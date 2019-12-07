@@ -1,0 +1,12 @@
+2019-11-13 15:58:34.539:payType=1;productID=424;money=0.01;ldNO=24;bill=111977820001010323;mechineID=68
+---------------
+2019-11-13 15:58:34.845:result=<?xml version="1.0" encoding="utf-8"?><root>1</root>
+---------------
+2019-11-13 16:18:34.424:payType=1;productID=424;money=0.01;ldNO=10;bill=111977820001010349;mechineID=68
+---------------
+2019-11-13 16:18:34.598:result=<?xml version="1.0" encoding="utf-8"?><root>1</root>
+---------------
+2019-11-13 16:28:34.783:payType=1;productID=424;money=0.01;ldNO=24;bill=111977820001010365;mechineID=68
+---------------
+2019-11-13 16:28:34.972:result=<?xml version="1.0" encoding="utf-8"?><root>1</root>
+---------------

@@ -1,0 +1,21 @@
+2019-07-24 18:45:05.116:暂停订单号=291558088375010
+---------------
+2019-07-24 18:45:31.302:暂停数量=19
+---------------
+2019-07-24 18:46:39.651:恢复订单号=291558088375010
+---------------
+2019-07-24 19:19:09.811:暂停订单号=291558088375010
+---------------
+2019-07-24 19:19:26.819:暂停数量=11
+---------------
+2019-07-24 19:22:42.474:恢复订单号=431563851108365
+---------------
+2019-07-24 19:23:04.931:错误=System.InvalidOperationException: ExecuteNonQuery: CommandText 属性尚未初始化
+   在 System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 DBUtility.DbHelperSQL.ExecuteSql(String SQLString) 位置 E:\My_project\青岛冰格售卖系统\奶企端\autosell_center_nq2\autosell_center\util\DbHelperSQL.cs:行号 244
+   在 Consumer.cls.Util.SleepOrder(DataTable dtInfo) 位置 E:\My_project\青岛冰格售卖系统\奶企端\autosell_center_nq2\autosell_center\cls\Util.cs:行号 519
+---------------
+2019-07-24 19:24:59.530:恢复订单号=291558088375010
+---------------

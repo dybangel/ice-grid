@@ -1,0 +1,22 @@
+2019-07-24 11:37:10.691:Query=select *,DATEDIFF(MI,convert(datetime,lastReqTime),getdate()) last from  asm_mechine where DATEDIFF(MI,convert(datetime,lastReqTime),getdate())>5 and statu=0 and sendF!=1
+---------------
+2019-07-24 12:07:10.710:Query=select *,DATEDIFF(MI,convert(datetime,lastReqTime),getdate()) last from  asm_mechine where DATEDIFF(MI,convert(datetime,lastReqTime),getdate())>5 and statu=0 and sendF!=1
+---------------
+2019-07-24 12:37:10.725:Query=select *,DATEDIFF(MI,convert(datetime,lastReqTime),getdate()) last from  asm_mechine where DATEDIFF(MI,convert(datetime,lastReqTime),getdate())>5 and statu=0 and sendF!=1
+---------------
+2019-07-24 13:07:10.744:Query=select *,DATEDIFF(MI,convert(datetime,lastReqTime),getdate()) last from  asm_mechine where DATEDIFF(MI,convert(datetime,lastReqTime),getdate())>5 and statu=0 and sendF!=1
+---------------
+2019-07-24 13:37:10.781:Query=select *,DATEDIFF(MI,convert(datetime,lastReqTime),getdate()) last from  asm_mechine where DATEDIFF(MI,convert(datetime,lastReqTime),getdate())>5 and statu=0 and sendF!=1
+---------------
+2019-07-24 14:07:10.817:Query=select *,DATEDIFF(MI,convert(datetime,lastReqTime),getdate()) last from  asm_mechine where DATEDIFF(MI,convert(datetime,lastReqTime),getdate())>5 and statu=0 and sendF!=1
+---------------
+2019-07-24 14:37:10.864:Query=select *,DATEDIFF(MI,convert(datetime,lastReqTime),getdate()) last from  asm_mechine where DATEDIFF(MI,convert(datetime,lastReqTime),getdate())>5 and statu=0 and sendF!=1
+---------------
+2019-07-24 15:07:10.881:Query=select *,DATEDIFF(MI,convert(datetime,lastReqTime),getdate()) last from  asm_mechine where DATEDIFF(MI,convert(datetime,lastReqTime),getdate())>5 and statu=0 and sendF!=1
+---------------
+2019-07-24 15:37:10.919:Query=select *,DATEDIFF(MI,convert(datetime,lastReqTime),getdate()) last from  asm_mechine where DATEDIFF(MI,convert(datetime,lastReqTime),getdate())>5 and statu=0 and sendF!=1
+---------------
+2019-07-24 16:07:09.930:Query=select * from asm_mechine
+---------------
+2019-07-24 19:17:11.666:Query=select * from asm_mechine where sendT=1
+---------------

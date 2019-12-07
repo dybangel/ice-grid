@@ -1,0 +1,4 @@
+2019-12-02 18:09:25.829:payType=1;productID=471;money=0.03;ldNO=15;bill=111977820001026582;mechineID=69
+---------------
+2019-12-02 18:09:26.353:result=<?xml version="1.0" encoding="utf-8"?><root>1</root>
+---------------

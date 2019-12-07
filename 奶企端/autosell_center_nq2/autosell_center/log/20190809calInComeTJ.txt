@@ -1,0 +1,32 @@
+2019-08-09 10:29:58.098:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=13 and time='20190809'
+---------------
+2019-08-09 10:29:58.267:update asm_inComeTJ set lsMoney=185.50,lsMoneyAvai=35.40,dgMoney=0.00,czMoney=201.00,tkMoney=0.00,totalMoney=421.90 where companyID=14 and time='20190809'
+---------------
+2019-08-09 10:29:58.435:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=5.50,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=5.50 where companyID=21 and time='20190809'
+---------------
+2019-08-09 10:29:58.601:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=22 and time='20190809'
+---------------
+2019-08-09 11:18:50.581:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=13 and time='20190809'
+---------------
+2019-08-09 11:18:50.777:update asm_inComeTJ set lsMoney=221.84,lsMoneyAvai=61.00,dgMoney=0.00,czMoney=226.00,tkMoney=0.00,totalMoney=508.84 where companyID=14 and time='20190809'
+---------------
+2019-08-09 11:18:50.947:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=5.50,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=5.50 where companyID=21 and time='20190809'
+---------------
+2019-08-09 11:18:51.106:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=22 and time='20190809'
+---------------
+2019-08-09 11:48:50.838:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=13 and time='20190809'
+---------------
+2019-08-09 11:48:51.019:update asm_inComeTJ set lsMoney=231.44,lsMoneyAvai=80.30,dgMoney=0.00,czMoney=246.00,tkMoney=7.90,totalMoney=557.74 where companyID=14 and time='20190809'
+---------------
+2019-08-09 11:48:51.188:update asm_inComeTJ set lsMoney=2.90,lsMoneyAvai=5.50,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=8.40 where companyID=21 and time='20190809'
+---------------
+2019-08-09 11:48:51.353:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=22 and time='20190809'
+---------------
+2019-08-09 12:23:28.972:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=13 and time='20190809'
+---------------
+2019-08-09 12:23:29.215:update asm_inComeTJ set lsMoney=296.24,lsMoneyAvai=93.80,dgMoney=0.00,czMoney=246.00,tkMoney=7.90,totalMoney=636.04 where companyID=14 and time='20190809'
+---------------
+2019-08-09 12:23:29.430:update asm_inComeTJ set lsMoney=2.90,lsMoneyAvai=5.50,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=8.40 where companyID=21 and time='20190809'
+---------------
+2019-08-09 12:23:29.640:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=22 and time='20190809'
+---------------

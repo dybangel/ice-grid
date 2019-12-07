@@ -1,0 +1,12 @@
+2019-07-17 06:33:28.476:Query=select *,DATEDIFF(MI,convert(datetime,lastReqTime),getdate()) last from  asm_mechine where DATEDIFF(MI,convert(datetime,lastReqTime),getdate())>5 and statu=0 and sendF!=1
+---------------
+2019-07-17 07:03:28.608:Query=select *,DATEDIFF(MI,convert(datetime,lastReqTime),getdate()) last from  asm_mechine where DATEDIFF(MI,convert(datetime,lastReqTime),getdate())>5 and statu=0 and sendF!=1
+---------------
+2019-07-17 07:33:28.620:Query=select *,DATEDIFF(MI,convert(datetime,lastReqTime),getdate()) last from  asm_mechine where DATEDIFF(MI,convert(datetime,lastReqTime),getdate())>5 and statu=0 and sendF!=1
+---------------
+2019-07-17 08:03:28.601:Query=select *,DATEDIFF(MI,convert(datetime,lastReqTime),getdate()) last from  asm_mechine where DATEDIFF(MI,convert(datetime,lastReqTime),getdate())>5 and statu=0 and sendF!=1
+---------------
+2019-07-17 08:33:28.627:Query=select *,DATEDIFF(MI,convert(datetime,lastReqTime),getdate()) last from  asm_mechine where DATEDIFF(MI,convert(datetime,lastReqTime),getdate())>5 and statu=0 and sendF!=1
+---------------
+2019-07-17 09:03:28.623:Query=select *,DATEDIFF(MI,convert(datetime,lastReqTime),getdate()) last from  asm_mechine where DATEDIFF(MI,convert(datetime,lastReqTime),getdate())>5 and statu=0 and sendF!=1
+---------------

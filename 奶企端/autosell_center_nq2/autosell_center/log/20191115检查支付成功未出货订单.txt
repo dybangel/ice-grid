@@ -1,0 +1,6 @@
+2019-11-15 14:47:24.308:payType=3;productID=319;money=5.50;ldNO=21;bill=1573800444271;mechineID=42
+---------------
+2019-11-15 15:55:30.951:payType=1;productID=335;money=1.99;ldNO=52;bill=111977820001012339;mechineID=51
+---------------
+2019-11-15 15:55:31.219:result=<?xml version="1.0" encoding="utf-8"?><root>1</root>
+---------------

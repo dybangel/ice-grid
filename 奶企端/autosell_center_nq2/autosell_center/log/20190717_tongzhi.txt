@@ -1,0 +1,10 @@
+2019-07-17 16:00:06.091:定时执行正在执行select * from asm_orderDetail where createTime like '2019-07-17%' and zt=4 and ldNO!='' and mechineID in(select id from  asm_mechine where companyID=13)
+---------------
+2019-07-17 17:00:06.892:定时执行正在执行select * from asm_orderDetail where createTime like '2019-07-17%' and zt=4 and ldNO!='' and mechineID in(select id from  asm_mechine where companyID=14)
+---------------
+2019-07-17 17:00:06.913:定时执行正在执行select * from asm_orderDetail where createTime like '2019-07-17%' and zt=4 and ldNO!='' and mechineID in(select id from  asm_mechine where companyID=21)
+---------------
+2019-07-17 17:00:06.933:定时执行正在执行select * from asm_member where id=309
+---------------
+2019-07-17 17:00:06.952:定时执行正在执行select companyID,mechineName from asm_mechine where id in(select mechineID from asm_orderDetail where code='636223') 
+---------------

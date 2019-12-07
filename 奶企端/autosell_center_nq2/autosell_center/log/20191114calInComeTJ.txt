@@ -1,0 +1,16 @@
+2019-11-14 16:48:44.310:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=13 and time='20191114'
+---------------
+2019-11-14 16:48:44.667:update asm_inComeTJ set lsMoney=543.38,lsMoneyAvai=134.32,dgMoney=0.00,czMoney=30.00,tkMoney=0.00,totalMoney=707.70 where companyID=14 and time='20191114'
+---------------
+2019-11-14 16:48:45.063:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=21 and time='20191114'
+---------------
+2019-11-14 16:48:45.424:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=22 and time='20191114'
+---------------
+2019-11-14 17:18:44.247:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=13 and time='20191114'
+---------------
+2019-11-14 17:18:44.630:update asm_inComeTJ set lsMoney=599.84,lsMoneyAvai=147.31,dgMoney=0.00,czMoney=30.00,tkMoney=0.00,totalMoney=777.15 where companyID=14 and time='20191114'
+---------------
+2019-11-14 17:18:44.976:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=21 and time='20191114'
+---------------
+2019-11-14 17:18:45.311:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=22 and time='20191114'
+---------------

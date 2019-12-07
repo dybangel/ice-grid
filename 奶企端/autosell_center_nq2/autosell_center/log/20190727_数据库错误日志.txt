@@ -1,0 +1,2 @@
+2019-07-27 14:21:55.072:Query=select *,DATEDIFF(MI,convert(datetime,lastReqTime),getdate()) last from  asm_mechine where DATEDIFF(MI,convert(datetime,lastReqTime),getdate())>5 and statu=0 and sendF!=1
+---------------

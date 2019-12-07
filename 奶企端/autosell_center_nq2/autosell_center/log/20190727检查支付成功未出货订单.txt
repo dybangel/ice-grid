@@ -1,0 +1,4 @@
+2019-07-27 13:21:39.001:payType=1;productID=324;money=4.90;ldNO=;bill=111977820000860593;mechineID=45
+---------------
+2019-07-27 13:21:39.547:result=<?xml version="1.0" encoding="utf-8"?><root>1</root>
+---------------

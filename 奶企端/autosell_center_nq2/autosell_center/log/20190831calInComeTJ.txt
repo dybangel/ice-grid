@@ -1,0 +1,8 @@
+2019-08-31 16:44:01.665:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=13 and time='20190831'
+---------------
+2019-08-31 16:44:02.019:update asm_inComeTJ set lsMoney=1365.50,lsMoneyAvai=265.30,dgMoney=1650.00,czMoney=188.00,tkMoney=12.00,totalMoney=3468.80 where companyID=14 and time='20190831'
+---------------
+2019-08-31 16:44:02.213:update asm_inComeTJ set lsMoney=15.50,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=15.50 where companyID=21 and time='20190831'
+---------------
+2019-08-31 16:44:02.427:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=22 and time='20190831'
+---------------

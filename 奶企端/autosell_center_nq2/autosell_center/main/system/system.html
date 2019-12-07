@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>系统设置-自动售卖终端中心控制系统</title>
+    <meta charset="utf-8"/>
+    <link rel="shortcut icon" href="/main/public/images/favicon.ico"/>
+    <link href="/main/public/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/main/public/css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="/main/public/css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="/main/public/script/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="/main/public/script/Titlelist.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="header"></div>
+<div class="main">
+    <div class="main_list">
+        <div class="common_title">
+            <h4>
+                <i class="fa fa-plus"></i>
+                <span>奶企管理</span>
+            </h4>
+            <!--<a class="change" href="SellCenter.html">
+                <i class="fa fa-reorder"></i>
+                切换奶企
+            </a>-->
+        </div>
+        <div class="common_main">
+            <div class="navlist">
+                <dl>
+                    <dt>奶企设备<em class="fa fa-cog"></em></dt>
+                    <dd>
+                        <a class="change acolor"><i class="change icolor fa fa-check-square"></i>设备列表</a>
+                    </dd>
+                    <dd>
+                        <a class="change" href="firmcon.aspx"><i class="change fa fa-plus-square"></i>新增设备</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>奶企设置<em class="fa fa-cog"></em></dt>
+                    <dd>
+                        <a class="change" href="Thepublicjb.aspx"><i class="change fa fa-wechat"></i>公众号设置</a>
+                    </dd>
+                    <dd>
+                        <a class="change" href="Paymentzf.aspx"><i class="change fa fa-money"></i>支付设置</a>
+                    </dd>
+                    <dd>
+                        <a class="change" href="Profit.aspx"><i class="change fa fa-database"></i>分润设置</a>
+                    </dd>
+                </dl>
+            </div>
+            <section class="jiqlist">
+                <dl class="jiqlistTab">
+                    <dd class="change ddcolor">运行中机器</dd>
+                    <dd class="change">即将过期机器</dd>
+                </dl>
+                <ul class="jiqlistseach">
+                    <li>
+                        <input type="text" value="" placeholder="设备开启时间"/>
+                    </li>
+                    <li>
+                        <input type="text" value="" placeholder="设备编号"/>
+                    </li>
+                    <li>
+                        <input type="button" value="查询" class="seachbtn"/>
+                    </li>
+                </ul>
+                <ul class="jiqlisttable" style="display: block;">
+                    <li>
+                        <dl>
+                            <dd class="jiqname">机器</dd>
+                            <dd class="jiqtime">有效期</dd>
+                            <dd class="jiqzt">状态</dd>
+                            <dd class="jiqcz">操作</dd>
+                        </dl>
+                        <label class="jiqname">
+                            <img src="public/images/smjicon.png" alt=""/>
+                            <span>SMJ3224568526</span>
+                            <em>开启时间:<i>2018-02-09 12:12:12</i></em>
+                        </label>
+                        <label class="jiqtime">2020-02-09 12:12:12过期</label>
+                        <label class="jiqzt"><a>正常运行</a></label>
+                        <label class="jiqcz">
+                            <a href="#">设置</a>
+                            <a onclick="shanchu()">删除</a>
+                        </label>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd class="jiqname">机器</dd>
+                            <dd class="jiqtime">有效期</dd>
+                            <dd class="jiqzt">状态</dd>
+                            <dd class="jiqcz">操作</dd>
+                        </dl>
+                        <label class="jiqname">
+                            <img src="public/images/smjicon.png" alt=""/>
+                            <span>SMJ3224568526</span>
+                            <em>开启时间:<i>2018-02-09 12:12:12</i></em>
+                        </label>
+                        <label class="jiqtime">2020-02-09 12:12:12过期</label>
+                        <label class="jiqzt"><a>正常运行</a></label>
+                        <label class="jiqcz">
+                            <a href="#">设置</a>
+                            <a onclick="shanchu()">删除</a>
+                        </label>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd class="jiqname">机器</dd>
+                            <dd class="jiqtime">有效期</dd>
+                            <dd class="jiqzt">状态</dd>
+                            <dd class="jiqcz">操作</dd>
+                        </dl>
+                        <label class="jiqname">
+                            <img src="public/images/smjicon.png" alt=""/>
+                            <span>SMJ3224568526</span>
+                            <em>开启时间:<i>2018-02-09 12:12:12</i></em>
+                        </label>
+                        <label class="jiqtime">2020-02-09 12:12:12过期</label>
+                        <label class="jiqzt"><a>正常运行</a></label>
+                        <label class="jiqcz">
+                            <a href="#">设置</a>
+                            <a onclick="shanchu()">删除</a>
+                        </label>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd class="jiqname">机器</dd>
+                            <dd class="jiqtime">有效期</dd>
+                            <dd class="jiqzt">状态</dd>
+                            <dd class="jiqcz">操作</dd>
+                        </dl>
+                        <label class="jiqname">
+                            <img src="public/images/smjicon.png" alt=""/>
+                            <span>SMJ3224568526</span>
+                            <em>开启时间:<i>2018-02-09 12:12:12</i></em>
+                        </label>
+                        <label class="jiqtime">2020-02-09 12:12:12过期</label>
+                        <label class="jiqzt"><a>正常运行</a></label>
+                        <label class="jiqcz">
+                            <a href="#">设置</a>
+                            <a onclick="shanchu()">删除</a>
+                        </label>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd class="jiqname">机器</dd>
+                            <dd class="jiqtime">有效期</dd>
+                            <dd class="jiqzt">状态</dd>
+                            <dd class="jiqcz">操作</dd>
+                        </dl>
+                        <label class="jiqname">
+                            <img src="public/images/smjicon.png" alt=""/>
+                            <span>SMJ3224568526</span>
+                            <em>开启时间:<i>2018-02-09 12:12:12</i></em>
+                        </label>
+                        <label class="jiqtime">2020-02-09 12:12:12过期</label>
+                        <label class="jiqzt"><a>正常运行</a></label>
+                        <label class="jiqcz">
+                            <a href="#">设置</a>
+                            <a onclick="shanchu()">删除</a>
+                        </label>
+                    </li>
+                </ul>
+                <ul class="jiqlisttable">
+                    <li>
+                        <dl>
+                            <dd class="jiqname">机器</dd>
+                            <dd class="jiqtime">有效期</dd>
+                            <dd class="jiqzt">状态</dd>
+                            <dd class="jiqcz">操作</dd>
+                        </dl>
+                        <label class="jiqname">
+                            <img src="public/images/smjicon.png" alt=""/>
+                            <span>SMJ3224568526</span>
+                            <em>开启时间:<i>2018-02-09 12:12:12</i></em>
+                        </label>
+                        <label class="jiqtime">2020-02-09 12:12:12过期</label>
+                        <label class="jiqzt"><a>正常运行</a></label>
+                        <label class="jiqcz">
+                            <a href="#">设置</a>
+                            <a onclick="shanchu()">删除</a>
+                        </label>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</div>
+<!--<div class="login_foot">
+    <span>青岛冰格科技公司版权所有 翻版必究</span>
+</div>-->
+</body>
+</html>
+<script>
+    $(function() {
+        $(".jiqlistTab").find("dd").click(function() {
+            $(".jiqlistTab dd").removeClass("ddcolor");
+            $(this).addClass("ddcolor");
+            var $liNum = $(this).index();
+            $(".jiqlisttable").hide();
+            $(".jiqlisttable").eq($liNum).fadeIn();
+        });
+    });
+</script>
+<script>
+    $(function() {
+        $("#li0").find("a").addClass("aborder");
+    })
+</script>

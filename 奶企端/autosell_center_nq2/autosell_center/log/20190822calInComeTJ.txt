@@ -1,0 +1,24 @@
+2019-08-22 11:50:24.700:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=13 and time='20190822'
+---------------
+2019-08-22 11:50:24.891:update asm_inComeTJ set lsMoney=321.90,lsMoneyAvai=82.70,dgMoney=408.00,czMoney=21.00,tkMoney=6.10,totalMoney=833.60 where companyID=14 and time='20190822'
+---------------
+2019-08-22 11:50:25.074:update asm_inComeTJ set lsMoney=5.50,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=5.50 where companyID=21 and time='20190822'
+---------------
+2019-08-22 11:50:25.259:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=22 and time='20190822'
+---------------
+2019-08-22 12:20:26.685:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=13 and time='20190822'
+---------------
+2019-08-22 12:20:26.893:update asm_inComeTJ set lsMoney=361.90,lsMoneyAvai=82.70,dgMoney=408.00,czMoney=21.00,tkMoney=6.10,totalMoney=873.60 where companyID=14 and time='20190822'
+---------------
+2019-08-22 12:20:27.097:update asm_inComeTJ set lsMoney=5.50,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=5.50 where companyID=21 and time='20190822'
+---------------
+2019-08-22 12:20:27.301:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=22 and time='20190822'
+---------------
+2019-08-22 12:50:24.688:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=13 and time='20190822'
+---------------
+2019-08-22 12:50:24.897:update asm_inComeTJ set lsMoney=378.00,lsMoneyAvai=101.40,dgMoney=408.00,czMoney=21.00,tkMoney=6.10,totalMoney=908.40 where companyID=14 and time='20190822'
+---------------
+2019-08-22 12:50:25.083:update asm_inComeTJ set lsMoney=5.50,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=5.50 where companyID=21 and time='20190822'
+---------------
+2019-08-22 12:50:25.265:update asm_inComeTJ set lsMoney=0.00,lsMoneyAvai=0.00,dgMoney=0.00,czMoney=0.00,tkMoney=0.00,totalMoney=0.00 where companyID=22 and time='20190822'
+---------------

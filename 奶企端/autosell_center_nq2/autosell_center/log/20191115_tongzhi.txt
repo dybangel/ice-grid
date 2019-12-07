@@ -1,0 +1,114 @@
+2019-11-15 16:00:56.790:定时执行正在执行select * from asm_orderDetail where createTime like '2019-11-15%' and zt=4 and ldNO!='' and mechineID in(select id from  asm_mechine where companyID=13)
+---------------
+2019-11-15 16:00:56.822:定时执行正在执行select * from asm_orderDetail where createTime like '2019-11-15%' and zt=4 and ldNO!='' and mechineID in(select id from  asm_mechine where companyID=14)
+---------------
+2019-11-15 16:00:56.883:定时执行正在执行select b.mechineName,a.* from asm_orderlistDetail a left join asm_mechine b on a.mechineid = b.id where a.createTime = '2019-11-15' and a.zt = 4 and a.companyID = 13
+---------------
+2019-11-15 16:00:56.918:定时执行正在执行select b.mechineName,a.* from asm_orderlistDetail a left join asm_mechine b on a.mechineid = b.id where a.createTime = '2019-11-15' and a.zt = 4 and a.companyID = 14
+---------------
+2019-11-15 16:00:56.959:定时执行正在执行select * from asm_member where id=6073
+---------------
+2019-11-15 16:00:57.619:定时执行正在执行select * from asm_member where id=6073
+---------------
+2019-11-15 16:00:57.894:定时执行正在执行select * from asm_member where id=6275
+---------------
+2019-11-15 16:00:58.191:定时执行正在执行select * from asm_member where id=8977
+---------------
+2019-11-15 16:00:58.475:定时执行正在执行select * from asm_member where id=7155
+---------------
+2019-11-15 16:00:58.801:定时执行正在执行select * from asm_member where id=12949
+---------------
+2019-11-15 16:00:59.055:定时执行正在执行select * from asm_member where id=5750
+---------------
+2019-11-15 16:00:59.338:定时执行正在执行select * from asm_member where id=6354
+---------------
+2019-11-15 16:00:59.589:定时执行正在执行select * from asm_member where id=7965
+---------------
+2019-11-15 16:00:59.875:定时执行正在执行select * from asm_member where id=9129
+---------------
+2019-11-15 16:01:00.105:定时执行正在执行select * from asm_member where id=8117
+---------------
+2019-11-15 16:01:00.347:定时执行正在执行select * from asm_member where id=8900
+---------------
+2019-11-15 16:01:00.595:定时执行正在执行select * from asm_member where id=671
+---------------
+2019-11-15 16:01:00.866:定时执行正在执行select * from asm_member where id=8536
+---------------
+2019-11-15 16:01:02.239:定时执行正在执行select * from asm_member where id=8536
+---------------
+2019-11-15 16:01:02.544:定时执行正在执行select * from asm_member where id=11987
+---------------
+2019-11-15 16:01:02.774:定时执行正在执行select * from asm_member where id=9710
+---------------
+2019-11-15 16:01:03.055:定时执行正在执行select * from asm_member where id=8453
+---------------
+2019-11-15 16:01:03.329:定时执行正在执行select * from asm_member where id=2255
+---------------
+2019-11-15 16:01:03.553:定时执行正在执行select * from asm_member where id=12052
+---------------
+2019-11-15 16:01:03.847:定时执行正在执行select * from asm_member where id=9938
+---------------
+2019-11-15 16:01:04.081:定时执行正在执行select * from asm_member where id=3092
+---------------
+2019-11-15 16:01:04.351:定时执行正在执行select * from asm_member where id=3092
+---------------
+2019-11-15 16:01:04.625:定时执行正在执行select * from asm_member where id=5569
+---------------
+2019-11-15 16:01:04.927:定时执行正在执行select * from asm_member where id=10978
+---------------
+2019-11-15 16:01:05.209:定时执行正在执行select * from asm_member where id=7842
+---------------
+2019-11-15 16:01:05.450:定时执行正在执行select * from asm_member where id=11406
+---------------
+2019-11-15 16:01:05.766:定时执行正在执行select * from asm_member where id=2377
+---------------
+2019-11-15 16:01:06.064:定时执行正在执行select * from asm_member where id=9650
+---------------
+2019-11-15 16:01:06.312:定时执行正在执行select * from asm_member where id=9650
+---------------
+2019-11-15 16:01:06.583:定时执行正在执行select * from asm_member where id=11493
+---------------
+2019-11-15 16:01:06.829:定时执行正在执行select * from asm_member where id=11493
+---------------
+2019-11-15 16:01:07.107:定时执行正在执行select * from asm_member where id=11443
+---------------
+2019-11-15 16:01:07.367:定时执行正在执行select * from asm_member where id=819
+---------------
+2019-11-15 16:01:07.647:定时执行正在执行select * from asm_member where id=6167
+---------------
+2019-11-15 16:01:07.931:定时执行正在执行select * from asm_member where id=2556
+---------------
+2019-11-15 16:01:08.459:定时执行正在执行select * from asm_member where id=2556
+---------------
+2019-11-15 16:01:08.717:定时执行正在执行select * from asm_member where id=2556
+---------------
+2019-11-15 16:01:08.988:定时执行正在执行select * from asm_member where id=2556
+---------------
+2019-11-15 16:01:09.338:定时执行正在执行select * from asm_member where id=498
+---------------
+2019-11-15 16:01:09.593:定时执行正在执行select * from asm_member where id=16245
+---------------
+2019-11-15 16:01:09.847:定时执行正在执行select * from asm_member where id=15654
+---------------
+2019-11-15 16:01:10.075:定时执行正在执行select * from asm_member where id=2409
+---------------
+2019-11-15 16:01:10.332:定时执行正在执行select * from asm_member where id=16432
+---------------
+2019-11-15 16:01:10.558:定时执行正在执行select * from asm_member where id=9702
+---------------
+2019-11-15 16:01:10.831:定时执行正在执行select * from asm_member where id=18562
+---------------
+2019-11-15 16:01:11.074:定时执行正在执行select * from asm_member where id=16803
+---------------
+2019-11-15 16:01:11.288:定时执行正在执行select * from asm_member where id=12949
+---------------
+2019-11-15 16:01:11.538:定时执行正在执行select * from asm_member where id=7803
+---------------
+2019-11-15 16:01:11.764:定时执行正在执行select * from asm_member where id=12949
+---------------
+2019-11-15 16:01:12.009:定时执行正在执行select * from asm_member where id=2370
+---------------
+2019-11-15 17:00:09.296:定时执行正在执行select * from asm_orderDetail where createTime like '2019-11-15%' and zt=4 and ldNO!='' and mechineID in(select id from  asm_mechine where companyID=21)
+---------------
+2019-11-15 17:00:09.352:定时执行正在执行select b.mechineName,a.* from asm_orderlistDetail a left join asm_mechine b on a.mechineid = b.id where a.createTime = '2019-11-15' and a.zt = 4 and a.companyID = 21
+---------------

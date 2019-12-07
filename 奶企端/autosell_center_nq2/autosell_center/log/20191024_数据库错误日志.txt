@@ -1,0 +1,12 @@
+2019-10-24 17:31:36.031:Query=select * from asm_company
+---------------
+2019-10-24 17:32:36.179:Query=select * from asm_company
+---------------
+2019-10-24 17:33:36.120:Query=select * from asm_company
+---------------
+2019-10-24 17:33:48.028:Query=select DATEDIFF(MI,createTime,GETDATE()) sjc, p.appid,p.trxid,p.acct,p.type,p.payType,p.trxamt,p.createTime,p.chLdNo,p.unionID,p.mechineID,p.productID,p.companyID,p.chzt,s.mechineID,s.billno,s.orderTime from  asm_pay_info p left join asm_sellDetail s on p.trxid = s.billno where p.type = 2 and p.statu = 1 and p.payType in(1,2,4)  and DATEDIFF(MI, createTime, GETDATE())>= 5 and DATEDIFF(MI, createTime, GETDATE())<= 120 and p.companyID=14  and s.billno is null order by p.id desc
+---------------
+2019-10-24 17:34:36.100:Query=select * from asm_company
+---------------
+2019-10-24 17:35:35.475:Query=select * from asm_company
+---------------

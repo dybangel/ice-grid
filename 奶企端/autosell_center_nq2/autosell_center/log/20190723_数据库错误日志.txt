@@ -1,0 +1,4 @@
+2019-07-23 15:25:22.577:Query=select dg.phone,m.name,dg.productCode,(select proname from asm_product p where p.bh=dg.productCode)proname,dg.productPrice,dg.zq,dg.orderCode,case dg.status when 1 then '已兑换' else '未兑换' end status,dg.tjr,dg.createTime,dg.dhTime,dg.bz  from asm_dgOrder dg left join asm_member m on dg.phone=m.phone where dg.companyID=System.Web.UI.HtmlControls.HtmlInputHidden and dg.createTime<'2019-07-23 15:25:09'
+---------------
+2019-07-23 15:26:13.273:Query=select dg.phone,m.name,dg.productCode,(select proname from asm_product p where p.bh=dg.productCode)proname,dg.productPrice,dg.zq,dg.orderCode,case dg.status when 1 then '已兑换' else '未兑换' end status,dg.tjr,dg.createTime,dg.dhTime,dg.bz  from asm_dgOrder dg left join asm_member m on dg.phone=m.phone where dg.companyID=System.Web.UI.HtmlControls.HtmlInputHidden and dg.createTime<'2019-07-23 15:25:09'
+---------------

@@ -1,0 +1,8 @@
+2019-11-22 17:30:28.043:insert into asm_inComeTJ(companyID,time,lsMoney,dgMoney,czMoney,tkMoney,totalMoney,lsMoneyAvai) values(13,'20191122',0.00,0.00,0.00,0.00,0.00,0.00)
+---------------
+2019-11-22 17:30:28.422:insert into asm_inComeTJ(companyID,time,lsMoney,dgMoney,czMoney,tkMoney,totalMoney,lsMoneyAvai) values(14,'20191122',0.00,0.00,0.00,0.00,0.00,0.00)
+---------------
+2019-11-22 17:30:28.776:insert into asm_inComeTJ(companyID,time,lsMoney,dgMoney,czMoney,tkMoney,totalMoney,lsMoneyAvai) values(21,'20191122',0.00,0.00,0.00,0.00,0.00,0.00)
+---------------
+2019-11-22 17:30:29.069:insert into asm_inComeTJ(companyID,time,lsMoney,dgMoney,czMoney,tkMoney,totalMoney,lsMoneyAvai) values(22,'20191122',0.00,0.00,0.00,0.00,0.00,0.00)
+---------------

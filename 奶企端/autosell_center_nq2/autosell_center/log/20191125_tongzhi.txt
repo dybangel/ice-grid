@@ -1,0 +1,4 @@
+2019-11-25 17:00:58.580:定时执行正在执行select * from asm_orderDetail where createTime like '2019-11-25%' and zt=4 and ldNO!='' and mechineID in(select id from  asm_mechine where companyID=21)
+---------------
+2019-11-25 17:00:58.613:定时执行正在执行select b.mechineName,a.* from asm_orderlistDetail a left join asm_mechine b on a.mechineid = b.id where a.createTime = '2019-11-25' and a.zt = 4 and a.companyID = 21
+---------------

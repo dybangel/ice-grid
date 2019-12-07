@@ -1,0 +1,258 @@
+2019-11-02 09:37:31.417:ExecuteSql=insert into asm_content (content) values ('ddddd')
+---------------
+2019-11-02 09:44:14.111:ExecuteSql=insert into asm_content (content) values ('ddddd')
+---------------
+2019-11-02 11:57:21.593:Query=select * from asm_content where companyID=undefined and type =1 
+---------------
+2019-11-02 11:57:41.410:Query=select * from asm_content where companyID=undefined and type =1 
+---------------
+2019-11-02 11:58:01.158:Query=select * from asm_content where companyID=undefined and type =1 
+---------------
+2019-11-02 11:58:05.638:Query=select * from asm_content where companyID=undefined and type =1 
+---------------
+2019-11-02 12:02:08.652:Query=select * from asm_content where companyID=undefined and type =1 
+---------------
+2019-11-02 12:03:59.339:Query=select * from asm_content where companyID=undefined and type =1 
+---------------
+2019-11-02 12:04:10.385:Query=select * from asm_content where companyID=undefined and type =1 
+---------------
+2019-11-02 13:32:47.295:Query=select * from asm_content where companyID=undefined and type =1 
+---------------
+2019-11-02 13:47:52.179:Query=select * from asm_content where companyID=System.Web.UI.HtmlControls.HtmlInputHidden and type =1 
+---------------
+2019-11-02 14:37:13.906:ExecuteSql=insert into asm_content (type,companyID,content) values ('1','<p>
+	dsadsad
+</p>
+<p>
+	dsagbfkidsal
+</p>
+<p>
+	sadhkjaisl
+</p>
+<p>
+	<img src="/main/study/upload/kind/image/20191102/20191102102029_4749.png" alt="" />dsadsadasdddddceshi
+</p>','<p>
+	dsadsad
+</p>
+<p>
+	dsagbfkidsal
+</p>
+<p>
+	sadhkjaisl
+</p>
+<p>
+	<img src="/main/study/upload/kind/image/20191102/20191102102029_4749.png" alt="" />dsadsadasdddddceshi
+</p>')
+---------------
+2019-11-02 14:39:26.357:ExecuteSql=insert into asm_content (type,companyID,content) values ('1','<p>
+	dsadsad
+</p>
+<p>
+	dsagbfkidsal
+</p>
+<p>
+	sadhkjaisl
+</p>
+<p>
+	<img src="/main/study/upload/kind/image/20191102/20191102102029_4749.png" alt="" />dsadsadasceshi
+</p>','<p>
+	dsadsad
+</p>
+<p>
+	dsagbfkidsal
+</p>
+<p>
+	sadhkjaisl
+</p>
+<p>
+	<img src="/main/study/upload/kind/image/20191102/20191102102029_4749.png" alt="" />dsadsadasceshi
+</p>')
+---------------
+2019-11-02 14:40:03.315:ExecuteSql=insert into asm_content (type,companyID,content) values ('1','<p>
+	dsadsad
+</p>
+<p>
+	dsagbfkidsal
+</p>
+<p>
+	sadhkjaisl
+</p>
+<p>
+	<img src="/main/study/upload/kind/image/20191102/20191102102029_4749.png" alt="" />dsadsadasceshi
+</p>','<p>
+	dsadsad
+</p>
+<p>
+	dsagbfkidsal
+</p>
+<p>
+	sadhkjaisl
+</p>
+<p>
+	<img src="/main/study/upload/kind/image/20191102/20191102102029_4749.png" alt="" />dsadsadasceshi
+</p>')
+---------------
+2019-11-02 14:40:08.673:ExecuteSql=insert into asm_content (type,companyID,content) values ('1','<p>
+	dsadsad
+</p>
+<p>
+	dsagbfkidsal
+</p>
+<p>
+	sadhkjaisl
+</p>
+<p>
+	<img src="/main/study/upload/kind/image/20191102/20191102102029_4749.png" alt="" />dsadsadasceshi
+</p>','<p>
+	dsadsad
+</p>
+<p>
+	dsagbfkidsal
+</p>
+<p>
+	sadhkjaisl
+</p>
+<p>
+	<img src="/main/study/upload/kind/image/20191102/20191102102029_4749.png" alt="" />dsadsadasceshi
+</p>')
+---------------
+2019-11-02 14:40:27.087:ExecuteSql=insert into asm_content (type,companyID,content) values ('1','<p>
+	dsadsad
+</p>
+<p>
+	dsagbfkidsal
+</p>
+<p>
+	sadhkjaislceshi
+</p>
+<p>
+	<img src="/main/study/upload/kind/image/20191102/20191102102029_4749.png" alt="" />dsadsadas
+</p>','<p>
+	dsadsad
+</p>
+<p>
+	dsagbfkidsal
+</p>
+<p>
+	sadhkjaislceshi
+</p>
+<p>
+	<img src="/main/study/upload/kind/image/20191102/20191102102029_4749.png" alt="" />dsadsadas
+</p>')
+---------------
+2019-11-02 14:42:12.333:ExecuteSql=insert into asm_content (type,companyID,content) values ('1','<p>
+	dsadsad
+</p>
+<p>
+	dsagbfkidsal
+</p>
+<p>
+	sadhkjaislceshi
+</p>
+<p>
+	<img src="/main/study/upload/kind/image/20191102/20191102102029_4749.png" alt="" />dsadsadas
+</p>','<p>
+	dsadsad
+</p>
+<p>
+	dsagbfkidsal
+</p>
+<p>
+	sadhkjaislceshi
+</p>
+<p>
+	<img src="/main/study/upload/kind/image/20191102/20191102102029_4749.png" alt="" />dsadsadas
+</p>')
+---------------
+2019-11-02 14:44:07.323:ExecuteSql=insert into asm_content (type,companyID,content) values ('1','<p>
+	dsadsad
+</p>
+<p>
+	dsagbfkidsal
+</p>
+<p>
+	sadhkjaisl
+</p>
+<p>
+	<img src="/main/study/upload/kind/image/20191102/20191102102029_4749.png" alt="" />dsadsadas
+</p>','<p>
+	dsadsad
+</p>
+<p>
+	dsagbfkidsal
+</p>
+<p>
+	sadhkjaisl
+</p>
+<p>
+	<img src="/main/study/upload/kind/image/20191102/20191102102029_4749.png" alt="" />dsadsadas
+</p>')
+---------------
+2019-11-02 15:14:45.983:ExecuteSql=insert into asm_content (type,companyID,content) values ('1','<p>
+	dsadsadceshi
+</p>
+<p>
+	dsagbfkidsal
+</p>
+<p>
+	sadhkjaisl
+</p>
+<p>
+	<img src="/main/study/upload/kind/image/20191102/20191102102029_4749.png" alt="" />dsadsadas
+</p>','<p>
+	dsadsadceshi
+</p>
+<p>
+	dsagbfkidsal
+</p>
+<p>
+	sadhkjaisl
+</p>
+<p>
+	<img src="/main/study/upload/kind/image/20191102/20191102102029_4749.png" alt="" />dsadsadas
+</p>')
+---------------
+2019-11-02 15:15:20.598:ExecuteSql=insert into asm_content (type,companyID,content) values ('1','<p>
+	dsadsadceshi
+</p>
+<p>
+	dsagbfkidsal
+</p>
+<p>
+	sadhkjaisl
+</p>
+<p>
+	<img src="/main/study/upload/kind/image/20191102/20191102102029_4749.png" alt="" />dsadsadas
+</p>','<p>
+	dsadsadceshi
+</p>
+<p>
+	dsagbfkidsal
+</p>
+<p>
+	sadhkjaisl
+</p>
+<p>
+	<img src="/main/study/upload/kind/image/20191102/20191102102029_4749.png" alt="" />dsadsadas
+</p>')
+---------------
+2019-11-02 15:29:12.289:ExecuteSql=insert into asm_content (type,companyID,content) values ('1','<p>
+	dsad
+</p>
+<p>
+	dsa<img src="/main/study/upload/kind/image/20191102/20191102152905_2439.png" alt="" />
+</p>','<p>
+	dsad
+</p>
+<p>
+	dsa<img src="/main/study/upload/kind/image/20191102/20191102152905_2439.png" alt="" />
+</p>')
+---------------
+2019-11-02 15:30:44.735:Query=select * from asm_content where companyID=14 and type ='1' 
+---------------
+2019-11-02 15:31:01.801:Query=select * from asm_content where companyID=14 and type ='1' 
+---------------
+2019-11-02 15:32:08.622:Query=select * from asm_content where companyID=14 and type ='1' 
+---------------
+2019-11-02 15:32:42.694:Query=select * from asm_content where companyID=‘14’ and type ='1' 
+---------------

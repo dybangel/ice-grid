@@ -1,0 +1,4 @@
+2019-09-09 18:01:21.726:result={"errcode":40037,"errmsg":"invalid template_id hint: [Dw0OKA02823113]"}data={"touser":"o1_mf1bBusFgt2Ssuclgj2OSby4Y","template_id":"0","url":"","data":{"first":{"value":"亲爱的会员，您今日订购的商品还未取货","color":"#173177"},"keyword1":{"value":"000000","color":"#173177"},"keyword2":{"value":"ceshi","color":"#173177"},"remark":{"value":"请及时取件,否则第二天会自动失效处理","color":"#173177"}}}
+---------------
+2019-09-09 18:07:33.382:result={"errcode":40037,"errmsg":"invalid template_id hint: [w0653shc1]"}data={"touser":"o1_mf1bBusFgt2Ssuclgj2OSby4Y","template_id":"0","url":"","data":{"first":{"value":"亲爱的会员，您今日订购的商品还未取货","color":"#173177"},"keyword1":{"value":"000000","color":"#173177"},"keyword2":{"value":"ceshi","color":"#173177"},"remark":{"value":"请及时取件,否则第二天会自动失效处理","color":"#173177"}}}
+---------------

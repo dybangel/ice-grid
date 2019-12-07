@@ -1,0 +1,14 @@
+2019-10-24 16:00:20.150:定时执行正在执行select * from asm_orderDetail where createTime like '2019-10-24%' and zt=4 and ldNO!='' and mechineID in(select id from  asm_mechine where companyID=13)
+---------------
+2019-10-24 16:00:20.181:定时执行正在执行select * from asm_orderDetail where createTime like '2019-10-24%' and zt=4 and ldNO!='' and mechineID in(select id from  asm_mechine where companyID=14)
+---------------
+2019-10-24 16:00:20.240:定时执行正在执行select b.mechineName,a.* from asm_orderlistDetail a left join asm_mechine b on a.mechineid = b.id where a.createTime = '2019-10-24' and a.zt = 4 and a.companyID = 13
+---------------
+2019-10-24 16:00:20.271:定时执行正在执行select b.mechineName,a.* from asm_orderlistDetail a left join asm_mechine b on a.mechineid = b.id where a.createTime = '2019-10-24' and a.zt = 4 and a.companyID = 14
+---------------
+2019-10-24 16:00:20.327:定时执行正在执行select * from asm_member where id=6275
+---------------
+2019-10-24 17:00:20.944:定时执行正在执行select * from asm_orderDetail where createTime like '2019-10-24%' and zt=4 and ldNO!='' and mechineID in(select id from  asm_mechine where companyID=21)
+---------------
+2019-10-24 17:00:21.018:定时执行正在执行select b.mechineName,a.* from asm_orderlistDetail a left join asm_mechine b on a.mechineid = b.id where a.createTime = '2019-10-24' and a.zt = 4 and a.companyID = 21
+---------------

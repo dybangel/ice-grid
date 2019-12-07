@@ -1,0 +1,36 @@
+﻿.div1 .box {
+    width: 80%;
+    margin: 0;
+}
+
+    .div1 .box .list {
+        margin: 0;
+        width: 100%;
+        float: left;
+    }
+
+        .div1 .box .list a {
+            font-size: 40px;
+            text-decoration: none;
+            color: lightgray;
+        }
+
+.c1 {
+    color: crimson;
+}
+
+.c2 {
+    color: goldenrod;
+}
+
+.c3 {
+    color: #fbb814 !important;
+}
+
+.c4 {
+    color: orange;
+}
+
+.c5 {
+    color: limegreen;
+}
