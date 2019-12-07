@@ -1,0 +1,749 @@
+﻿
+/* 改变滚动条 */
+.commonOvl::-webkit-scrollbar{
+    width:0;
+    height:0;
+}
+
+#indexNewsShowIs_ {
+    display: block;
+    width: 10%;
+    height: 4vh;
+    margin: 46vh 45%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 4vh;
+    background: rgba(17,227,136,0.6);
+    border-radius: 0.6vh;
+    position: fixed;
+    z-index: 5;
+    display: none;
+}
+
+/* 搜索地图按钮组 */
+.button-group {
+    top: 6vh;
+    right: 2vh !important;
+}
+.button-group2 {
+    position: relative;
+    float: left;
+    margin-left: 2vh;
+    padding: 10px;
+    color: #ffffff;
+    bottom: 20px;
+    border-radius: 0.6vh;
+    background: rgba(13, 155, 242, 0.4)!important;
+}
+.button-group2:hover {
+    background: rgba(13, 155, 242, 1)!important;
+}
+
+#DataCengBtn {
+    position: relative;
+    margin-left: 2vh;
+    height: 3.6vh;
+    padding: 0 1.2vh;
+    border: 0;
+    background: #3ad5a8;
+    border-radius: 0.6vh;
+    color: #fff;
+    font-size: 1.2rem;
+    bottom: 1.68vh;
+    float: left;
+    cursor: pointer;
+}
+
+body {
+    min-width: 1920px;
+}
+.screenmain {
+    width: 100%;
+    min-width: 1920px;
+    height: 100vh;
+    position: relative;
+}
+
+section {
+    position: absolute;
+    z-index: 1;
+    float: left;
+    padding: 1.4vh;
+}
+section:hover .commonMainBg {
+    opacity: 1;
+}
+section h2 {
+    font-size: 1.3rem;
+    position: relative;
+    color: #5e9ecb;
+    line-height: 4vh;
+    font-weight: bold;
+    z-index: 1;
+}
+.screenCommonUl {
+    width: 100%;
+    float: left;
+    position: relative;
+    z-index: 1;
+    font-size: 1.1rem;
+}
+.screenCommonUl li {
+    width: 100%;
+    height: 4vh;
+}
+.screenCommonUl li label {
+    display: block;
+    height: 4vh;
+    line-height: 4vh;
+    float: left;
+    color: #fff;
+    text-align: center;
+}
+.screenCommonUl li span {
+    display: block;
+    height: 4vh;
+    line-height: 4vh;
+    float: left;
+    color: #5e9ecb;
+    text-align: center;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.screenCommonUl li .screenNum {
+    color: #fff;
+}
+.commonMainBg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    background: rgba(9, 36, 60, 0.2);
+    top: 0;
+    left: 0;
+    border: 2px solid rgba(106, 169, 255, 0.1);
+    opacity: 0;
+}
+.commonMainBg i,.commonMainBg em {
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 360px;
+}
+.commonMainBg i:nth-child(1) {
+    width: 1.6vh;
+    height: 2px;
+    left: 0;
+    top: -2px;
+}
+.commonMainBg em:nth-child(2) {
+    width: 2px;
+    height: 1vh;
+    left: -2px;
+    top: -2px;
+}
+.commonMainBg i:nth-child(3) {
+    width: 2px;
+    height: 1.6vh;
+    right: -2px;
+    top: 0;
+}
+.commonMainBg em:nth-child(4) {
+    width: 1vh;
+    height: 2px;
+    right: -2px;
+    top: -2px;
+}
+.commonMainBg i:nth-child(5) {
+    width: 2px;
+    height: 1vh;
+    right: -2px;
+    bottom: 0;
+}
+.commonMainBg em:nth-child(6) {
+    width: 1.6vh;
+    height: 2px;
+    right: -2px;
+    bottom: -2px;
+}
+.commonMainBg i:nth-child(7) {
+    width: 2px;
+    height: 1.6vh;
+    left: -2px;
+    bottom: 0;
+}
+.commonMainBg em:nth-child(8) {
+    width: 1vh;
+    height: 2px;
+    left: -2px;
+    bottom: -2px;
+}
+.screenTitle {
+    width: 100%;
+    height: 10vh;
+    background: url(screenTitleBg.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.screenTitle h4 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #fff;
+    margin-top: 6px;
+}
+.screenTitle p {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #cccccc;
+    margin-top: 8px;
+}
+.screenNewsShow {
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 3.2vh;
+    left: 25%;
+    top: 11vh;
+    z-index: 5;
+    background: url(screenNewsShowBg.png) no-repeat center;
+    background-size: 100% 100%;
+    display: none;
+}
+.screenNewsShow a {
+    display: block;
+    width: 60%;
+    margin: 0 20%;
+    line-height: 3.2vh;
+    color: #e62a2a;
+    text-decoration: underline;
+}
+.screenBigData {
+    width: auto;
+    min-width: 20%;
+    height: 26vh;
+    top: 10vh;
+    left: 3vh;
+}
+.screenBigData dl {
+    position: relative;
+    float: left;
+    z-index: 1;
+}
+.screenBigData dl dd {
+    margin-bottom: 1.2vh;
+}
+.screenBigData dl dd span {
+    font-size: 1.3rem;
+    color: #d6de96;
+}
+.screenBigData dl dd h4 {
+    font-size: 3rem;
+    color: #fff;
+    line-height: 4vh;
+    letter-spacing: 0.3vh;
+}
+.screenBigData dl dd h4 b {
+    font-family: DS-Digitalec5945d691b303;
+}
+.screenBigData dl dd h4 em {
+    font-style: normal;
+    font-size: 1.4rem;
+    margin-left: 6px;
+}
+.screenOrder {
+    width: 20%;
+    height: 33vh;
+    left: 3vh;
+    bottom: 28vh;
+}
+.screenOrder .list_lh {
+    width: 100%;
+    height: 24vh;
+    margin-top: 2vh;
+    overflow: hidden;
+}
+.screenOrder .list_lh .news {
+    height: 26vh;
+    width: 100%;
+}
+.screenOrder .list_lh .news ul,.screenOrder .list_lh .news ul li {
+    width: 100%;
+    float: left;
+    color: #2ed9f5;
+    font-size: 1.2rem;
+    line-height: 2.4vh;
+}
+.screenOrder .list_lh .news ul li em {
+    font-style: normal;
+    color: #d6de96;
+}
+.screenOrder .list_lh .news ul li i {
+    font-style: normal;
+    color: #3ad5a8;
+}
+.screenHot {
+    width: 20%;
+    height: 22vh;
+    left: 3vh;
+    bottom: 3vh;
+}
+.screenHot h2 span {
+    display: block;
+    width: 20vh;
+    height: 2.6vh;
+    margin: 0.7vh auto;
+    float: right;
+    border-radius: 360px;
+    border: 1px solid rgba(106, 169, 255, 0.6);
+    background: rgba(38,82,113,0.6);
+}
+.screenHot h2 span input {
+    width: calc(100% - 3vh);
+    float: left;
+    margin-left: 0.4vh;
+    height: 2.4vh;
+    background: initial;
+    border: 0;
+    padding-left: 1.6vh;
+    color: #cccccc;
+}
+.screenHot h2 span i {
+    display: block;
+    width: 2.6vh;
+    height: 2.6vh;
+    text-align: center;
+    line-height: 2.6vh;
+    float: right;
+}
+.screenHot .commonOvl {
+    width: 100%;
+    height: 15.4vh;
+    overflow: auto;
+}
+.screenHot ul label:first-child,.screenHot ul span:first-child {
+    width: 12%;
+}
+.screenHot ul label:nth-child(2),.screenHot ul span:nth-child(2) {
+    width: 40%;
+}
+.screenHot ul label:nth-child(3),.screenHot ul span:nth-child(3) {
+    width: 24%;
+}
+.screenHot ul label:nth-child(4),.screenHot ul span:nth-child(4) {
+    width: 20%;
+}
+
+.screenNotice {
+    width: calc(56% - 12vh);
+    height: 22vh;
+    left: calc(20% + 6vh);
+    bottom: 3vh;
+}
+.screenNotice ul label:first-child,.screenNotice ul span:first-child {
+    width: 12%;
+}
+.screenNotice ul label:nth-child(2),.screenNotice ul span:nth-child(2) {
+    width: 18%;
+}
+.screenNotice ul label:nth-child(3),.screenNotice ul span:nth-child(3) {
+    width: 20%;
+}
+.screenNotice ul label:nth-child(4),.screenNotice ul span:nth-child(4) {
+    width: 20%;
+}
+.screenNotice ul label:nth-child(5),.screenNotice ul span:nth-child(5) {
+    width: 14%;
+}
+.screenNotice ul label:nth-child(6),.screenNotice ul span:nth-child(6) {
+    width: 14%;
+}
+.screenNotice li span b {
+    display: block;
+    width: 56%;
+    margin: 0.2vh 22%;
+    height: 2.8vh;
+    line-height: 2.8vh;
+    font-size: 1rem;
+    border-radius: 30vh;
+}
+.screenNotice li .screenNoticeMain {
+    color: #5cc3cc;
+}
+.screenNotice li .screenNoticeZt {
+    color: #11e388;
+}
+.screenNotice li .screenNoticeZttz {
+    color: #ef2849;
+}
+.screenNotice li a {
+    color: #5e9ecb;
+    text-decoration: underline;
+}
+.screenNotice li span .red {
+    color: #de595b;
+    background: rgba(201, 18, 48, 0.3);
+    border: 1px solid rgba(180, 24, 50, 0.3);
+}
+.screenNotice li span .yellow {
+    color: #e3c360;
+    background: rgba(248, 198, 101, 0.3);
+    border: 1px solid rgba(248, 214, 101, 0.3);
+}
+.screenNotice li span .blue {
+    color: #2b8df1;
+    background: rgba(43, 141, 241, 0.3);
+    border: 1px solid rgba(43, 141, 241, 0.3);
+}
+.screenNotice li h5 {
+    width: auto;
+    float: left;
+    line-height: 4vh;
+    margin-left: 2%;
+    color: #5e9ecb;
+}
+.screenNotice li p {
+    width: auto;
+    min-width: 30%;
+    float: right;
+    margin-right: 2%;
+    text-align: right;
+}
+.screenNotice li p input {
+    float: left;
+    width: 6.8vh;
+    height: 2.8vh;
+    margin: 0.6vh 1%;
+    background: initial;
+    border: 0;
+    color: #5e9ecb;
+    cursor: pointer;
+}
+.screenNotice li p a {
+    display: block;
+    width: 2.8vh;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    line-height: 2.8vh;
+    margin: 0.6vh 1%;
+}
+.screenNotice li p #onThis {
+    color: #5cc3cc;
+}
+
+.screenJiqiList {
+    width: 24%;
+    height: 22vh;
+    right: 3vh;
+    bottom: 3vh;
+}
+.screenJiqiList h2 span {
+    display: block;
+    width: 20vh;
+    float: right;
+    text-align: right;
+}
+.screenJiqiList h2 span a {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    color: #fff;
+    font-weight: normal;
+    margin: 0 0.2vh;
+}
+.screenJiqiList .commonOvl {
+    width: 100%;
+    height: 15.4vh;
+    overflow: auto;
+}
+.screenJiqiList ul label:first-child,.screenJiqiList ul span:first-child {
+    width: 12%;
+}
+.screenJiqiList ul label:nth-child(2),.screenJiqiList ul span:nth-child(2) {
+    width: 22%;
+}
+.screenJiqiList ul label:nth-child(3),.screenJiqiList ul span:nth-child(3) {
+    width: 20%;
+}
+.screenJiqiList ul label:nth-child(4),.screenJiqiList ul span:nth-child(4) {
+    width: 46%;
+}
+
+.screenNewsList {
+    width: 24%;
+    height: 10vh;
+    right: 3vh;
+    bottom: 28vh;
+}
+.screenNewsList h2 span {
+    display: block;
+    float: right;
+}
+.screenNewsList h2 span b {
+    display: block;
+    width: 5vh;
+    height: 2.4vh;
+    float: left;
+    margin: 0.8vh 1.5vh 0.8vh auto;
+    border-radius: 50vh;
+    position: relative;
+    cursor: pointer;
+}
+.screenNewsList h2 span b i {
+    display: block;
+    width: 2.4vh;
+    height: 2.4vh;
+    position: absolute;
+    z-index: 2;
+    border-radius: 50vh;
+    right: 0;
+    box-shadow: 0 0 10px #999;
+    background: #fff;
+}
+.screenNewsList h2 span b .icolor {
+    right: 2.6vh;
+}
+.screenNewsList h2 span b em {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50vh;
+    background: #3ad5a8;
+}
+.screenNewsList h2 span b .emcolor {
+    background: rgba(255,255,255,0.8);
+}
+.screenNewsList h2 span a {
+    font-size: 1.2rem;
+    float: right;
+    color: #ffffff;
+    font-weight: normal;
+}
+.screenNewsList .maquee {
+    width: 100%;
+    float: left;
+    margin-top: 0.6vh;
+    height: 3vh;
+    overflow: hidden;
+}
+.screenNewsList .maquee ul {
+    width: 100%;
+    float: left;
+}
+.screenNewsList .maquee .ulOff {
+    margin-top: 0 !important;
+}
+.screenNewsList .maquee ul li {
+    width: 100%;
+    height: 3vh;
+    line-height: 3vh;
+    font-size: 1.2rem;
+    color: #2ed9f5;
+    text-decoration: underline;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+.screenDataSeach {
+    width: 24%;
+    height: 49vh;
+    right: 3vh;
+    top: 10vh;
+}
+.screenDataSeachChart {
+    position: absolute;
+    z-index: 1;
+    width: calc(100% - 2.8vh);
+    bottom: 0;
+    height: 32vh;
+}
+.screenDataSeachChart iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.screenDataSeach h2 span {
+    display: block;
+    float: right;
+}
+.screenDataSeach h2 span em {
+    float: left;
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 0.4vh;
+    cursor: pointer;
+    font-weight: normal;
+}
+.screenDataSeach p {
+    width: 100%;
+    font-size: 1.2rem;
+    color: #2ed9f5;
+}
+.screenDataSeach p em {
+    font-style: normal;
+    font-weight: bold;
+    color: #fff;
+    line-height: 3.6vh;
+    margin: 0 0.6vh;
+}
+.screenDataSeach .screenSeachData {
+    width: 100%;
+    float: left;
+}
+.screenDataSeach .screenSeachData dd {
+    width: 33.33%;
+    float: left;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #2ed9f5;
+}
+.screenDataSeach .screenSeachData dd span {
+    display: block;
+    line-height: 24px;
+}
+
+/* 右侧数据查询 */
+.screenseachMain {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    background: rgba(9, 36, 60, 0.8);
+    top: 0;
+    left: 0;
+    z-index: 9;
+    border-radius: 0.6vh;
+    overflow: hidden;
+}
+.screenseachMainH {
+    height: 100%;
+}
+.screenseachMain h4 {
+    width: 100%;
+    font-size: 1.26rem;
+    color: #d6de96;
+    line-height: 4.8vh;
+    padding-left: 1.2vh;
+    border-bottom: 1px solid #666;
+    margin-bottom: 3vh;
+}
+.screenseachMain h4 em {
+    float: right;
+    color: #fff;
+    width: 4.8vh;
+    text-align: center;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.screenseachMain ul,.screenseachMain ul li {
+    width: 100%;
+    float: left;
+}
+.screenseachMain ul li {
+    margin-bottom: 1.6vh;
+}
+.screenseachMain ul li label {
+    display: block;
+    width: 10vh;
+    font-size: 1.2rem;
+    text-align: right;
+    padding-right: 1.6vh;
+    line-height: 3.6vh;
+    color: #fff;
+    float: left;
+}
+.screenseachMain ul li span {
+    display: block;
+    width: calc(100% - 10vh);
+    height: 3.6vh;
+    float: right;
+    padding: 0 1.2vh;
+}
+.screenseachMain ul li #province select {
+    width: 31.33%;
+    float: left;
+    margin: 0.3vh 1%;
+}
+.screenseachMain ul li span select option {
+    color: #666;
+    background: #fff;
+}
+.screenseachMain ul li span select,.screenseachMain ul li span input {
+    width: 100%;
+    height: 3vh;
+    margin: 0.3vh auto;
+    padding-left: 1.2vh;
+    border-radius: 0.6vh;
+    background: rgba(9, 36, 60, 0.4);
+    border: 1px solid rgba(46,217,245,0.6);
+    color: #fff;
+}
+.screenseachMain ul li #screenSeachBtn {
+    width: calc(100% - 2.8vh);
+    margin: 3vh 1.4vh 3vh 1.4vh;
+    height: 3.6vh;
+    background: #0D9BF2;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0.6vh;
+}
+.screenseachMain ul li #screenSeachBtn:hover {
+    opacity: 0.8;
+}
+
+/* 放大echart */
+.commonBg {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 6;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+.EchartBig {
+    position: absolute;
+    z-index: 9;
+    left: 10%;
+    top: 10vh;
+    width: 80%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 0.6vh;
+    background: rgba(9, 36, 60, 0.8);
+}
+.EchartBigWandH {
+    height: 80vh;
+    padding: 0 0 6vh 0;
+    border: 2px solid rgba(106, 169, 255, 0.2);
+}
+.EchartBig h2 {
+    width: 100%;
+    height: 4.8vh;
+    line-height: 4.8vh;
+    padding: 0 1.2vh;
+    color: #fff;
+    font-size: 1.3rem;
+    background: rgba(46, 217, 245, 0.6);
+}
+.EchartBig h2 em {
+    float: right;
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+.EchartBig #screenSeachChartBig {
+    width: 100%;
+    height: auto;
+    margin-left: 5%;
+}
+.EchartBig iframe {
+    width: 95%;
+    height: 68vh;
+    margin-top: 5vh;
+    margin-left: 5%;
+    border: 0;
+}

@@ -1,0 +1,1312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{56A27D7B-F2CE-4BF8-B4BC-3CC0CD4BDC15}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>autosell_center</RootNamespace>
+    <AssemblyName>autosell_center</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.11119.20050, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdom.ServiceProcess.Extensions, Version=1.3.2.33715, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceProcess.Extensions.1.3.2\lib\net40\Kingdom.ServiceProcess.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MattBerseth.WebControls.AJAX, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MattBerseth.WebControls.AJAX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Redis, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Redis.1.0.3\lib\Redis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=4.0.62.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Common.4.0.62\lib\net40\ServiceStack.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Interfaces.4.0.62\lib\portable-wp80+sl5+net40+win8+wpa81+monotouch+monoandroid+xamarin.ios10\ServiceStack.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Redis, Version=4.0.62.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Redis.4.0.62\lib\net40\ServiceStack.Redis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=4.0.62.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Text.4.0.62\lib\net40\ServiceStack.Text.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ascx\CheckboxListControl.ascx" />
+    <Content Include="chart.html" />
+    <Content Include="code\css\highcharts.css" />
+    <Content Include="code\css\js\highcharts-3d.js" />
+    <Content Include="code\css\js\highcharts-3d.src.js" />
+    <Content Include="code\css\js\highcharts-more.js" />
+    <Content Include="code\css\js\highcharts-more.src.js" />
+    <Content Include="code\css\js\highstock.js" />
+    <Content Include="code\css\js\highstock.src.js" />
+    <Content Include="code\css\js\indicators\accumulation-distribution.js" />
+    <Content Include="code\css\js\indicators\accumulation-distribution.src.js" />
+    <Content Include="code\css\js\indicators\atr.js" />
+    <Content Include="code\css\js\indicators\atr.src.js" />
+    <Content Include="code\css\js\indicators\bollinger-bands.js" />
+    <Content Include="code\css\js\indicators\bollinger-bands.src.js" />
+    <Content Include="code\css\js\indicators\cci.js" />
+    <Content Include="code\css\js\indicators\cci.src.js" />
+    <Content Include="code\css\js\indicators\cmf.js" />
+    <Content Include="code\css\js\indicators\cmf.src.js" />
+    <Content Include="code\css\js\indicators\ema.js" />
+    <Content Include="code\css\js\indicators\ema.src.js" />
+    <Content Include="code\css\js\indicators\ichimoku-kinko-hyo.js" />
+    <Content Include="code\css\js\indicators\ichimoku-kinko-hyo.src.js" />
+    <Content Include="code\css\js\indicators\indicators.js" />
+    <Content Include="code\css\js\indicators\indicators.src.js" />
+    <Content Include="code\css\js\indicators\macd.js" />
+    <Content Include="code\css\js\indicators\macd.src.js" />
+    <Content Include="code\css\js\indicators\mfi.js" />
+    <Content Include="code\css\js\indicators\mfi.src.js" />
+    <Content Include="code\css\js\indicators\momentum.js" />
+    <Content Include="code\css\js\indicators\momentum.src.js" />
+    <Content Include="code\css\js\indicators\pivot-points.js" />
+    <Content Include="code\css\js\indicators\pivot-points.src.js" />
+    <Content Include="code\css\js\indicators\price-envelopes.js" />
+    <Content Include="code\css\js\indicators\price-envelopes.src.js" />
+    <Content Include="code\css\js\indicators\psar.js" />
+    <Content Include="code\css\js\indicators\psar.src.js" />
+    <Content Include="code\css\js\indicators\roc.js" />
+    <Content Include="code\css\js\indicators\roc.src.js" />
+    <Content Include="code\css\js\indicators\rsi.js" />
+    <Content Include="code\css\js\indicators\rsi.src.js" />
+    <Content Include="code\css\js\indicators\stochastic.js" />
+    <Content Include="code\css\js\indicators\stochastic.src.js" />
+    <Content Include="code\css\js\indicators\volume-by-price.js" />
+    <Content Include="code\css\js\indicators\volume-by-price.src.js" />
+    <Content Include="code\css\js\indicators\vwap.js" />
+    <Content Include="code\css\js\indicators\vwap.src.js" />
+    <Content Include="code\css\js\indicators\wma.js" />
+    <Content Include="code\css\js\indicators\wma.src.js" />
+    <Content Include="code\css\js\indicators\zigzag.js" />
+    <Content Include="code\css\js\indicators\zigzag.src.js" />
+    <Content Include="code\css\js\modules\accessibility.js" />
+    <Content Include="code\css\js\modules\accessibility.src.js" />
+    <Content Include="code\css\js\modules\annotations.js" />
+    <Content Include="code\css\js\modules\annotations.src.js" />
+    <Content Include="code\css\js\modules\boost-canvas.js" />
+    <Content Include="code\css\js\modules\boost-canvas.src.js" />
+    <Content Include="code\css\js\modules\boost.js" />
+    <Content Include="code\css\js\modules\boost.src.js" />
+    <Content Include="code\css\js\modules\bullet.js" />
+    <Content Include="code\css\js\modules\bullet.src.js" />
+    <Content Include="code\css\js\modules\data.js" />
+    <Content Include="code\css\js\modules\data.src.js" />
+    <Content Include="code\css\js\modules\drag-panes.js" />
+    <Content Include="code\css\js\modules\drag-panes.src.js" />
+    <Content Include="code\css\js\modules\drilldown.js" />
+    <Content Include="code\css\js\modules\drilldown.src.js" />
+    <Content Include="code\css\js\modules\export-data.js" />
+    <Content Include="code\css\js\modules\export-data.src.js" />
+    <Content Include="code\css\js\modules\exporting.js" />
+    <Content Include="code\css\js\modules\exporting.src.js" />
+    <Content Include="code\css\js\modules\funnel.js" />
+    <Content Include="code\css\js\modules\funnel.src.js" />
+    <Content Include="code\css\js\modules\gantt.js" />
+    <Content Include="code\css\js\modules\gantt.src.js" />
+    <Content Include="code\css\js\modules\grid-axis.js" />
+    <Content Include="code\css\js\modules\grid-axis.src.js" />
+    <Content Include="code\css\js\modules\heatmap.js" />
+    <Content Include="code\css\js\modules\heatmap.src.js" />
+    <Content Include="code\css\js\modules\histogram-bellcurve.js" />
+    <Content Include="code\css\js\modules\histogram-bellcurve.src.js" />
+    <Content Include="code\css\js\modules\item-series.js" />
+    <Content Include="code\css\js\modules\item-series.src.js" />
+    <Content Include="code\css\js\modules\no-data-to-display.js" />
+    <Content Include="code\css\js\modules\no-data-to-display.src.js" />
+    <Content Include="code\css\js\modules\offline-exporting.js" />
+    <Content Include="code\css\js\modules\offline-exporting.src.js" />
+    <Content Include="code\css\js\modules\oldie.js" />
+    <Content Include="code\css\js\modules\oldie.src.js" />
+    <Content Include="code\css\js\modules\overlapping-datalabels.js" />
+    <Content Include="code\css\js\modules\overlapping-datalabels.src.js" />
+    <Content Include="code\css\js\modules\parallel-coordinates.js" />
+    <Content Include="code\css\js\modules\parallel-coordinates.src.js" />
+    <Content Include="code\css\js\modules\pareto.js" />
+    <Content Include="code\css\js\modules\pareto.src.js" />
+    <Content Include="code\css\js\modules\pattern-fill.js" />
+    <Content Include="code\css\js\modules\pattern-fill.src.js" />
+    <Content Include="code\css\js\modules\sankey.js" />
+    <Content Include="code\css\js\modules\sankey.src.js" />
+    <Content Include="code\css\js\modules\series-label.js" />
+    <Content Include="code\css\js\modules\series-label.src.js" />
+    <Content Include="code\css\js\modules\solid-gauge.js" />
+    <Content Include="code\css\js\modules\solid-gauge.src.js" />
+    <Content Include="code\css\js\modules\static-scale.js" />
+    <Content Include="code\css\js\modules\static-scale.src.js" />
+    <Content Include="code\css\js\modules\stock.js" />
+    <Content Include="code\css\js\modules\stock.src.js" />
+    <Content Include="code\css\js\modules\streamgraph.js" />
+    <Content Include="code\css\js\modules\streamgraph.src.js" />
+    <Content Include="code\css\js\modules\sunburst.js" />
+    <Content Include="code\css\js\modules\sunburst.src.js" />
+    <Content Include="code\css\js\modules\tilemap.js" />
+    <Content Include="code\css\js\modules\tilemap.src.js" />
+    <Content Include="code\css\js\modules\treemap.js" />
+    <Content Include="code\css\js\modules\treemap.src.js" />
+    <Content Include="code\css\js\modules\variable-pie.js" />
+    <Content Include="code\css\js\modules\variable-pie.src.js" />
+    <Content Include="code\css\js\modules\variwide.js" />
+    <Content Include="code\css\js\modules\variwide.src.js" />
+    <Content Include="code\css\js\modules\vector.js" />
+    <Content Include="code\css\js\modules\vector.src.js" />
+    <Content Include="code\css\js\modules\windbarb.js" />
+    <Content Include="code\css\js\modules\windbarb.src.js" />
+    <Content Include="code\css\js\modules\wordcloud.js" />
+    <Content Include="code\css\js\modules\wordcloud.src.js" />
+    <Content Include="code\css\js\modules\xrange.js" />
+    <Content Include="code\css\js\modules\xrange.src.js" />
+    <Content Include="code\css\js\themes\avocado.js" />
+    <Content Include="code\css\js\themes\avocado.src.js" />
+    <Content Include="code\css\js\themes\dark-blue.js" />
+    <Content Include="code\css\js\themes\dark-blue.src.js" />
+    <Content Include="code\css\js\themes\dark-green.js" />
+    <Content Include="code\css\js\themes\dark-green.src.js" />
+    <Content Include="code\css\js\themes\dark-unica.js" />
+    <Content Include="code\css\js\themes\dark-unica.src.js" />
+    <Content Include="code\css\js\themes\gray.js" />
+    <Content Include="code\css\js\themes\gray.src.js" />
+    <Content Include="code\css\js\themes\grid-light.js" />
+    <Content Include="code\css\js\themes\grid-light.src.js" />
+    <Content Include="code\css\js\themes\grid.js" />
+    <Content Include="code\css\js\themes\grid.src.js" />
+    <Content Include="code\css\js\themes\sand-signika.js" />
+    <Content Include="code\css\js\themes\sand-signika.src.js" />
+    <Content Include="code\css\js\themes\skies.js" />
+    <Content Include="code\css\js\themes\skies.src.js" />
+    <Content Include="code\css\js\themes\sunset.js" />
+    <Content Include="code\css\js\themes\sunset.src.js" />
+    <Content Include="code\css\themes\dark-unica.css" />
+    <Content Include="code\css\themes\grid-light.css" />
+    <Content Include="code\css\themes\sand-signika.css" />
+    <Content Include="code\highcharts-3d.js" />
+    <Content Include="code\highcharts-3d.src.js" />
+    <Content Include="code\highcharts-more.js" />
+    <Content Include="code\highcharts-more.src.js" />
+    <Content Include="code\highstock.js" />
+    <Content Include="code\highstock.src.js" />
+    <Content Include="code\indicators\accumulation-distribution.js" />
+    <Content Include="code\indicators\accumulation-distribution.src.js" />
+    <Content Include="code\indicators\atr.js" />
+    <Content Include="code\indicators\atr.src.js" />
+    <Content Include="code\indicators\bollinger-bands.js" />
+    <Content Include="code\indicators\bollinger-bands.src.js" />
+    <Content Include="code\indicators\cci.js" />
+    <Content Include="code\indicators\cci.src.js" />
+    <Content Include="code\indicators\cmf.js" />
+    <Content Include="code\indicators\cmf.src.js" />
+    <Content Include="code\indicators\ema.js" />
+    <Content Include="code\indicators\ema.src.js" />
+    <Content Include="code\indicators\ichimoku-kinko-hyo.js" />
+    <Content Include="code\indicators\ichimoku-kinko-hyo.src.js" />
+    <Content Include="code\indicators\indicators.js" />
+    <Content Include="code\indicators\indicators.src.js" />
+    <Content Include="code\indicators\macd.js" />
+    <Content Include="code\indicators\macd.src.js" />
+    <Content Include="code\indicators\mfi.js" />
+    <Content Include="code\indicators\mfi.src.js" />
+    <Content Include="code\indicators\momentum.js" />
+    <Content Include="code\indicators\momentum.src.js" />
+    <Content Include="code\indicators\pivot-points.js" />
+    <Content Include="code\indicators\pivot-points.src.js" />
+    <Content Include="code\indicators\price-envelopes.js" />
+    <Content Include="code\indicators\price-envelopes.src.js" />
+    <Content Include="code\indicators\psar.js" />
+    <Content Include="code\indicators\psar.src.js" />
+    <Content Include="code\indicators\roc.js" />
+    <Content Include="code\indicators\roc.src.js" />
+    <Content Include="code\indicators\rsi.js" />
+    <Content Include="code\indicators\rsi.src.js" />
+    <Content Include="code\indicators\stochastic.js" />
+    <Content Include="code\indicators\stochastic.src.js" />
+    <Content Include="code\indicators\volume-by-price.js" />
+    <Content Include="code\indicators\volume-by-price.src.js" />
+    <Content Include="code\indicators\vwap.js" />
+    <Content Include="code\indicators\vwap.src.js" />
+    <Content Include="code\indicators\wma.js" />
+    <Content Include="code\indicators\wma.src.js" />
+    <Content Include="code\indicators\zigzag.js" />
+    <Content Include="code\indicators\zigzag.src.js" />
+    <Content Include="code\lib\canvg.js" />
+    <Content Include="code\lib\canvg.src.js" />
+    <Content Include="code\lib\jspdf.js" />
+    <Content Include="code\lib\jspdf.src.js" />
+    <Content Include="code\lib\rgbcolor.js" />
+    <Content Include="code\lib\rgbcolor.src.js" />
+    <Content Include="code\lib\svg2pdf.js" />
+    <Content Include="code\lib\svg2pdf.src.js" />
+    <Content Include="code\modules\accessibility.js" />
+    <Content Include="code\modules\accessibility.src.js" />
+    <Content Include="code\modules\annotations.js" />
+    <Content Include="code\modules\annotations.src.js" />
+    <Content Include="code\modules\boost-canvas.js" />
+    <Content Include="code\modules\boost-canvas.src.js" />
+    <Content Include="code\modules\boost.js" />
+    <Content Include="code\modules\boost.src.js" />
+    <Content Include="code\modules\bullet.js" />
+    <Content Include="code\modules\bullet.src.js" />
+    <Content Include="code\modules\data.js" />
+    <Content Include="code\modules\data.src.js" />
+    <Content Include="code\modules\drag-panes.js" />
+    <Content Include="code\modules\drag-panes.src.js" />
+    <Content Include="code\modules\drilldown.js" />
+    <Content Include="code\modules\drilldown.src.js" />
+    <Content Include="code\modules\export-data.js" />
+    <Content Include="code\modules\export-data.src.js" />
+    <Content Include="code\modules\exporting.js" />
+    <Content Include="code\modules\exporting.src.js" />
+    <Content Include="code\modules\funnel.js" />
+    <Content Include="code\modules\funnel.src.js" />
+    <Content Include="code\modules\gantt.js" />
+    <Content Include="code\modules\gantt.src.js" />
+    <Content Include="code\modules\grid-axis.js" />
+    <Content Include="code\modules\grid-axis.src.js" />
+    <Content Include="code\modules\heatmap.js" />
+    <Content Include="code\modules\heatmap.src.js" />
+    <Content Include="code\modules\histogram-bellcurve.js" />
+    <Content Include="code\modules\histogram-bellcurve.src.js" />
+    <Content Include="code\modules\item-series.js" />
+    <Content Include="code\modules\item-series.src.js" />
+    <Content Include="code\modules\no-data-to-display.js" />
+    <Content Include="code\modules\no-data-to-display.src.js" />
+    <Content Include="code\modules\offline-exporting.js" />
+    <Content Include="code\modules\offline-exporting.src.js" />
+    <Content Include="code\modules\oldie.js" />
+    <Content Include="code\modules\oldie.src.js" />
+    <Content Include="code\modules\overlapping-datalabels.js" />
+    <Content Include="code\modules\overlapping-datalabels.src.js" />
+    <Content Include="code\modules\parallel-coordinates.js" />
+    <Content Include="code\modules\parallel-coordinates.src.js" />
+    <Content Include="code\modules\pareto.js" />
+    <Content Include="code\modules\pareto.src.js" />
+    <Content Include="code\modules\pattern-fill.js" />
+    <Content Include="code\modules\pattern-fill.src.js" />
+    <Content Include="code\modules\sankey.js" />
+    <Content Include="code\modules\sankey.src.js" />
+    <Content Include="code\modules\series-label.js" />
+    <Content Include="code\modules\series-label.src.js" />
+    <Content Include="code\modules\solid-gauge.js" />
+    <Content Include="code\modules\solid-gauge.src.js" />
+    <Content Include="code\modules\static-scale.js" />
+    <Content Include="code\modules\static-scale.src.js" />
+    <Content Include="code\modules\stock.js" />
+    <Content Include="code\modules\stock.src.js" />
+    <Content Include="code\modules\streamgraph.js" />
+    <Content Include="code\modules\streamgraph.src.js" />
+    <Content Include="code\modules\sunburst.js" />
+    <Content Include="code\modules\sunburst.src.js" />
+    <Content Include="code\modules\tilemap.js" />
+    <Content Include="code\modules\tilemap.src.js" />
+    <Content Include="code\modules\treemap.js" />
+    <Content Include="code\modules\treemap.src.js" />
+    <Content Include="code\modules\variable-pie.js" />
+    <Content Include="code\modules\variable-pie.src.js" />
+    <Content Include="code\modules\variwide.js" />
+    <Content Include="code\modules\variwide.src.js" />
+    <Content Include="code\modules\vector.js" />
+    <Content Include="code\modules\vector.src.js" />
+    <Content Include="code\modules\windbarb.js" />
+    <Content Include="code\modules\windbarb.src.js" />
+    <Content Include="code\modules\wordcloud.js" />
+    <Content Include="code\modules\wordcloud.src.js" />
+    <Content Include="code\modules\xrange.js" />
+    <Content Include="code\modules\xrange.src.js" />
+    <Content Include="code\readme.txt" />
+    <Content Include="code\themes\avocado.js" />
+    <Content Include="code\themes\avocado.src.js" />
+    <Content Include="code\themes\dark-blue.js" />
+    <Content Include="code\themes\dark-blue.src.js" />
+    <Content Include="code\themes\dark-green.js" />
+    <Content Include="code\themes\dark-green.src.js" />
+    <Content Include="code\themes\dark-unica.js" />
+    <Content Include="code\themes\dark-unica.src.js" />
+    <Content Include="code\themes\gray.js" />
+    <Content Include="code\themes\gray.src.js" />
+    <Content Include="code\themes\grid-light.js" />
+    <Content Include="code\themes\grid-light.src.js" />
+    <Content Include="code\themes\grid.js" />
+    <Content Include="code\themes\grid.src.js" />
+    <Content Include="code\themes\sand-signika.js" />
+    <Content Include="code\themes\sand-signika.src.js" />
+    <Content Include="code\themes\skies.js" />
+    <Content Include="code\themes\skies.src.js" />
+    <Content Include="code\themes\sunset.js" />
+    <Content Include="code\themes\sunset.src.js" />
+    <Content Include="Global.asax" />
+    <Content Include="index.aspx" />
+    <Content Include="js\echarts.js" />
+    <Content Include="logo\20180226174420.jpg" />
+    <Content Include="main\Adminlist\adminlist.aspx" />
+    <Content Include="main\Adminlist\rolelist.aspx" />
+    <Content Include="main\Advertisement\add_video.aspx" />
+    <Content Include="main\Advertisement\adVideoToMechine.aspx" />
+    <Content Include="main\Advertisement\fileupload\jquery-1.4.4.min.js" />
+    <Content Include="main\Advertisement\fileupload\jquery.uploadify.js" />
+    <Content Include="main\Advertisement\fileupload\jquery.uploadify.min.js" />
+    <Content Include="main\Advertisement\fileupload\uploadify-cancel.png" />
+    <Content Include="main\Advertisement\fileupload\uploadify.css" />
+    <Content Include="main\Advertisement\fileupload\uploadify.swf" />
+    <Content Include="main\Advertisement\hblist.aspx" />
+    <Content Include="main\Advertisement\Jurisdiction.aspx" />
+    <Content Include="main\Advertisement\play.aspx" />
+    <Content Include="main\Advertisement\video.aspx" />
+    <Content Include="main\Advertisement\videoaddlist.aspx" />
+    <Content Include="main\Advertisement\yvideolist.aspx" />
+    <Content Include="main\Advertisement\zfbhb.aspx" />
+    <Content Include="main\Analysis\Analysis.aspx" />
+    <Content Include="main\Big_screen\bigChart.aspx" />
+    <Content Include="main\Big_screen\big_screen.aspx" />
+    <Content Include="main\Big_screen\echartMain.aspx" />
+    <Content Include="main\Big_screen\public\area.js" />
+    <Content Include="main\Big_screen\public\Big_screenJs.js" />
+    <Content Include="main\Big_screen\public\Big_screenStyle.css" />
+    <Content Include="main\Big_screen\public\center.gif" />
+    <Content Include="main\Big_screen\public\centergz.gif" />
+    <Content Include="main\Big_screen\public\font\iconfont.css" />
+    <Content Include="main\Big_screen\public\screenFont\5a24f898f629d91afc4477d7.bmp" />
+    <Content Include="main\Big_screen\public\screenFont\5a24f898f629d91afc4477d7.gif" />
+    <Content Include="main\Big_screen\public\screenFont\5a24f898f629d91afc4477d7.png" />
+    <Content Include="main\Big_screen\public\screenFont\font.css" />
+    <Content Include="main\Big_screen\public\screenNewsShowBg.png" />
+    <Content Include="main\Big_screen\public\screenTitleBg.png" />
+    <Content Include="main\Big_screen\public\scroll.js" />
+    <Content Include="main\bootstrapSelect\css\bootstrap-select.min.css" />
+    <Content Include="main\bootstrapSelect\css\bootstrap.css" />
+    <Content Include="main\bootstrapSelect\css\bootstrap.min.css" />
+    <Content Include="main\bootstrapSelect\dist\css\bootstrap-select.css" />
+    <Content Include="main\bootstrapSelect\dist\css\bootstrap-select.min.css" />
+    <Content Include="main\bootstrapSelect\dist\js\bootstrap-select.js" />
+    <Content Include="main\bootstrapSelect\dist\js\bootstrap-select.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\bootstrap.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-ar_AR.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-ar_AR.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-bg_BG.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-bg_BG.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-cro_CRO.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-cro_CRO.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-cs_CZ.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-cs_CZ.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-da_DK.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-da_DK.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-de_DE.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-de_DE.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-en_US.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-en_US.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-es_CL.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-es_CL.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-es_ES.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-es_ES.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-et_EE.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-et_EE.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-eu.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-eu.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-fa_IR.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-fa_IR.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-fi_FI.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-fi_FI.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-fr_FR.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-fr_FR.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-hu_HU.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-hu_HU.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-id_ID.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-id_ID.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-it_IT.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-it_IT.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-ja_JP.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-ja_JP.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-kh_KM.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-kh_KM.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-ko_KR.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-ko_KR.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-lt_LT.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-lt_LT.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-nb_NO.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-nb_NO.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-nl_NL.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-nl_NL.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-pl_PL.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-pl_PL.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-pt_BR.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-pt_BR.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-pt_PT.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-pt_PT.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-ro_RO.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-ro_RO.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-ru_RU.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-ru_RU.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-sk_SK.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-sk_SK.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-sl_SI.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-sl_SI.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-sv_SE.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-sv_SE.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-tr_TR.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-tr_TR.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-ua_UA.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-ua_UA.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-vi_VN.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-vi_VN.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-zh_CN.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-zh_CN.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-zh_TW.js" />
+    <Content Include="main\bootstrapSelect\dist\js\i18n\defaults-zh_TW.min.js" />
+    <Content Include="main\bootstrapSelect\dist\js\jquery.js" />
+    <Content Include="main\bootstrapSelect\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="main\bootstrapSelect\js\bootstrap3.3.7.js" />
+    <Content Include="main\bootstrapSelect\js\jquery-3.2.1.slim.js" />
+    <Content Include="main\datastatistics\chart.aspx" />
+    <Content Include="main\datastatistics\js\citylist.js" />
+    <Content Include="main\datastatistics\Statisticalquery.aspx" />
+    <Content Include="main\datastatistics\城市省份.htm" />
+    <Content Include="main\demo.html" />
+    <Content Include="main\enterprise\devicelist.aspx" />
+    <Content Include="main\enterprise\FirmAdd.aspx" />
+    <Content Include="main\enterprise\firmcon.aspx" />
+    <Content Include="main\enterprise\FirmList.aspx" />
+    <Content Include="main\enterprise\firnupdate.aspx" />
+    <Content Include="main\enterprise\kclist.aspx" />
+    <Content Include="main\enterprise\Paymenttk.aspx" />
+    <Content Include="main\enterprise\Paymentzf.aspx" />
+    <Content Include="main\enterprise\Profit.aspx" />
+    <Content Include="main\enterprise\SellCenter.aspx" />
+    <Content Include="main\enterprise\syssetting.aspx" />
+    <Content Include="main\enterprise\Thepublicdx.aspx" />
+    <Content Include="main\enterprise\Thepublicjb.aspx" />
+    <Content Include="main\enterprise\Thepublicsyz.aspx" />
+    <Content Include="main\equipment\Allequipment.aspx" />
+    <Content Include="main\equipment\equipmentadd.aspx" />
+    <Content Include="main\equipment\equipmentclass.aspx" />
+    <Content Include="main\equipment\Material.aspx" />
+    <Content Include="main\equipment\mechineTypeList.aspx" />
+    <Content Include="main\member\chgMoney.aspx" />
+    <Content Include="main\member\memberadd.aspx" />
+    <Content Include="main\member\memberlist.aspx" />
+    <Content Include="main\member\rechargelist.aspx" />
+    <Content Include="main\member\rechargetj.aspx" />
+    <Content Include="main\member\xfmx.aspx" />
+    <Content Include="main\product\dglist.aspx" />
+    <Content Include="main\product\order.aspx" />
+    <Content Include="main\product\orderDetail.aspx" />
+    <Content Include="main\product\orderlistOld.aspx" />
+    <Content Include="main\product\orderlist.aspx" />
+    <Content Include="main\product\paylist.aspx" />
+    <Content Include="main\product\productclass.aspx" />
+    <Content Include="main\product\Productform.aspx" />
+    <Content Include="main\product\productlist.aspx" />
+    <Content Include="main\product\standard.aspx" />
+    <Content Include="main\product\standardbzq.aspx" />
+    <Content Include="main\public\css\jquery-ui-1.8.16.custom.css" />
+    <Content Include="main\public\css\simple-calendar.css" />
+    <Content Include="main\public\images\1.jpg" />
+    <Content Include="main\public\images\2.jpg" />
+    <Content Include="main\public\images\3.jpg" />
+    <Content Include="main\public\images\firmok.png" />
+    <Content Include="main\public\images\nopic.png" />
+    <Content Include="main\public\images\smjicon.png" />
+    <Content Include="main\public\images\video.jpg" />
+    <Content Include="main\public\images\zhuan.png" />
+    <Content Include="main\public\images\_no.png" />
+    <Content Include="main\public\images\_ok.png" />
+    <Content Include="main\public\script\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="main\public\script\jquery.form.js" />
+    <Content Include="main\public\script\simple-calendar.js" />
+    <Content Include="main\public\script\Titlelist.js" />
+    <Content Include="main\system\system.html" />
+    <Content Include="main\public\video\movie.mp4" />
+    <Content Include="main\upPassword\UpPassWord.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="main\public\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="main\public\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="main\public\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="main\public\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="main\public\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="main\public\font-awesome\less\animated.less" />
+    <Content Include="main\public\font-awesome\less\bordered-pulled.less" />
+    <Content Include="main\public\font-awesome\less\core.less" />
+    <Content Include="main\public\font-awesome\less\fixed-width.less" />
+    <Content Include="main\public\font-awesome\less\font-awesome.less" />
+    <Content Include="main\public\font-awesome\less\icons.less" />
+    <Content Include="main\public\font-awesome\less\larger.less" />
+    <Content Include="main\public\font-awesome\less\list.less" />
+    <Content Include="main\public\font-awesome\less\mixins.less" />
+    <Content Include="main\public\font-awesome\less\path.less" />
+    <Content Include="main\public\font-awesome\less\rotated-flipped.less" />
+    <Content Include="main\public\font-awesome\less\screen-reader.less" />
+    <Content Include="main\public\font-awesome\less\stacked.less" />
+    <Content Include="main\public\font-awesome\less\variables.less" />
+    <Content Include="main\public\font-awesome\scss\font-awesome.scss" />
+    <Content Include="main\public\font-awesome\scss\_animated.scss" />
+    <Content Include="main\public\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="main\public\font-awesome\scss\_core.scss" />
+    <Content Include="main\public\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="main\public\font-awesome\scss\_icons.scss" />
+    <Content Include="main\public\font-awesome\scss\_larger.scss" />
+    <Content Include="main\public\font-awesome\scss\_list.scss" />
+    <Content Include="main\public\font-awesome\scss\_mixins.scss" />
+    <Content Include="main\public\font-awesome\scss\_path.scss" />
+    <Content Include="main\public\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="main\public\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="main\public\font-awesome\scss\_stacked.scss" />
+    <Content Include="main\public\font-awesome\scss\_variables.scss" />
+    <Content Include="ashx\asm.ashx" />
+    <Content Include="scripts\jedate.js" />
+    <Content Include="scripts\jedate.min.js" />
+    <Content Include="scripts\skin\gray.css" />
+    <Content Include="scripts\skin\green.css" />
+    <Content Include="scripts\skin\jedate.css" />
+    <Content Include="scripts\skin\red.css" />
+    <Content Include="scripts\spark-md5.js" />
+    <Content Include="yyzz\20180226174420.jpg" />
+    <Content Include="main\Advertisement\Handler.ashx" />
+    <Content Include="省市区.xml" />
+    <Content Include="main\Big_screen\public\font\iconfont.eot" />
+    <Content Include="main\Big_screen\public\font\iconfont.woff" />
+    <Content Include="code\css\highcharts.scss" />
+    <Content Include="code\css\js\highcharts-3d.js.map" />
+    <Content Include="code\css\js\highcharts-more.js.map" />
+    <Content Include="code\css\js\highstock.js.map" />
+    <Content Include="code\css\js\indicators\accumulation-distribution.js.map" />
+    <Content Include="code\css\js\indicators\atr.js.map" />
+    <Content Include="code\css\js\indicators\bollinger-bands.js.map" />
+    <Content Include="code\css\js\indicators\cci.js.map" />
+    <Content Include="code\css\js\indicators\cmf.js.map" />
+    <Content Include="code\css\js\indicators\ema.js.map" />
+    <Content Include="code\css\js\indicators\ichimoku-kinko-hyo.js.map" />
+    <Content Include="code\css\js\indicators\indicators.js.map" />
+    <Content Include="code\css\js\indicators\macd.js.map" />
+    <Content Include="code\css\js\indicators\mfi.js.map" />
+    <Content Include="code\css\js\indicators\momentum.js.map" />
+    <Content Include="code\css\js\indicators\pivot-points.js.map" />
+    <Content Include="code\css\js\indicators\price-envelopes.js.map" />
+    <Content Include="code\css\js\indicators\psar.js.map" />
+    <Content Include="code\css\js\indicators\roc.js.map" />
+    <Content Include="code\css\js\indicators\rsi.js.map" />
+    <Content Include="code\css\js\indicators\stochastic.js.map" />
+    <Content Include="code\css\js\indicators\volume-by-price.js.map" />
+    <Content Include="code\css\js\indicators\vwap.js.map" />
+    <Content Include="code\css\js\indicators\wma.js.map" />
+    <Content Include="code\css\js\indicators\zigzag.js.map" />
+    <Content Include="code\css\js\modules\accessibility.js.map" />
+    <Content Include="code\css\js\modules\annotations.js.map" />
+    <Content Include="code\css\js\modules\boost-canvas.js.map" />
+    <Content Include="code\css\js\modules\boost.js.map" />
+    <Content Include="code\css\js\modules\bullet.js.map" />
+    <Content Include="code\css\js\modules\data.js.map" />
+    <Content Include="code\css\js\modules\drag-panes.js.map" />
+    <Content Include="code\css\js\modules\drilldown.js.map" />
+    <Content Include="code\css\js\modules\export-data.js.map" />
+    <Content Include="code\css\js\modules\exporting.js.map" />
+    <Content Include="code\css\js\modules\funnel.js.map" />
+    <Content Include="code\css\js\modules\gantt.js.map" />
+    <Content Include="code\css\js\modules\grid-axis.js.map" />
+    <Content Include="code\css\js\modules\heatmap.js.map" />
+    <Content Include="code\css\js\modules\histogram-bellcurve.js.map" />
+    <Content Include="code\css\js\modules\item-series.js.map" />
+    <Content Include="code\css\js\modules\no-data-to-display.js.map" />
+    <Content Include="code\css\js\modules\offline-exporting.js.map" />
+    <Content Include="code\css\js\modules\oldie.js.map" />
+    <Content Include="code\css\js\modules\overlapping-datalabels.js.map" />
+    <Content Include="code\css\js\modules\parallel-coordinates.js.map" />
+    <Content Include="code\css\js\modules\pareto.js.map" />
+    <Content Include="code\css\js\modules\pattern-fill.js.map" />
+    <Content Include="code\css\js\modules\sankey.js.map" />
+    <Content Include="code\css\js\modules\series-label.js.map" />
+    <Content Include="code\css\js\modules\solid-gauge.js.map" />
+    <Content Include="code\css\js\modules\static-scale.js.map" />
+    <Content Include="code\css\js\modules\stock.js.map" />
+    <Content Include="code\css\js\modules\streamgraph.js.map" />
+    <Content Include="code\css\js\modules\sunburst.js.map" />
+    <Content Include="code\css\js\modules\tilemap.js.map" />
+    <Content Include="code\css\js\modules\treemap.js.map" />
+    <Content Include="code\css\js\modules\variable-pie.js.map" />
+    <Content Include="code\css\js\modules\variwide.js.map" />
+    <Content Include="code\css\js\modules\vector.js.map" />
+    <Content Include="code\css\js\modules\windbarb.js.map" />
+    <Content Include="code\css\js\modules\wordcloud.js.map" />
+    <Content Include="code\css\js\modules\xrange.js.map" />
+    <Content Include="code\css\js\themes\avocado.js.map" />
+    <Content Include="code\css\js\themes\dark-blue.js.map" />
+    <Content Include="code\css\js\themes\dark-green.js.map" />
+    <Content Include="code\css\js\themes\dark-unica.js.map" />
+    <Content Include="code\css\js\themes\gray.js.map" />
+    <Content Include="code\css\js\themes\grid-light.js.map" />
+    <Content Include="code\css\js\themes\grid.js.map" />
+    <Content Include="code\css\js\themes\sand-signika.js.map" />
+    <Content Include="code\css\js\themes\skies.js.map" />
+    <Content Include="code\css\js\themes\sunset.js.map" />
+    <Content Include="code\highcharts-3d.js.map" />
+    <Content Include="code\highcharts-more.js.map" />
+    <Content Include="code\highstock.js.map" />
+    <Content Include="code\indicators\accumulation-distribution.js.map" />
+    <Content Include="code\indicators\atr.js.map" />
+    <Content Include="code\indicators\bollinger-bands.js.map" />
+    <Content Include="code\indicators\cci.js.map" />
+    <Content Include="code\indicators\cmf.js.map" />
+    <Content Include="code\indicators\ema.js.map" />
+    <Content Include="code\indicators\ichimoku-kinko-hyo.js.map" />
+    <Content Include="code\indicators\indicators.js.map" />
+    <Content Include="code\indicators\macd.js.map" />
+    <Content Include="code\indicators\mfi.js.map" />
+    <Content Include="code\indicators\momentum.js.map" />
+    <Content Include="code\indicators\pivot-points.js.map" />
+    <Content Include="code\indicators\price-envelopes.js.map" />
+    <Content Include="code\indicators\psar.js.map" />
+    <Content Include="code\indicators\roc.js.map" />
+    <Content Include="code\indicators\rsi.js.map" />
+    <Content Include="code\indicators\stochastic.js.map" />
+    <Content Include="code\indicators\volume-by-price.js.map" />
+    <Content Include="code\indicators\vwap.js.map" />
+    <Content Include="code\indicators\wma.js.map" />
+    <Content Include="code\indicators\zigzag.js.map" />
+    <Content Include="code\modules\accessibility.js.map" />
+    <Content Include="code\modules\annotations.js.map" />
+    <Content Include="code\modules\boost-canvas.js.map" />
+    <Content Include="code\modules\boost.js.map" />
+    <Content Include="code\modules\bullet.js.map" />
+    <Content Include="code\modules\data.js.map" />
+    <Content Include="code\modules\drag-panes.js.map" />
+    <Content Include="code\modules\drilldown.js.map" />
+    <Content Include="code\modules\export-data.js.map" />
+    <Content Include="code\modules\exporting.js.map" />
+    <Content Include="code\modules\funnel.js.map" />
+    <Content Include="code\modules\gantt.js.map" />
+    <Content Include="code\modules\grid-axis.js.map" />
+    <Content Include="code\modules\heatmap.js.map" />
+    <Content Include="code\modules\histogram-bellcurve.js.map" />
+    <Content Include="code\modules\item-series.js.map" />
+    <Content Include="code\modules\no-data-to-display.js.map" />
+    <Content Include="code\modules\offline-exporting.js.map" />
+    <Content Include="code\modules\oldie.js.map" />
+    <Content Include="code\modules\overlapping-datalabels.js.map" />
+    <Content Include="code\modules\parallel-coordinates.js.map" />
+    <Content Include="code\modules\pareto.js.map" />
+    <Content Include="code\modules\pattern-fill.js.map" />
+    <Content Include="code\modules\sankey.js.map" />
+    <Content Include="code\modules\series-label.js.map" />
+    <Content Include="code\modules\solid-gauge.js.map" />
+    <Content Include="code\modules\static-scale.js.map" />
+    <Content Include="code\modules\stock.js.map" />
+    <Content Include="code\modules\streamgraph.js.map" />
+    <Content Include="code\modules\sunburst.js.map" />
+    <Content Include="code\modules\tilemap.js.map" />
+    <Content Include="code\modules\treemap.js.map" />
+    <Content Include="code\modules\variable-pie.js.map" />
+    <Content Include="code\modules\variwide.js.map" />
+    <Content Include="code\modules\vector.js.map" />
+    <Content Include="code\modules\windbarb.js.map" />
+    <Content Include="code\modules\wordcloud.js.map" />
+    <Content Include="code\modules\xrange.js.map" />
+    <Content Include="code\themes\avocado.js.map" />
+    <Content Include="code\themes\dark-blue.js.map" />
+    <Content Include="code\themes\dark-green.js.map" />
+    <Content Include="code\themes\dark-unica.js.map" />
+    <Content Include="code\themes\gray.js.map" />
+    <Content Include="code\themes\grid-light.js.map" />
+    <Content Include="code\themes\grid.js.map" />
+    <Content Include="code\themes\sand-signika.js.map" />
+    <Content Include="code\themes\skies.js.map" />
+    <Content Include="code\themes\sunset.js.map" />
+    <Content Include="main\bootstrapSelect\dist\css\bootstrap-select.css.map" />
+    <Content Include="main\bootstrapSelect\dist\js\bootstrap-select.js.map" />
+    <Content Include="main\bootstrapSelect\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="main\bootstrapSelect\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="main\bootstrapSelect\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="main\bootstrapSelect\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Properties\PublishProfiles\asm_admin.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="main\public\css\common.css" />
+    <Content Include="main\public\css\style.css" />
+    <Content Include="main\public\font-awesome\css\font-awesome.css" />
+    <Content Include="main\public\font-awesome\css\font-awesome.min.css" />
+    <Content Include="main\public\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="main\public\images\addimg.png" />
+    <Content Include="main\public\images\favicon.ico" />
+    <Content Include="main\public\images\logo.png" />
+    <Content Include="main\public\images\q1.jpg" />
+    <Content Include="main\public\images\q2.jpg" />
+    <Content Include="main\public\images\q3.jpg" />
+    <Content Include="main\public\images\q4.jpg" />
+    <Content Include="main\public\script\JavaScript.js" />
+    <Content Include="main\public\script\jquery-3.2.1.min.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ascx\CheckboxListControl.ascx.cs">
+      <DependentUpon>CheckboxListControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ascx\CheckboxListControl.ascx.designer.cs">
+      <DependentUpon>CheckboxListControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\asm.ashx.cs">
+      <DependentUpon>asm.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="com.allinpay.syb\AppConstants.cs" />
+    <Compile Include="com.allinpay.syb\AppUtil.cs" />
+    <Compile Include="com.allinpay.syb\HttpUtil.cs" />
+    <Compile Include="com.allinpay.syb\SybWxPayService.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\Adminlist\adminlist.aspx.cs">
+      <DependentUpon>adminlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\Adminlist\adminlist.aspx.designer.cs">
+      <DependentUpon>adminlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\Adminlist\rolelist.aspx.cs">
+      <DependentUpon>rolelist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\Adminlist\rolelist.aspx.designer.cs">
+      <DependentUpon>rolelist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\Advertisement\add_video.aspx.cs">
+      <DependentUpon>add_video.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\Advertisement\add_video.aspx.designer.cs">
+      <DependentUpon>add_video.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\Advertisement\adVideoToMechine.aspx.cs">
+      <DependentUpon>adVideoToMechine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\Advertisement\adVideoToMechine.aspx.designer.cs">
+      <DependentUpon>adVideoToMechine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\Advertisement\hblist.aspx.cs">
+      <DependentUpon>hblist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\Advertisement\hblist.aspx.designer.cs">
+      <DependentUpon>hblist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\Advertisement\Jurisdiction.aspx.cs">
+      <DependentUpon>Jurisdiction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\Advertisement\Jurisdiction.aspx.designer.cs">
+      <DependentUpon>Jurisdiction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\Advertisement\play.aspx.cs">
+      <DependentUpon>play.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\Advertisement\play.aspx.designer.cs">
+      <DependentUpon>play.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\Advertisement\video.aspx.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\Advertisement\video.aspx.designer.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\Advertisement\videoaddlist.aspx.cs">
+      <DependentUpon>videoaddlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\Advertisement\videoaddlist.aspx.designer.cs">
+      <DependentUpon>videoaddlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\Advertisement\yvideolist.aspx.cs">
+      <DependentUpon>yvideolist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\Advertisement\yvideolist.aspx.designer.cs">
+      <DependentUpon>yvideolist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\Advertisement\zfbhb.aspx.cs">
+      <DependentUpon>zfbhb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\Advertisement\zfbhb.aspx.designer.cs">
+      <DependentUpon>zfbhb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\Analysis\Analysis.aspx.cs">
+      <DependentUpon>Analysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\Analysis\Analysis.aspx.designer.cs">
+      <DependentUpon>Analysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\Big_screen\bigChart.aspx.cs">
+      <DependentUpon>bigChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\Big_screen\bigChart.aspx.designer.cs">
+      <DependentUpon>bigChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\Big_screen\big_screen.aspx.cs">
+      <DependentUpon>big_screen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\Big_screen\big_screen.aspx.designer.cs">
+      <DependentUpon>big_screen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\Big_screen\echartMain.aspx.cs">
+      <DependentUpon>echartMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\Big_screen\echartMain.aspx.designer.cs">
+      <DependentUpon>echartMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\datastatistics\chart.aspx.cs">
+      <DependentUpon>chart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\datastatistics\chart.aspx.designer.cs">
+      <DependentUpon>chart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\datastatistics\Statisticalquery.aspx.cs">
+      <DependentUpon>Statisticalquery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\datastatistics\Statisticalquery.aspx.designer.cs">
+      <DependentUpon>Statisticalquery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\enterprise\devicelist.aspx.cs">
+      <DependentUpon>devicelist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\enterprise\devicelist.aspx.designer.cs">
+      <DependentUpon>devicelist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\enterprise\FirmAdd.aspx.cs">
+      <DependentUpon>FirmAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\enterprise\FirmAdd.aspx.designer.cs">
+      <DependentUpon>FirmAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\enterprise\firmcon.aspx.cs">
+      <DependentUpon>firmcon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\enterprise\firmcon.aspx.designer.cs">
+      <DependentUpon>firmcon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\enterprise\FirmList.aspx.cs">
+      <DependentUpon>FirmList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\enterprise\FirmList.aspx.designer.cs">
+      <DependentUpon>FirmList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\enterprise\firnupdate.aspx.cs">
+      <DependentUpon>firnupdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\enterprise\firnupdate.aspx.designer.cs">
+      <DependentUpon>firnupdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\enterprise\kclist.aspx.cs">
+      <DependentUpon>kclist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\enterprise\kclist.aspx.designer.cs">
+      <DependentUpon>kclist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\enterprise\Paymenttk.aspx.cs">
+      <DependentUpon>Paymenttk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\enterprise\Paymenttk.aspx.designer.cs">
+      <DependentUpon>Paymenttk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\enterprise\Paymentzf.aspx.cs">
+      <DependentUpon>Paymentzf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\enterprise\Paymentzf.aspx.designer.cs">
+      <DependentUpon>Paymentzf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\enterprise\Profit.aspx.cs">
+      <DependentUpon>Profit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\enterprise\Profit.aspx.designer.cs">
+      <DependentUpon>Profit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\enterprise\SellCenter.aspx.cs">
+      <DependentUpon>SellCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\enterprise\SellCenter.aspx.designer.cs">
+      <DependentUpon>SellCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\enterprise\syssetting.aspx.cs">
+      <DependentUpon>syssetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\enterprise\syssetting.aspx.designer.cs">
+      <DependentUpon>syssetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\enterprise\Thepublicdx.aspx.cs">
+      <DependentUpon>Thepublicdx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\enterprise\Thepublicdx.aspx.designer.cs">
+      <DependentUpon>Thepublicdx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\enterprise\Thepublicjb.aspx.cs">
+      <DependentUpon>Thepublicjb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\enterprise\Thepublicjb.aspx.designer.cs">
+      <DependentUpon>Thepublicjb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\enterprise\Thepublicsyz.aspx.cs">
+      <DependentUpon>Thepublicsyz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\enterprise\Thepublicsyz.aspx.designer.cs">
+      <DependentUpon>Thepublicsyz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\equipment\Allequipment.aspx.cs">
+      <DependentUpon>Allequipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\equipment\Allequipment.aspx.designer.cs">
+      <DependentUpon>Allequipment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\equipment\equipmentadd.aspx.cs">
+      <DependentUpon>equipmentadd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\equipment\equipmentadd.aspx.designer.cs">
+      <DependentUpon>equipmentadd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\equipment\equipmentclass.aspx.cs">
+      <DependentUpon>equipmentclass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\equipment\equipmentclass.aspx.designer.cs">
+      <DependentUpon>equipmentclass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\equipment\Material.aspx.cs">
+      <DependentUpon>Material.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\equipment\Material.aspx.designer.cs">
+      <DependentUpon>Material.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\equipment\mechineTypeList.aspx.cs">
+      <DependentUpon>mechineTypeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\equipment\mechineTypeList.aspx.designer.cs">
+      <DependentUpon>mechineTypeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\member\chgMoney.aspx.cs">
+      <DependentUpon>chgMoney.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\member\chgMoney.aspx.designer.cs">
+      <DependentUpon>chgMoney.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\member\memberadd.aspx.cs">
+      <DependentUpon>memberadd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\member\memberadd.aspx.designer.cs">
+      <DependentUpon>memberadd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\member\memberlist.aspx.cs">
+      <DependentUpon>memberlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\member\memberlist.aspx.designer.cs">
+      <DependentUpon>memberlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\member\rechargelist.aspx.cs">
+      <DependentUpon>rechargelist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\member\rechargelist.aspx.designer.cs">
+      <DependentUpon>rechargelist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\member\rechargetj.aspx.cs">
+      <DependentUpon>rechargetj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\member\rechargetj.aspx.designer.cs">
+      <DependentUpon>rechargetj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\member\xfmx.aspx.cs">
+      <DependentUpon>xfmx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\member\xfmx.aspx.designer.cs">
+      <DependentUpon>xfmx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\product\dglist.aspx.cs">
+      <DependentUpon>dglist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\product\dglist.aspx.designer.cs">
+      <DependentUpon>dglist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\product\order.aspx.cs">
+      <DependentUpon>order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\product\order.aspx.designer.cs">
+      <DependentUpon>order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\product\orderDetail.aspx.cs">
+      <DependentUpon>orderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\product\orderDetail.aspx.designer.cs">
+      <DependentUpon>orderDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\product\orderlistOld.aspx.cs">
+      <DependentUpon>orderlistOld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\product\orderlistOld.aspx.designer.cs">
+      <DependentUpon>orderlistOld.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\product\orderlist.aspx.cs">
+      <DependentUpon>orderlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\product\orderlist.aspx.designer.cs">
+      <DependentUpon>orderlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\product\paylist.aspx.cs">
+      <DependentUpon>paylist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\product\paylist.aspx.designer.cs">
+      <DependentUpon>paylist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\product\productclass.aspx.cs">
+      <DependentUpon>productclass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\product\productclass.aspx.designer.cs">
+      <DependentUpon>productclass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\product\Productform.aspx.cs">
+      <DependentUpon>Productform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\product\Productform.aspx.designer.cs">
+      <DependentUpon>Productform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\product\productlist.aspx.cs">
+      <DependentUpon>productlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\product\productlist.aspx.designer.cs">
+      <DependentUpon>productlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\product\standard.aspx.cs">
+      <DependentUpon>standard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\product\standard.aspx.designer.cs">
+      <DependentUpon>standard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\product\standardbzq.aspx.cs">
+      <DependentUpon>standardbzq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\product\standardbzq.aspx.designer.cs">
+      <DependentUpon>standardbzq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main\upPassword\UpPassWord.aspx.cs">
+      <DependentUpon>UpPassWord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main\upPassword\UpPassWord.aspx.designer.cs">
+      <DependentUpon>UpPassWord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="util\Config.cs" />
+    <Compile Include="util\DbHelperSQL.cs" />
+    <Compile Include="util\OperUtil.cs" />
+    <Compile Include="util\RedisConfig.cs" />
+    <Compile Include="util\RedisHelper.cs" />
+    <Compile Include="util\RedisUtil.cs" />
+    <Compile Include="util\TemplateMessage.cs" />
+    <Compile Include="util\Util.cs" />
+    <Compile Include="util\wxHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="main\Advertisement\upload\hvideo\" />
+    <Folder Include="main\Advertisement\upload\vvideo\" />
+    <Folder Include="video\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62853</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62852/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/login",
+    "pages/index/indexpage/home",
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/index/notice/noticelist",
+    "pages/index/member/center",
+    "pages/index/order/orderlist",
+    "pages/index/member/wallet",
+    "pages/index/member/memberInfo",
+    "pages/index/member/record",
+    "pages/index/product/product",
+    "pages/index/order/cycle",
+    "pages/index/notice/news",
+    "pages/index/order/orderDetail",
+    "pages/pay/pay",
+    "pages/index/order/getCode",
+    "pages/index/indexpage/adver",
+    "pages/index/notice/notice",
+    "pages/index/order/dhProduct",
+    "pages/index/order/paysuccess",
+    "pages/index/member/success",
+    "pages/index/order/dgcycle"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "生鲜时逐",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

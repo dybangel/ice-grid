@@ -1,0 +1,105 @@
+  <view class="main">
+
+  <form report-submit='true' bindsubmit='clickFormView'>
+      <view class="getUserInfo" wx:if="{{memberInfoFlag}}">
+        <view class="userInfoTips">
+          <image src='../../images/lg.png'/>
+          <text class="tipsTop">申请获取以下权限</text>
+          <text class="tipsP">获取您的头像、性别个人信息</text>
+        </view>
+        <button form-type='submit' class="grandBtn" wx:if="{{canIUse}}"open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">确认授权</button>
+    </view>
+    <view class="getUserInfo-bg" wx:if="{{memberInfoFlag}}"></view>
+  </form>
+
+
+
+  <swiper class="" indicator-dots="true" autoplay="true" interval="10000" duration="1000">
+  <block wx:for="{{picList}}" wx:key="index" wx:for-item="item">
+    <swiper-item >
+      <image src="{{item.path}}" class="slide-image" mode="aspectFill" bindtap='previewImg' data-previewurl='{{item.url}}'data-currenturl='{{item.url}}'/>
+    </swiper-item>   
+  </block>  
+</swiper>
+<i-drawer i-class="drawer" mode="right" visible="{{showRight1}}" bind:close="handleClick">
+    <view class="drawerView">
+        <view class="drawerList" wx:for="{{mechineList}}" wx:for-item="item" wx:for-index="idx">
+          <view class="drawerList-li" bindtap='clickMechine' data-id="{{item.id}}" data-name="{{item.mechineName}}" data-address="{{item.addres}}" data-jl="{{item.xjlc}}">
+            <view class="drawerList-name">{{item.mechineName}}
+              <view>
+                <icon class="icon iconfont icon-dingwei"/>{{item.xjlc}}km
+              </view>
+              </view>
+              <text class="drawerList-add">地址：{{item.addres}}</text>
+          </view>
+        </view>
+    </view>
+</i-drawer>
+    <view class="contentlist">
+      <view class="address">
+        <view class="addresstext" wx:if="{{sqFlag==true}}">
+          <text class="text-address">{{mechineName}}</text>	
+          <view class="text-location">距离您：{{xjlc}}km<icon class="icon iconfont icon-dingwei"/></view>
+          <text class="text-location">地址：{{address}}</text>
+        </view>
+         <view class="addresstext" wx:elif="{{sqFlag==false}}">
+          <text class="text-address">哎呀，地址定位失败</text>	
+          <!-- <view class="text-location">距离您1：{{xjlc}}km<icon class="icon iconfont icon-dingwei"/></view> -->
+          <text class="text-location">请开启定位和微信APP位置权限</text>
+        </view>
+        <view class="replace" wx:if="{{sqFlag==true}}">
+          <i-button type="primary" bind:click="handleClick">更换地址</i-button>
+        </view>
+         <view class="replace" wx:elif="{{sqFlag==false}}">
+          <i-button type="primary" bind:click="handleClick">开启定位</i-button>
+        </view>
+      </view>
+      <view class="navlist">
+        <view class="navlistUl">
+          <view class="navlistLi">
+            <view class="order">
+              <view class="orderTitle" bindtap='nowOrder'>现在预订<text class="orderData" wx:if="{{productFlag}}">{{productActivity}}</text></view>
+              <text class="orderMain">ORDER NOW</text>
+            </view>
+            <view class="icon" bindtap='nowOrder'>
+              <image src="../../images/buy.png" />
+            </view>
+          </view>
+          <view class="navlistLi">
+            <view class="order" bindtap='myWallet'>
+              <view class="orderTitle">会员钱包<text class="orderData" wx:if="{{payFlag}}">{{payActivityList}}</text></view>
+              <text class="orderMain">MILK WALLET</text>
+            </view>
+            <view class="icon" bindtap='myWallet'>
+              <image src="../../images/wallet.png" />
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="btn">
+      <view class="quhuo">
+        <button bindtap='scanQH'>扫码取货</button>
+      </view>
+      <view class="pickingCode">
+        <button bindtap='getCode'>取货码</button>
+      </view>
+      <view class="ad">
+        <swiper class="" indicator-dots="true" autoplay="true" interval="10000" duration="1000">
+      <block wx:for="{{lbtList}}" wx:key="index" wx:for-item="item">
+        <swiper-item>
+          <image src="{{item.path}}" class="slide-image" mode="aspectFill" bindtap='previewImgAdver' data-previewurl='{{item.url}}'data-currenturl='{{item.url}}'/>
+        </swiper-item>   
+      </block>  
+    </swiper>
+      </view>
+    </view>
+  </view>
+  <i-tab-bar current="{{ current }}" i-class="menuNav" bindchange="handleChange">
+    <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+    <i-tab-bar-item key="order" icon="group" current-icon="group_fill" title="订单"></i-tab-bar-item>
+    <i-tab-bar-item key="notice" icon="remind" current-icon="remind_fill" count="{{num}}" title="通知"></i-tab-bar-item>
+    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill"  title="会员"></i-tab-bar-item>
+  </i-tab-bar>
+ 
+<i-toast id="toast" />

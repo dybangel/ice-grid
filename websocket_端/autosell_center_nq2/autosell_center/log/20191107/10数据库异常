@@ -1,0 +1,2 @@
+2019-11-07 10:44:34.953:SQLString=update asm_mechine set socketStatus=4 where id=mechineID 
+---------------

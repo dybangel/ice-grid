@@ -1,0 +1,4 @@
+<view>
+<button type="primary" bindtap="requestPayment" loading="{{loading}}">支付</button>
+<button  bindtap="sendMsg" >发送模板消息</button>
+</view>

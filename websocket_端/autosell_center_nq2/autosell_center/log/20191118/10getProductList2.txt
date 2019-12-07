@@ -1,0 +1,22 @@
+2019-11-18 10:20:20.334:45
+---------------
+2019-11-18 10:20:51.764:45sql2select * from (
+                        (SELECT p.productID, p.proName, o.sellPrice AS price0, o.sellPrice AS price1, o.sellPrice AS price2, o.sellPrice AS price3, p.path, p.protype, p.mechineID, p.description, p.productSize, p.bzq,
+                            p.companyID, p.ljxs, p.httpImageUrl, p.sluid, p.progg, p.brandID, p.shortName, p.bh, p.tag, p.dstype, p.startSend, p.is_del, '200' weight, '100' num, '3' type, o.id, '' AS sftj
+                        FROM asm_product p RIGHT JOIN asm_orderlistDetail o ON p.productID = o.productID WHERE o.zt = 3 AND o.createTime = '2019-11-18' AND o.mechineID =45
+                        )
+                        UNION
+                        (select p.productID, p.proName, p.price0, p.price1, p.price2, p.price3, p.path, p.protype, p.mechineID, p.description, p.productSize, p.bzq,
+                        p.companyID, p.ljxs, p.httpImageUrl, p.sluid, p.progg, p.brandID, p.shortName, p.bh, p.tag, p.dstype, p.startSend, p.is_del,
+                                CASE WHEN lsNum <= 0 THEN
+
+                                '-100'  ELSE        p.weight    END weight, lsNum num,  '2' type,'' id, '' sftj from (select t.* from
+                        (select asm_kcDetail.*,row_number() over (partition by productID order by id desc) rn 
+                        from asm_kcDetail where mechineID=45) t
+                        where rn=1) b left
+                                                                                                                join asm_product p on b.productID = p.productID  where
+
+                            p.is_del = 0        AND p.dstype IN (2, 3)		AND p.companyID = 14 and b.productID IN (SELECT          productID       FROM            asm_ldInfo      WHERE           mechineID =45
+
+                        AND zt != 1     AND productID != '' ) )) s order by s.weight desc
+---------------

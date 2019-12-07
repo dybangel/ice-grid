@@ -1,0 +1,146 @@
+.header{
+	font-size: 1.8em;
+	text-align: center;
+	color: #666666;
+	padding: 2vw;
+}
+.main{
+	width: 100%;
+	height: 600px;
+	display: inline-block;
+}
+.main .personal{
+	width: 100%;
+	display: inline-block;
+	background: #fff;
+	padding: 10px;
+}
+.main .personal icon{
+	float: left;
+	font-weight: bold;
+	display: inline-block;
+}
+.main .personal .h2{
+	font-size: 1.4em;
+	text-align: center;
+}
+.main .personal .h4{
+	font-size: 1.2em;
+	color: #2dbb61;
+	float: right;
+	display: inline-block;
+	margin-top: -15px;
+}
+.main .datalist{
+	width: 100%;
+	height: auto;
+	display: inline-block;
+}
+.main .datalist .ul{
+	width: 100%;
+	display: inline-block;
+}
+.main .datalist .ul .li{
+	width: 100%;
+	display: inline-block;
+	background: #fff;
+	float: left;
+	margin-top: 2px;
+}
+.main .datalist .ul .li .data-content{
+	width: calc(90% - 4px);
+	display: inline-block;
+	float: left;
+	margin: 12px 4px 12px 12px;
+}
+.main .datalist .ul .li .data-content .h4{
+	font-size: 1.4em;
+	float: left;
+}
+.main .datalist .ul .li .data-content image{
+	width: 7vw;
+	height: 7vw;
+	border-radius: 50%;
+	float: right;
+	display: inline-block;
+	margin-top: -3px;
+}
+.main .datalist .ul .li icon{
+	width: calc(10% - 12px);
+	float: right;
+	display: inline-block;
+	margin: 12px 0;
+	color: #999;
+	font-weight: bold;
+}
+.main .datalist .ul .li .h5{
+	font-size: 1em;
+	color: #b0afb0;
+	float: right;
+  margin-top: 10px;
+}
+.bottom{
+	width: 100%;
+	height: 60px;
+	display: inline-block;
+	background: #fff;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	z-index: 98;
+	padding: 0 100px;
+	text-align: center;
+}
+.bottom icon{
+	width: calc(50% - 100px);
+	display: inline-block;
+	font-size: 2em;
+	font-weight: bold;
+	float: left;
+	margin: 18px 50px;
+	color: #b8b8ba;
+}
+.bottom em.emcolor{
+	color: #000000;
+}
+.input_modal{
+  border-style: none;
+  height: 40px;
+  width: 60%;
+  border: 1px solid #999;
+  text-indent: 20px;
+  outline: none;
+  border-radius: 10px;
+  float: left;
+}
+.input_modal2{
+  border-style: none;
+  height: 40px;
+  width: 100%;
+  border: 1px solid #999;
+  text-indent: 20px;
+  outline: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+.btnFS{
+  width: 35%;
+  height: 40px;
+  background-color:#19be6b!important;
+  color: #fff;
+  padding-top: 4px;
+  font-size: 1.1em;
+  margin-right: 0px;
+  text-align: center;
+  border-radius: 5px;
+
+}
+.btnAndYzm{
+  widows: 100%;
+  height: 50px;
+  display: inline-block;
+}
+.clickBtn{
+  color: #000000;
+}

@@ -1,0 +1,196 @@
+<!-- <View class="menulist">
+	<View>
+		<View class="licolor li">全部订单</View>
+		<View class="li">待完成</View>
+		<View class="li">已完成</View>
+		<View class="li">取货中</View>
+		<View class="li">已转售</View>
+		<View class="li">已失效</View>
+	</View>
+</View> -->
+<wxs src="../../../wxs/subUtil.wxs" module="tools" />
+<wxs src="../../../wxs/replaceUtil.wxs" module="replaceUtil" />
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">全部</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">生产中</view>
+  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">配送中</view>
+  <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">已完成</view>
+  <view class="swiper-tab-list {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap="swichNav">已更换</view>
+  <!-- <view class="swiper-tab-list {{currentTab==5 ? 'on' : ''}}" data-current="5" bindtap="swichNav">已失效</view> -->
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300"style="height:{{winHeight}}px" bindchange="bindChange">
+  <swiper-item>
+    <!-- 全部订单 -->
+    	<View class="productlist">
+			<View >
+				<View class="li" wx:for="{{allList}}" wx:for-item="item" wx:for-index="idx">
+					<View class="productbox bottomline" bindtap='selOrder' data-id='{{item.id}}' data-orderno='{{item.orderNO}}' data-mechineid='{{item.mechineID}}'>
+						<View class="product">
+							<text class='h6'>{{replaceUtil.my_rep(tools.sub(item.createTime))}}</text>
+							<View class="producticon">
+								<image src="{{item.httpImageUrl}}"></image>
+							</View>
+						</View>
+						<View class="brand">
+							<text class='h2'>{{item.proName}}</text>
+							<View class='h6'>{{item.progg}}*{{item.totalNum}}盒</View>
+							<!-- <text class='h5'>共{{item.totalNum}}件商品</text> -->
+						</View>
+						<View class="price">
+							<View class="pricetext">
+								<View class='h3'>单价￥{{item.price}}</View>
+								<View class='h4'>*{{item.totalNum}}</View>
+							</View>
+							<View class="pricesum">
+								 <View class='h5'>状态：{{item.orderZT=="0"?"生产中":(item.orderZT=="1"?"配送中":(item.orderZT=="2"?"已转售":(item.orderZT=="3"?"配送完成":(item.orderZT=="4"?"已兑换":(item.orderZT=="5"?"取消":(item.orderZT=="6"?"暂停派送":""))))))}}</View> 
+								<View class='h1'>合计：￥{{item.totalMoney}}</View>
+							</View>
+						</View>
+					</View>
+				</View>
+			</View>
+		</View>
+  </swiper-item>
+  <swiper-item>
+    <!-- 生产中 -->
+    	<View class="productlist">
+			<View >
+				<View class="li" wx:for="{{shengchan}}" wx:for-item="item" wx:for-index="idx">
+					<View class="productbox bottomline"  bindtap='selOrder' data-id='{{item.id}}' data-orderno='{{item.orderNO}}' data-mechineid='{{item.mechineID}}'>
+						<View class="product">
+							<text class='h6'>{{replaceUtil.my_rep(tools.sub(item.createTime))}}</text>
+							<View class="producticon">
+								<image src="{{item.httpImageUrl}}"></image>
+							</View>
+						</View>
+						<View class="brand">
+							<text class='h2'>{{item.proName}}</text>
+							<View class='h6'>{{item.progg}}*{{item.totalNum}}盒</View>
+							<!-- <text class='h5'>共{{item.totalNum}}件商品</text> -->
+						</View>
+						<View class="price">
+							<View class="pricetext">
+								<View class='h3'>单价￥{{item.price}}</View>
+								<View class='h4'>*{{item.totalNum}}</View>
+							</View>
+							<View class="pricesum">
+								<!-- <View class='h5'>会员已优惠：￥{{item.youhuiMoney}}</View> -->
+								<View class='h1'>合计：￥{{item.totalMoney}}</View>
+							</View>
+						</View>
+					</View>
+				</View>
+			</View>
+		</View>
+  </swiper-item>
+   <swiper-item>
+    <!-- 配送中 -->
+    	<View class="productlist">
+			<View >
+				<View class="li" wx:for="{{quhuozhong}}" wx:for-item="item" wx:for-index="idx">
+					<View class="productbox bottomline" >
+						<View class="product" bindtap='selOrder' data-id='{{item.id}}' data-orderno='{{item.orderNO}}' data-mechineid='{{item.mechineID}}'>
+							<text class='h6'>{{replaceUtil.my_rep(tools.sub(item.createTime))}}</text>
+							<View class="producticon">
+								<image src="{{item.httpImageUrl}}"></image>
+							</View>
+						</View>
+						<View class="brand" bindtap='selOrder' data-id='{{item.id}}' data-orderno='{{item.orderNO}}' data-mechineid='{{item.mechineID}}'>
+							<text class='h2'>{{item.proName}}</text>
+							<View class='h6'>{{item.progg}}*{{item.totalNum}}盒</View>
+							<!-- <text class='h5'>共{{item.totalNum}}件商品</text> -->
+						</View>
+						<View class="price" >
+							<View class="pricetext" bindtap='selOrder' data-id='{{item.id}}' data-orderno='{{item.orderNO}}' data-mechineid='{{item.mechineID}}'>
+								<View class='h3'>单价￥{{item.price}}</View>
+								<View class='h4'>*{{item.totalNum}}</View>
+							</View>
+							<View class="pricesum">
+								<!-- <View class='h5'>会员已优惠：￥{{item.youhuiMoney}}</View> -->
+									<View class='h1'>剩余：{{item.syNum}}份</View>
+                  <button class='btn' bindtap='dhProduct' data-orderno='{{item.orderNO}}'>更换商品</button>
+							</View>
+						</View>
+					</View>
+				</View>
+			</View>
+		</View>
+  </swiper-item>
+   <swiper-item>
+   <!-- 已完成 -->
+    	<View class="productlist">
+			<View >
+				<View class="li" wx:for="{{wancheng}}" wx:for-item="item" wx:for-index="idx">
+					<View class="productbox bottomline" bindtap='selOrder' data-id='{{item.id}}' data-orderno='{{item.orderNO}}' data-mechineid='{{item.mechineID}}'>
+						<View class="product">
+							<text class='h6'>{{replaceUtil.my_rep(tools.sub(item.createTime))}}</text>
+							<View class="producticon">
+								<image src="{{item.httpImageUrl}}"></image>
+							</View>
+						</View>
+						<View class="brand">
+							<text class='h2'>{{item.proName}}</text>
+							<View class='h6'>{{item.progg}}*{{item.totalNum}}盒</View>
+							<!-- <text class='h5'>共{{item.totalNum}}件商品</text> -->
+						</View>
+						<View class="price">
+							<View class="pricetext">
+								<View class='h3'>单价￥{{item.price}}</View>
+								<View class='h4'>*{{item.totalNum}}</View>
+							</View>
+							<View class="pricesum">
+								<!-- <View class='h5'>会员已优惠：￥{{item.youhuiMoney}}</View> -->
+								<View class='h1'>合计：￥{{item.totalMoney}}</View>
+               
+							</View>
+						</View>
+					</View>
+				</View>
+			</View>
+		</View>
+  </swiper-item>
+    <swiper-item>
+      <View class="productlist">
+			<View >
+				<View class="li" wx:for="{{dh}}" wx:for-item="item" wx:for-index="idx">
+					<View class="productbox bottomline" bindtap='selOrder' data-id='{{item.id}}' data-orderno='{{item.orderNO}}' data-mechineid='{{item.mechineID}}'>
+						<View class="product">
+							<text class='h6'>{{replaceUtil.my_rep(tools.sub(item.createTime))}}</text>
+							<View class="producticon">
+								<image src="{{item.httpImageUrl}}"></image>
+							</View>
+						</View>
+						<View class="brand">
+							<text class='h2'>{{item.proName}}</text>
+							<View class='h6'>{{item.progg}}*{{item.totalNum}}盒</View>
+							<!-- <text class='h5'>共{{item.totalNum}}件商品</text> -->
+						</View>
+						<View class="price">
+							<View class="pricetext">
+								<View class='h3'>单价￥{{item.price}}</View>
+								<View class='h4'>*{{item.totalNum}}</View>
+							</View>
+							<View class="pricesum">
+								<!-- <View class='h5'>会员已优惠：￥{{item.youhuiMoney}}</View> -->
+								<View class='h1'>合计：￥{{item.totalMoney}}</View>
+               
+							</View>
+						</View>
+					</View>
+				</View>
+			</View>
+		</View>
+  </swiper-item>
+  <!-- <swiper-item>
+    <view>
+     
+    </view>
+  </swiper-item> -->
+</swiper>
+ <i-tab-bar current="{{ current }}" i-class="menuNav" bindchange="handleChange">
+    <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+    <i-tab-bar-item key="order" icon="group" current-icon="group_fill" title="订单"></i-tab-bar-item>
+    <i-tab-bar-item key="notice" icon="remind" current-icon="remind_fill" count="{{num}}" title="通知"></i-tab-bar-item>
+    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill"  title="会员"></i-tab-bar-item>
+  </i-tab-bar>
+		 

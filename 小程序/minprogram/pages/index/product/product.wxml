@@ -1,0 +1,39 @@
+<swiper class="" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+  <block wx:for="{{picList}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item.path}}" class="slide-image" mode="aspectFill" bindtap='previewImg' data-previewurl='{{item.url}}'data-currenturl='{{item.url}}'/>
+    </swiper-item>   
+  </block>  
+</swiper>
+ <scroll-view scroll-x='true' class="swiper-tab">
+  <view wx:for="{{typeList}}" wx:for-item="item" wx:for-index="idx" class="swiper-tab-list {{currentTab==item.productTypeID ? 'on' : ''}}" data-current="{{item.productTypeID}}" bindtap="swichNav">{{item.typeName}}</view>
+</scroll-view>
+ <view class='productlist'>
+        <view class='ul'>
+          <view class='li'  wx:for="{{productList}}" wx:for-item="item" wx:for-index="idx">
+            	<view class="product">
+                <view class="milk">
+                  <image src="{{item.httpImageUrl}}"></image>
+                </view>
+							  <view class="introduce" >
+								<view class="producttext">
+                    <View class='h2'>{{item.proName}}</View>
+                    <View class='h3'>{{item.description}}</View>
+                    <view class="hot">
+                      <View class='h5' wx:for="{{item.tag}}" wx:for-item="child">{{child}}</View> 
+                    </view>
+                    <View class='h4'>
+                      <text class='span'>单价：￥{{item.price0}}</text>
+                    </View>
+                   
+                    <View class='h6'>规格：{{item.progg}}</View>
+                    <button bindtap='pickProduct' data-id='{{item.productID}}'>选购</button>
+								</view>
+							</view>
+						</view>
+          </view>
+        </view>
+     </view>
+
+ 
+ 

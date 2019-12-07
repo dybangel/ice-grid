@@ -1,0 +1,80 @@
+ 
+<View class="main">
+  <view class="getUserInfo" wx:if="{{memberInfoFlag}}">
+      <view class="userInfoTips">
+        <image src='../../images/lg.png'/>
+        <text class="tipsTop">申请获取您的手机号</text>
+        <text class="tipsP">以便于提供奖励通知、售后处理等服务</text>
+      </view>
+      <button class="grandBtn" open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber">手机号授权</button>
+     </view>
+     <view class="getUserInfo-bg" wx:if="{{memberInfoFlag}}"></view>
+
+			<view class='allPan'>
+        <view class="leftPan">
+          <View class="h1">奶卡余额：{{memberInfo.AvailableMoney}}</View>
+          <view class='h2'>黄金会员体验日剩余：{{memberInfo.hjhyDays}}天</view>
+        </view>
+        <view class="rightPan">
+          <view class='imgfl'>
+            <image class='img' src='../../images/fl.png'></image>
+          </view>
+          <text class='rightday'>充值送黄金会员体验天数</text>
+          <view wx:for="{{tqlist}}" wx:for-item="item">
+             <text class='day1'>充{{item.money}}元送{{item.day}}天</text>
+          </view>
+        </view>
+      </view>
+			<View class="h4">快捷充值</View>
+			<View class="moneylist">
+				<View class="ul">
+					<View class="li" style="border-bottom: 1px solid #d9d9d9;border-right: 1px solid #d9d9d9;"  wx:for="{{payActivityList}}" wx:for-item="item" >
+						<View class='h2' bindtap="{{!buttonClicked?'onclickPay':''}}" data-id="{{item.id}}" data-money="{{item.czMoney}}" data-dzmoney="{{item.dzMoney}}">{{item.czMoney}}元</View>
+						<View class='h5' bindtap="{{!buttonClicked?'onclickPay':''}}" data-id="{{item.id}}" data-money="{{item.czMoney}}" data-dzmoney="{{item.dzMoney}}">{{item.tag}}</View>
+					</View>
+				</View>
+			</View>
+      <view class='tips'>
+        <text class='one'>1、牛奶钱包中余额仅限“生鲜时逐”贩卖机零售（微信扫码）购买</text>
+        <text class='one'>2、余额为“生鲜时逐”专属消费积分余额，不支持提现，可转让，不会过期</text>
+      </view>
+			<View class="mtext">
+				<View class='h5'><text>充值金额：￥</text><input id='moneyInput' type="number" placeholder="最低1元起充" maxlength='5' bindinput='bindMoney'></input>
+      
+        </View>
+        <!-- <form report-submit='true' bindsubmit='clickFormView'> form-type='submit'-->
+				  <button  bindtap="{{!buttonClicked1?'payOK':''}}">确定</button>
+         <!-- </form> -->
+			</View>
+      <view class='serviceClass' bindtap='serviceInfo'>
+        查看《生鲜时逐用户服务协议》
+      </view>
+			<View class="mlist">
+				<View class="ul">
+        	<View class="li" bindtap='modalinputCZ' style='border-bottom:1px solid #eee'>
+						<View class='h2'>充值卡兑换</View>
+						<icon class='icon iconfont icon-Icon_right'></icon>
+					</View>
+					<View class="li" bindtap='modalinput' style='border-bottom:1px solid #eee'>
+						<View class='h2'>会员转账</View>
+						<icon class='icon iconfont icon-Icon_right'></icon>
+					</View>
+					<View class="li" bindtap='onclick' data-index="2">
+						<View class='h2'>交易明细</View>
+						<icon class='icon iconfont icon-Icon_right'></icon>
+					</View>
+				</View>
+			</View>
+      <button class='backBtn' bindtap='backCenter'>返回个人中心</button>
+		</View>
+<modal wx:if="{{hiddenmodalput}}" class='modalClass' title="会员转账" confirm-text="确认" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+    <input class='input_modal' cursor-spacing='100' type='number'placeholder="收款人手机号" bindinput='bindPhone' value="{{val}}" maxlength='11' auto-focus/>
+    <input class='input_modal2'  cursor-spacing='100' type='number'placeholder="转账金额" bindinput='bindMoney2'value="{{val}}" maxlength='5' auto-focus/>
+     <input class='input_modal2'  cursor-spacing='50' type='text'placeholder="备注信息（15字以内）" bindinput='bindbz'value="{{val}}" maxlength='15' auto-focus/>
+</modal>
+<modal wx:if="{{hiddenmodalput4}}" class='modalClass' title="" confirm-text="确定"  bindconfirm="payCode" cancel-text="取消" bindcancel="cancel">
+     <input wx:if="{{hiddenmodalput4}}" bindinput='bindCardNO' focus='true' cursor-spacing='100' class='input_modalCode' type='number'placeholder="充值卡号" value='' maxlength='12' auto-focus/>
+      <input wx:if="{{hiddenmodalput4}}" bindinput='bindPwd' cursor-spacing='100' class='input_modalCode' style='margin-top: 10px' type='number'placeholder="密码" value='' maxlength='10' auto-focus/>
+      
+</modal>
+<i-toast id="toast" />

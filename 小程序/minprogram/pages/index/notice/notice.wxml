@@ -1,0 +1,5 @@
+<view>
+<view class="title">{{title}}</view>
+<view class="con">{{con}}</view>
+<view class="con" wx:if="{{address!=null}}">取货地址:{{address}}</view>
+</view>

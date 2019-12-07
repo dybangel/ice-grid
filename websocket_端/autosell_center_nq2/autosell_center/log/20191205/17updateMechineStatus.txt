@@ -1,0 +1,6 @@
+2019-12-05 17:09:03.123:1sql1=select top 1 * from asm_mechine_statu where mechineID=68 and breakID=2  order by id desc
+---------------
+2019-12-05 17:09:03.181:1sql1=select top 1 * from asm_mechine_statu where mechineID=69 and breakID=2  order by id desc
+---------------
+2019-12-05 17:41:46.122:1sql1=select top 1 * from asm_mechine_statu where mechineID=68 and breakID=2  order by id desc
+---------------

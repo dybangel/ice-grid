@@ -1,0 +1,83 @@
+/**app.wxss**/
+@import "pages/icon/iconfont.wxss";
+page, view{
+  box-sizing: border-box;
+  font-size: 12px;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.change {
+  transition: all 0.3s;
+  -moz-transition: all 0.3s; /* Firefox 4 */
+  -webkit-transition: all 0.3s; /* Safari and Chrome */
+  -o-transition: all 0.3s; /* Opera */
+}
+
+/* 底部菜单导航 */
+.menuNav {
+  width: 100%;
+  height: 70px;
+  max-width: 640px;
+  background: #fff;
+  position: fixed !important;
+  bottom: 0;
+  z-index: 9;
+  border: 0;
+}
+
+.menuNav .menuNavView {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+.menuNav .menuNavView .menuNavViewLi {
+  width: 25%;
+  height: 100%;
+  font-size: 1.1em;
+  float: left;
+  text-align: center;
+  color: #666666;
+  padding: 15px 0;
+}
+
+.menuNav .menuNavView .licolor {
+  color: #73D0FF;
+}
+.menuNav .menuNavView .menuNavViewLi img{
+  width: 20px;
+  height: auto;
+}
+.menuNav .menuNavView .menuNavViewLi icon {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+}
+.menuNav .menuNavView .menuNavViewLi text{
+  display: block;
+  width: 100%;
+  float: left;
+}
+ 
+.menuNav .menuNavView .menuNavViewLi .circle{
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	background: #ed1c24;
+	border-radius: 50%;
+	font-size: 1em;
+	color: #fff;
+	text-align: center;
+	float: left;
+	margin-top: -46px;
+	margin-left: 66px;
+}

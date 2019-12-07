@@ -1,0 +1,33 @@
+
+.background-image{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.background-content{
+  width: 100vw;
+  height: auto;
+  padding-top: 30vh;
+  position: relative;
+  z-index: 1;
+}
+.background-content .background-img{
+  width: 50vw;
+  height: 26vw;
+  float: left;
+  margin: 0 25vw;
+}
+.background-content button{
+  width: 50vw;
+  height: 42px;
+  margin: 48px calc(25vw);
+  float: left;
+  border-radius: 150px;
+  background: rgb(35,108,226);
+  color: #fff;
+  border: 0;
+}

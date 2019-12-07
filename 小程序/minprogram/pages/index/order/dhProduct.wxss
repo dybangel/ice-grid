@@ -1,0 +1,293 @@
+@import '../../icon/iconfont.wxss';
+.background {
+  width: 100%;
+  height: 100vh;
+  display: inline-block;
+  background: #f7f7f7;
+}
+/* 标题 */
+.title{
+  width: 100%;
+  height: 80px;
+  display: inline-block;
+}
+.title .title-name{
+  width: 100%;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+}
+.title .machine{
+  width: 100%;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  font-size: 14px;
+  padding-left: 18px;
+  background: #fff;
+  color: #666;
+}
+/* 更换产品内容 */
+.content{
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  padding-bottom: 60px;
+}
+.content .current{
+  width: 100%;
+  height: auto;
+}
+.content .current .current-product{
+  width: 100%;
+  height: 40px;
+  display: inline-block;
+  font-size: 12px;
+  padding-left: 18px;
+  color: #999;
+  line-height: 56px;
+}
+.content .current .current-detail{
+  width: 100%;
+  height: auto;
+  padding: 18px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  float: left;
+}
+.content .current .current-detail .orderImg{
+  width: 90px;
+  height: 90px;
+  border: 1px solid #eee;
+  float: left;
+}
+.content .current .current-detail .prodetail{
+  width: calc(100% - 200px);
+  height: auto;
+  float: left;
+  line-height: 28px;
+  margin-top: 10px;
+  margin-left: 18px;
+}
+.content .current .current-detail .prodetail .brand{
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+}
+.content .current .current-detail .prodetail .specifications{
+  width: 100%;
+  float: left;
+  font-size: 12px;
+  color: #999;
+}
+.content .current .current-detail .prodetail .price{
+  width: 100%;
+  font-size: 14px;
+  color: #666;
+  float: left;
+}
+.content .current .current-detail .replaceBtn{
+  width: 56px;
+  height: 25px;
+  display: inline-block;
+  font-size: 12px;
+  color: #fff;
+  background: #45a2df;
+  border-radius: 6px;
+  line-height: 25px;
+  margin-top: 30px;
+}
+.content .current .shenyu{
+  width: 100%;
+  height: 40px;
+  color: #666;
+  background: #fff;
+  float: left;
+}
+.content .current .shenyu .syNum{
+  float: left;
+  font-size: 11px;
+  height: 40px;
+  line-height: 20px;
+  padding: 0 18px;
+}
+.content .current .shenyu .syNum .syPiece{
+  width: 100%;
+  float: left
+}
+.content .current .shenyu .total{
+  float: right;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  padding-right: 10px;
+}
+.content .tips{
+  width: 100%;
+  display: inline-block;
+  font-size: 12px;
+  color: #999;
+  padding: 8px;
+}
+/* 退款金额 */
+.money{
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 96;
+  background: #fff;
+}
+.money .refund{
+  font-size: 14px;
+  color: #f16f42;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 18px;
+}
+.money .refund .refMoney {
+ padding-left: 10px;
+}
+.money .sureBtn{
+  width: 100px;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  background: #45a2df;
+  line-height: 50px;
+  z-index: 97;
+  border-radius: 0
+}
+/* 弹出框 */
+.product{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 98;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+.protype{
+  width: 90%;
+  height: 70vh;
+  top: 16vh;
+  left: 5%;
+  position: fixed;
+  z-index: 99;
+  background: #fff;
+  border-radius: 10px;
+  display: none;
+}
+.protype icon{
+  font-size: 1.5rem;
+  color: #999;
+  float: right;
+  padding-right: 12px;
+}
+.protype .proMenu{
+  width: 100%;
+}
+.protype .proMenu .proName{
+  width: 25%;
+}
+.protype .proDataList{
+  width: 100%;
+  height: calc(100% - 117px);
+  display: inline-block;
+  overflow: auto;
+}
+.protype .proDataList .proData{
+  width: 90%;
+  height: 120px;
+  margin: 10px 5%;
+  box-shadow: 2px 2px 6px #ddd;
+  border-radius: 10px;
+  display: inline-block;
+  position: relative
+}
+.protype .proDataList .proData .productImg{
+  width: 120px;
+  height: 90px;
+  overflow: hidden;
+  padding: 10px;
+  float: left
+}
+.protype  .proDataList .proData .productImg .proImg{
+  width: 100%;
+}
+.protype .proDataList .proData .proDetail{
+  width: 42%;
+  height: 120px;
+  float: left;
+  border-left: 1px solid #eee;
+  padding-left: 10px;
+  line-height: 20px;
+}
+.protype .proDataList .proData .proDetail .brand{
+  width: 100%;
+  font-size: 14px;
+  display: inline-block;
+}
+.protype .proDataList .proData .proDetail .replace-time{
+  width: 100%;
+  font-size: 12px;
+  color: #666;
+  display: inline-block;
+}
+.protype .proDataList .proData .proDetail .proBtn{
+  width: 100%;
+  height: 18px;
+  display: inline-block;
+}
+.protype .proDataList .proData .proDetail .proBtn .proLabel{
+  width: 42px;
+  height: 16px;
+  display: inline-block;
+  font-size: 10px;
+  color: #f89d36;
+  border: 1px solid #f89d36;
+  line-height: 16px;
+  margin-right: 6px;
+  border-radius: 10px;
+  text-align: center;
+}
+.protype .proDataList .proData .proDetail .price{
+  width: 100%;
+  display: inline-block;
+  font-size: 12px;
+}
+.protype .proDataList .proData .proDetail .Specifications{
+  width: 100%;
+  display: inline-block;
+  font-size: 12px;
+  color: #999;
+}
+.protype .proDataList .proData .repBtn{
+  float: right;
+  padding: 0;
+  width: 40px;
+  font-size: 14px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.protype .remind{
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid #f7f7f7;
+  font-size: 14px;
+  line-height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  color: #666;
+}

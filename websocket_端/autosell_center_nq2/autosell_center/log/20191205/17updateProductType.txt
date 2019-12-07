@@ -1,0 +1,2 @@
+2019-12-05 17:28:53.086:dt=[{"productTypeID":22,"typeName":"新鲜酸奶","companyID":0},{"productTypeID":33,"typeName":"24h鲜奶","companyID":0},{"productTypeID":34,"typeName":"爽口甜品","companyID":0},{"productTypeID":35,"typeName":"家庭应急","companyID":0},{"productTypeID":37,"typeName":"夏日冰爽","companyID":0},{"productTypeID":38,"typeName":"未启用","companyID":0},{"productTypeID":39,"typeName":"活动商品","companyID":0}]
+---------------

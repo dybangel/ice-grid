@@ -1,0 +1,446 @@
+ .main{
+   width: 100%;
+   display: inline-block;
+   padding-bottom: 60px;
+ }
+ .main .address{
+   width: 100%;
+   float: left;
+   padding: 12px 16px;
+   position: relative;
+ }
+ .main .address .address-add{
+   width: calc(100% - 20px);
+   float: left;
+   line-height: 32px;
+ }
+  .main .address .address-add .address-addLabel{
+    width: 68px;
+    float: left;
+    font-size: 16px;
+    color: #333;
+  }
+    .main .address .address-add .address-addSpan{
+      width: calc(100% - 68px);
+      float: left;
+      text-align: right;
+      font-size: 14px;
+      color: #999;
+    }
+     .main .address .address-user{
+   width: calc(100% - 20px);
+   float: left;
+   line-height: 26px;
+ }
+    .main .address .address-user .address-userLabel{
+    width: 68px;
+    float: left;
+    font-size: 12px;
+    color: #f7931e;
+  }
+    .main .address .address-user .address-userSpan{
+      width: calc(100% - 68px);
+      float: left;
+      text-align: right;
+      font-size: 14px;
+      color: #999;
+    }
+        .main .address icon{
+          position: absolute;
+          display: block;
+          right: 12px;
+          top: 12px;
+          text-align: right;
+          width: 20px;
+          line-height: 54px;
+          color: #999;
+          font-size: 1.2rem;
+        }
+        .main .address #address-addBg{
+          width: 100%;
+          height: 5px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+ .main .product{
+	width: 100%;
+	display: inline-block;
+	margin-top: 10px;
+	background: #fff;
+	padding: 12px 16px;
+}
+.main .product .milk{
+	width: 20%;
+	display: inline-block;
+	float: left;
+}
+.main .product .milk image{
+	width: 90px;
+  height: 90px;
+  margin-left: 5px;
+  margin-top: -5px;
+}
+.main .product .productInformation{
+	width: 50%;
+	display: inline-block;
+	float: left;
+	line-height: 18px;
+	padding-left: 30px;
+} 
+.main .product .productInformation .h2{
+	font-size: 1.2em;
+}
+.main .product .productInformation .h3{
+	font-size: 1em;
+	color: #b3b3b3;
+}
+.main .product .productInformation .hot{
+	width: 100%;
+	display: inline-block;
+}
+.main .product .productInformation .hot .h5{
+	width: calc(33.33% - 4vw);
+	float: left;
+	font-size: 0.6em;
+	color: #f7931e;
+	border: 1px solid #f7931e;
+	text-align: center;
+	border-radius: 10vw;
+	margin-right: 2vw;
+}
+.main .product .price{
+	width: 30%;
+	display: inline-block;
+	float: right;
+	margin-top: 12px;
+}
+.main .product .price .h4{
+	font-size: 1.2em;
+	text-decoration:line-through red solid; 
+	float: right;
+}
+.main .product .price .span{
+	font-size: 1.2em;
+	color: #f15a24;
+	float: right;
+}
+
+.main .dispatching{
+	width: 100%;
+	height: 438px;
+	margin-top: 10px;
+}
+.main .dispatching .ul{
+	width: 100%;
+	display: inline-block;
+	background: #fff;
+	padding: 0 15px;
+	float: left;
+}
+.main .dispatching .ul .li{
+	width: 100%;
+	border-bottom: 1px solid #f2f2f2;
+	float: left;
+}
+.main .dispatching .ul .liHeight{
+  padding: 12px 0;
+  position: relative;
+}
+.main .dispatching .ul .liHeight .picker{
+  display: block;
+  position: absolute;
+  top: 22px;
+  right: 16px;
+}
+.main .dispatching .ul .liHeight .cell-bd{
+  color: #fff;
+}
+.main .dispatching .ul .liHeight .cell-bd .cell-desc{
+  color: red;
+}
+.main .dispatching .ul .li .left{
+	display: inline-block;
+	font-size: 1.2em;
+	margin-top: 22px;
+	float: left;
+}
+.main .dispatching .ul .li .right{
+	width: 80%;
+	float: right;
+  text-align: right;
+	padding: 6px 0;
+   
+}
+.main .dispatching .ul .li .right .day{
+  display:inline-block;
+  margin:0 5px;
+  padding:4px 1px;
+  text-align:center;
+  height:auto;
+  width:36px;
+  border-radius: 4px;
+}
+.main .dispatching .ul .li .right .dayActivity{
+   display: inline-block;
+  width: 36px;
+	margin: 0 5px;
+  padding: 2px 1px;
+	 font-size: 0.6em;
+	text-align: center;
+  height: auto;
+  line-height: 14px;
+  min-height: 1px;
+  border: 0;
+  background: initial;
+}
+.main .dispatching .ul .li .right .day .h4{
+	border: 1px solid #b3b3b3;
+	border-radius: 6px;
+}
+.main .dispatching .ul .li .right .day .h6{
+	width: 35px;
+	height: 22px;
+	font-size: 0.6em;
+}
+
+.main .dispatching .right-num{
+	float: right;
+  margin: 17px 0;
+}
+.main .dispatching .right-num .h4{
+	width: 33.33%;
+	height: 31px;
+	display: inline-block;
+	float: left;
+	font-size: 1.5em;
+	padding-top: 4px;
+}
+.main .dispatching .right-num #jia{
+		width: 33.33%;
+    height: 31px;
+    display: inline-block;
+    color: #29abe2;
+    float: right;
+    font-size: 1em;
+    border-left: 1px solid #b3b3b3;
+    margin-top: -20px;
+}
+
+.main .right-sum {
+	width: 60px;
+	display: inline-block;
+	color: #f15a24;
+	margin: 18px 10px;
+	float: right;
+	text-align: center;
+}
+.main .right-sum .h2{
+	display: inline-block;
+	font-size: 1.4em;
+}
+.main .right-sum .p{
+	display: inline-block;
+	font-size: 1em;
+}
+
+.main .right-style{
+  width: auto;
+	/* display: inline-block; */
+	float: right;
+  text-align: right;
+	padding: 1px 0;
+   
+}
+.main .right-style .dayCycle{
+  display:inline-block;
+  padding:2px 4px;
+  text-align:center;
+  height:auto;
+  width:auto;
+  border-radius: 4px;
+  margin-top: 18px;
+}
+.main .dispatching .ul .li .span{
+	width: 100%;
+	color: #f15a24;
+	float: left;
+	line-height: 26px;
+	font-size: 1em;
+}
+.main .right-data {
+	display: inline-block;
+	float: right;
+	color: #b3b3b3;
+	font-size: 1em;
+	margin-top: 13px;
+}
+.main .dispatching .ul .liHeight .h2{
+  position:absolute;
+  right:12px;
+  top:16px;
+  width:50%;
+  text-align:right;
+  font-size: 1em;
+  
+}
+
+.main .right-data .section .picker{
+	display: inline-block;
+	float: right;
+	color: #b3b3b3;
+	font-size: 1em;
+	margin-top: 13px;
+  margin-right: 30px;
+}
+.main .right-data icon{
+	font-weight: bold;
+	font-size: 1.6em;
+}
+
+.main .orderNotice{
+	width: 100%;
+	display: inline-block;
+	line-height: 25px;
+	padding: 3px 0;
+}
+.main .orderNotice .title{
+	font-size: 1.4em;
+	margin-top: 8px;
+}
+.main .orderNotice .notice{
+	font-size: 1em;
+	color: #b3b3b3;
+}
+
+.main .bottom{
+	width: 100%;
+	height: 48px;
+	bottom: 0;
+	left: 0;
+	display: inline-block;
+	background: #fff;
+	position: fixed;
+	z-index: 99;
+}
+.main .bottom .div{
+	width: calc(75% - 20px);
+	float: left;
+	font-size: 1.6em;
+	margin: 13px 0 13px 20px;
+}
+.main .bottom .div .span{
+	color: #f15a24;
+  font-size: 1.2em;
+}
+.main .bottom button{
+	width: 90%;
+	height: 40px;
+	border: 0;
+  border-radius: 10px;
+	font-size: 1.2em;
+	color: #fff;
+	background: #44a2e2;
+  bottom: 5px;
+  left: 5%;
+  right: 5%;
+}
+
+/* 右侧抽屉弹出 */
+.drawerView{
+  position: absolute;
+  top: -50vh;
+  right: 0;
+  width: 60vw;
+  height: 100vh;
+  background: #fff;
+  overflow:auto;
+}
+.drawerView .drawerList{
+  width: 100%;
+  height: auto;
+  padding: 12px;
+}
+.drawerView .drawerList .drawerList-li{
+  width: 100%;
+  float: left;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+.drawerView .drawerList .drawerList-li .drawerList-name{
+  width: 100%;
+  display: inline-block;
+  font-size: 1.26em;
+  margin-bottom: 6px;
+}
+.drawerView .drawerList .drawerList-li .drawerList-name view{
+  float: right;
+  font-size: 1em;
+  color: #999;
+  position: relative;
+  margin-top: -8px;
+}
+.drawerView .drawerList .drawerList-li .drawerList-name view icon{
+  font-size: 1.3em;
+  position: relative;
+  top: 4px;
+  color: #f15a24;
+}
+.drawerView .drawerList .drawerList-li .drawerList-add{
+  color: #666;
+}
+
+
+/* 获取用户信息授权 */
+.getUserInfo{
+  width: 94vw;
+  position: fixed;
+  top: 28vh;
+  left: 3vw;
+  background: #fff;
+  border-radius: 4px;
+  padding: 16px;
+  z-index: 9;
+}
+.getUserInfo .userInfoTips{
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.getUserInfo .userInfoTips image{
+  width: 46px;
+  height: 46px;
+  float: left;
+}
+.getUserInfo .userInfoTips text {
+  width: calc(100% - 46px);
+  float: left;
+  padding-left: 12px;
+  box-sizing: border-box;
+}
+.getUserInfo .userInfoTips text.tipsTop{
+  font-size: 16px;
+  color: #666666;
+}
+.getUserInfo .userInfoTips text.tipsP{
+  font-size: 12px;
+  color: #999999;
+  margin-top: 2px;
+}
+.getUserInfo .grandBtn{
+  width: 90%;
+  float: left;
+  margin: 0 5%;
+  height: 42px;
+  font-size: 16px;
+  border-radius: 4px;
+  color: #ffffff;
+  background: rgb(26,175,25);
+}
+.getUserInfo-bg{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 8;
+  background: rgba(0,0,0,0.5);
+}

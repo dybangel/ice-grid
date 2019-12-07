@@ -1,0 +1,2273 @@
+﻿
+/* 后台登录页 */
+
+.login_main {
+    width: 400px;
+    height: auto;
+    margin: 280px auto;
+    text-align: center;
+}
+
+.login_title {
+    margin-top: 200px;
+    color: #999;
+    font-size: 1.6rem;
+}
+
+.login_title img {
+    width: auto;
+    height: 42px;
+}
+.login_title span {
+    width: auto;
+    line-height: 24px;
+    font-size: 1.2rem;
+}
+
+.login_con {
+    margin: 20px 0;
+    width: 100%;
+    height: 240px;
+    position: relative;
+}
+
+.login_user, .login_pwd {
+    display: block;
+    width: 80%;
+    height: 42px;
+    background: initial;
+    margin: 20px 10%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.login_user i, .login_pwd i {
+    float: left;
+    height: 20px;
+    line-height: 22px;
+    margin: 11px 2%;
+    color: #999;
+    font-size: 1.6rem;
+    width: 14%;
+    border-right: 1px solid #ccc;
+}
+
+.login_user input, .login_pwd input {
+    float: left;
+    width: 74%;
+    height: 100%;
+    border: 0;
+    color: #666;
+    background: initial;
+}
+
+.login_con span input:focus {
+    outline: none;
+}
+
+.login_verify {
+    width: 50%;
+    margin-left: 10%;
+    height: 42px;
+    border: 1px solid #ccc;
+    display: block;
+    border-radius: 6px;
+    float: left;
+}
+
+.login_verify input {
+    width: 86%;
+    height: 100%;
+    border: 0;
+    background: initial;
+    color: #666;
+}
+
+.login_verify i {
+    width: 30%;
+    float: left;
+    height: 20px;
+    line-height: 22px;
+    margin: 11px 2%;
+    border-right: 1px solid #ccc;
+    color: #999;
+}
+
+.verify_img {
+    float: right;
+    width: auto;
+    height: 44px;
+    margin-right: 10%;
+    cursor: pointer;
+    margin-left: 2%;
+}
+
+.passcode {
+    height: 42px;
+    float: right;
+    margin-right: 25%;
+}
+
+.alogin_nav {
+    width: 80%;
+    height: 42px;
+    background: #1e53a6;
+    border: 0;
+    border-radius: 6px;
+    color: #fff;
+    margin: 20px 10%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.alogin_nav:hover {
+    opacity: 0.9;
+}
+
+.alogin_nav:focus {
+    outline: none;
+}
+
+.login_foot {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    left: 0;
+    bottom: 0;
+    background: #f0f0f0;
+    border-top: 1px solid #e5e5e5;
+}
+
+.login_foot span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 30px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background: #2B3643;
+    padding: 0 30px;
+}
+.header .header_logo {
+    width: auto;
+    height: 60px;
+    float: left;
+}
+.header .header_logo img {
+    width: auto;
+    height: 40px;
+    margin: 10px auto;
+}
+.header nav {
+    width: auto;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+    margin-left: 120px;
+}
+.header nav ul li {
+    width: auto;
+    float: left;
+    padding: 0 16px;
+    font-size: 1.2rem;
+}
+.header nav ul a {
+    color: #C6CFDA;
+    height: 60px;
+    display: block;
+}
+.header nav ul a:hover {
+    color: #fff;
+}
+.header nav ul .aborder {
+    color: #fff;
+    border-bottom: 3px solid #3a77d5;
+}
+.header .user_set {
+    width: auto;
+    float: right;
+    height: 60px;
+}
+.header .user_set dd {
+    display: block;
+    width: auto;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+    color: #C6CFDA;
+    margin-left: 20px;
+    font-size: 1.1rem;
+}
+.header .user_set dd a {
+    color: #C6CFDA;
+}
+.header .user_set dd a:hover {
+    color: #fff;
+}
+.main {
+    width: 100%;
+    height: auto;
+    padding: 0 30px;
+}
+.main_list {
+    width: 100%;
+    min-width: 300px;
+    border: 1px solid #ddd;
+    margin-top: 30px;
+    float: left;
+    min-height: 80vh;
+    margin-bottom: 80px;
+}
+/* 通用 */
+.common_title {
+    width: auto;
+    padding: 0 30px;
+    height: 50px;
+    line-height: 50px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+}
+.common_title h4 {
+    float: left;
+    font-size: 1.4rem;
+    color: #333;
+}
+.common_title h4 img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+}
+.common_title a {
+    float: right;
+    border-radius: 5px;
+    background: #3a77d5;
+    color: #fff;
+    height: 32px;
+    margin-top: 9px;
+    padding: 0 24px;
+    line-height: 32px;
+    font-size: 1rem;
+}
+.common_title a:hover {
+    background: #1e53a6;
+}
+.common_main {
+    width: 100%;
+    background: #fff;
+    float: left;
+    min-height: 80vh;
+}
+
+/* 奶企列表 */
+.firm_list {
+    width: 100%;
+    padding: 30px;
+    float: left;
+    background: #fff;
+}
+.firm_list li {
+    width: 12%;
+    min-width: 220px;
+    height: auto;
+    padding: 16px;
+    margin: 3% 1%;
+    float: left;
+    background: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    position: relative;
+}
+.firm_list li .firm_mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(92, 184, 92, 0.8);
+    opacity: 0;
+    cursor: pointer;
+}
+.firm_list li .nqBtn{
+    width:60%;
+    position:absolute;
+    bottom:-46px;
+    left:20%;
+    height:32px;
+    border:0;
+    border-radius:6px;
+    background:#3a77d5;
+    color:#fff;
+    cursor:pointer;
+}
+.firm_list li .firm_mask a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.firm_list li .firm_mask span {
+    display: block;
+    line-height: 24px;
+    margin-top: 120px;
+    font-size: 1.3rem;
+    color: #fff;
+}
+.firm_list li:hover .firm_mask {
+    opacity: 1;
+}
+.firm_list li .firm_logo {
+    width: 90%;
+    margin: 0 5%;
+    height: auto;
+    overflow: hidden;
+}
+.firm_list li .firm_logo img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #eee;
+}
+.firm_list li span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    margin: 6px auto;
+}
+.firm_list li p {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: #999;
+}
+
+/* 添加奶企 */
+.addnaiq {
+    width: calc(100% - 60px);
+    margin: 30px;
+    float: left;
+}
+.addnaiq h4 {
+    width: 100%;
+    line-height: 36px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.addnaiq h4 a {
+    font-size: 1.2rem;
+}
+.addnaiq h4 a:hover,.addnaiq h4 a:hover i {
+    color: #3a77d5;
+    /*font-weight: bold;*/
+}
+.addnaiq h4 i {
+    font-size: 1.8rem;
+    color: #999;
+    margin-right: 6px;
+    display: block;
+    float: left;
+    line-height: 32px;
+}
+/*.addnaiq dl {
+    width: 100%;
+    height: 36px;
+    background: #f5f5f5;
+    margin-bottom: 30px;
+}*/
+/*.addnaiq dl dd {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    line-height: 48px;
+    font-size: 1.2rem;
+    color: #999;
+}*/
+.addnaiq dl .ddcolor {
+    color: #3a77d5;
+}
+.addnaiq .addnaiqdata {
+    width: 100%;
+    float: left;
+}
+.addnaiq ul li {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-bottom: 30px;
+}
+.addnaiq ul li label {
+    display: block;
+    width: 180px;
+    float: left;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 36px;
+}
+.addnaiq ul li div {
+    width: 60%;
+    max-width: 800px;
+    float: left;
+}
+.addnaiq ul li div input {
+    width: 60%;
+    min-width: 400px;
+    max-width: 800px;
+    padding-left: 2%;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+.addnaiq ul li div img {
+    width: auto;
+    height: 120px;
+    border: 1px dashed #ddd;
+    cursor: pointer;
+}
+.addnaiq ul li div p {
+    width: 100%;
+    font-size: 1.1rem;
+    color: #999;
+    margin-top: 10px;
+}
+.firmbtn {
+    margin: 30px auto;
+    width: 120px;
+    height: 36px;
+    border: 1px solid #2061c5;
+    border-radius: 5px;
+    background: #3a77d5;
+    color: #fff;
+    cursor: pointer;
+}
+.addnaiqdata {
+    display: none;
+}
+.firmok {
+    width: 30%;
+    max-width: 400px;
+    margin: 30px auto;
+    text-align: center;
+}
+.firmok img {
+    width: 40%;
+    max-width: 160px;
+}
+.firmok div {
+    margin-top: 12px;
+}
+.firmok div p {
+    width: 100%;
+    line-height: 26px;
+    color: #666;
+    font-size: 1.1rem;
+}
+.firmok input {
+    width: 40%;
+    margin: 30px 5%;
+    float: left;
+    height: 36px;
+    background: initial;
+    border-radius: 8px;
+    border: 1px solid #3a77d5;
+    color: #3a77d5;
+    cursor: pointer;
+}
+.firmok .backlist {
+    background: #3a77d5;
+    color: #fff;
+    border: 0;
+}
+
+/* 奶企详情 */
+.navlist {
+    width: 200px;
+    float: left;
+    height: 80vh;
+    border-right: 1px solid #ddd;
+}
+.navlist dl {
+    width: 100%;
+    height: auto;
+    float: left;
+    border-bottom: 1px solid #ddd;
+}
+.navlist dl dt {
+    width: 100%;
+    line-height: 44px;
+    font-size: 1.2rem;
+    color: #999;
+    padding: 0 16px;
+}
+.navlist dl dt em {
+    float: right;
+    display: block;
+    line-height: 44px;
+}
+.navlist dl dd {
+    width: 100%;
+    line-height: 48px;
+    font-size: 1.2rem;
+    float: left;
+}
+.navlist dl dd a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    color: #333;
+}
+.navlist dl dd a i {
+    display: block;
+    float: left;
+    line-height: 48px;
+    margin-right: 10px;
+    color: #999;
+    font-size: 1.6rem;
+}
+.navlist dl dd .acolor {
+    background: #3a77d5;
+    color: #fff;
+}
+.navlist dl dd .icolor {
+    color: #fff;
+}
+.navlist dl dd a:hover {
+    background: #3a77d5;
+    color: #fff;
+}
+.navlist dl dd a:hover i {
+    color: #fff;
+}
+.jiqadd {
+    width: calc(100% - 200px);
+    float: left;
+}
+
+/* 奶企添加机器 */
+.firmconlist {
+    width: 40%;
+    float: left;
+    border: 1px solid #ddd;
+    padding: 16px;
+    height: 400px;
+    overflow: auto;
+} 
+.firmconlist li {
+    width: 100%;
+    float: left;
+    height: auto;
+    position: relative;
+    margin-bottom: 0!important;
+}
+.firmconlist li h6 {
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    background: #ccc;
+    left: 17px;
+    top: 28px;
+}
+.firmconlist li h1 {
+    position: absolute;
+    width: 1px;
+    height: 42%;
+    background: #ccc;
+    left: 17px;
+    top: 28px;
+}
+.firmconlist li .h1height {
+    height: 88%;
+}
+.firmconlist li i {
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #999;
+    float: left;
+    cursor: pointer;
+}
+.firmconlist li a {
+    display: block;
+    width: auto;
+    min-width: 60%;
+    float: left;
+    line-height: 36px;
+}
+.firmconlist li a em {
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #3a77d5;
+    float: left;
+}
+.firmconlist li a span {
+    display: block;
+    width: auto;
+    float: left;
+    font-size: 1.4rem;
+    margin-left: 10px;
+    color: #454545;
+}
+.firmconlist li dl {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: left;
+    background: initial;
+    display: none;
+}
+.firmconlist li dl dd {
+    width: 100%;
+    float: left;
+    padding-left: 80px;
+    font-size: 1.3rem;
+    color: #666;
+    position: relative;
+    cursor: pointer;
+}
+.firmconlist li h5 {
+    position: absolute;
+    width: 1px;
+    height: 32px;
+    background: #ccc;
+    left: 52px;
+    top: -8px;
+}
+.firmconlist li h4 {
+    position: absolute;
+    width: 24px;
+    height: 1px;
+    background: #ccc;
+    left: 52px;
+    top: 24px;
+}
+
+.firmconlist li dl dd em {
+    display: block;
+    float: left;
+    line-height: 48px;
+    color: #3a77d5;
+    font-size: 1.5rem;
+}
+.firmconlist li dl dd span {
+    display: block;
+    float: left;
+    line-height: 48px;
+    margin-left: 12px;
+}
+.firmconlist li dl dd b {
+    display: block;
+    float: right;
+    line-height: 48px;
+    font-size: 1.8rem;
+    color: #ccc;
+}
+.firmconlist li dl dd .bcolor {
+    color: #3a77d5;
+}
+.zhuanImg {
+    width: 20%;
+    float: left;
+    text-align: center;
+    line-height: 400px;
+}
+.zhuanImg img {
+    width: 30%;
+    height: auto;
+}
+.firmcon_ok {
+    width:40%;
+    float: left;
+    border: 1px solid #ddd;
+    padding: 16px;
+    height: 400px;
+    overflow: auto;
+}
+.firmcon_ok li {
+    width: 100%;
+    float: left;
+    height: auto;
+    position: relative;
+    margin-bottom: 0!important;
+}
+.firmcon_ok li em {
+    display: block;
+    line-height: 48px;
+    font-size: 1.8rem;
+    color: #3a77d5;
+    float: left;
+}
+.firmcon_ok li span {
+    display: block;
+    line-height: 48px;
+    font-size: 1.4rem;
+    margin-left: 16px;
+    color: #666;
+    float: left;
+}
+
+.firmconBtn {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    background: initial!important;
+}
+.firmconBtn dd {
+    width: 20%!important;
+    height: 36px;
+    float: left;
+}
+.firmconBtn dd:first-child,.firmconBtn dd:last-child {
+    width: 40%!important;
+    float: left;
+}
+.firmconBtn dd:first-child input {
+    float: right;
+}
+.firmconBtn dd:last-child input {
+    float: left;
+}
+.firmconBtn dd input {
+    width: 120px;
+    height: 36px;
+    background: #3a77d5;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* 机器列表 */
+.jiqlist {
+    width: calc(100% - 200px);
+    float: left;
+    height: 80vh;
+    overflow: auto;
+    padding-bottom:120px;
+    position: relative;
+}
+.jiqlist::-webkit-scrollbar-track{
+background:initial;
+}
+.jiqlist::-webkit-scrollbar-thumb{
+background:initial;
+border-radius:0;
+}
+.jiqlistTab {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-top: 16px;
+    float: left;
+    height: 44px;
+}
+.jiqlistTab dd {
+    width: auto;
+    float: left;
+    line-height: 43px;
+    font-size: 1.1rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+.jiqlistTab dd b:hover {
+    color: #3a77d5;
+}
+.jiqlistTab .ddcolor {
+    color: #3a77d5;
+    border-bottom: 1px solid #3a77d5;
+}
+.jiqlistTab dd b {
+    font-weight: 300;
+    display: block;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+}
+.jiqlistTab dd b i {
+    margin-left: 4px;
+}
+.jiqlistTab dd div {
+    width: 160px;
+    position: absolute;
+    height: 0;
+    left: 0;
+    top: 50px;
+    background: #fff;
+    overflow: auto;
+    cursor: default;
+    border-radius: 4px;
+}
+.jiqlistTab dd div::-webkit-scrollbar {
+    width:0;
+    height: 0;
+}
+.jiqlistTab dd .divheight {
+    height: 160px;
+    box-shadow: 0 0 10px #ccc;
+}
+.jiqlistTab dd div span {
+    display: block;
+    width: 100%;
+    color: #666;
+    line-height: 36px;
+    text-align: left;
+    padding: 0 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #eeeeee;
+}
+.jiqlistTab dd div span em {
+    display: block;
+    line-height: 36px;
+    float: right;
+}
+.jiqlistTab dd div span:hover {
+    background: #3a77d5;
+    color: #fff;
+}
+.jiqlistTab dd div input {
+    width: 90%;
+    margin: 12px 5% 0 5%;
+    height: 32px;
+    padding-left: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.jiqlistTab dd div p {
+    line-height: 24px;
+    text-align: left;
+    width: 100%;
+    padding-left: 5%;
+    margin-top: 12px;
+}
+.dataSelectbtn {
+    background: #3a77d5 !important;
+    color: #fff !important;
+    border: 0!important;
+    padding: 0 !important;
+    cursor: pointer;
+}
+.jiqlistseach {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    padding: 0 30px;
+}
+.jiqlistseach li {
+    width: 12%;
+    max-width: 260px;
+    float: left;
+    padding: 12px 0;
+    margin-right: 2%;
+    position: relative;
+}
+.jiqlistseach li input,.jiqlistseach li select {
+    width: 100%;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding-left: 16px;
+}
+.jiqlistseach li i {
+    position: absolute;
+    z-index: 1;
+    top: 12px;
+    line-height: 36px;
+    right: 16px;
+}
+.jiqlistseach li dl {
+    width: 416px;
+    position: absolute;
+    height: auto;
+    line-height: 120px;
+    top: 54px;
+    background: #fff;
+    border: 1px solid #3a77d5;
+    display: none;
+    border-radius: 4px;
+}
+.jiqlistseach li dd {
+    line-height: 30px;
+    color: #666;
+    float: left;
+    margin: 5px;
+    width: 48px;
+    cursor: pointer;
+    background: #fff;
+    text-align: center;
+}
+.jiqlistseach li dd:first-child {
+    padding-left: 16px;
+}
+.jiqlistseach li dt {
+    line-height: 36px;
+    width: 100%;
+    font-size: 1.1rem;
+    color: #999;
+    padding-left: 16px;
+    border-bottom: 1px dashed #ddd;
+    margin-bottom: 10px;
+}
+.jiqlistseach li dd:hover {
+    color: #3a77d5;
+}
+
+.jiqlistseach li .seachbtn {
+    width: 50%;
+    color: #fff;
+    padding: 0;
+    background: #3a77d5;
+    cursor: pointer;
+} 
+.jiqlisttable {
+    width: 100%;
+    float: left;
+    padding:30px;
+    display: none;
+}
+.jiqlisttable li {
+    width: 100%;
+    float: left;
+    height: auto;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+}
+.jiqlisttable li dl {
+    width: 100%;
+    height: 42px;
+    float: left;
+    background: #f4f6f9;
+    border-bottom: 1px solid #eee;
+}
+.jiqlisttable li dl dd {
+    line-height: 42px;
+    float: left;
+    font-size: 1.2rem;
+    color: #666;
+}
+.jiqlisttable li .jiqname {
+    width: 30%;
+    padding-left: 3%;
+}
+.jiqlisttable li .jiqname2 {
+    width: 32%;
+    padding-left: 3%;
+}
+.jiqlisttable li .jiqtime {
+    width: 14%;
+}
+.jiqlisttable li .jiqtime2 {
+    width: 16%;
+}
+.jiqlisttable li .jiqclass2 {
+    width:10%;
+}
+.jiqlisttable li .jiqnq {
+    width:8%;
+}
+.jiqlisttable li .jiqzt {
+    width: 14%;
+}
+.jiqlisttable li .jiqgs {
+    width: 14%;
+}
+.jiqlisttable li .jiqzt2 {
+    width: 6%;
+}
+.jiqlisttable li .jiqcz {
+    width: 14%;
+    text-align: right;
+    padding-right: 3%;
+}
+.jiqlisttable li .jiqcz2 {
+    width: 12%;
+    text-align: right;
+    padding-right: 3%;
+}
+.jiqlisttable li label {
+    display: block;
+    float: left;
+    font-weight: 300;
+    height: 100px;
+    line-height: 100px;
+    font-size: 1.2rem;
+    color: #999;
+}
+.jiqlisttable li label img {
+    width: auto;
+    height: 70px;
+    float: left;
+    margin: 15px 36px 15px 0;
+}
+.jiqlisttable li label span {
+    display: block;
+    width: 60%;
+    float: left;
+    color: #333;
+    margin-top: 18px;
+    font-size: 1.2rem;
+    line-height: 36px;
+}
+.jiqlisttable li label em {
+    display: block;
+    width: 60%;
+    float: left;
+    line-height: 30px;
+    font-style: normal;
+    color: #999;
+    font-size: 1.1rem;
+}
+.jiqlisttable li label em i {
+    color: #cf1010;
+    font-style: normal;
+    margin-left: 6px;
+}
+.jiqlisttable li label b {
+    color: #0fb795;
+    font-weight: 300;
+}
+.jiqlisttable li label a {
+    color: #3a77d5;
+    margin-left: 12px;
+}
+.jiqlisttable li .jiqzt a {
+    color: #0fb795;
+    margin-left: 0;
+}
+
+/* 公众号设置 */
+.thepublic {
+    width: calc(100% - 60px);
+    float: left;
+    margin: 20px 30px;
+    border: 1px solid #ddd;
+    font-size: 1.1rem;
+}
+.thepublic li:first-child {
+    padding: 0;
+}
+.thepublic li:last-child {
+    border: 0;
+}
+.thepublic li {
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+.thepublic li:hover {
+    background: #f4f6f9;
+}
+.thepublic li dd {
+    display: block;
+    line-height: 40px;
+    padding: 0 30px;
+    color: #666;
+    width: 100%;
+    background: #f4f6f9;
+}
+.thepublic li label {
+    display: block;
+    line-height: 36px;
+    width: 160px;
+    float: left;
+    color: #999;
+    padding: 0 50px 0 30px;
+}
+.thepublic li img {
+    width: 88px;
+    height: 88px;
+}
+.thepublic li input {
+    display: block;
+    background: initial;
+    float: left;
+    width: auto;
+    min-width: 50%;
+    border: 0;
+    outline: none;
+    height: 36px;
+    line-height: 36px;
+    color: #333;
+}
+.fsopen span {
+    cursor: pointer;
+}
+.fsopen em {
+    display: block;
+    float: left;
+    top: 6px;
+    font-style: normal;
+    width: 60px;
+    height: 26px;
+    background: #fff;
+    border-radius: 30px;
+    border: 2px solid #eee;
+    position: relative;
+}
+.fsopen .emopen {
+    background: #3a77d5;
+    border: 1px solid #eee;
+}
+.fsopen i {
+    display: block;
+    font-style: normal;
+    float: left;
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    top: 6px;
+    left: 26px;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 50px;
+    border: 1px solid #eee;
+    position: relative;
+    z-index: 2;
+}
+.fsopen .iopen {
+    left: 60px;
+}
+.thepublic li a {
+    display: block;
+    line-height: 36px;
+    width: auto;
+    float: right;
+    color: #3a77d5;
+    padding-right: 30px;
+}
+
+/* 弹窗 */
+.popupbj {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+.zfpopup {
+    width: 680px;
+    position: fixed;
+    z-index: -1;
+    left: calc(50% - 340px);
+    top: 24%;
+    background: #fff;
+    font-size: 1.1rem;
+    box-shadow: 0 0 20px #666;
+    opacity: 0;
+}
+.zfpopup_on {
+    opacity: 1;
+    top: 28%;
+    z-index: 2;
+}
+.zfpopup h4 {
+    width: 100%;
+    float: left;
+    line-height: 48px;
+    background: #f4f6f9;
+    padding: 0 30px;
+}
+.zfpopup table,.zfpopup table tbody,.zfpopup table tr{
+    display:block;
+    width:100%;
+    min-height:300px;
+}
+.zfpopup table tr td{
+    display:block;
+    height:300px;
+    width:50%;
+    float:left;
+}
+.zfpopup table tr td div{
+    width:100%;
+    float:left;
+    font-size:1.1rem;
+    padding:6px 12px;
+    line-height:36px;
+    color:#666;
+}
+.zfpopup table tr td div input{
+    width:250px;
+    float:right;
+    height:30px;
+    border:1px solid #eee;
+    border-radius:6px;
+    padding-left:12px;
+}
+.zfpopup table tr td div:first-child input{
+    width:180px;
+    margin-right:10px;
+}
+.zfpopup table tr td div button{
+    float:right;
+    width:60px;
+    height:30px;
+    border:1px solid #eee;
+    border-radius:6px;
+    background:#3a77d5;
+    color:#fff;
+    outline:none;
+}
+.zfpopup ul {
+    float: left;
+    width: 100%;
+    padding: 0 30px;
+}
+.zfpopup ul li {
+    width: 100%;
+    height: auto;
+    padding: 16px 0;
+    float: left;
+
+}
+
+.zfpopup ul li span{
+    display:block;
+    width:33.33%;
+    float:left;
+    text-align:center;
+    line-height:40px;
+    border-bottom:1px solid #ddd;
+}
+.zfpopup ul li b{
+    display:block;
+    width:33.33%;
+    float:left;
+    text-align:center;
+    height:40px;
+    line-height:40px;
+    font-weight:normal;
+    border-bottom:1px solid #ddd;
+}
+.zfpopup ul li b a{
+    width:20px;
+    height:20px;
+    margin:10px calc(60% - 24px);
+    display:block;
+    color:#3a77d5;
+    line-height:18px;
+    font-size:1.8rem;
+    border:1px solid #3a77d5;
+    border-radius:50px;
+}
+
+.zfpopup ul li h5 {
+    line-height: 36px;
+    width: 120px;
+}
+.zfpopup ul li label {
+    display: block;
+    height: 36px;
+    width: calc(100% - 120px);
+    float: right;
+    border: 1px solid #eee;
+    position: relative;
+}
+.zfpopup ul li label input,.zfpopup ul li label select {
+    width: calc(100% - 50px);
+    height: 36px;
+    border: 0;
+    background: initial;
+    padding-left: 16px;
+}
+.zfpopup ul li label select{
+    width:100%;
+}
+.zfpopup ul li label b {
+    display: block;
+    float: right;
+    line-height: 36px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #999;
+    background: #eee;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+}
+.zfpopup ul li p {
+    width: 100%;
+    line-height: 20px;
+    color: #999;
+    margin-top: 12px;
+    float: left;
+}
+.zfpopup ul li p a:hover {
+    color: #3a77d5;
+}
+.zfpopup h2 {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    color: #8a6d3b;
+    border: 1px solid #faebcc;
+    background: #fcf8e3;
+    margin-bottom: 10px;
+}
+.zfpopup h2 a {
+    color: #3a77d5;
+}
+.zfpopup h5 {
+    width: auto;
+    float: left;
+    font-size: 1.1rem;
+    line-height: 36px;
+}
+.zfpopup dl {
+    width: 100%;
+    float: left;
+    margin: 16px auto;
+}
+.zfpopup dd {
+    width: 50%;
+    text-align: center;
+    float: left;
+    line-height: 48px;
+}
+.zfpopup dd input {
+    width: 120px;
+    height: 36px;
+    border: 0;
+    background: #e7e7eb;
+    color: #333;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.zfpopup dd .popupqdbtn {
+    background: #3a77d5;
+    color: #fff;
+    border: 0;
+}
+
+/* 会员管理 */
+.memberjs {
+    width: 100%;
+    height: auto;
+    float: left;
+    background: #f5f5f9;
+    padding: 12px 30px;
+}
+.memberjs p {
+    line-height: 26px;
+    font-size: 1.2rem;
+    margin: 6px auto;
+    color: #333;
+    color: #a94442;
+    font-weight: bold;
+}
+.memberjs p em {
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-size: 1rem;
+    margin: 3px auto;
+    float: left;
+    margin-right: 12px;
+    background: #3a77d5;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+}
+.memberjs p span {
+    font-weight: 300;
+    color: #333;
+}
+.memberjs p i {
+    font-style: normal;
+    color: #a94442;
+    font-weight: bold;
+
+}
+.memberseach {
+    width: calc(100% - 60px);
+    float: left;
+    margin: 20px 30px;
+    border: 1px solid #ddd;
+}
+.memberseach h4 {
+    width: 100%;
+    line-height: 40px;
+    padding: 0 30px;
+    font-size: 1.1rem;
+    color: #666;
+    background: #f4f6f9;
+    border-bottom: 1px solid #ddd;
+}
+.memberseach ul {
+    width: 100%;
+    float: left;
+    padding: 0 30px;
+}
+.memberseach ul li {
+    width: auto;
+    height: auto;
+    float: left;
+    line-height: 80px;
+    font-size: 1.1rem;
+    color: #333;
+    margin-right:30px;
+}
+.memberseach ul li label {
+    display: block;
+    float: left;
+    height: 80px;
+    text-align:right;
+    width: auto;
+}
+.memberseach ul li span{
+    float:left;
+}
+.memberseach ul li div {
+    position: relative;
+    width: 360px;
+    height: 34px;
+    top: 23px;
+    float: left;
+}
+.memberseach ul li div input {
+    position: absolute;
+    cursor: pointer;
+}
+.memberseach ul li input,.memberseach ul li select {
+    width: 150px;
+    margin-left:20px;
+    height: 36px;
+    margin-top:22px;
+    float:left;
+    border: 1px solid #ddd;
+    padding-left: 5px;
+    border-radius: 5px;
+    margin-bottom:20px;
+}
+.memberseach ul li i {
+    position: absolute;
+    z-index: 1;
+    line-height: 36px;
+    right: 16px;
+}
+.memberseach ul li dl {
+    width: 100%;
+    position: absolute;
+    height: 92px;
+    top: 33px;
+    border: 1px solid #ddd;
+    display: none;
+}
+.memberseach ul li dd {
+    line-height: 30px;
+    padding-left: 16px;
+    color: #666;
+    width: 100%;
+    background: #fff;
+}
+.memberseach ul li .seachbtn {
+    width: 160px;
+    color: #fff;
+    padding: 0;
+    background: #3a77d5;
+    cursor: pointer;
+}
+.memberlist {
+    width: calc(100% - 60px);
+    height: auto;
+    margin: 0 30px;
+    float: left;
+    padding-bottom: 40px;
+    border: 1px solid #ddd;
+}
+.memberlist li {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.2rem;
+    color: #666;
+}
+.memberlist li label {
+    display: block;
+    float: left;
+    text-align: center;
+    background: #f4f6f9;
+}
+.memberlist li .membname {
+    width: 8%;
+}
+.memberlist li .membage {
+    width: 10%;
+}
+.memberlist li .membnub {
+    width: 6%;
+}
+.memberlist li .membljxf {
+    width: 8%;
+}
+.memberlist li .membljcz {
+    width: 8%;
+}
+.memberlist li .membreg {
+    width: 16%;
+}
+.memberlist li .memblast {
+    width: 16%;
+}
+.memberlist li span {
+    display: block;
+    float: left;
+    text-align: center;
+    height:48px;
+    line-height:48px;
+    color: #333;
+    border-bottom: 1px dashed #ddd;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.memberlist li span.membljxf {
+    color: #a94442;
+}
+.memberlist li span.membljcz {
+    color: #41B314;
+}
+
+/* 综合查询 */
+.bigdata {
+    width: calc(100% - 60px);
+    margin: 50px 30px;
+    float: left;
+}
+.bigdata li {
+    width: 20%;
+    margin: 0 2%;
+    float: left;
+    color: #fff;
+    text-align: center;
+    background: #ffb74d;
+}
+.bigdata li:first-child {
+    background: #81c784;
+}
+.bigdata li:last-child {
+    background: #4db6ac;
+}
+.bigdata li h4 {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+}
+.bigdata li div {
+    width: 100%;
+    height: auto;
+}
+.bigdata li div span {
+    display: block;
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+    font-size: 2.4rem;
+}
+.bigdata li div span i {
+    margin-right: 16px;
+}
+.bigdata li div p {
+    display: block;
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+}
+
+/* 提示弹窗 */
+.prompt {
+    width: 230px;
+    height: 54px;
+    background: #51a351;
+    position: absolute;
+    text-align: center;
+    padding: 0 70px;
+    left: -6%;
+    top: 42%;
+    margin-left: 50%;
+    border-radius: 4px;
+    z-index: -99;
+    opacity: 0;
+}
+.promptTop {
+    top: 46%;
+    opacity: 1;
+    z-index: 99;
+}
+.prompt img {
+    width: 16px;
+    height: 16px;
+    margin: 18px auto;
+    float: left;
+    margin-right: 10px;
+}
+.prompt span {
+    display: block;
+    line-height: 54px;
+    float: left;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* 产品列表 */
+.productlist {
+    width: calc(100% - 60px);
+    height: auto;
+    margin: 30px;
+    float: left;
+    padding-bottom: 40px;
+    border: 1px solid #ddd;
+}
+.productlist li {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.2rem;
+    color: #666;
+}
+.productlist li label {
+    display: block;
+    float: left;
+    text-align: center;
+    background: #f4f6f9;
+}
+.productlist li .proname {
+    width: 20%;
+    text-align: left;
+    padding-left: 3%;
+}
+.productlist li .proclass {
+    width: 12%;
+}
+.productlist li .pronaiq {
+    width: 8%;
+}
+.productlist li .projiag {
+    width: 14%;
+}
+.productlist li .proguig {
+    width: 10%;
+}
+.productlist li .probao {
+    width: 12%;
+}
+.productlist li .procz {
+    width: 14%;
+    text-align: center;
+    padding-right: 3%;
+}
+.productlist li span {
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 10px 0;
+    line-height: 80px;
+    color: #333;
+    border-bottom: 1px dashed #ddd;
+}
+.productlist li span em {
+    display: block;
+    width: 80px;
+    height: 80px;
+    float: left;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+.productlist li span em i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    margin-left: 0;
+    line-height: 80px;
+    font-size: 1.8rem;
+    color: #fff;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+.productlist li span img {
+    width: auto;
+    height: 100%;
+}
+.productlist li span i {
+    font-style: normal;
+    margin-left: 12px;
+    float: left;
+}
+.productlist li span a {
+    color: #3a77d5;
+    margin-left: 12px;
+}
+.productlist li span.projiag {
+    color: #41B314;
+    font-weight: bold;
+}
+.productlist li span.probao {
+    color: #a94442;
+    font-weight: bold;
+}
+
+/* 产品分类 */
+.productclass {
+    width: calc(100% - 60px);
+    height: auto;
+    margin: 0 30px;
+    float: left;
+    padding-bottom: 40px;
+    border: 1px solid #ddd;
+}
+.productclass li {
+    width: 100%;
+    height: auto;
+    float: left;
+    line-height: 40px;
+    font-size: 1.2rem;
+    color: #666;
+    position: relative;
+}
+.productclass li b {
+    display: block;
+    position: absolute;
+    right: 30px;
+    font-weight: 300;
+    line-height: 58px;
+}
+.productclass li label {
+    display: block;
+    float: left;
+    text-align: center;
+    background: #f4f6f9;
+}
+.productclass li .classid {
+    width: 10%;
+    text-align: left;
+    padding-left: 30px;
+}
+.productclass li .classname {
+    width: 70%;
+    text-align: left;
+}
+.productclass li .classdelete {
+    width: 20%;
+    text-align: right;
+    padding-right: 30px;
+}
+.productclass li span {
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 10px 0;
+    color: #333;
+    border-bottom: 1px dashed #ddd;
+}
+.productclass li span input {
+    height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 16px;
+}
+.productclass li .classid input {
+    width: 60%;
+}
+.productclass li .classname input {
+    width: 100%;
+}
+.productclass li span a {
+    color: #3a77d5;
+}
+.addClass {
+    width: 100%;
+    float: left;
+}
+.addClass a {
+    display: block;
+    margin: 30px;
+    width: 120px;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 5px;
+    background: #41B314;
+    color: #fff;
+    float: right;
+}
+
+/* 规格与保质期 */
+.productgui {
+    display: none;
+}
+
+/* 分类规格保质期弹窗 */
+.addDiv {
+    width: 600px;
+    height: auto;
+    position: absolute;
+    background: #fff;
+    top: 26%;
+    float: left;
+    left: -16%;
+    margin-left: 50%;
+    border-radius: 6px;
+    opacity: 0;
+    z-index: -1
+}
+.addDivshow {
+    opacity: 1;
+    z-index: 5;
+    top: 20%;
+}
+.addDiv video {
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.addDiv h4 {
+    width: 100%;
+    line-height: 48px;
+    background: #3a77d5;
+    color: #fff;
+    font-size: 1.2rem;
+    padding-left: 30px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.addDiv ul {
+    width: 100%;
+    float: left;
+    padding: 30px;
+}
+.addDiv ul li {
+    width: 100%;
+    float: left;
+    line-height: 36px;
+    font-size: 1.2rem;
+    margin: 20px auto;
+}
+.addDiv ul li dl dd {
+    width: 100%;
+    float: left;
+}
+.addDiv ul li dl dd span {
+    display: block;
+    min-width: 120px;
+    float: left;
+    font-weight: bold;
+    height: 16px;
+    margin-bottom: 20px;
+    padding-right: 16px;
+    line-height: 16px;
+    margin-right: 20px;
+    border-right: 1px solid #ddd;
+}
+.addDiv ul li dl dd em {
+    display: block;
+    line-height: 16px;
+    font-style: normal;
+    cursor: pointer;
+    float: left;
+    margin-right: 24px;
+}
+.addDiv ul li dl dd .emcolor {
+    color: #3a77d5;
+}
+.addDiv ul li dl dd em:hover {
+    color: #3a77d5;
+}
+.addDiv ul li label {
+    display: block;
+    float: left;
+    height: 36px;
+    width: 80px;
+}
+.addDiv ul li input,.addDiv ul li select {
+    width: calc(100% - 160px);
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding-left: 16px;
+}
+.addDiv ul li .btnok {
+    width: 120px;
+    border: 0;
+    background: #3a77d5;
+    color: #fff;
+    padding: 0;
+    cursor: pointer;
+}
+.addDiv ul li .btnoff {
+    width: 120px;
+    border: 0;
+    background: #ddd;
+    color: #666;
+    float: right;
+    margin-right: 80px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.jiqlistseach li table {
+    width: 100%;
+    min-width:160px;
+    position: absolute;
+    height: auto;
+    min-height: 120px;
+    top: 47px;
+    background: #fff;
+    display: none;
+    border: 1px solid #ddd;
+}
+.jiqlistseach li table td {
+    display: block;
+    float: left;
+    width: 50%;
+    color: #3a77d5;
+    padding-left: 16px;
+    line-height: 30px;
+}
+.jiqlistseach li table th {
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    color: #666;
+    font-weight: 300;
+    padding-left: 16px;
+    /*border-bottom: 1px dashed #ddd;*/
+}
+.jiqlistseach li table td:last-child {
+    text-align: right;
+    padding-right: 16px;
+}
+.jiqlistseach li table tr {
+    cursor: pointer;
+}
+.jiqlistseach li table tr:first-child {
+    cursor: default;
+    border-bottom: 1px dashed #ddd;
+}
+.jiqlistseach li table tr:first-child:hover {
+    background: #fff;
+}
+.jiqlistseach li table tr:hover {
+    background: rgb(200, 227, 252);
+}
+
+/* 料道设置 */
+.materiallist {
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+    padding: 0 30px;
+}
+.materiallist dl {
+    width: 100px;
+    float: left;
+    text-align: center;
+}
+.materiallist dl dd {
+    display: block;
+    height: 108px;
+    padding:30px 0;
+    font-size: 1.2rem;
+    color: #999;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.materiallist dl dd span{
+    display:block;
+}
+.materiallist dl dd select{
+    width:50%;
+    height:20px;
+    border:1px solid #ddd;
+    margin-top:10px;
+}
+.materiallist ul {
+    width: calc(100% - 100px);
+    float: left;
+}
+.materiallist ul li {
+    width: 9%;
+    height: 88px;
+    margin: 10px auto;
+    margin-left: 1%;
+    border: 1px solid #eee;
+    float: left;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(194,205,188,0.4);
+}
+.materiallist ul li h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #666;
+}
+.materiallist ul li .h4color {
+    color: #999;
+}
+.materiallist ul li span {
+    display: block;
+    font-size: 1rem;
+    color: #41b314;
+    margin-top: 6px;
+}
+.materiallist ul li .spancolor {
+    color: #ccc;
+}
+.materiallist ul li i {
+    display: block;
+    width: 4px;
+    height: 30px;
+    background: #bbb;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 6px;
+}
+.materiallist ul li .ion {
+    background: #41b314;
+}
+.materiallist ul li .ioff {
+    background: #fa3428;
+}
+.materiallist ul li em {
+    display: block;
+    width: 30px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #ccc;
+    font-size: 1.3rem
+}
+.materiallist ul li .emon {
+    color: #41b314;
+}
+.materiallist ul li .emoff {
+    color: #fa3428;
+}
+
+/* 添加视频loading */
+.addvideopopup{
+    width:100%;
+    height:100vh;
+    position:fixed;
+    background:rgba(0,0,0,0.6);
+    z-index:5;
+    display:none;
+}
+.addvideopopup dl{
+    margin-top:14%;
+}
+.addvideopopup dl,.addvideopopup dl dt,.addvideopopup dl dd{
+    width:100%;
+    text-align:center;
+    float:left;
+}
+.addvideopopup dl dd{
+    font-size:1.2rem;
+    color:#fff;
+    margin-top:16px;
+}
+/* 权限显示 */
+.noquanxian{
+    width:100%;
+    text-align:center;
+    line-height:600px;
+    font-size:2rem;
+    color:#999;
+}
+.login_user select{
+    width:100%;
+    height:100%;
+    border:0;
+    background:initial;
+}
+
+/* 修改密码 */
+.upPwd,.upPwd li{
+    width:100%;
+    float:left;
+}
+.upPwd{
+    padding:30px;
+}
+.upPwd li{
+    margin-bottom:16px;
+}
+.upPwd li label{
+    display:block;
+    width:100%;
+    float:left;
+    line-height:36px;
+    font-size:1.26rem;
+    color:#666;
+}
+.upPwd li input{
+    width:360px;
+    height:36px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    background:initial;
+    padding:0 12px;
+    margin-top:4px;
+}
+#upPwdBtn{
+    width:120px;
+    margin:0 30px;
+    height:36px;
+    background:#3a77d5;
+    color:#fff;
+    border:0;
+    border-radius:6px;
+    cursor:pointer;
+}
+/* 参数设置 */
+.syssettingTable{
+    display:block;
+    width: calc(100% - 60px);
+    float:left;
+    margin:30px;
+}
+.syssettingTable tbody{
+    width:100%;
+    float:left;
+}
+.syssettingTable tr{
+    width:100%;
+    float:left;
+    padding:6px 30px;
+    margin-bottom:12px;
+}
+.syssettingTable tr td{
+    display:block;
+    float:left;
+    height:36px;
+    font-size:1.2rem;
+    color:#666;
+    line-height:36px;
+}
+.syssettingTable tr td:first-child{
+    width:100px;
+}
+.syssettingTable tr td:last-child{
+    width:calc(100% - 100px)
+}
+.syssettingTable tr td input{
+    width:300px;
+    height:32px;
+    margin:2px auto;
+    border:1px solid #ddd;
+}
+.seachbtnTwo{
+    width: 100px;
+    height:36px;
+    border:0;
+    background:#3a77d5;
+    color:#fff;
+    border-radius:6px;
+    margin-left:60px;
+    margin-top:30px;
+}
+/* 分页 */
+.commonPage{
+    width:auto;
+    float:right;
+    margin:30px;
+}
+.commonPage a{
+    display:block;
+    width:auto;
+    padding:6px 8px;
+    border:1px solid #3a77d5;
+    color:#3a77d5;
+    float:left;
+    margin-left:8px;
+    font-size:1.1rem;
+}
+.commonPage select{
+    width:auto;
+    padding:5px 8px;
+    border:1px solid #3a77d5;
+    color:#3a77d5;
+    margin-left:10px;
+}
+
+.bannerList, .bannerList ul{
+    width:100%;
+    float:left;
+}
+.bannerList ul li{
+    width:calc(50% - 60px);
+    float:left;
+    border:1px solid #ddd;
+    margin: 30px 30px auto 30px;
+    border-radius:6px;
+    box-shadow: 0 0 5px #ccc;
+}
+.bannerList ul li .bannerList-Img{
+    width:100%;
+    float:left;
+    /*height:240px;*/
+    overflow:hidden;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    border-bottom:1px solid #ddd;
+}
+.bannerList ul li .bannerList-Img img{
+    width:100%;
+    height:100%;
+    float:left;
+}
+.bannerList ul li p{
+    width:auto;
+    float:right;
+}
+.bannerList ul li p a{
+    display:block;
+    width:54px;
+    line-height:26px;
+    float:left;
+    margin:12px 8px;
+    border:1px solid #ddd;
+    text-align:center;
+    border-radius:6px;
+}
+.bannerList ul li p .updateImg{
+    background:#3a77d5;
+    color:#fff;
+    border:0;
+}

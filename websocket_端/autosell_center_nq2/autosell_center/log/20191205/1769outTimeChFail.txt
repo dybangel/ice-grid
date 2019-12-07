@@ -1,0 +1,210 @@
+2019-12-05 17:13:53.052:mechineIDCHObj={
+  "CH157533881556454499": "{\r\n  \"cmd\": \"ch\",\r\n  \"code\": \"200\",\r\n  \"ldNO\": \"32\",\r\n  \"billno\": \"157533881556454499\",\r\n  \"payType\": \"3\",\r\n  \"productID\": \"424\",\r\n  \"money\": \"0.01\",\r\n  \"type\": \"2\",\r\n  \"createTime\": \"2019-12-03 10:06:55\",\r\n  \"CHStatus\": \"chForeach\"\r\n}",
+  "CH2370467369": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"467369\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 11:03:33\",\"CHStatus\":\"\"}",
+  "CH157535535034746765": "{\"cmd\":\"ch\",\"code\":\"200\",\"ldNO\":\"15\",\"billno\":\"157535535034746765\",\"payType\":\"3\",\"productID\":\"471\",\"money\":\"0.03\",\"type\":\"2\",\"createTime\":\"2019-12-03 14:42:30\",\"CHStatus\":\"\"}",
+  "CH2370375207": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"375207\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 14:46:43\",\"CHStatus\":\"\"}",
+  "CH2370776382": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"776382\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 15:34:49\",\"CHStatus\":\"\"}",
+  "CH2370694402": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"694402\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 15:36:23\",\"CHStatus\":\"\"}"
+}
+---------------
+2019-12-05 17:13:53.053:key:value=CH157533881556454499:{
+  "cmd": "ch",
+  "code": "200",
+  "ldNO": "32",
+  "billno": "157533881556454499",
+  "payType": "3",
+  "productID": "424",
+  "money": "0.01",
+  "type": "2",
+  "createTime": "2019-12-03 10:06:55",
+  "CHStatus": "chForeach"
+}
+---------------
+2019-12-05 17:13:53.053:difTimeSeconds=198418.0534013
+---------------
+2019-12-05 17:13:53.053:sql=select trxid,m.id from  asm_pay_info a left join asm_member m on a.unionID=m.unionID where  a.statu=1 and trxid='157533881556454499'
+---------------
+2019-12-05 17:13:53.086:key:value=CH2370467369:{"cmd":"ch","ldNO":"14","memberID":"2370","type":"1","productID":"424","mechineID":"69","code":"467369","money":"0.01","createTime":"2019-12-03 11:03:33","CHStatus":""}
+---------------
+2019-12-05 17:13:53.086:difTimeSeconds=195020.0864013
+---------------
+2019-12-05 17:18:53.054:mechineIDCHObj={
+  "CH157533881556454499": "{\r\n  \"cmd\": \"ch\",\r\n  \"code\": \"200\",\r\n  \"ldNO\": \"32\",\r\n  \"billno\": \"157533881556454499\",\r\n  \"payType\": \"3\",\r\n  \"productID\": \"424\",\r\n  \"money\": \"0.01\",\r\n  \"type\": \"2\",\r\n  \"createTime\": \"2019-12-03 10:06:55\",\r\n  \"CHStatus\": \"chForeach\"\r\n}",
+  "CH2370467369": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"467369\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 11:03:33\",\"CHStatus\":\"\"}",
+  "CH157535535034746765": "{\"cmd\":\"ch\",\"code\":\"200\",\"ldNO\":\"15\",\"billno\":\"157535535034746765\",\"payType\":\"3\",\"productID\":\"471\",\"money\":\"0.03\",\"type\":\"2\",\"createTime\":\"2019-12-03 14:42:30\",\"CHStatus\":\"\"}",
+  "CH2370375207": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"375207\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 14:46:43\",\"CHStatus\":\"\"}",
+  "CH2370776382": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"776382\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 15:34:49\",\"CHStatus\":\"\"}",
+  "CH2370694402": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"694402\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 15:36:23\",\"CHStatus\":\"\"}"
+}
+---------------
+2019-12-05 17:18:53.055:key:value=CH157533881556454499:{
+  "cmd": "ch",
+  "code": "200",
+  "ldNO": "32",
+  "billno": "157533881556454499",
+  "payType": "3",
+  "productID": "424",
+  "money": "0.01",
+  "type": "2",
+  "createTime": "2019-12-03 10:06:55",
+  "CHStatus": "chForeach"
+}
+---------------
+2019-12-05 17:18:53.055:difTimeSeconds=198718.0554013
+---------------
+2019-12-05 17:18:53.056:sql=select trxid,m.id from  asm_pay_info a left join asm_member m on a.unionID=m.unionID where  a.statu=1 and trxid='157533881556454499'
+---------------
+2019-12-05 17:18:53.087:key:value=CH2370467369:{"cmd":"ch","ldNO":"14","memberID":"2370","type":"1","productID":"424","mechineID":"69","code":"467369","money":"0.01","createTime":"2019-12-03 11:03:33","CHStatus":""}
+---------------
+2019-12-05 17:18:53.087:difTimeSeconds=195320.0874013
+---------------
+2019-12-05 17:23:53.060:mechineIDCHObj={
+  "CH157533881556454499": "{\r\n  \"cmd\": \"ch\",\r\n  \"code\": \"200\",\r\n  \"ldNO\": \"32\",\r\n  \"billno\": \"157533881556454499\",\r\n  \"payType\": \"3\",\r\n  \"productID\": \"424\",\r\n  \"money\": \"0.01\",\r\n  \"type\": \"2\",\r\n  \"createTime\": \"2019-12-03 10:06:55\",\r\n  \"CHStatus\": \"chForeach\"\r\n}",
+  "CH2370467369": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"467369\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 11:03:33\",\"CHStatus\":\"\"}",
+  "CH157535535034746765": "{\"cmd\":\"ch\",\"code\":\"200\",\"ldNO\":\"15\",\"billno\":\"157535535034746765\",\"payType\":\"3\",\"productID\":\"471\",\"money\":\"0.03\",\"type\":\"2\",\"createTime\":\"2019-12-03 14:42:30\",\"CHStatus\":\"\"}",
+  "CH2370375207": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"375207\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 14:46:43\",\"CHStatus\":\"\"}",
+  "CH2370776382": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"776382\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 15:34:49\",\"CHStatus\":\"\"}",
+  "CH2370694402": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"694402\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 15:36:23\",\"CHStatus\":\"\"}"
+}
+---------------
+2019-12-05 17:23:53.060:key:value=CH157533881556454499:{
+  "cmd": "ch",
+  "code": "200",
+  "ldNO": "32",
+  "billno": "157533881556454499",
+  "payType": "3",
+  "productID": "424",
+  "money": "0.01",
+  "type": "2",
+  "createTime": "2019-12-03 10:06:55",
+  "CHStatus": "chForeach"
+}
+---------------
+2019-12-05 17:23:53.061:difTimeSeconds=199018.0614013
+---------------
+2019-12-05 17:23:53.061:sql=select trxid,m.id from  asm_pay_info a left join asm_member m on a.unionID=m.unionID where  a.statu=1 and trxid='157533881556454499'
+---------------
+2019-12-05 17:23:53.083:key:value=CH2370467369:{"cmd":"ch","ldNO":"14","memberID":"2370","type":"1","productID":"424","mechineID":"69","code":"467369","money":"0.01","createTime":"2019-12-03 11:03:33","CHStatus":""}
+---------------
+2019-12-05 17:23:53.083:difTimeSeconds=195620.0834013
+---------------
+2019-12-05 17:28:53.069:mechineIDCHObj={
+  "CH157533881556454499": "{\r\n  \"cmd\": \"ch\",\r\n  \"code\": \"200\",\r\n  \"ldNO\": \"32\",\r\n  \"billno\": \"157533881556454499\",\r\n  \"payType\": \"3\",\r\n  \"productID\": \"424\",\r\n  \"money\": \"0.01\",\r\n  \"type\": \"2\",\r\n  \"createTime\": \"2019-12-03 10:06:55\",\r\n  \"CHStatus\": \"chForeach\"\r\n}",
+  "CH2370467369": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"467369\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 11:03:33\",\"CHStatus\":\"\"}",
+  "CH157535535034746765": "{\"cmd\":\"ch\",\"code\":\"200\",\"ldNO\":\"15\",\"billno\":\"157535535034746765\",\"payType\":\"3\",\"productID\":\"471\",\"money\":\"0.03\",\"type\":\"2\",\"createTime\":\"2019-12-03 14:42:30\",\"CHStatus\":\"\"}",
+  "CH2370375207": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"375207\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 14:46:43\",\"CHStatus\":\"\"}",
+  "CH2370776382": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"776382\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 15:34:49\",\"CHStatus\":\"\"}",
+  "CH2370694402": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"694402\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 15:36:23\",\"CHStatus\":\"\"}"
+}
+---------------
+2019-12-05 17:28:53.069:key:value=CH157533881556454499:{
+  "cmd": "ch",
+  "code": "200",
+  "ldNO": "32",
+  "billno": "157533881556454499",
+  "payType": "3",
+  "productID": "424",
+  "money": "0.01",
+  "type": "2",
+  "createTime": "2019-12-03 10:06:55",
+  "CHStatus": "chForeach"
+}
+---------------
+2019-12-05 17:28:53.070:difTimeSeconds=199318.0704013
+---------------
+2019-12-05 17:28:53.070:sql=select trxid,m.id from  asm_pay_info a left join asm_member m on a.unionID=m.unionID where  a.statu=1 and trxid='157533881556454499'
+---------------
+2019-12-05 17:28:53.091:key:value=CH2370467369:{"cmd":"ch","ldNO":"14","memberID":"2370","type":"1","productID":"424","mechineID":"69","code":"467369","money":"0.01","createTime":"2019-12-03 11:03:33","CHStatus":""}
+---------------
+2019-12-05 17:28:53.092:difTimeSeconds=195920.0924013
+---------------
+2019-12-05 17:33:53.072:mechineIDCHObj={
+  "CH157533881556454499": "{\r\n  \"cmd\": \"ch\",\r\n  \"code\": \"200\",\r\n  \"ldNO\": \"32\",\r\n  \"billno\": \"157533881556454499\",\r\n  \"payType\": \"3\",\r\n  \"productID\": \"424\",\r\n  \"money\": \"0.01\",\r\n  \"type\": \"2\",\r\n  \"createTime\": \"2019-12-03 10:06:55\",\r\n  \"CHStatus\": \"chForeach\"\r\n}",
+  "CH2370467369": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"467369\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 11:03:33\",\"CHStatus\":\"\"}",
+  "CH157535535034746765": "{\"cmd\":\"ch\",\"code\":\"200\",\"ldNO\":\"15\",\"billno\":\"157535535034746765\",\"payType\":\"3\",\"productID\":\"471\",\"money\":\"0.03\",\"type\":\"2\",\"createTime\":\"2019-12-03 14:42:30\",\"CHStatus\":\"\"}",
+  "CH2370375207": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"375207\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 14:46:43\",\"CHStatus\":\"\"}",
+  "CH2370776382": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"776382\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 15:34:49\",\"CHStatus\":\"\"}",
+  "CH2370694402": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"694402\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 15:36:23\",\"CHStatus\":\"\"}"
+}
+---------------
+2019-12-05 17:33:53.073:key:value=CH157533881556454499:{
+  "cmd": "ch",
+  "code": "200",
+  "ldNO": "32",
+  "billno": "157533881556454499",
+  "payType": "3",
+  "productID": "424",
+  "money": "0.01",
+  "type": "2",
+  "createTime": "2019-12-03 10:06:55",
+  "CHStatus": "chForeach"
+}
+---------------
+2019-12-05 17:33:53.073:difTimeSeconds=199618.0734013
+---------------
+2019-12-05 17:33:53.073:sql=select trxid,m.id from  asm_pay_info a left join asm_member m on a.unionID=m.unionID where  a.statu=1 and trxid='157533881556454499'
+---------------
+2019-12-05 17:33:53.105:key:value=CH2370467369:{"cmd":"ch","ldNO":"14","memberID":"2370","type":"1","productID":"424","mechineID":"69","code":"467369","money":"0.01","createTime":"2019-12-03 11:03:33","CHStatus":""}
+---------------
+2019-12-05 17:33:53.105:difTimeSeconds=196220.1054013
+---------------
+2019-12-05 17:38:53.077:mechineIDCHObj={
+  "CH157533881556454499": "{\r\n  \"cmd\": \"ch\",\r\n  \"code\": \"200\",\r\n  \"ldNO\": \"32\",\r\n  \"billno\": \"157533881556454499\",\r\n  \"payType\": \"3\",\r\n  \"productID\": \"424\",\r\n  \"money\": \"0.01\",\r\n  \"type\": \"2\",\r\n  \"createTime\": \"2019-12-03 10:06:55\",\r\n  \"CHStatus\": \"chForeach\"\r\n}",
+  "CH2370467369": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"467369\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 11:03:33\",\"CHStatus\":\"\"}",
+  "CH157535535034746765": "{\"cmd\":\"ch\",\"code\":\"200\",\"ldNO\":\"15\",\"billno\":\"157535535034746765\",\"payType\":\"3\",\"productID\":\"471\",\"money\":\"0.03\",\"type\":\"2\",\"createTime\":\"2019-12-03 14:42:30\",\"CHStatus\":\"\"}",
+  "CH2370375207": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"375207\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 14:46:43\",\"CHStatus\":\"\"}",
+  "CH2370776382": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"776382\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 15:34:49\",\"CHStatus\":\"\"}",
+  "CH2370694402": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"694402\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 15:36:23\",\"CHStatus\":\"\"}"
+}
+---------------
+2019-12-05 17:38:53.077:key:value=CH157533881556454499:{
+  "cmd": "ch",
+  "code": "200",
+  "ldNO": "32",
+  "billno": "157533881556454499",
+  "payType": "3",
+  "productID": "424",
+  "money": "0.01",
+  "type": "2",
+  "createTime": "2019-12-03 10:06:55",
+  "CHStatus": "chForeach"
+}
+---------------
+2019-12-05 17:38:53.078:difTimeSeconds=199918.0784013
+---------------
+2019-12-05 17:38:53.078:sql=select trxid,m.id from  asm_pay_info a left join asm_member m on a.unionID=m.unionID where  a.statu=1 and trxid='157533881556454499'
+---------------
+2019-12-05 17:38:53.110:key:value=CH2370467369:{"cmd":"ch","ldNO":"14","memberID":"2370","type":"1","productID":"424","mechineID":"69","code":"467369","money":"0.01","createTime":"2019-12-03 11:03:33","CHStatus":""}
+---------------
+2019-12-05 17:38:53.110:difTimeSeconds=196520.1104013
+---------------
+2019-12-05 17:43:53.084:mechineIDCHObj={
+  "CH157533881556454499": "{\r\n  \"cmd\": \"ch\",\r\n  \"code\": \"200\",\r\n  \"ldNO\": \"32\",\r\n  \"billno\": \"157533881556454499\",\r\n  \"payType\": \"3\",\r\n  \"productID\": \"424\",\r\n  \"money\": \"0.01\",\r\n  \"type\": \"2\",\r\n  \"createTime\": \"2019-12-03 10:06:55\",\r\n  \"CHStatus\": \"chForeach\"\r\n}",
+  "CH2370467369": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"467369\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 11:03:33\",\"CHStatus\":\"\"}",
+  "CH157535535034746765": "{\"cmd\":\"ch\",\"code\":\"200\",\"ldNO\":\"15\",\"billno\":\"157535535034746765\",\"payType\":\"3\",\"productID\":\"471\",\"money\":\"0.03\",\"type\":\"2\",\"createTime\":\"2019-12-03 14:42:30\",\"CHStatus\":\"\"}",
+  "CH2370375207": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"375207\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 14:46:43\",\"CHStatus\":\"\"}",
+  "CH2370776382": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"776382\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 15:34:49\",\"CHStatus\":\"\"}",
+  "CH2370694402": "{\"cmd\":\"ch\",\"ldNO\":\"14\",\"memberID\":\"2370\",\"type\":\"1\",\"productID\":\"424\",\"mechineID\":\"69\",\"code\":\"694402\",\"money\":\"0.01\",\"createTime\":\"2019-12-03 15:36:23\",\"CHStatus\":\"\"}"
+}
+---------------
+2019-12-05 17:43:53.084:key:value=CH157533881556454499:{
+  "cmd": "ch",
+  "code": "200",
+  "ldNO": "32",
+  "billno": "157533881556454499",
+  "payType": "3",
+  "productID": "424",
+  "money": "0.01",
+  "type": "2",
+  "createTime": "2019-12-03 10:06:55",
+  "CHStatus": "chForeach"
+}
+---------------
+2019-12-05 17:43:53.084:difTimeSeconds=200218.0844013
+---------------
+2019-12-05 17:43:53.085:sql=select trxid,m.id from  asm_pay_info a left join asm_member m on a.unionID=m.unionID where  a.statu=1 and trxid='157533881556454499'
+---------------
+2019-12-05 17:43:53.117:key:value=CH2370467369:{"cmd":"ch","ldNO":"14","memberID":"2370","type":"1","productID":"424","mechineID":"69","code":"467369","money":"0.01","createTime":"2019-12-03 11:03:33","CHStatus":""}
+---------------
+2019-12-05 17:43:53.117:difTimeSeconds=196820.1174013
+---------------

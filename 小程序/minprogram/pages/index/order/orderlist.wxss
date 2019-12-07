@@ -1,0 +1,171 @@
+ .swiper-tab{  
+    width: 100%;  
+    border-bottom: 2rpx solid #d0d0d0;  
+    text-align: center;  
+    line-height: 80rpx;}  
+.swiper-tab-list{  font-size: 25rpx;  
+    display: inline-block;  
+    width: 20%;  
+    color: #272727;  
+}  
+.on{ color: #00a0e8;  
+    border-bottom: 5rpx solid #00a0e8;}  
+  
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; background: #f5f5f5;}  
+
+.swiper-box view{  
+    text-align: center; 
+}  
+ .menulist{
+	width: 100%;
+	height: 48px;
+	display: inline-block;
+	background: #fff;
+	padding: 0 12px;
+}
+.menulist .li{
+	width: calc(100% / 6 - 4px);
+	display: inline-block;
+	font-size: 1.2em;
+	color: #4d4d4d;
+	float: left;
+	margin: 0 2px;
+	padding: 15px 0;
+	text-align: center;
+}
+.menulist .li.licolor{
+	color: #44a2e2;
+	border-bottom: 4px solid #44a2e2;
+}
+.productlist{
+	width: calc(100% - 38px);
+	display: inline-block;
+	margin: 0 19px;
+}
+.productlist .li{
+	width: 100%;
+	display: inline-block;
+	padding: 2vw;
+	background: #fff;
+	margin-top: 15px;
+}
+.productlist .li .btnPay{
+	display: inline-block;
+	font-size: 0.6em;
+	color: #fff;
+	background: #44a2e2;
+	border: 0;
+	border-radius: 10px;
+	float: right;
+	padding: 4px;
+	text-align: center;
+}
+.productlist .li .productbox{
+	width: 100%;
+	height: 115px;
+	display: inline-block;
+}
+/* .productlist .li .bottomline{
+	border-bottom: 1px solid #e5e5e5;
+} */
+.productlist .li .product{
+	width: 26%;
+	display: inline-block;
+	float: left;
+}
+.productlist .li .product .h6{
+	font-size: 0.8em;
+	color: #b3b3b3;
+  margin-top: -5px;
+}
+.productlist .li .product .producticon{
+	width: 100%;
+	display: inline-block;
+	margin-top: 2vw;
+}
+.productlist .li .product image{
+	width: 100%;
+  margin-top: -5px;
+	border: 1px solid #f2f2f2;
+	border-radius: 2vw;
+  height: 90px;
+}
+.productlist .li .brand{
+	width: 48%;
+	display: inline-block;
+	float: left;
+	padding: 0 4vw;
+}
+.productlist .li .brand .h2{
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 8vh;
+  text-align: left;
+  display: inherit;
+}
+.productlist .li .brand .h6{
+	font-size: 0.8em;
+	color: #b3b3b3;
+  display: inherit;
+  text-align: left;
+}
+.productlist .li .brand .h5{
+	font-size: 0.8em;
+	text-align: right;
+	line-height: 8vh;
+  display :inherit;
+
+}
+.productlist .li .price{
+	width: 26%;
+	display: inline-block;
+	float: right;
+	text-align: right;
+}
+.productlist .li .price .h5{
+	font-size: 0.8em;
+	color: #f15a24;
+}
+.productlist .li .price .pricetext{
+	padding: 2vw 0;
+}
+.productlist .li .price .pricetext .h3{
+	font-size: 1.2em;
+  display: inherit;
+  text-align: right;
+}
+.productlist .li .price .pricetext .h4{
+	color: #b3b3b3;
+	font-size: 1em;
+  display: inherit;
+  text-align: right;
+}
+.productlist .li .price .pricesum{
+	padding: 5vw 0;
+}
+.productlist .li .price .btn{
+  width: 90px;
+  height: 25px;
+  font-size: 15px;
+  line-height: 25px;
+  border-radius: 20rpx; 
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  background-color: rgb(68, 162, 226)
+}
+.productlist .li .price .pricesum .h6{
+	font-size: 0.8em;
+	color: #f15a24;
+}
+.productlist .li .price .pricesum .h5{
+	font-size: 0.8em;
+  display: inherit;
+  text-align: right;
+}
+.productlist .li .price .pricesum .h1{
+	font-size: 1em;
+   display: inherit;
+  text-align: right;
+} 
+ 

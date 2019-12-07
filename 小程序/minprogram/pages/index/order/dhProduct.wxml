@@ -1,0 +1,80 @@
+<view class='background'>
+  <view class='title'>
+    <text class='title-name'>更换商品</text>
+    <text class='machine'>{{mechineName}}</text>
+  </view>
+  <view class='content'>
+    <view class='current'>
+      <text class='current-product'>当前订单商品</text>
+      <view class='current-detail'>
+        <image class='orderImg' src='{{productInfo.httpImageUrl}}'></image>
+        <view class='prodetail'>
+          <text class='brand'>{{productInfo.proName}}</text>
+          <text class='specifications'>规格:{{productInfo.progg}}</text>
+          <text class='price'>单价¥{{productInfo.price}}</text>
+        </view>
+      </view>
+      <view class='shenyu'>
+        <view class='syNum'>
+          <text class='syPiece'>剩余:{{productInfo.syNum}}件</text>
+          <text class='syDay'>剩余:{{productInfo.syNum}}天</text>
+        </view>
+        <text class='total'>合计金额:{{oldTotalMoney}}</text>
+      </view>
+    </view>
+    <view class='current'>
+      <text class='current-product'>更换为</text>
+      <view class='current-detail'>
+        <image class='orderImg' src='{{newProductInfo.httpImageUrl}}'></image>
+        <view class='prodetail'>
+          <text class='brand'>{{newProductInfo.proName}}</text>
+          <text class='specifications'>规格:{{newProductInfo.progg}}</text>
+          <text class='price'>单价¥{{newProductInfo.price0}}</text>
+        </view>
+        <button class='replaceBtn' bindtap='replace'>更换</button>
+      </view>
+      <view class='shenyu'>
+        <text class='total'>合计金额:{{newTotalMoney}}</text>
+      </view>
+      <text class='tips'>如有退款,将退还到您的会员钱包</text>
+    </view>
+  </view>
+  <view class='money'>
+    <view class='refund'>{{txtMoney}}
+      <text class='refMoney'>¥{{chaMoney}}</text>
+    </view>
+    <button class='sureBtn' bindtap='addOrder'>确 定</button>
+  </view>
+</view>
+<!-- 弹出框 -->
+<view class='protype' style="{{isShow?'display:block':'display:none'}}">
+  <icon bindtap='offpopup' class='icon iconfont icon-Icon_off' />
+  <i-tabs i-class='proMenu' current="{{ current_scroll }}" scroll bindchange="handleChangeScroll">
+    <i-tab i-class='proName' wx:for="{{typeList}}" wx:for-item="item" key="tab{{index}}" title="{{item.typeName}}" bindtap='onclickPro' data-current="{{item.productTypeID}}"></i-tab>
+  </i-tabs>
+  
+  <view class='proDataList'>
+    <view class='proData' wx:for="{{productList}}" wx:for-item="item" wx:for-index="idx" >
+      <view class='productImg'>
+        <image class='proImg' src='{{item.httpImageUrl}}'></image>
+      </view>
+      <view class='proDetail'>
+        <text class='brand'>{{item.proName}}</text>
+        <text class='replace-time'>更换{{item.startSend}}天后生效</text>
+        <view class='proBtn'>
+          <text class='proLabel' wx:for="{{item.tag}}" wx:for-item="child">{{child}}</text>
+          
+        </view>
+        <text class='price'>¥{{item.price0}}</text>
+        <view class='Specifications'>规格:
+          <text class='num'>{{item.progg}}</text>
+        </view>
+      </view>
+      <button class='repBtn' data-id='{{item.productID}}' bindtap='chg'>更换</button>
+    </view>
+  </view>
+  <text class='remind'>提醒:我们将在更换后对应天数起,配送新商品给您</text>
+</view>
+<view class='product' style="{{isShow?'display:block':'display:none'}}"></view>
+
+<i-toast id="toast" />

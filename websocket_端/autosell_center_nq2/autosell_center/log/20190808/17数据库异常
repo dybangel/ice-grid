@@ -1,0 +1,32 @@
+2019-08-08 17:00:24.764:SQLString=update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='视频177' ;update asm_videoAddMechine set tfcs=tfcs+2019-08-08 17:00:24 where mechineID='51' and videoID='视频createTime' ;
+---------------
+2019-08-08 17:00:24.786:SQLString=update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='视频177' ;update asm_videoAddMechine set tfcs=tfcs+2019-08-08 17:00:24 where mechineID='51' and videoID='视频createTime' ;update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='177' ;update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='177' ;
+---------------
+2019-08-08 17:00:24.805:SQLString=update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='视频177' ;update asm_videoAddMechine set tfcs=tfcs+2019-08-08 17:00:24 where mechineID='51' and videoID='视频createTime' ;update asm_videoAddMechine set tfcs=tfcs+2 where mechineID='51' and videoID='177' ;update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='177' ;
+---------------
+2019-08-08 17:00:24.826:SQLString=update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='视频177' ;update asm_videoAddMechine set tfcs=tfcs+2019-08-08 17:00:24 where mechineID='51' and videoID='视频createTime' ;update asm_videoAddMechine set tfcs=tfcs+3 where mechineID='51' and videoID='177' ;update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='177' ;
+---------------
+2019-08-08 17:00:25.564:SQLString=update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='视频177' ;update asm_videoAddMechine set tfcs=tfcs+2019-08-08 17:00:24 where mechineID='51' and videoID='视频createTime' ;update asm_videoAddMechine set tfcs=tfcs+4 where mechineID='51' and videoID='177' ;update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='177' ;
+---------------
+2019-08-08 17:00:26.578:SQLString=update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='视频177' ;update asm_videoAddMechine set tfcs=tfcs+2019-08-08 17:00:24 where mechineID='51' and videoID='视频createTime' ;update asm_videoAddMechine set tfcs=tfcs+5 where mechineID='51' and videoID='177' ;update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='177' ;
+---------------
+2019-08-08 17:00:27.591:SQLString=update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='视频177' ;update asm_videoAddMechine set tfcs=tfcs+2019-08-08 17:00:24 where mechineID='51' and videoID='视频createTime' ;update asm_videoAddMechine set tfcs=tfcs+6 where mechineID='51' and videoID='177' ;update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='177' ;
+---------------
+2019-08-08 17:00:28.604:SQLString=update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='视频177' ;update asm_videoAddMechine set tfcs=tfcs+2019-08-08 17:00:24 where mechineID='51' and videoID='视频createTime' ;update asm_videoAddMechine set tfcs=tfcs+7 where mechineID='51' and videoID='177' ;update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='177' ;
+---------------
+2019-08-08 17:00:29.619:SQLString=update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='视频177' ;update asm_videoAddMechine set tfcs=tfcs+2019-08-08 17:00:24 where mechineID='51' and videoID='视频createTime' ;update asm_videoAddMechine set tfcs=tfcs+8 where mechineID='51' and videoID='177' ;update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='177' ;
+---------------
+2019-08-08 17:00:30.634:SQLString=update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='视频177' ;update asm_videoAddMechine set tfcs=tfcs+2019-08-08 17:00:24 where mechineID='51' and videoID='视频createTime' ;update asm_videoAddMechine set tfcs=tfcs+9 where mechineID='51' and videoID='177' ;update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='177' ;
+---------------
+2019-08-08 17:00:31.646:SQLString=update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='视频177' ;update asm_videoAddMechine set tfcs=tfcs+2019-08-08 17:00:24 where mechineID='51' and videoID='视频createTime' ;update asm_videoAddMechine set tfcs=tfcs+10 where mechineID='51' and videoID='177' ;update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='177' ;
+---------------
+2019-08-08 17:00:32.662:SQLString=update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='视频177' ;update asm_videoAddMechine set tfcs=tfcs+2019-08-08 17:00:24 where mechineID='51' and videoID='视频createTime' ;update asm_videoAddMechine set tfcs=tfcs+11 where mechineID='51' and videoID='177' ;update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='177' ;
+---------------
+2019-08-08 17:00:33.679:SQLString=update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='视频177' ;update asm_videoAddMechine set tfcs=tfcs+2019-08-08 17:00:24 where mechineID='51' and videoID='视频createTime' ;update asm_videoAddMechine set tfcs=tfcs+12 where mechineID='51' and videoID='177' ;update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='177' ;
+---------------
+2019-08-08 17:00:34.705:SQLString=update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='视频177' ;update asm_videoAddMechine set tfcs=tfcs+2019-08-08 17:00:24 where mechineID='51' and videoID='视频createTime' ;update asm_videoAddMechine set tfcs=tfcs+13 where mechineID='51' and videoID='177' ;update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='177' ;
+---------------
+2019-08-08 17:00:35.704:SQLString=update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='视频177' ;update asm_videoAddMechine set tfcs=tfcs+2019-08-08 17:00:24 where mechineID='51' and videoID='视频createTime' ;update asm_videoAddMechine set tfcs=tfcs+14 where mechineID='51' and videoID='177' ;update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='177' ;
+---------------
+2019-08-08 17:00:36.716:SQLString=update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='视频177' ;update asm_videoAddMechine set tfcs=tfcs+2019-08-08 17:00:24 where mechineID='51' and videoID='视频createTime' ;update asm_videoAddMechine set tfcs=tfcs+15 where mechineID='51' and videoID='177' ;update asm_videoAddMechine set tfcs=tfcs+1 where mechineID='51' and videoID='177' ;
+---------------

@@ -1,0 +1,35 @@
+ 
+<View class="main">
+			<View class="amount">
+       
+				<View class="time">
+				<picker mode="date" value="{{date}}" fields="month" start="2019-01" end="2100-1" bindchange="bindDateChange">  
+          <view class="picker">  
+             {{dates}}
+             <icon class='icon iconfont icon-Icon_xiaB'></icon>  
+          </view>  
+        </picker>  
+				</View>
+       
+			<view style='width:100%;display:inline-block'>
+        	<View style='width:45%;display:inline-block;text-align: center;font-size: 1.2em;'>收入¥{{totalIn}}</View>
+          <View style='width:45%;display:inline-block;text-align: center;font-size: 1.2em;'>支出¥{{totalOut}}</View>
+      </view>
+			</View>
+			<View class="recordlist">
+				<View class='ul' wx:if="{{recordList!=''}}">
+          	<View class='li' wx:for="{{recordList}}" wx:for-item="item" >
+						<View class="box"></View>
+						<View class="name">
+							<View class='h5'>{{item.description}}</View>
+							<View class='span'>{{item.payTime}}</View>
+						</View>
+						<View class='h2'>{{item.money}}</View>
+					 </View>
+            
+				</View>
+        <View>
+          <view id='noneContent'>{{record}}</view>
+        </View>
+			</View>
+</View>

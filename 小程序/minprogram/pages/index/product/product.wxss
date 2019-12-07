@@ -1,0 +1,140 @@
+.swiper-tab{  
+    width: 100%;  
+    border-bottom: 2rpx solid #d0d0d0;  
+    text-align: center;  
+    line-height: 80rpx;
+    overflow:hidden;
+    white-space:nowrap;
+    }  
+.swiper-tab-list{  
+    font-size: 25rpx;  
+    display: inline-block;  
+    width: 90px;  
+    color: #272727;  
+}  
+.on{ color: #00a0e8;  
+    border-bottom: 5rpx solid #00a0e8;}  
+  
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }  
+.swiper-box view{  
+    text-align: left;  
+}  
+.slide-image{
+  width: 100%;
+}
+ .productlist{
+	width: 100%;
+  height: calc(100vh - 193px);
+  background: #f0f0f0;
+  overflow: auto;
+  float: left;
+}
+ .productlist .ul{
+	width: 100%;
+  height: calc(100vh - 193px);
+	display: inline-block;
+	padding: 0 4vw;
+}
+ .productlist .ul .li{
+	width: 100%;
+	display: inline-block;
+	margin-top: 4vw;
+  position: relative;
+}
+ .productlist .ul .li .product{
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	background: #fff;
+	border-radius: 4vw ;
+}
+ .productlist .ul .li .product .milk{
+	width: 110px;
+  height: 110px;
+	float: left;
+  padding: 1vw;
+  overflow: hidden;
+}
+ .productlist .ul .li .product .milk image{
+	width: 100%;
+  height: 110px;
+}
+ .productlist .ul .li .product .introduce{
+	width: calc(100% - 110px);
+	float: left;
+	padding: 1vw 2vw;
+  border-left: 1px solid #d9d9d9;
+}
+ .productlist .ul .li .product .introduce .producttext{
+	width: 100%;
+	display: inline-block;
+  padding: 6px 0;
+}
+ .productlist .ul .li .product .introduce .producttext .h2{
+	font-size: 1.2em;
+	font-weight: bold;
+  line-height: 20px;
+}
+ .productlist .ul .li .product .introduce .producttext .h3{
+	font-size: 1em;
+	color: #b3b3b3;
+  line-height: 20px;
+  height: 40px;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  line-clamp: 2;
+  -webkit-line-clamp:2; 
+}
+ .productlist .ul .li .product .introduce .producttext .h6{
+  font-size: 1em;
+  color: #b3b3b3;
+  line-height: 20px;
+  height: auto;
+ }
+ .productlist .ul .li .product .introduce .producttext .hot{
+	width: 100%;
+	display: inline-block;
+}
+ .productlist .ul .li .product .introduce .producttext .hot .h5{
+	width: auto;
+	float: left;
+	font-size: 0.6em;
+	color: #f7931e;
+  padding: 2px 8px;
+	border: 1px solid #f7931e;
+	text-align: center;
+	border-radius: 10vw;
+	margin-right: 8px;
+}
+ .productlist .ul .li .product .introduce .producttext .h4{
+	font-size: 1em;
+	text-decoration:line-through red solid; 
+	float: left;
+  width: 100%;
+}
+ .productlist .ul .li .product .introduce .producttext .hyspan{
+   float: left;
+   text-decoration: line-through;
+ }
+ .productlist .ul .li .product .introduce .producttext .span{
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #f15a24;
+  float: left;
+}
+ .productlist .ul .li .product button{
+	font-size: 1.2em;
+	color: #fff;
+	background: #44a2e2;
+	border: 0;
+	text-align: center;
+	border-radius: 2vw;
+	padding: 1vw 2vw;
+  width: 50px;
+  line-height: 20px;
+  position: absolute;
+  right: 10px; 
+  bottom: 10px;
+}

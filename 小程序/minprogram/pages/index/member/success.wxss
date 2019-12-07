@@ -1,0 +1,30 @@
+@import '../../icon/iconfont.wxss';
+.title{
+  width: 50%;
+  font-size: 1.6em;
+  text-align: left;
+  float: left;
+  height: 100px;
+  line-height: 50px;
+}
+.btn{
+ 
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #fff;
+  background-color: red
+}
+.success{
+  width: 100%;
+  height: 100px;
+  display: inline-block;
+}
+.success icon{
+  width: 40%;
+  font-size: 1rem;
+  text-align: right;
+  height: 50px;
+  line-height: 50px;
+  color: red;
+  float: left;
+}

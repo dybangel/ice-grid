@@ -1,0 +1,76 @@
+2019-12-05 17:10:53.041:updateTime：2019-12-03 14:01:50
+---------------
+2019-12-05 17:10:53.041:newVerCode：17https://bg-app.oss-cn-beijing.aliyuncs.com/app/asm1.0.17.apk
+---------------
+2019-12-05 17:12:53.049:updateTime：2019-12-03 14:01:50
+---------------
+2019-12-05 17:12:53.049:newVerCode：17https://bg-app.oss-cn-beijing.aliyuncs.com/app/asm1.0.17.apk
+---------------
+2019-12-05 17:14:53.059:updateTime：2019-12-03 14:01:50
+---------------
+2019-12-05 17:14:53.059:newVerCode：17https://bg-app.oss-cn-beijing.aliyuncs.com/app/asm1.0.17.apk
+---------------
+2019-12-05 17:16:53.073:updateTime：2019-12-03 14:01:50
+---------------
+2019-12-05 17:16:53.073:newVerCode：17https://bg-app.oss-cn-beijing.aliyuncs.com/app/asm1.0.17.apk
+---------------
+2019-12-05 17:18:53.082:updateTime：2019-12-03 14:01:50
+---------------
+2019-12-05 17:18:53.082:newVerCode：17https://bg-app.oss-cn-beijing.aliyuncs.com/app/asm1.0.17.apk
+---------------
+2019-12-05 17:20:53.093:updateTime：2019-12-03 14:01:50
+---------------
+2019-12-05 17:20:53.093:newVerCode：17https://bg-app.oss-cn-beijing.aliyuncs.com/app/asm1.0.17.apk
+---------------
+2019-12-05 17:22:53.106:updateTime：2019-12-03 14:01:50
+---------------
+2019-12-05 17:22:53.106:newVerCode：17https://bg-app.oss-cn-beijing.aliyuncs.com/app/asm1.0.17.apk
+---------------
+2019-12-05 17:24:53.117:updateTime：2019-12-03 14:01:50
+---------------
+2019-12-05 17:24:53.118:newVerCode：17https://bg-app.oss-cn-beijing.aliyuncs.com/app/asm1.0.17.apk
+---------------
+2019-12-05 17:26:53.130:updateTime：2019-12-03 14:01:50
+---------------
+2019-12-05 17:26:53.130:newVerCode：17https://bg-app.oss-cn-beijing.aliyuncs.com/app/asm1.0.17.apk
+---------------
+2019-12-05 17:28:53.264:updateTime：2019-12-03 14:01:50
+---------------
+2019-12-05 17:28:53.264:newVerCode：17https://bg-app.oss-cn-beijing.aliyuncs.com/app/asm1.0.17.apk
+---------------
+2019-12-05 17:30:53.151:updateTime：2019-12-03 14:01:50
+---------------
+2019-12-05 17:30:53.151:newVerCode：17https://bg-app.oss-cn-beijing.aliyuncs.com/app/asm1.0.17.apk
+---------------
+2019-12-05 17:32:53.164:updateTime：2019-12-03 14:01:50
+---------------
+2019-12-05 17:32:53.165:newVerCode：17https://bg-app.oss-cn-beijing.aliyuncs.com/app/asm1.0.17.apk
+---------------
+2019-12-05 17:34:53.175:updateTime：2019-12-03 14:01:50
+---------------
+2019-12-05 17:34:53.175:newVerCode：17https://bg-app.oss-cn-beijing.aliyuncs.com/app/asm1.0.17.apk
+---------------
+2019-12-05 17:36:53.188:updateTime：2019-12-03 14:01:50
+---------------
+2019-12-05 17:36:53.188:newVerCode：17https://bg-app.oss-cn-beijing.aliyuncs.com/app/asm1.0.17.apk
+---------------
+2019-12-05 17:38:53.197:updateTime：2019-12-03 14:01:50
+---------------
+2019-12-05 17:38:53.198:newVerCode：17https://bg-app.oss-cn-beijing.aliyuncs.com/app/asm1.0.17.apk
+---------------
+2019-12-05 17:40:53.210:updateTime：2019-12-03 14:01:50
+---------------
+2019-12-05 17:40:53.210:newVerCode：17https://bg-app.oss-cn-beijing.aliyuncs.com/app/asm1.0.17.apk
+---------------
+2019-12-05 17:42:53.226:updateTime：2019-12-03 14:01:50
+---------------
+2019-12-05 17:42:53.227:newVerCode：17https://bg-app.oss-cn-beijing.aliyuncs.com/app/asm1.0.17.apk
+---------------
+2019-12-05 17:44:53.233:updateTime：2019-12-03 14:01:50
+---------------
+2019-12-05 17:44:53.233:newVerCode：17https://bg-app.oss-cn-beijing.aliyuncs.com/app/asm1.0.17.apk
+---------------
+2019-12-05 17:46:53.244:updateTime：2019-12-03 14:01:50
+---------------
+2019-12-05 17:46:53.244:newVerCode：17https://bg-app.oss-cn-beijing.aliyuncs.com/app/asm1.0.17.apk
+---------------

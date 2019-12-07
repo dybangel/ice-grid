@@ -1,0 +1,36 @@
+<View class="main">
+			<View class="news">
+				 <!-- <View class="nh2"><View class="circle"></View>4条未读消息</View> -->
+			</View>
+			<View class="infrom">
+				<View class="nul">
+				  
+          <View class="nli"  wx:for="{{noticelist}}" wx:for-item="item">
+						<View class="infromtext" data-id="{{item.id}}" bindtap="getNotice">
+						<view class="nh2" wx:if="{{item.isRead==0}}">
+              <View class="circle-two"></View>{{item.title}}
+            </view>
+            <view class="nh2" wx:if="{{item.isRead==1}}">
+              <View class="circle-two2"></View>{{item.title}}
+            </view>
+              <text class="np">{{item.con}}</text>
+              <text class="np" wx:if="{{item.addres!=null}}">取货地址：{{item.addres}}</text>
+						</View>
+						<View class="time" data-id="{{item.id}}" bindtap="getNotice">
+							<text class="na">{{item.timeStr}}</text>
+							<view class='icon iconfont icon-Icon_right'></view>
+						</View>
+             
+					</View>
+				 
+				 
+				</View>
+			</View>
+		</View>
+     <i-tab-bar current="{{ current }}" i-class="menuNav" bindchange="handleChange">
+    <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+    <i-tab-bar-item key="order" icon="group" current-icon="group_fill" title="订单"></i-tab-bar-item>
+    <i-tab-bar-item key="notice" icon="remind" current-icon="remind_fill" count="{{num}}" title="通知"></i-tab-bar-item>
+    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill"  title="会员"></i-tab-bar-item>
+  </i-tab-bar>
+	 

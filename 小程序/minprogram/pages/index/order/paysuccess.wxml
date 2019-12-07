@@ -1,0 +1,10 @@
+<view>
+  <view class='success'>
+   <icon class='icon iconfont icon-chenggong'></icon>
+    <view class='title'> 支付成功</view>
+  </view>
+  <button bindtap='orderInfo' class='btn'>查看订单</button>
+</view>
+
+ 
+

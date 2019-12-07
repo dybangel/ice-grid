@@ -1,0 +1,21 @@
+<!-- <view class="container">
+    <view class="userinfo">
+     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取用户头像 </button>
+  
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>  
+    
+  </view>  
+  <view class="usermotto">
+     <button plain="true" open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber">手机号授权登录</button>
+  </view>
+</view> -->
+<view class='set-background'>
+  <image class='background-image' src='../images/loginback.png'></image>
+  <view class='background-content'>
+    <image class='background-img' src="../images/logo.png"></image>
+    <button plain="true" open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber">手机号授权登录</button>
+  </view>
+</view>

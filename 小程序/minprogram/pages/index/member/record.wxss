@@ -1,0 +1,92 @@
+.amount{
+   background:#CABBC7;
+   margin:20rpx;
+   padding:20rpx;
+
+}
+.head{
+	width: 100%;
+	display: inline-block;
+	padding: 2vw 6vw;
+	background: #f2f2f2;
+}
+.head .header{
+	font-size: 2em;
+	color: #666666;
+	text-align: center;
+}
+.main{
+	width: 100%;
+	display: inline-block;
+}
+.main .amount{
+	width: 100%;
+	display: inline-block;
+	background: #f6f6f6;
+	padding: 4vw;
+}
+.main .amount .time{
+	width: 100%;
+	display: inline-block;
+}
+.main .amount .time .picker{
+  width: 120px;
+	font-size: 1.6em;
+	float: left;
+  background-color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  position: relative;
+}
+.main .amount .time .picker icon{
+  position: absolute;
+  top: -5px;
+}
+.main.recordlist.box.name .span{
+	font-size: 1.2em;
+	color: #bfbfbf;
+}
+.main .recordlist{
+	width: 100%;
+	display: inline-block;
+}
+.main .recordlist .ul{
+	width: 100%;
+	display: inline-block;
+}
+.main .recordlist .ul .li{
+	width: 100%;
+	display: inline-block;
+	background: #fff;
+	padding: 4vw;
+	margin-bottom: 0.3vw;
+}
+.main .recordlist .ul .li .box{
+	width: 10vw;
+	height: 10vw;
+	background: #44a2e2;
+	border-radius: 50%;
+	float: left;
+}
+.main .recordlist .ul .li .name{
+	margin-left: 4vw;
+	float: left;
+	line-height: 3vh;
+}
+.main .recordlist .ul .li .name .h5{
+	font-size: 1.2em;
+  text-align: left;
+}
+.main .recordlist .ul .li .h2{
+	font-size: 1.2em;
+	text-align: right;
+}
+#noneContent{
+  text-align: center;
+  font-size: 1.6em;
+  color: #bfbfbf;
+}
+.title{
+  margin-top: -10px;
+  text-align: center;
+}

@@ -1,0 +1,154 @@
+<View class="main">
+ <view class="getUserInfo" wx:if="{{memberInfoFlag}}">
+      <view class="userInfoTips">
+        <image src='../../images/lg.png'/>
+        <text class="tipsTop">申请获取您的手机号</text>
+        <text class="tipsP">以便于提供到货通知、售后处理等服务</text>
+      </view>
+      <button class="grandBtn" open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber">手机号授权</button>
+     </view>
+     <view class="getUserInfo-bg" wx:if="{{memberInfoFlag}}"></view>
+
+      <view class="address">
+        <view class="address-add">
+          <text class="address-addLabel">当前机器</text>
+          <text class="address-addSpan">{{mechineName}}</text>
+        </view>
+        <view class="address-user">
+          <text class="address-userLabel">详细地址</text>
+          <text class="address-userSpan">{{address}}</text>
+        </view>
+        <!-- <icon class="icon iconfont icon-Icon_right"  bindtap='handleClick' /> -->
+        <image id="address-addBg" src="../../images/line.png" />
+      </view>
+			<View class="product">
+				<View class="milk">
+					<image src="{{productInfo[0].httpImageUrl}}"></image>
+				</View>
+				<View class="productInformation">
+					<View class='h2'>{{productInfo[0].proName}}</View>
+					<View class='h3'>{{productInfo[0].description}}</View>
+					<View class="hot">
+					 <View class='h5' wx:for="{{productInfo[0].tag}}" wx:for-item="child">{{child}}</View> 
+					</View>
+					<View class='h3'>规格：{{productInfo[0].progg}}</View>
+				</View>
+				<View class="price">
+					<View class='span'>单价：￥{{productInfo[0].price0}}</View>
+				</View>
+			</View>
+			<View class="dispatching">
+				<View class='ul'>
+					<View class='li'>
+						<View class="left">配送周期</View>
+						<View class="right">
+
+              <View>
+                  <i-tag wx:for="{{tags}}" wx:key="{{index}}"  wx:if="{{item.rowNum<=5}}" bindchange="onChange" checkable="{{true}}" name="{{index}}" color="{{item.color}}" checked="{{item.checked}}" type="border" style="margin-right:5px;" i-class="day" data-id="{{item.id}}" data-cycle=" {{item.zq}}" data-type="{{item.type}}" data-num="{{item.num}}">
+      {{item.zqName}}
+  </i-tag> 
+              </View>
+              <view>
+               <i-tag wx:for="{{tags}}" wx:key="{{index}}"wx:if="{{item.rowNum<=5}}" style="margin-right:5px;" i-class="dayActivity">
+    {{item.activitytag}}
+</i-tag> 
+              </view>
+
+
+               <View>
+                  <i-tag wx:for="{{tags}}" wx:key="{{index}}" wx:if="{{item.rowNum>5}}" bindchange="onChange" checkable="{{true}}" name="{{index}}" color="{{item.color}}" checked="{{item.checked}}" type="border" style="margin-right:5px;" i-class="day" data-id="{{item.id}}"                     data-cycle=" {{item.zq}}" data-type="{{item.type}}" data-num="{{item.num}}">
+                    {{item.zqName}}
+                  </i-tag> 
+              </View>
+              <view>
+               <i-tag wx:for="{{tags}}" wx:key="{{index}}" wx:if="{{item.rowNum>5}}" style="margin-right:5px;" i-class="dayActivity">
+                  {{item.activitytag}}
+               </i-tag> 
+              </view> 
+
+
+
+						</View>
+					</View>
+					<View class='li'>
+						<View class="left">每期件数</View>
+              <i-input-number class="right-num" value="{{ value1 }}" min="1" max="1" bindchange="handleChange1" />
+					  </View>
+            <i-cell i-class='li liHeight' title="总件数">
+              <View class='h2'>{{zsStr}}</View>
+            </i-cell>
+					<View class='li'>
+						<View class="left">
+							配送模式
+						</View>
+						<View class="right-style">
+                <i-tag wx:for="{{cycle}}" wx:key="{{index}}" bindchange="onChangeCycle" checkable="{{true}}" name="{{index}}" color="{{item.color}}" checked="{{item.checked}}" type="border"style="margin-right:5px;" i-class="dayCycle" data-id="{{item.id}}">
+    {{item.name}}
+</i-tag> 
+						</View>
+						<View class='span'>如周期送订单需暂停，请提前3天联系客服申请</View>
+					</View>
+          <i-cell i-class='li liHeight' title="首送日期" label="请根据配送模式选择正确的日期" is-link><picker
+                      mode="date"
+                      value="{{dates}}"
+                      start="{{dates}}"
+                      end="2050-01-01"
+                      bindchange="bindDateChange">
+                      <view class="picker">
+                        {{dates}}
+                      </view>
+                    </picker></i-cell>
+				 
+          <i-cell i-class='li liHeight' title="配送时间" value="每天07:00-17:00" is-link></i-cell>
+					<View class="orderNotice" bindtap='openNotice'>
+						<View class="title">预订须知</View>
+						<View class="notice">
+							1.请确认商品与预订取货时间无误，下单成功后将不予退换
+						</View>
+            <view class="notice">
+            2.预订取货时间48小时前可修改取货时间，取货时间48小时内不得修改取货时间
+            </view>
+            <view class="notice">
+            3.预订取货时间当天将通过微信通知用户取货，如当天未到指定设备取货，设备管理员次日将销毁该商品，由于逾期造成的损失由用户自行承担
+            </view>
+            <view class="notice">
+            4.由于设备故障等不可抗力因素，存在少量预订取消的情况，会进行退款
+            </view>
+            <view class="notice">
+            5.由于设备系统不稳定等因素，存在出货失败的情况，会进行退款
+            </view>
+            <view class="notice">
+            6.预订成功后，预订商品将按预订时间放置于指定设备内，放置到位后用户会收到取货码短信/微信提醒
+            </view>
+            <view class="notice">
+            7.下单即代表你同意<text style="color:rgb(115,208,255)">《生鲜时逐用户服务协议》</text>
+            </view>
+					</View>
+				</View>
+			</View>
+			<View class="bottom">
+				<View class='div'>合计金额：
+          <text class='span'>￥{{totalMoney}}</text>
+        </View>
+				<!-- <button bindtap='bindOKBtn'>确    认</button> -->
+         <form report-submit='true' bindsubmit='clickFormView'>
+          <!-- <i-button form-type='submit'bind:click="bindOKBtn" type="primary" shape="circle" size="small" loading="{{loadFlag}}">确    认</i-button> -->
+           <button form-type='submit' bindtap="{{!buttonClicked?'bindOKBtn':''}}">支付</button>
+         </form>
+			</View>
+</View>
+<i-drawer i-class="drawer" mode="right" visible="{{showRight1}}" bind:close="handleClick">
+    <view class="drawerView">
+        <view class="drawerList" wx:for="{{mechineList}}" wx:for-item="item" wx:for-index="idx">
+          <view class="drawerList-li" bindtap='clickMechine' data-id="{{item.id}}" data-name="{{item.mechineName}}" data-address="{{item.addres}}" data-jl="{{item.xjlc}}">
+            <view class="drawerList-name">{{item.mechineName}}
+              <view>
+                <icon class="icon iconfont icon-dingwei"/>{{item.xjlc}}km
+              </view>
+              </view>
+              <text class="drawerList-add">地址：{{item.addres}}</text>
+          </view>
+        </view>
+    </view>
+</i-drawer>
+<i-toast id="toast" />

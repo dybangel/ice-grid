@@ -1,0 +1,153 @@
+<wxs src="../../../wxs/subUtil.wxs" module="tools" />
+<wxs src="../../../wxs/replaceUtil.wxs" module="replaceUtil" />
+<view style="background:#f5f5f5;display:inline-block;width:100vw;height:100vh;">
+<!-- 订单信息 -->
+<View class="details">
+  <View class='h6'></View>
+				<View class="product">
+					<View class="producticon">
+						<image src="{{orderInfo.httpImageUrl}}" ></image>
+					</View>
+				</View>
+				<View class="brand">
+					<view class='h2'>{{orderInfo.proName}}</view>
+					<view class='h6'>{{orderInfo.progg}}*{{orderInfo.totalNum}}盒</view>
+					<view class='h5'>共{{orderInfo.totalNum}}件商品</view>
+				</View>
+				<View class="price">
+					<View class="pricetext">
+          	<view class='h4' style='color: #f15a24'>{{orderInfo.orderZT=="0"?"生产中":(orderInfo.orderZT=="1"?"配送中":(orderInfo.orderZT=="3"?"配送完成":(orderInfo.orderZT=="4"?"已兑换":"其他")))}}</view>
+						<view class='h3'>￥{{orderInfo.price}}</view>
+						<view class='h4'>*{{orderInfo.totalNum}}</view>
+					</View>
+					<View class="pricesum">
+						<!-- <view class='h5'>会员已优惠：￥{{orderInfo.youhuiMoney}}</view> -->
+						<view class='h1'>合计：￥{{orderInfo.totalMoney}}</view>
+					</View> 
+				</View>
+</View>
+
+<view style="width:100vw;padding: 0 12px;display:inline-block">
+<!-- 日历信息 -->
+
+<view class="date-year-month">
+<image bindtap='lastMonthEvent' src='../../images/left.png'></image>
+{{year}}年{{month}}月
+<image src='../../images/right.png' bindtap='nextMonthEvent'></image>
+<view bindtap='nextMonthEvent' class='closeArrowRight'></view>
+</view>
+  
+<view style="background:#fff;">
+<view style="font-size: 30rpx; ">
+  <view class="layout-flex row">
+    <text class="date-week" style="width:{{systemInfo.windowWidth/7-10}}px;height:20px" wx:for="{{weekStr}}" wx:key="{{index}}">
+    <text wx:if="{{item !=='日' && item !=='六'}}">{{item}}</text>
+    <text wx:if="{{item ==='日' || item ==='六'}}" class="week">{{item}}</text>
+    </text>
+  </view>
+</view>
+  <view class="layout-flex row" style="flex-wrap: wrap;margin-top:30rpx;">
+    <view class="date-day {{item.day<=0?'bgwhite':item.class}}" style="width:{{systemInfo.windowWidth/7-10}}px;height:{{systemInfo.windowWidth/7}}px;" data-year="{{year}}" data-month="{{month}}" data-day="{{item.day}}" data-amount="{{item.amount}}"bindtap="onPressDateEvent"
+      wx:for="{{days}}" wx:key="{{index}}">
+      <view class='item-days'>
+        <text>{{item.day>0?(item.daytext?item.daytext:item.day):''}}</text>
+        <text class='amount' wx:if='{{item.day>0}}'>{{item.amount}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+</view>
+
+<!-- 订单 -->
+<view class="order-datails">
+				<view class='ul'>
+					<view class='li'>
+						<view class='h4'>订单号</view>
+						<view class='span'>{{orderInfo.orderNO}}</view>
+					</view>
+				<view class='li'>
+						<view class='h4'>下单时间</view>
+						<view class='span'>{{orderTime}}</view>
+					</view>
+				<view class='li'>
+						<view class='h4'>首送日期</view>
+						<view class='span'>{{orderInfo.startTime}}</view>
+				</view>
+				<view class='li'>
+						<view class='h4'>止送日期</view>
+						<view class='span'>{{orderInfo.endTime}}</view>
+				</view>
+				<view class='li'>
+						<view class='h4'>订单状态</view>
+						<view class='span'>{{orderInfo.orderZT=="0"?"生产中":(orderInfo.orderZT=="1"?"配送中":(orderInfo.orderZT=="3"?"配送完成":(orderInfo.orderZT=="4"?"已兑换":"其他")))}}</view>
+				</view>
+				<view class='li'>
+						<view class='h4'>配送周期</view>
+						<view class='span'>{{orderInfo.totalNum}}天</view>
+				</view> 
+				<view class='li'>
+						<view class='h4'>剩余天数</view>
+						<view class='span'>{{orderInfo.syNum}}天</view>
+				</view>
+				<!-- <view class='li'>
+						<view class='h4'>每期件数</view>
+						<view class='span'>27868928855</view>
+				</view> -->
+				<view class='li'>
+						<view class='h4'>配送模式</view>
+						<view class='span'>{{orderInfo.psModeStr}}</view>
+				</view>
+				<view class='li'>
+						<view class='h4'>客服热线</view>
+						<view class='span'>{{orderInfo.customerPhone}}</view>
+					</view>
+				</view>
+</view>
+
+ 
+
+
+ <view class="zan-dialog {{ showDialog ? 'zan-dialog--show' : '' }}">
+  <view class="zan-dialog__mask" bindtap="toggleDialog" />
+  <view class="zan-dialog__container">
+    <view style='padding:100rpx;'>
+
+    
+    <view class="zhuanshou">
+			<view class="zs">
+				<view class="zs-milk">
+					<image src="{{orderInfo.httpImageUrl}}" ></image>
+				</view>
+				<view class="zs-time">
+					<view id="one">
+						<view class='h2'>1 调整该日期奶品的配送时间</view>
+						<!-- <view class="zs-date" id="select">选择配送日期</view> -->
+            <View class="zs-date" id="select" >
+              <picker mode="date" value="{{date}}" fields="day" start="2019-01-01" end="2050-01-01" bindchange="bindDateChange">  
+                <view class="picker">  
+                  {{dates}}  
+                </view>  
+              </picker>  
+				    </View>
+						<view class='h2' bindtap='zsproduct'>2 转售该配送日期奶品<icon class="{{zsproductflag?'icon iconfont icon-duigou iColor': 'icon iconfont icon-duigou'}}"/></view>
+					</view>
+					<!-- <view class="resale">转售该配送日期奶品</view> -->
+					<view class="price">
+						<view class='h3'>购买价：￥{{orderInfo.price}}</view> 
+						<view class='h4'>转售价：<view class='span' style="float:right">￥{{orderInfo.price/2}}</view></view>
+					</view>
+					<view class='p'>温馨提示：1当日产品不允许修改派送时间;
+          2免费为您提供转售服务，商品将以五折价在本设备销售，销售期24小时，期限结束后处于保鲜考虑统一销毁款，转售失败无返还金额。          </view>
+				</view>
+				<view class="zs-button">
+					<button class="cancel confirm" bindtap='changeOrder'>确定</button>
+					<button class="cancel" bindtap='toggleDialog'>取消</button>
+				</view>
+			</view>
+</view> 
+    </view>
+  </view>
+</view>
+</view>
+ <i-toast id="toast" />
+ 

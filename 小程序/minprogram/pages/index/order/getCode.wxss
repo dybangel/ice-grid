@@ -1,0 +1,56 @@
+.forView{
+  width: calc(100% - 24px);
+  margin: 12px 12px 0 12px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.item_content{
+  width:90%;
+  height:100rpx;
+  font-size:1.6em;
+  color:#888;
+  word-break:break-all;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  line-height:58px;
+}
+.item_from{
+  width: auto;
+  font-size: 1em;
+  color: #999;
+}
+.item_time{
+  width:auto;
+  font-size: 1.0em;
+  color: #999;
+  display:block;
+  /* float: right; */
+  position: absolute;
+  right: 0;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.hover-class{
+  background-color: #A4D3EE;
+}
+.bzInfo{
+  text-align: center;
+  padding-top: 20px;
+  position: relative;
+  color: #999;
+  font-size: 1.2em;
+}
+.noticeInfo{
+  color: #999;
+  margin-left: 10px;
+  font-size: 1em;
+  
+}
+.baseInfo{
+  position: absolute;
+  bottom: 10px;
+
+}

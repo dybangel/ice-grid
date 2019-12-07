@@ -1,0 +1,73 @@
+ <View class="main">
+	<View class="datalist">
+		<View class='ul'>
+			<View class='li'>
+            <View class="data-content">
+              <text class='h4'>头像</text>
+              <image src="{{memberInfo.headurl}}"></image>
+            </View>
+            <icon class='icon iconfont icon-Icon_right'></icon>
+      </View>
+			<View class='li'>
+						<View class="data-content">
+							<text class='h4'>姓名</text>
+							<text class='h5' bindtap="modalinput">{{memberName}}</text>
+						</View>
+						<icon class='icon iconfont icon-Icon_right'></icon>
+			</View>		
+			<View class='li'>
+						<View class="data-content">
+							<text class='h4'>手机号</text>
+							<text class='h5' >{{memberInfo.phone}}</text>
+						</View>
+						<icon class='icon iconfont icon-Icon_right'></icon>
+			</View>		
+			<View class='li'>
+						<View class="data-content">
+							<text class='h4'>性别</text>
+							<text class='h5'>{{memberInfo.sex}}</text>
+						</View>
+						<icon class='icon iconfont icon-Icon_right'></icon>
+			</View>
+			<View class='li'>
+						<View class="data-content">
+							<text class='h4'>出生年月</text>
+							<!-- <text class='h5' style="color: #333333;">{{memberInfo[0].brithday==null?"":memberInfo[0].brithday}}</text> -->
+              	<picker mode="date" value="{{date}}" fields="day" start="1900-01-01" end="2050-01-01" bindchange="bindDateChange">  
+                  <view class='h5' style="color: #333333;">  
+                    {{dates}}  
+                  </view>  
+                </picker>  
+						</View>
+						<icon class='icon iconfont icon-Icon_right'></icon>
+			</View>
+			<!-- <View style="margin-top: 10px;" class='li' bindtap='modalinput1'>
+						<View class="data-content">
+							<View class='h4'>支付密码</View>
+							<View class='h5'>点击设置</View>
+						</View>
+						<icon class='icon iconfont icon-Icon_right'></icon>
+			</View> -->
+		</View>
+	</View>
+</View>
+<modal wx:if="{{hiddenmodalput}}" title="会员资料" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+    <input type='text'placeholder="请输入真实姓名" bindinput='bindName' auto-focus/>
+</modal>
+<!-- <modal hidden="{{hiddenmodalput1}}" title="密码修改" confirm-text="提交" cancel-text="取消" bindcancel="cancel1" bindconfirm="confirm1">
+  <view class='btnAndYzm'>
+    <input type='number'placeholder="手机验证码" bindinput='bindYzm' auto-focus maxlength='6' class='input_modal'/>
+    <button bindtap='sendMsg' class='btnFS' hover-class='clickBtn' disabled='{{setDis}}'>{{content}}</button>
+  </view>
+   <input type='number'placeholder="请输入交易密码" bindinput='bindPwd' auto-focus maxlength='6' class='input_modal2'/>
+    
+</modal> -->
+<modal  wx:if="{{hiddenmodalput2}}" title="修改手机号" confirm-text="提交" cancel-text="取消" bindcancel="cancel2" bindconfirm="confirm2">
+    <view class='btnAndYzm'>
+     <button bindtap='sendMsg' class='btnFS' hover-class='clickBtn' disabled='{{setDis}}'>{{content}}</button>
+    <input type='number'placeholder="手机验证码" bindinput='bindYzm' auto-focus maxlength='6' class='input_modal'/>
+   
+  </view>
+   <input type='number'placeholder="请输入手机号" bindinput='bindPhone' auto-focus maxlength='11' class='input_modal2'/>
+</modal>
+<i-toast id="toast" />

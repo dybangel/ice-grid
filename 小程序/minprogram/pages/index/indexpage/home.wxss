@@ -1,0 +1,317 @@
+page{
+  background: #f9f9f9;
+}
+.slide-image{
+  width: 100%;
+}
+
+
+.main{
+	width: 100%;
+	height: calc(100vh - 50px);
+	display: inline-block;
+	overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.main .contentlist{
+	width: 100%;
+	display: inline-block;
+	padding: 1vw 4vw;
+	border-bottom: 1px solid #b2b2b2;
+}
+.main .contentlist .address{
+	width: 100%;
+	display: inline-block;
+	border-bottom: 1px solid #b2b2b2;
+}
+.main .contentlist .address .addresstext{
+	width: calc(80% - 5vw);
+	display: inline-block;
+	padding: 4px 0 10px 0;
+}
+.main .contentlist .address .text-address{
+	font-size: 1.6em;
+	font-weight: bold;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.main .contentlist .address .text-location{
+  width: 100%;
+  display: inline-block;
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 20px;
+}
+.main .contentlist .address .text-location icon{
+	color: #73D0FF;
+	font-size: 1.8em;
+	font-weight:normal ;
+}
+.main .contentlist .address .replace{
+	width: calc(20% + 5vw);
+	display: inline-block;
+	float: right;
+	margin-top: 7vw;
+}
+.main .contentlist .address .replace button{
+	/* font-size: 1.2em;
+	text-align: center;
+	color: #fff; */
+  padding: 0;
+	background: #44a2e2;
+	border-radius: 10vw;
+  margin: 0;
+}
+
+.main .contentlist .navlist{
+	width: 100%;
+	display: inline-block;
+}
+.main .contentlist .navlist .navlistUl{
+	width: 100%;
+	display: inline-block;
+}
+.main .contentlist .navlist .navlistUl .navlistLi{
+	width: 100%;
+	display: inline-block;
+	padding: 3vw 0;
+	float: left;
+  position: relative;
+}
+.main .contentlist .navlist .navlistUl .navlistLi:first-child{
+	border-bottom: 1px solid #b2b2b2;
+}
+.main .contentlist .navlist .navlistUl .navlistLi .order{
+	/* width: 24%; */
+	display: inline-block;
+	float: left;
+}
+.main .contentlist .navlist .navlistUl .navlistLi .order .orderTitle{
+	display: inline-block;
+	font-size: 1.6em;
+	font-weight: bold;
+}
+.main .contentlist .navlist .navlistUl .navlistLi .order .orderMain{
+	font-size: 1em;
+  display: inline-block;
+  width: 100%;
+}
+.main .contentlist .navlist .navlistUl .navlistLi .orderData{
+	width: auto;
+	font-size: 12px;
+	text-align: center;
+	background: #f15a24;
+	color: #fff;
+  font-weight: normal;
+	border-radius: 2vw;
+	display: inline-block;
+	padding: 1vw 6px;
+  margin-left: 6px;
+}
+.main .contentlist .navlist .navlistUl .navlistLi .icon{
+	position: absolute;
+	right: -8px;
+	top: 10px;
+}
+.main .contentlist .navlist .navlistUl .navlistLi .icon image{
+	width: 36px;
+  height: 36px;
+}
+
+.main .btn{
+	width: 100%;
+	height: 172px;
+	display: inline-block;	
+}
+.main .btn .quhuo{
+	width: 50%;
+	height: auto;
+	display: inline-block;
+	border-right: 1px solid #b2b2b2;
+	padding: 1vw 10vw;
+}
+.main .btn .quhuo button{
+	font-size: 1.4em;
+	background: #44a2e2;
+	color: #fff;
+	border: 0;
+	text-align: center;
+	border-radius: 10vw;
+	padding: 1vw 2vw;
+}
+.main .btn .pickingCode{
+	width: 50%;
+	height: auto;
+	display: inline-block;
+	float: right;
+	padding: 1vw 10vw;
+}
+.main .btn .pickingCode button{
+	font-size: 1.4em;
+	background: #44a2e2;
+	color: #fff;
+	border: 0;
+	text-align: center;
+	border-radius: 10vw;
+	padding: 1vw 2vw;
+} 
+.main .btn .ad{
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	background: #c6e9fa;
+  padding-bottom: 10px;
+}
+.main .btn .ad text{
+	font-size: 2.2em;
+	font-weight: bolder;
+	text-align: center;
+	color: #44a2e2;
+}
+
+/*取货码提示框*/
+.quhuocode{
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	z-index: 98;
+	display: none;
+}
+.quhuocode .quhuo{
+	width: calc(100% - 80px);
+	display: inline-block;
+	background: #fff;
+	border-radius: 32px;
+	margin: 233px 40px;
+	padding: 10px 30px;
+	text-align: center;
+	line-height: 70px;
+}
+.quhuo .quhuoTitle{
+	font-size: 3em;
+	color: #4d4d4d;
+}
+.quhuo .quhuoNum{
+	font-size: 4.5em;
+	color: #44a2e2;
+	font-family: "微软雅黑";
+	
+}
+.quhuo .quhuoDate{
+	font-size: 1.8em;
+	color: #666666;
+}
+
+/* 右侧抽屉弹出 */
+.drawerView{
+  position: absolute;
+  top: -50vh;
+  bottom: -50vh;
+  right: 0;
+  width: 60vw;
+  height: 90.5vh;
+  background: #fff;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.drawerView .drawerList{
+  width: 100%;
+  height: auto;
+  padding: 12px;
+}
+.drawerView .drawerList .drawerList-li{
+  width: 100%;
+  float: left;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+.drawerView .drawerList .drawerList-li .drawerList-name{
+  width: 100%;
+  display: inline-block;
+  font-size: 1.26em;
+  margin-bottom: 6px;
+}
+.drawerView .drawerList .drawerList-li .drawerList-name view{
+  float: right;
+  font-size: 1em;
+  color: #999;
+  position: relative;
+  margin-top: -8px;
+}
+.drawerView .drawerList .drawerList-li .drawerList-name view icon{
+  font-size: 1.3em;
+  position: relative;
+  top: 4px;
+  color: #f15a24;
+}
+.drawerView .drawerList .drawerList-li .drawerList-add{
+  color: #666;
+}
+
+ /* 获取用户信息授权 */
+.getUserInfo{
+  width: 94vw;
+  position: fixed;
+  top: 28vh;
+  left: 3vw;
+  background: #fff;
+  border-radius: 4px;
+  padding: 16px;
+  z-index: 9999;
+}
+.getUserInfo .userInfoTips{
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.getUserInfo .userInfoTips image{
+  width: 46px;
+  height: 46px;
+  float: left;
+}
+.getUserInfo .userInfoTips text {
+  width: calc(100% - 46px);
+  float: left;
+  padding-left: 12px;
+  box-sizing: border-box;
+}
+.getUserInfo .userInfoTips text.tipsTop{
+  font-size: 20px;
+  color: #666666;
+
+}
+.getUserInfo .userInfoTips text.tipsP{
+  font-size: 15px;
+  color: #999999;
+  margin-top: 2px;
+}
+.getUserInfo .grandBtn{
+  width: 90%;
+  float: left;
+  margin: 0 5%;
+  height: 42px;
+  font-size: 16px;
+  border-radius: 4px;
+  color: #ffffff;
+  background: rgb(26,175,25);
+}
+.getUserInfo-bg{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: rgba(0,0,0,0.5);
+  z-index: 999;
+}
+.productInfo{
+  text-align: center;
+  font-size: 1.2em;
+
+}
+.sendInfo{
+  text-align: center;
+  font-size: 1.2em
+}

@@ -1,0 +1,6 @@
+function my_rep(str) {
+  return str.replace("T"," ");
+}
+module.exports = {
+  my_rep: my_rep
+}

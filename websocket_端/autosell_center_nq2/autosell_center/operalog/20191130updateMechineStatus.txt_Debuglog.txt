@@ -1,0 +1,50 @@
+2019-11-30 17:57:34.645:mechineID=68;netStatus=1
+---------------
+2019-11-30 17:57:34.741:sql=update asm_mechine set netStatus=1 where id=68
+---------------
+2019-11-30 17:57:34.776:a=1
+---------------
+2019-11-30 17:57:34.777:sql1=select top 1 * from asm_mechine_statu where mechineID=68 and breakID=2  order by id desc
+---------------
+2019-11-30 17:57:34.798:1insert=insert into asm_mechine_statu(mechineID,breakID,time,statu) values(68,2,'2019-11-30 17:57:34',0)
+---------------
+2019-11-30 17:57:39.619:mechineID=68;netStatus=1
+---------------
+2019-11-30 17:57:39.671:sql=update asm_mechine set netStatus=1 where id=68
+---------------
+2019-11-30 17:57:39.700:a=1
+---------------
+2019-11-30 17:57:39.700:sql1=select top 1 * from asm_mechine_statu where mechineID=68 and breakID=2  order by id desc
+---------------
+2019-11-30 17:57:39.721:1insert=insert into asm_mechine_statu(mechineID,breakID,time,statu) values(68,2,'2019-11-30 17:57:39',0)
+---------------
+2019-11-30 17:57:44.628:mechineID=68;netStatus=1
+---------------
+2019-11-30 17:57:44.678:sql=update asm_mechine set netStatus=1 where id=68
+---------------
+2019-11-30 17:57:44.700:a=1
+---------------
+2019-11-30 17:57:44.701:sql1=select top 1 * from asm_mechine_statu where mechineID=68 and breakID=2  order by id desc
+---------------
+2019-11-30 17:57:44.722:1insert=insert into asm_mechine_statu(mechineID,breakID,time,statu) values(68,2,'2019-11-30 17:57:44',0)
+---------------
+2019-11-30 17:58:39.714:mechineID=68;netStatus=1
+---------------
+2019-11-30 17:58:39.763:sql=update asm_mechine set netStatus=1 where id=68
+---------------
+2019-11-30 17:58:39.918:a=1
+---------------
+2019-11-30 17:58:39.918:sql1=select top 1 * from asm_mechine_statu where mechineID=68 and breakID=2  order by id desc
+---------------
+2019-11-30 17:58:39.940:1insert=insert into asm_mechine_statu(mechineID,breakID,time,statu) values(68,2,'2019-11-30 17:58:39',0)
+---------------
+2019-11-30 17:58:44.719:mechineID=68;netStatus=1
+---------------
+2019-11-30 17:58:44.767:sql=update asm_mechine set netStatus=1 where id=68
+---------------
+2019-11-30 17:58:44.803:a=1
+---------------
+2019-11-30 17:58:44.803:sql1=select top 1 * from asm_mechine_statu where mechineID=68 and breakID=2  order by id desc
+---------------
+2019-11-30 17:58:44.824:1insert=insert into asm_mechine_statu(mechineID,breakID,time,statu) values(68,2,'2019-11-30 17:58:44',0)
+---------------

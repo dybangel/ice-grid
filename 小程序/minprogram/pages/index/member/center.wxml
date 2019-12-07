@@ -1,0 +1,131 @@
+<View class="main">
+		 <!-- <view class="getUserInfo" wx:if="{{memberInfoFlag}}">
+      <view class="userInfoTips">
+        <image src='../../images/lg.png'/>
+        <text class="tipsTop">申请获取以下权限</text>
+        <text class="tipsP">获取您的头像、性别个人信息</text>
+      </view>
+      <button class="grandBtn" wx:if="{{canIUse}}"open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">确认授权</button>
+     </view>
+     <view class="getUserInfo-bg" wx:if="{{memberInfoFlag}}"></view> -->
+			<View class="wechat">
+        <open-data class="wechat-pic" type="userAvatarUrl"></open-data>
+        <open-data class="wechat-name" type="userNickName"></open-data>
+        <text class="wechat-list">手机：{{phone}}</text>
+          <view class="wechat-list" wx:if="{{memberDj==0}}">
+          会员等级：
+          <image src="../../images/grade1.png"/>
+          <text class="wechat-grade">游客</text>
+          <text class="wechat-gradeMs">(体验期剩余0天)</text>
+        </view>
+        <view class="wechat-list" wx:if="{{memberDj==1}}">
+          会员等级：
+          <image src="../../images/grade1.png"/>
+          <text class="wechat-grade">普通会员</text>
+          <text class="wechat-gradeMs">(体验期剩余{{hjhyDay}}天)</text>
+        </view>
+        <view class="wechat-list" wx:elif="{{memberDj==2}}">
+          会员等级：
+          <image src="../../images/grade2.png"/>
+          <text class="wechat-grade">白银会员</text>
+          <text class="wechat-gradeMs">(体验期剩余{{hjhyDay}}天)</text>
+        </view>
+        <view class="wechat-list" wx:elif="{{memberDj==3}}">
+          会员等级：
+          <image src="../../images/grade3.png"/>
+          <text class="wechat-grade">黄金会员</text>
+          <text class="wechat-gradeMs">(体验期剩余{{hjhyDay}}天)</text>
+        </view>
+        <text class="wechat-list">近30天消费{{day4}}天</text>
+        <view class="wechat-gradeList">
+          <text class="wechat-gradeList-title">近30天消费</text>
+          <view class="wechat-gradeList-list">
+            <view class="gradeList-list-top">
+              <view style="width: {{day1 / (30)* 100}}%;"><image src="../../images/grade1.png" /></view>
+              <view style="width: {{day2 / (30)* 100}}%;"><image src="../../images/grade2.png" /></view>
+              <view style="width: {{day3 / (30)* 100}}%;"><image src="../../images/grade3.png" /></view>
+            </view>
+            <view class="gradeList-list-jd">
+              <view class="change" style="width: {{day4 / (30)* 100}}%;"></view>
+            </view>
+            <view class="gradeList-list-text">
+              <text>0</text>
+              <text style="width: {{day1 / (30)* 100}}%">{{day1}}</text>
+              <text style="width: {{day2 / (30)* 100}}%">{{day2}}</text>
+              <text style="width: {{day3 / (30)* 100}}%">{{day3}}</text>
+              <text>30天</text>
+            </view>
+          </view>
+        </view>
+			</View>
+    	<View class="infromlist">
+				<View class="ul">
+					<View class="li" bindtap='onclick' data-index="1">
+						<text class='h2'>会员钱包</text>
+						<icon class='icon iconfont icon-Icon_right'></icon>
+					</View>
+				 <View class="li" bindtap='payCodeTC' >
+						<text class='h2'>充值卡兑换</text>
+						<icon class='icon iconfont icon-Icon_right'></icon>
+					</View>
+          <View class="li" bindtap='modalinput2' data-index="7">
+						<text class='h2'>更换手机号</text>
+						<icon class='icon iconfont icon-Icon_right'></icon>
+					</View>
+					<View class="li" bindtap='onclick' data-index="3">
+						<text class='h2'>转售记录</text>
+						<icon class='icon iconfont icon-Icon_right'></icon>
+					</View>
+					<View class="li" bindtap='onclick' data-index="4">
+						<text class='h2'>扫码取货</text>
+						<icon class='icon iconfont icon-Icon_right'></icon>
+					</View>
+					<View class="li" bindtap='onclick' data-index="5">
+					  <text class='h2'>取货码取货</text>
+						<icon class='icon iconfont icon-Icon_right'></icon>
+					</View>
+          	<View class="li" bindtap='modalinput' data-index="6">
+					  <text class='h2'>线下订奶码兑换</text>
+						<icon class='icon iconfont icon-Icon_right'></icon>
+					</View>
+          <View class="li" bindtap='onclick' data-index="2">
+						<text class='h2'>会员资料</text>
+						<icon class='icon iconfont icon-Icon_right'></icon>
+					</View>
+				</View>
+			</View>      
+
+ <i-tab-bar current="{{ current }}" i-class="menuNav" bindchange="handleChange">
+    <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+    <i-tab-bar-item key="order" icon="group" current-icon="group_fill" title="订单"></i-tab-bar-item>
+    <i-tab-bar-item key="notice" icon="remind" current-icon="remind_fill" count="{{num}}" title="通知"></i-tab-bar-item>
+    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill"  title="会员"></i-tab-bar-item>
+</i-tab-bar>
+<i-toast id="toast" />
+
+<modal wx:if="{{hiddenmodalput}}" class='modalClass' title="请输入您的短信订奶码" confirm-text="确认" cancel-text="取消" bindcancel="cancel" bindconfirm="getProductByCode">
+    <input wx:if="{{hiddenmodalput}}" class='input_modalCode' type='text'placeholder="短信订奶码" bindinput='bindCode' maxlength='10' auto-focus/>
+</modal> 
+ <modal wx:if="{{hiddenmodalput1}}" class='modalClass' title="" confirm-text="设置"  bindconfirm="setInfo" cancel-text="取消" bindcancel="cancel">
+    <View class="productInfo">您订购了{{productName}}{{zq}}盒</View>
+    <View class="sendInfo">请设置何时派送</View>
+</modal>
+
+<modal wx:if="{{hiddenmodalput2}}" title="修改手机号" confirm-text="提交" cancel-text="取消" bindcancel="cancel2" bindconfirm="confirm2">
+ <input type='number'placeholder="请输入手机号" bindinput='bindPhone' value='{{val}}' auto-focus maxlength='11' class='input_modal2'/>
+    <view class='btnAndYzm'>
+    <button bindtap='sendMsg' class='btnFS' hover-class='clickBtn' disabled='{{setDis}}'>{{content}}</button>
+    <input wx:if="{{hiddenmodalput2}}" cursor-spacing='100' type='number'placeholder="手机验证码" bindinput='bindYzm' auto-focus maxlength='6' class='input_modal' style="width:calc(100% - 140px)" value='{{val}}'/>
+  </view>
+</modal>
+ <modal wx:if="{{hiddenmodalput3}}" class='modalClass' title="" confirm-text="设置"  bindconfirm="setLocation" cancel-text="取消" bindcancel="cancel">
+     <input wx:if="{{hiddenmodalput3}}" class='input_modalCode' cursor-spacing='100' type='number'placeholder="经度" value='{{_longitude}}' maxlength='10' auto-focus/>
+      <input wx:if="{{hiddenmodalput3}}" class='input_modalCode' cursor-spacing='100' type='number'placeholder="纬度" value='{{_latitude}}' maxlength='10' auto-focus/>
+       <input wx:if="{{hiddenmodalput3}}" class='input_modalCode' cursor-spacing='100' type='text'placeholder="机器编号" bindinput='bindBH' maxlength='20' auto-focus/>
+</modal>
+<modal wx:if="{{hiddenmodalput4}}" class='modalClass' title="" confirm-text="确定"  bindconfirm="payCode" cancel-text="取消" bindcancel="cancel">
+     <input wx:if="{{hiddenmodalput4}}" bindinput='bindCardNO' cursor-spacing='100' class='input_modalCode' type='number'placeholder="充值卡号" value='' maxlength='12' auto-focus/>
+      <input wx:if="{{hiddenmodalput4}}" bindinput='bindPwd' cursor-spacing='100' class='input_modalCode' style='margin-top: 10px' type='number'placeholder="密码" value='' maxlength='10' auto-focus/>
+      
+</modal>
+</View>

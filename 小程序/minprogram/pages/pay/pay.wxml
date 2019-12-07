@@ -1,0 +1,4 @@
+<button bindtap='wxPay'>微信支付</button>
+<button bindtap='blancePay'>余额支付</button>
+ <i-toast id="toast" />
+ 
