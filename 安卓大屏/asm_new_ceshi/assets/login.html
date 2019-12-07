@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<script type="text/javascript">
+			function login()
+			{
+				var th=document.form1;
+				if(th.uname.value=="")
+				{
+					alert("用户名不能为空");
+					return;
+				}
+				var name=th.uname.value;
+				var upwd=th.pwd.value;
+				var result=JsObject.login(name,upwd); 
+				obj=JSON.parse(result)
+				if(obj.code=="200")
+				{
+				  
+			      //页面跳转 在后台实现
+				}else{
+					alert(obj.msg);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form action="" name="form1">
+			<div class="binge">
+				<img src="img/login/BINGE.png" />
+			</div>
+			<div class="login">
+			<div class="loginlist">
+				<ul>
+					<li>
+						设备编号：<input type="text" name="uname"/>
+					</li>
+					<li>
+						登录密码：<input type="text" name="pwd"/>
+					</li>
+				</ul>
+			</div>
+			<div class="bottom">
+				<button onclick="login()">登录</button>
+			</div>
+		</div>
+	</form>
+	</body>
+</html>

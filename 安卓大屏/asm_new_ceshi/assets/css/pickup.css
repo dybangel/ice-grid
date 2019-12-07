@@ -1,0 +1,214 @@
+/**提示*/
+.prompt{
+	width: 72vw;
+	margin: 14vw;
+	display: inline-block;
+	position: fixed;
+	z-index: 99;
+	border-radius: 2vw;
+	overflow: hidden;
+	display: none;
+}
+.prompt .smile{
+	width: 100%;
+	display: inline-block;
+	padding: 10vw 20vw ;
+	background: #fff;
+}
+.prompt .smile img{
+	width: 100%;
+}
+.prompt .prompttext{
+	width: 100%;
+	display: inline-block;
+}
+.prompt .prompttext h2{
+	font-size: 2rem;
+	font-family: "黑体";
+	font-weight: bold;
+	text-align: center;
+	background: #fff;
+	color: #61CCEC;
+}
+.prompt .prompttext h4{
+	font-size: 1.4rem;
+	font-family: "黑体";
+	font-weight: bold;
+	text-align: center;
+	background: #fff;
+	color: #CCCCCC;
+	line-height: 8vh;
+}
+.prompt .prompttext button{
+	width: 50%;
+	font-size: 1.6rem;
+	font-family: "黑体";
+	font-weight: bold;
+	text-align: center;
+	background:#e4f5ff;
+	color: #61CCEC;
+	float: left;
+	padding: 2vw 0;
+	border: 0;
+}
+.prompt .prompttext button.color{
+	background: #3491df;
+	color: #fff;
+}
+/**提示背景*/
+.promptback{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 98;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	display: none;
+}
+
+.main{
+	width: 100%;
+	display: inline-block;
+	padding: 4vw 0 0 0;
+}
+.main .left{
+	width: 7vw;
+	height: 7vw;
+	background: #61CCEC;
+	border-radius: 50%;
+	line-height: 7vw;
+	text-align: center;
+	color: #fff;
+	font-size: 2rem;
+	font-weight: bold;
+	position: absolute;
+	top: 2vw;
+	left: 2vw;
+}
+.main .right{
+	width: 100%;
+	display: inline-block;
+	padding: 0 10vw;
+}
+.main .right .one{
+	width: 100%;
+	display: inline-block;
+	background: url(../img/onebox.png) no-repeat;
+	background-size: 100% 100%;
+	margin-bottom: 2vw;
+}
+.main .right .one .onetext{
+	width: 50%;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	margin-top: 8vw;
+	padding-left: 4vw;
+}
+.main .right .one .onetext h2{
+	font-size: 1.8rem;
+	font-family: "黑体";
+	font-weight: bold;
+	color: #1B1464;
+}
+.main .right .one .onetext h3{
+	font-size: 1.4rem;
+	font-family: "黑体";
+	color: #1B1464;
+	line-height: 10vh;
+}
+.main .right .one .oneicon{
+	width: 50%;
+	display: inline-block;
+	float: left;
+	padding: 4vw 10vw;
+}
+.main .right .one .oneicon img{
+	width: 100%;
+}
+.main .right .two{
+	width: 100%;
+	display: inline-block;
+	background: url(../img/twobox.png) no-repeat;
+	background-size: 100% 100%;
+	padding: 4vw 10vw;
+}
+.main .right .two .twotext{
+	width: 100%;
+	display: inline-block;
+}
+.main .right .two .twotext h2{
+	font-size:2rem;
+	font-family: "黑体";
+	font-weight: bold;
+	color: #1B1464;
+	float: left;
+}
+.main .right .two .twotext span{
+	font-size: 1.8rem;
+	font-family: "黑体";
+	color: #1B1464;
+	float: right;
+}
+.main .right .two .num{
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+.main .right .two .num .textbox{
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	height: 7vh;
+	z-index: 0;
+}
+.main .right .two .num .textbox img{
+	width: 100%;
+	display: inline-block;
+	height: 7vh;
+}
+.main .right .two .num p{
+	font-size: 1.4rem;
+	font-family: "黑体";
+	color: #CCCCCC;
+	position: absolute;
+	top: 0;
+	line-height: 6.8vh;
+	padding: 0 4vw;
+	z-index: 1;
+}
+.main .right .two .num input{
+	width: calc(33.33% - 0.8vw);
+	display: inline-block;
+	float: left;
+	border-radius: 2vw;
+	background: #95e6f9;
+	border: 0;
+	line-height: 6.8vh;
+	font-size: 1.6rem;
+	font-family: "黑体";
+	font-weight: bold;
+	color: #1B1464;
+	margin: 0.4vw;
+	/*padding: 2vw;*/
+} 
+.main .right .two .num input.numclick{
+	background: #4efff7;
+}
+ .main .right .two .num .btn{
+ 	width: 100%;
+	display: inline-block;
+	border-radius: 2vw;
+	background: #b3dc1f;
+	border: 0;
+	font-size: 2rem;
+	font-family: "黑体";
+	color: #1B1464;
+	margin-top: 2vw;
+	padding: 2vw;
+ } 
+  .main .right .two .num button.btncolor{
+  	background: #39B54A;
+  	color: #fff;
+  }

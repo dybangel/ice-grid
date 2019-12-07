@@ -1,0 +1,59 @@
+.binge{
+	width: 100%;
+	height: auto;
+	display: inline-block;
+}
+.binge img{
+	width: 100%;
+	padding: 18vw;
+}
+
+.login{
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	padding: 10vw;
+}
+.login .loginlist{
+	width: 100%;
+	display: inline-block;
+	font-size: 2rem;
+	font-family: "黑体";
+	margin-top: 6vh;
+}
+.login .loginlist ul{
+	width: 100%;
+	display: inline-block;
+}
+.login .loginlist ul li{
+	width: 100%;
+	display: inline-block;
+	border-bottom: 1px solid #000000;
+	margin-bottom: 20vw;
+	padding-bottom: 1vw;
+}
+.login .loginlist ul li input{
+	width: 60%;
+	display: inline-block;
+	border: 0;
+	background: inherit;
+	font-size: 2rem;
+	font-family: "黑体";
+}
+.login .bottom{
+	width: 100%;
+	display: inline-block;
+	margin-top: 6vh;
+}
+.login .bottom button{
+	width: 100%;
+	font-size: 2rem;
+	font-family: "黑体";
+	font-weight: bold;
+	color: #fff;
+	background: #2056ff;
+	border: 0;
+	text-align: center;
+	border-radius: 10vw;
+	padding: 2vw 0;
+}

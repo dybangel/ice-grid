@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/shipment.css" />
+	</head>
+	<body>
+		<div class="shipment">
+			<div class="time">
+				<img src="img/time.png" />
+				<img id="timeM" src="img/numLis/6.png"/>
+				<img id="timeS" src="img/numLis/0.png" />
+				<img src="img/scon.gif" />
+			</div>
+			<div class="wait">
+				<img src="img/shipment.png" />
+			</div>
+			<div class="reminder">
+				<h4>温馨提示：请在出货口解锁后60秒内取走商品</h4>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+var lastTime = new Date().getTime();
+    var currentTime = new Date().getTime();
+    var timeOut = 2*60 * 1000; //设置超时时间：2分
+
+    /* 鼠标移动事件 */
+    $(document).mouseover(function(){
+        lastTime = new Date().getTime(); //更新操作时间
+		parent. updateCount(4);
+    });
+
+    //判断用户多久没有进行鼠标操作,超过2分钟自动退出登录
+    function testTime(){
+		console.log("testTime"+lastTime);
+        currentTime = new Date().getTime(); //更新当前时间
+        if(currentTime - lastTime > timeOut){ //判断是否超时
+            window.clearTimeout(inter);         
+            window.history.go(-1);
+        }else{
+            inter = setTimeout(testTime,1000);
+        }
+    }
+	
+
+
+
+	$(function(){
+		testTime();//倒计时返回
+		var timeM = 6
+		var timeS = 9
+		var ref = setInterval(function(){ //姣�绉掓墽琛屼竴娆�
+			$('#timeM').attr({'src': 'img/numLis/' + (timeM - 1) + '.png'}) // 鍒嗗浘鐗�
+			$('#timeS').attr({'src': 'img/numLis/' + timeS + '.png'}) // 绉掑浘鐗�
+			//$('#timeS').attr({'src': 'img/numLis/' +  + '.png'}) // 绉掑浘鐗�
+			if (timeM <= 1 && timeS <= 1) { // 鍒嗗拰绉掗兘涓�鏃�鍏抽棴瀹氭椂鎵ц
+				$('#timeM').attr({'src': 'img/numLis/0.png'}) // 鍒嗗浘鐗�
+			$('#timeS').attr({'src': 'img/numLis/0.png'}) // 绉掑浘鐗�
+			clearInterval(ref);
+			}
+			if (timeS <= 0) {
+				timeM = timeM - 1
+				timeS = 9
+			} else {
+			timeS = timeS - 1	
+			}
+		},1000);
+	})
+</script>

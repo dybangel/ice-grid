@@ -1,0 +1,177 @@
+.main{
+	width: 100%;
+	display: inline-block;
+	padding: 0;
+}
+.main .order{
+	width: 100vw;
+	display: inline-block;
+	padding: 2vw 8vw 0 8vw;
+}
+.main .order .shoppingprocess{
+	width: 33%;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #1B1464;
+	float: left;
+	margin-top: 5vw;
+}
+.main .order .step{
+	width: 67%;
+	display: inline-block;
+	float: right;
+	padding: 0.2vw;
+}
+.main .order .step div{
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #1B1464;
+	padding-bottom: 2vw;
+	text-align: center;
+}
+.main .order .step div span{
+	color: #39B54A;
+	margin: 0 15vw;
+}
+.main .order .step .shoppingicon{
+	width: 100%;
+	display: inline-block;
+	padding-left: 4vw;
+	padding-right: 4vw;
+}
+.main .order .step .shoppingicon img{
+	width: 100%;
+	display: inline-block;
+}
+.main .pay{
+	width: 100%;
+	display: inline-block;
+	padding: 0 10vw;
+}
+.main .pay .scan_codei_con{
+	width: 100%;
+	display: inline-block;	
+	padding:0 30vw;
+}
+.main .pay .scan_codei_con img{
+	width: 100%;
+	display: inline-block;	
+}
+.main .pay .produce{
+	width: 100%;
+	display: inline-block;
+	background: url(../img/scanbackgroundbox.png)  no-repeat;
+	background-size:100% 100%;
+	padding-right: 8vw;
+	margin-top: -2.2vh;
+}
+.main .pay .produce .producedetail{
+	width: calc(100% - 36vw);
+	display: inline-block;
+	padding: 4vw 0 0 6vw; 
+	float: left;
+}
+.main .pay .produce .producedetail div{
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #1B1464;
+}
+.main .pay .produce .producedetail .yoghourt{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+.main .pay .produce .producedetail .yoghourt img{
+	width: 80%;
+	border-radius: 2vw;
+}
+.main .pay .produce .producedetail .price{
+	font-size: 0.8rem;
+	font-weight: bold;
+	color: #1B1464;
+}
+.main .pay .produce .producedetail button{
+	width: 30vw;
+	height: 5vh;
+	font-size: 1.5rem;
+	margin: 1.2vh calc(50% - 15vw);
+	background: #61ccec;
+	border: 0;
+	border-radius: 2vw;
+	color: #1B1464;
+}
+.main .pay .produce .payway{
+	width: 32vw;
+	padding-top: 2vh;
+	display: inline-block;
+	float: right;
+}
+.main .pay .produce .payway .zhifu{
+	font-size: 1.4rem;
+	font-family: "黑体";
+	font-weight: bold;
+	color: #1B1464;
+	text-align: center;
+}
+.main .pay .produce .payway .two{
+	width: 32vw;
+	height: 32vw;
+	margin-top: 2vh;
+	display: inline-block;
+	background: #fff;
+	position: relative;
+}
+.main .pay .produce .payway .two span{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	line-height: 32vw;
+	font-size: 1.6rem;
+	color: #1B1464;
+	font-weight: bold;
+}
+.main .pay .produce .payway .two #qrcodeIcon{
+	width: 6vw;
+	height: 6vw;
+	position: absolute;
+	top: calc(50% - 3vw);
+	left: calc(50% - 3vw);
+	z-index: 2;
+	display: none;
+	border-radius: 1vw;
+}
+.main .pay .produce .payway .two #qrcode img{
+	width: 100%;
+	display: inline-block;
+	box-shadow: 1vw 1vw 2vw #67b6c7;
+	display: none;
+	background: #fff;
+	padding: 2vw;
+}
+.main .pay .produce .payway .listpay{
+	width: 100%;
+	display: inline-block;
+}
+.main .pay .produce .payway .listpay img{
+	width: calc(33.33%);	
+	float: left;
+	padding: 1vw;
+	margin:2vw 0 6vw 0;
+}
+.main .bottom{
+	width: 100%;
+	display: inline-block;
+	padding-bottom: 50px;
+	padding: 2vw 5vw;
+} 
+.main .bottom  button{
+	width: calc(100% - 40px);
+	height: 8vh;
+	font-family: "黑体";
+	font-size: 2.4rem;
+	color: #fff;
+	text-align: center;
+	background: #62cced;
+	border: 0;
+	border-radius: 2vw;
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/pay.css" />
+		<script>
+		function updateProductTypeUI(htmlVal)
+ 		{
+ 			
+ 		}
+ 		</script>
+	</head>
+	<body onclick="updateClick()">
+		<div class="main">
+			<div class="order">
+				<div class="shoppingprocess">购买流程</div>
+				<div class="step">
+					<div>选货<span>付款</span>出货</div>
+					<div class="shoppingicon">
+						<img src="img/buyprocess.png" />
+					</div>
+				</div>
+			</div>
+			<div class="pay">
+				<div class="scan_codei_con">
+					<img src="img/phonescan.png" />
+				</div>
+				<div  class="produce">
+					<div class="producedetail">
+						<div id="productName"></div>
+						 
+						<div class="yoghourt">
+							<img src="" id="imgPath"/>
+						</div>
+						<div class="price" style="width:100%;">
+							<span style="width:200px;text-align:right;float:left;display:block;">零 售 价 ：</span>
+							<div id="price" class="price" style="float:left;">￥0</div>
+						</div>
+						<div class="price" style="width:100%;">
+							<span style="width:200px;text-align:right;float:left;display:block;">普通会员价：</span>
+							<div id="price1" class="price" style="float:left;">￥0</div>
+						</div>
+						<div class="price" style="width:100%;">
+							<span style="width:200px;text-align:right;float:left;display:block;">白银会员价：</span>
+							<div id="price2" class="price" style="float:left;">￥0</div>
+						</div>
+						<div class="price" style="width:100%;">
+							<span style="width:200px;text-align:right;float:left;display:block;">黄金会员价：</span>
+							<div id="price3" class="price" style="float:left;">￥0</div>
+						</div>
+					</div>
+					<div class="payway">
+						<div  class="zhifu">扫码支付</div>
+						<div id="qrcodediv" class="two">
+							<span>请点击购买</span>
+							<img id="qrcodeIcon" src="img/logo.png" />
+							<div id=qrcode></div>
+							<!--<img src="" />-->
+						</div>
+						<div class="listpay">
+							<img src="img/Alipay.png" />
+							<img src="img/wallet.png" />
+							<img src="img/wechat.png" />
+						</div>
+					</div>
+				</div>
+				<div>
+					<div style="float:left">
+					    <div style="float:left;width:20px;font-size:18px;padding-top:5px;">微信公众号</div>
+						<div style="float:right">
+							<img src="/mnt/internal_sd/asm/image/qr/14.png" style='width:150px;height:150px;' id="imgPath"/>
+						</div>
+					</div>
+					<div style="float:left;padding-left:50px">
+						<p>如何成为会员？</p>
+						<p>扫码关注—>点"订奶"绑手机</p>
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<button type="button" onclick="goback()">返    回</button>
+			</div>
+		</div>
+		<!--<audio id="bgmMusic" src="video/pay.mp3" autoplay="autoplay"  preload="auto" type="audio/mp3"></audio>-->
+	</body>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/qrcode.min.js"></script>
+	<script>
+	var lastTime = new Date().getTime();
+    var currentTime = new Date().getTime();
+    var timeOut = 2*60 * 1000; //设置超时时间：2分
+
+    /* 鼠标移动事件 */
+    $(document).mouseover(function(){
+        lastTime = new Date().getTime(); //更新操作时间
+    });
+ 	$(function () {
+		parent. updateCount("3");
+	})
+    //判断用户多久没有进行鼠标操作,超过2分钟自动退出登录
+    function testTime(){
+        currentTime = new Date().getTime(); //更新当前时间
+        if(currentTime - lastTime > timeOut){ //判断是否超时
+            window.clearTimeout(inter);       
+            parent.updateIndex();  
+            window.history.go(-1);
+        }else{
+            inter = setTimeout(testTime,1000);
+        }
+    }
+	function updateClick()
+	{
+		parent.addClickTime("0");
+	}
+	var setting = {
+	     // 用于动态生成二维码的API，不需要修改。
+	     qrcodeApi: "http://qr.liantu.com/api.php?text="    
+    	}
+    	var productName="";
+    	var price="";
+    	var path="";
+    	
+    	var price1="";
+    	var price2="";
+    	var price3="";
+    	var priceSwich="";
+		$(function () {
+			var reqsn=getQueryString("reqsn");
+
+			productName=decodeURI(getQueryString("productName"));
+			price=getQueryString("price");
+			path=getQueryString("imgPath");
+			
+			price1=getQueryString("price1");
+			price2=getQueryString("price2");
+			price3=getQueryString("price3");
+			priceSwich=getQueryString("priceSwich");
+			$("#productName").text(productName);
+			if(priceSwich=="1")
+			{
+			//显示
+			$("#price1").show()
+			$("#price2").show()
+			$("#price3").show()
+			}else{
+			//隐藏
+			$("#price1").hide()
+			$("#price2").hide()
+			$("#price3").hide()
+			}
+			
+			
+			if(price!=""&&price!=null)
+			{
+				$("#price").text("￥"+price);
+			}else{
+				$("#price").hide();
+			}
+			if(price1!=""&&price1!=null)
+			{
+				$("#price1").text("￥"+price1);
+			}else{
+				$("#price1").hide()
+			}
+			if(price2!=""&&price2!=null)
+			{
+				$("#price2").text("￥"+price2);
+			}else{
+				$("#price2").hide()
+			}
+			if(price3!=""&&price3!=null)
+			{
+				$("#price3").text("￥"+price3);
+			}else{
+				$("#price3").hide()
+			}
+			$("#imgPath").attr("src",path);
+			var url="https://wx.bingoseller.com/main/togetherPayNew.aspx?reqsn="+reqsn;
+		 	
+		 	buyclick(url)
+		})
+		function goback(){
+			//window.location.href="";
+			console.log("返回上一页了");
+			parent.updateIndexCount();
+			parent.playMp3(1);
+			history.back(-1); 
+			//window.location.go(-1);
+			 
+		}
+		function buyclick(htmlContent){
+			//如果成功执行以下
+			$("#qrcode").html('')
+			$("#qrcodediv").find("span").hide()
+			$('#qrcodediv').find('#qrcodeIcon').show()
+			//生成二维码
+			// 设置参数方式
+			var width = $('#qrcodediv').width() - 12
+			var qrcode = new QRCode('qrcode', {
+			  text: htmlContent,
+			  width: width,
+			  height: width,
+			  colorDark : '#000000',
+			  colorLight : '#ffffff',
+			});
+		}
+		function getQueryString(name) { 
+	        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+	        var r = window.location.search.substr(1).match(reg); 
+	        if (r != null) return unescape(r[2]); 
+	        return null; 
+    	} 
+	</script>
+</html>

@@ -1,0 +1,233 @@
+#videoView{
+	width: 100%;
+	display: inline-block;
+	height: 24vh;
+	border: 0;
+	float: left;
+	background: #000;
+}
+#productView{
+	width: 100%;
+	display: inline-block;
+	height: 76vh;
+	border: 0;
+	float: left;
+}
+.main{
+	width: 100%;
+	height: auto;
+	display: inline-block;
+}
+.main .menu{ 
+	width: 100%;
+	height: 6vh;
+	overflow: auto;
+	padding: 0 4vw;
+	float: left;
+	display: inline-block;
+	background: url(../img/menu.png);
+	-webkit-overflow-scrolling: touch;
+
+}
+.main .menu .title{
+	width:auto;
+	float: left;
+}
+.menu .title a{
+	font-family: "黑体";
+	font-size: 1.4rem;
+	color: #fff;
+	padding-right: 6vw;
+	text-decoration: none;
+	float: left;
+	line-height: 6vh;
+}
+.menu .title a.acolor{
+	color: #1B1464;
+}
+
+.main .productlist{
+	width: 100%;
+	padding: 0 1vw;
+	height: calc(100% - 0vh);
+	display: inline-block;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+.main .productlist ul{
+	width: 100%;
+	display: inline-block;
+}
+.pli1{
+	width: 30.33vw;
+	margin: 1vw 1vw 0 1vw;
+	float: left;
+	background: #62cced;
+	padding: 0.5vw 1vw;
+	border-radius: 2vw;
+    border: 0.2vw solid #40aed3;
+}
+.pli2{
+	width: 30.33vw;
+	margin: 1vw 1vw 0 1vw;
+	float: left;
+	/*background: #62cced;*/
+	background: #FB7979;
+	padding: 0.5vw 1vw;
+	border-radius: 2vw;
+	/*border: 0.2vw solid #40aed3;*/
+	border: 0.2vw solid #FB7979;
+}
+.main .productlist ul li.liColor{
+	box-shadow: 2vw 2vw 6vw #CCCCCC;
+	background: #95e6f9;
+}
+.main .productlist ul li .listimg{
+	width: 100%;
+	height:26.33vw;
+	float: left;
+	text-align: center;
+	overflow:hidden;
+}
+.main .productlist ul li .listimg img{
+	width: auto;
+	height:26.33vw;
+	border-radius: 2vw;
+}
+.main .productlist ul li .listtext{
+	width: 100%;
+	display: inline-block;
+}
+.main .productlist ul li .listtext div{
+	width: 7vw;
+	height: 7vw;
+	border-radius:50%;
+	background: #fff;
+	font-size: 0.8rem;
+	color: #333;
+	line-height: 6vh;
+	text-align: center;
+	float: right;
+	margin-top: -4vw;
+}
+.main .productlist ul li .listtext h4{
+	font-size: 0.8rem;
+	color: #21206c;
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.main .productlist ul li .listtext span{
+	font-size: 0.7rem;
+	color: #21206c;
+	width: calc(100% - 8vw);
+	float: left;
+	 
+}
+.main .productlist ul li .listtext  a{
+	color: #8a429f;
+	width: calc(100% - 8vw);
+	font-size: 0.7rem;
+	float: left;
+}
+.bottom{
+	width: 100%;
+	height: 10vh;
+	background: url(../img/bottom.png) no-repeat;
+	background-size: 100% auto;
+	padding: 4vh 8vw 0 8vw;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+}
+.bottom a{
+	font-size: 1.6rem;
+	color: #1B1464;
+	line-height: 8vh;
+}
+.bottom a:first-child{
+	float: left;
+}
+.bottom a:last-child{
+	float: right;
+}
+.bottom button{
+	width: auto;
+	/* height: 6vh; */
+	/* margin-top: 3vh; */
+	font-size: 1.8rem;
+	color: #1B1464;
+	background: initial;
+	border: 0;
+}
+
+/**提示*/
+.prompt{
+	width: 72vw;
+	margin: 14vw;
+	display: inline-block;
+	position: fixed;
+	z-index: 99;
+	border-radius: 2vw;
+	overflow: hidden;
+	display: none;
+}
+.prompt .smile{
+	width: 100%;
+	display: inline-block;
+	padding: 10vw 20vw ;
+	background: #fff;
+}
+.prompt .smile img{
+	width: 100%;
+}
+.prompt .prompttext{
+	width: 100%;
+	display: inline-block;
+}
+.prompt .prompttext h2{
+	font-size: 2rem;
+	font-family: "黑体";
+	font-weight: bold;
+	text-align: center;
+	background: #fff;
+	color: #61CCEC;
+}
+.prompt .prompttext h4{
+	font-size: 1.4rem;
+	font-family: "黑体";
+	font-weight: bold;
+	text-align: center;
+	background: #fff;
+	color: #CCCCCC;
+	line-height: 8vh;
+}
+.prompt .prompttext button{
+	width: 50%;
+	font-size: 1.6rem;
+	font-family: "黑体";
+	font-weight: bold;
+	text-align: center;
+	background:#e4f5ff;
+	color: #61CCEC;
+	float: left;
+	padding: 2vw 0;
+	border: 0;
+}
+.prompt .prompttext button.color{
+	background: #3491df;
+	color: #fff;
+}
+/**提示背景*/
+.promptback{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 98;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	display: none;
+}

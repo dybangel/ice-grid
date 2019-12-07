@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8"/>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="icon/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/pickup.css"/>
+</head>
+<body onclick="updateClick()">
+<div class="prompt">
+    <div class="smile">
+        <img src="img/fail.png"/>
+    </div>
+    <div class="prompttext">
+         <h2>提示</h2>
+        <h4 id="scanfail"></h4>
+        <button class="promptbtn" onclick="javascript:history.back(-1)">返回</button>
+        <button class="promptbtn" onclick="continuebtn()">继续</button>
+    </div>
+</div>
+<div class="promptback"></div>
+
+<div class="main">
+    <div class="left icon iconfont icon-Icon_left" onclick="javascript:history.back(-1)">
+    </div>
+    <div class="right">
+        <div class="one">
+            <div class="onetext">
+                <h2>取货方式一</h2>
+                <h3>微信商城扫码</h3>
+            </div>
+            <div class="oneicon">
+            	<div id="qrcode"></div>
+               <!-- <img src="img/qrcode.png"/>-->
+            </div>
+        </div>
+        <div class="two">
+            <div class="twotext" style="line-height: 6vh;">
+                <h2>取货方式二</h2>
+                <span>短信取货码</span>
+            </div>
+            <div id="num" class="num">
+
+                <div class="textbox">
+                    <img src="img/inputbox.png"/>
+                </div>
+
+                <p id="demo">请输入6位取货码</p>
+
+                <input type="button" value="1"/>
+
+                <input type="button" value="2"/>
+
+                <input type="button" value="3"/>
+
+                <input type="button" value="4"/>
+
+                <input type="button" value="5"/>
+
+                <input type="button" value="6"/>
+
+                <input type="button" value="7"/>
+
+                <input type="button" value="8"/>
+
+                <input type="button" value="9"/>
+
+                <input type="button" value="0"/>
+
+                <input type="button" value="删除"/>
+
+                <input type="button" value="返回"  onclick='goback()'/>
+
+                <button class="btn" onclick="quhuo(this)">取货</button>
+
+            </div>
+        </div>
+    </div>
+    <audio id="bgmMusic" src="video/scanget.mp3" autoplay="autoplay"  preload="auto" type="audio/mp3"></audio>
+</body>
+</html>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/qrcode.min.js"></script>
+<script>
+var stringa=""
+window.onkeydown= function(evt){ 
+	stringa=stringa+String.fromCharCode(evt.keyCode);
+	if(evt.keyCode==13){
+		$(".prompt, .promptback").fadeIn()
+		$("#scanfail").text(stringa)
+	}
+    //$("#demo").text(evt.charCode==13);
+} 
+
+var lastTime = new Date().getTime();
+    var currentTime = new Date().getTime();
+    var timeOut = 2*60 * 1000; //设置超时时间：2分
+    var b=true;
+
+    /* 鼠标移动事件 */
+    $(document).mouseover(function(){
+        lastTime = new Date().getTime(); //更新操作时间
+    });
+	$(function () {
+		parent.updateCount("2");
+	})
+	function goback()
+	{
+		parent.playMp3(1);
+		parent.updateIndexCount();
+		history.back(-1); 
+	}
+	var setting = {
+	     // 用于动态生成二维码的API，不需要修改。
+	     qrcodeApi: "http://qr.liantu.com/api.php?text="    
+    }
+	function updateClick()
+	{
+		parent.addClickTime("0");
+	}
+    function buyclick(htmlContent){
+		//如果成功执行以下
+		$("#qrcode").html('')
+		//生成二维码
+		// 设置参数方式
+		 
+		var qrcode = new QRCode('qrcode', {
+			text: htmlContent,
+			width: 250,
+			height: 250,
+			colorDark : '#000000',
+			colorLight : '#ffffff',
+		});
+	}
+    //判断用户多久没有进行鼠标操作,超过2分钟自动退出登录
+    function testTime(){
+        currentTime = new Date().getTime(); //更新当前时间
+        if(currentTime - lastTime > timeOut){ //判断是否超时
+            window.clearTimeout(inter);         
+            window.history.go(-1);
+        }else{
+            inter = setTimeout(testTime,1000);
+        }
+    }
+    $(function () {
+        $("#num").find("input").click(function () {
+            var num = $(this).val()
+            var text = $("#demo").text()
+            $(this).addClass("numclick")
+            setTimeout(function () {
+                $("#num").find("input").removeClass("numclick")
+            }, 200)
+            if (num == "删除") {
+                if (text != "请输入6位取货码") {
+                    var num2 = text.substring(0, text.length - 1)
+                    if (text.length <= 1) {
+                        $("#demo").text("请输入6位取货码")
+                    } else {
+                        $("#demo").text(num2)
+                    }
+                }
+                return false;
+            } else if (num == "返回") {
+                //$("#demo").text("请输入6位取货码")
+                //return
+            }
+            if (text == "请输入6位取货码") {
+                $("#demo").text(num)
+            } else {
+                if (text.length < 6) {
+                    $("#demo").text(text + num)
+                }
+            }
+        })
+       //提示
+        $(".promptbtn").click(function () {
+            $(this).addClass("color")
+            setTimeout(function () {
+                $(".promptbtn").removeClass("color")
+            }, 200)
+        })
+        //testTime();
+        buyclick(parent.getMechineID());
+    })
+    function quhuo(obg) {
+    	//为了防止连续点击出现多次请求出货现象给点击加锁
+    	var a=$("#demo").html();
+    	$("#demo").html('请输入6位取货码')
+        $(obg).addClass("btncolor")
+        setTimeout(function () {
+            $(obg).removeClass("btncolor")
+        }, 200)
+        var res =parent.dgCh(a);
+        obj = JSON.parse(res);
+        if(obj.code=="200")
+        {
+        	window.location.href="shipment.html";
+        }else if(obj=="300"){
+         $(".prompt, .promptback").fadeIn()
+	        $("#scanfail").text('机器正忙，请稍后重试')
+     
+        }else if(obj.code=="500"){
+          $(".prompt, .promptback").fadeIn()
+	        $("#scanfail").text(obj.msg)
+        }else{
+        	 //取货失败
+	        $(".prompt, .promptback").fadeIn()
+	        $("#scanfail").text(obj.code)
+        }
+       
+    }
+    function continuebtn() {
+        $(".prompt, .promptback").hide()
+        $("#scanfail").text("")
+        //window.location.href = 'shipment.html'
+    }
+</script>

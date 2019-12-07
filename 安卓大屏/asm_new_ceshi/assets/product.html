@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<style>
+			.productlist::-webkit-scrollbar {
+				width: 4px;
+				height: 4px;
+			}
+			.productlist::-webkit-scrollbar-track {
+			  	background: initial;
+			}
+			.productlist::-webkit-scrollbar-thumb {
+		  		background: #b3dc1f;
+			}
+			.productlist::-webkit-scrollbar-corner {
+			  	background: #82AFFF;
+			}
+			.proBg{
+				position:absolute;
+				top: 0;
+				left: 40%;
+				width: 30%;
+				background: #FB7979;
+				text-align: center;
+				color: #fff;
+				border-bottom-left-radius: 8px;
+				border-bottom-right-radius: 8px;
+			}
+			
+			.gray { 
+			    -webkit-filter: grayscale(100%);
+			    -moz-filter: grayscale(100%);
+			    -ms-filter: grayscale(100%);
+			    -o-filter: grayscale(100%);
+			    filter: grayscale(100%);
+			    filter: gray;
+			}
+		</style>
+		<script>
+ 		function updateProduct()
+ 		{
+ 			parent.updatePro(0,1);
+ 		}
+ 		function updateProductUI(htmlVal)
+ 		{
+ 			$("#productlist").html(htmlVal)
+ 			totalCount=$("#hidTotalCount").val();	
+ 		}
+ 		//更新产品类别
+ 		function updateProductType()
+ 		{
+ 			parent.updateProductType();
+ 		}
+ 		function updateProductTypeUI(htmlVal)
+ 		{
+ 			$("#menu").html(htmlVal)
+ 			var totalW = 0
+			var paddingRight = document.body.clientWidth * 0.062
+			for (var a=0;a<$("#menu").find("a").length;a++) {
+				var thisW = $("#menu").find("a").eq(a).width()+paddingRight
+				totalW += thisW 
+			}
+			$("#menu").width(totalW)
+			menuclick();
+			$("#_productType").val(0);
+ 		}
+ 		function callParent() {
+ 			 //子页面调用父页面方法
+			 //parent.parentFunction();
+		}
+		</script>
+		
+	</head>
+	<body onclick="addClickTime("0")">
+		<div class="main" style="height: 100vh;overflow-y: hidden;">
+			<div class="menu">
+				<div id="menu" class="title">
+					<!--<a class="acolor" href="#">全部</a>
+					<a href="#">酸奶</a>
+					<a href="#">鲜牛奶</a>
+					<a href="#">儿童奶</a>
+					<a href="#">多味</a>
+					<a href="#">酸奶</a>
+					<a href="#">鲜牛奶</a>
+					<a href="#">儿童奶</a>
+					<a href="#">多味</a>-->
+				</div>
+			</div>
+			<div class="productlist">
+				<ul id="productlist">
+				 
+				 
+					 
+					 
+					 
+					 
+					
+				</ul>
+			</div>
+		</div>
+		<div class="bottom">
+			<a href="#" onclick="upPage()">上一页</a>
+			<button onclick="jumpUrl()">扫码取货</button>
+			<a href="#" onclick="downPage()">下一页</a>
+		</div>
+	</body>
+	<input type="hidden" id="_productType"/>
+</html>
+<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script>
+	var pageNO=1;//默认第一页  每一页显示9个 
+	//总条数$("#hidTotalCount").val() 每页显示9条
+	var totalCount=0;
+	var pageSize=9;//每页显示9条
+	function upPage()
+	{
+		console.log("上翻页"+"pageNO="+pageNO+";pageTotal="+Math.ceil(totalCount/pageSize));
+		if(parseInt(pageNO)>1)
+		{
+		 pageNO--;
+		 parent.updatePro($("#_productType").val(),pageNO);
+		}
+	}
+	function jumpUrl()
+	{
+		parent.playMp3(2)
+		window.location.href='pickup.html'
+	}
+	function downPage()
+	{
+	  console.log("下翻页"+"pageNO="+pageNO+";pageTotal="+Math.ceil(totalCount/pageSize));
+	  if(parseInt(pageNO)<Math.ceil(totalCount/pageSize))
+	  {
+	   pageNO++;
+	   parent.updatePro($("#_productType").val(),pageNO);
+	  }
+	}
+    function addClickTime(val){
+	
+     parent.addClickTime(val);
+    }
+	$(function(){
+		updateProductType();//页面加载产品类别
+		updateProduct();//页面加载产品
+	})
+	function menuclick(){
+		$("#menu").find("a").click(function(){
+			$("#menu").find("a").removeClass("acolor")
+			$(this).addClass("acolor")
+			var productType=$(this).attr('data-id');
+			 
+			$("#_productType").val(productType);
+			parent.updatePro(productType,1);
+		})
+	}
+	var isclick=false;
+	 
+	function pickProduct(productID,mechineID,companyID,productName,price,imgPath,dgOrderDetailID,type,price1,price2,price3,priceSwich,sftj){
+		
+		if(isclick){
+			return;
+		}
+		//
+		var alertStatus=parent.getAlertStatus();
+		if(alertStatus){
+			return;
+		}
+		isclick=true;
+		setTimeout(function () {
+			$("#productlist").find("li").removeClass("liColor")
+		},200)
+		//先判断机器状态 0可以跳转 1是机器忙
+		var status=parent.getStatus();
+		//调取后台判断库存是否足够
+		var res= parent.testKC(productID,dgOrderDetailID);
+		var jsonString="[{\"productID\":\""+productID+"\",\"num\":\"1\"}]";
+		//获取商户交易单号
+		var reqsn= parent.getReqsn(companyID,mechineID,productID,sftj,jsonString,dgOrderDetailID,type);
+		if(res=="200")//证明有库存
+		{
+			if(reqsn==""||reqsn==null){
+				alert("未获取到信息，请重试");
+				isclick=false;
+				return;
+			}
+			if(status=="0")
+			{ 	
+				
+				var url="pay.html?reqsn="+reqsn+"&productName="+encodeURI(encodeURI(productName))+"&price="+price+"&imgPath="+imgPath+"&price1="+price1+"&price2="+price2+"&price3="+price3+"&priceSwich="+priceSwich;
+				window.location.href=url
+			}else{
+				alert("当前机器正忙，请稍后");
+			}
+		}else if(res=="100"){
+			alert("该笔特价产品以售卖");
+		}else if(res=="300"){
+			alert("该笔特价产品不存在");
+		}else if(res=="500"){
+			alert("该产品没有库存了");
+		}
+		isclick=false;
+		return;
+	}
+	 
+</script>

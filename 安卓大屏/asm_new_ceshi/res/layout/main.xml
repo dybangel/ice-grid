@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/ldNO"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="输入出货料道号" />
+
+    <Button
+        android:id="@+id/btnCH"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="出货" />
+ 	<TextView
+        android:id="@+id/temInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFAFA"
+        android:textSize="30dp" 
+        android:text="温度信息:"/>
+    <Button
+        android:id="@+id/btnTem"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:text="生成订单信息" />
+     <Button
+        android:id="@+id/btnGo"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:text="跳转" />
+	<TextView
+        android:id="@+id/locationInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFAFA"
+        android:textSize="30dp" 
+        android:text="位置信息:"/>
+    <TextView
+        android:id="@+id/lblInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFAFA"
+        android:textSize="30dp" />
+
+</LinearLayout>

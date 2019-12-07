@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<style>
+			.fullScreen{
+				width: 100vw;
+				height: 100vh;
+				position: fixed;
+				top: 0;
+				left: 0;
+				background: #000;
+			}
+			.fullScreen .fullScreen-video{
+				width: 100%;
+				height: 78vh;
+				overflow: hidden;
+			}
+			.fullScreen .fullScreen-product{
+				width: 100%;
+				float: left;
+				height: 22vh;
+				position: absolute;
+				bottom: 0;
+				background: #fff;
+			}
+			.fullScreen-product{
+				width: 100%;
+				padding: 0 1vw;
+				height: calc(100% - 8vh);
+				display: inline-block;
+				overflow-y: auto;
+				-webkit-overflow-scrolling: touch;
+			}
+			.fullScreen-product ul{
+				width: 100%;
+				display: inline-block;
+			}
+			.fullScreen-product ul li{
+				width: calc(33.33vw - 2vw);
+				margin: 2vw 1vw 0 1vw;
+				float: left;
+				background: #62cced;
+				padding: 1vw;
+				border-radius: 2vw;
+				border: 0.2vw solid #40aed3;
+			}
+			.fullScreen-product ul li.liColor{
+				box-shadow: 2vw 2vw 6vw #CCCCCC;
+				background: #95e6f9;
+			}
+			.productlist ul li .listimg{
+				width: 100%;
+				float: left;
+			}
+			.fullScreen-product ul li .listimg img{
+				width: 100%;
+				float: left;
+				border-radius: 2vw;
+			}
+			.fullScreen-product ul li .listtext{
+				width: 100%;
+				display: inline-block;
+			}
+			.fullScreen-product ul li .listtext div{
+				width: 7vw;
+				height: 7vw;
+				border-radius:50%;
+				background: #fff;
+				font-size: 0.8rem;
+				color: #333;
+				line-height: 6vh;
+				text-align: center;
+				float: right;
+				margin-top: -2vw;
+			}
+			.fullScreen-product ul li .listtext h4{
+				font-size: 1rem;
+				color: #21206c;
+				width: calc(100% - 8vw);
+				float: left;
+				margin-top: 1vw;
+			}
+			.fullScreen-product ul li .listtext span{
+				display: inline-block;
+				font-size: 0.8rem;
+				color: #21206c;
+				width: calc(100% - 8vw);
+				float: left;
+				margin-top: 1vw;
+			}
+			.fullScreen-product ul li .listtext span a{
+				color: #8a429f;
+			}
+		</style>
+	</head>
+	<body onclick="clickBody()">
+	<section class="fullScreen" id="vvscreen">
+		<div class="fullScreen-video">
+			<video id="fullScreen-videoPlay" src="video/fullScreen.mp4" data-id="" autoplay="autoplay" style="width: 100%;height:80vh;object-fit: fill"></video>
+		</div>
+		<div class="fullScreen-product">
+			<ul id="fullScreen-productUl">
+				 
+			</ul>
+		</div>
+	</section>
+		<div class="head" style="background: #000; height: 30vh;">
+			<video id="videoPlay" data-id="" autoplay="autoplay" style="width: 100%;"></video>
+		</div>
+		<iframe id="productView" src="product.html" style="height: 70vh;"></iframe>
+	</body>
+</html>
+<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="js/scroll.js" type="text/javascript"></script>
+<script>
+	$(function () {
+		vvideoPlay()
+        fullScreen()
+        updatePro();
+	})
+	function clickBody()
+	{
+		full_obj.jumpVVScreen();
+	}
+	function fullScreen () { // 获取全屏广告底部商品的宽度 fullScreen-productUl
+	    var totalWidth = 0
+        var paddingRight = document.body.clientWidth * 0.06
+	    for (var i = 0; i < $('#fullScreen-productUl').find('li').length; i++) {
+	        var thisW = $('#fullScreen-productUl').find('li').eq(i).width() + paddingRight
+            totalWidth += thisW
+		}
+        $('#fullScreen-productUl').width(totalWidth)
+        $(".fullScreen-product").myScroll({
+            speed: 10, //数值越大，速度越慢
+            rowWidth: 100 //li的宽度
+        });
+	}
+	function vvideoPlay () {
+	 	var path= full_obj.vvideoPlay();
+	 	console.log("path="+path);
+		//var append = [{id: 1, src:'./video/video1.mp4'},{id: 2, src:'./video/video2.mp4'}]
+		var append=JSON.parse(path);
+		
+		$('#fullScreen-videoPlay').attr({'src': append[0].src}).attr({'data-id': append[0].id})
+	    $("#fullScreen-videoPlay").on("ended",function(){
+            var a = $('#fullScreen-videoPlay').attr('data-id')
+            console.log(a)
+	    	for(var a=0; a<append.length; a++) {
+	    		if (append[a].id == $('#fullScreen-videoPlay').attr('data-id')) {
+	    			if (a >= append.length - 1) {
+	    				$('#fullScreen-videoPlay').attr({'src': append[0].src}).attr({'data-id': append[0].id})
+						// a = append[0].id
+	    				return false
+	    			}
+	    			$('#fullScreen-videoPlay').attr({'data-id': append[a + 1].id, 'src': append[a + 1].src})
+					// a = append[a + 1].id
+	    			break
+	    		}
+	    	}
+	    })
+	}
+	 //更新产品
+	function updatePro(productType)
+	{
+		var htmlVal= full_obj.updateProduct();
+		$("#fullScreen-productUl").html(htmlVal)
+	}
+</script>
