@@ -1,0 +1,6 @@
+2019-12-03 12:08:28.191:sql=select SUM(ld_productNum) ld_productNum from  asm_ldinfo where mechineID=68 and productID=424 and ld_productNum>0 and (zt is null or zt=0) group by productID
+---------------
+2019-12-03 12:08:28.212:sql1=select COUNT(*) num  from asm_orderlistDetail where mechineID=68 and productID=424 and zt=4 and createTime='2019-12-03'
+---------------
+2019-12-03 12:08:28.238:sql3=select * from  asm_ldinfo where mechineID=68 and productID=424 and ld_productNum>0 and (zt is null or zt=0) order by yxch
+---------------

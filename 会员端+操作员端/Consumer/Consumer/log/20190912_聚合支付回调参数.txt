@@ -1,0 +1,42 @@
+2019-09-12 10:41:24.547:key=回调开始
+---------------
+2019-09-12 10:41:24.548:
+---------------
+2019-09-12 10:42:52.730:key=回调开始
+---------------
+2019-09-12 10:42:52.731:
+---------------
+2019-09-12 10:43:09.111:key=回调开始
+---------------
+2019-09-12 10:43:19.745:
+---------------
+2019-09-12 10:52:59.446:key=回调开始
+---------------
+2019-09-12 10:53:08.885:key=acct;value=oJ1cB5cb5EfRZ1PSifg3-ce7hWlokey=appid;value=00020342key=chnlid;value=25462306key=chnltrxid;value=4200000406201909066897989215key=cmid;value=209522098key=cusid;value=55045204816P7KFkey=cusorderid;value=132122396606666787key=fee;value=5key=outtrxid;value=132122396606666787key=paytime;value=20190906183429key=sign;value=3BBBBAE203576C74A2DF8E0A79D34B11key=signtype;value=MD5key=termauthno;value=CMB_CREDITkey=termrefnum;value=4200000406201909066897989215key=termtraceno;value=0key=trxamt;value=750key=trxcode;value=VSP501key=trxdate;value=20190906key=trxid;value=111977820000921239key=trxreserved;value=商品消费key=trxstatus;value=0000
+---------------
+2019-09-12 10:53:56.450:keytrxid:111977820000921239
+---------------
+2019-09-12 10:55:49.639:keyif=回调结束
+---------------
+2019-09-12 10:55:49.639:返回通联successtrxid:111977820000921239
+---------------
+2019-09-12 10:57:46.066:key=回调开始
+---------------
+2019-09-12 10:57:46.066:key=acct;value=oJ1cB5cb5EfRZ1PSifg3-ce7hWlokey=appid;value=00020342key=chnlid;value=25462306key=chnltrxid;value=4200000406201909066897989215key=cmid;value=209522098key=cusid;value=55045204816P7KFkey=cusorderid;value=132122396606666787key=fee;value=5key=outtrxid;value=132122396606666787key=paytime;value=20190906183429key=sign;value=3BBBBAE203576C74A2DF8E0A79D34B11key=signtype;value=MD5key=termauthno;value=CMB_CREDITkey=termrefnum;value=4200000406201909066897989215key=termtraceno;value=0key=trxamt;value=750key=trxcode;value=VSP501key=trxdate;value=20190906key=trxid;value=111977820000921239key=trxreserved;value=商品消费key=trxstatus;value=0000
+---------------
+2019-09-12 10:57:46.067:keytrxid:111977820000921239
+---------------
+2019-09-12 10:58:32.262:keyif=回调结束
+---------------
+2019-09-12 11:05:41.360:返回通联successtrxid:111977820000921239
+---------------
+2019-09-12 11:06:10.281:key=回调开始
+---------------
+2019-09-12 11:06:10.281:key=acct;value=oJ1cB5cb5EfRZ1PSifg3-ce7hWlokey=appid;value=00020342key=chnlid;value=25462306key=chnltrxid;value=4200000406201909066897989215key=cmid;value=209522098key=cusid;value=55045204816P7KFkey=cusorderid;value=132122396606666787key=fee;value=5key=outtrxid;value=132122396606666787key=paytime;value=20190906183429key=sign;value=3BBBBAE203576C74A2DF8E0A79D34B11key=signtype;value=MD5key=termauthno;value=CMB_CREDITkey=termrefnum;value=4200000406201909066897989215key=termtraceno;value=0key=trxamt;value=750key=trxcode;value=VSP501key=trxdate;value=20190906key=trxid;value=111977820000921239key=trxreserved;value=商品消费key=trxstatus;value=0000
+---------------
+2019-09-12 11:06:10.282:keytrxid:111977820000921239
+---------------
+2019-09-12 11:06:10.282:返回通联successtrxid:111977820000921239
+---------------
+2019-09-12 11:07:50.147:keyif=回调结束
+---------------

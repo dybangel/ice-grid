@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="JHNotify.aspx.cs" Inherits="autosell_center.pay.JHNotify" %>

@@ -1,0 +1,448 @@
+2019-06-01 10:54:00.438:operaID=43
+---------------
+2019-06-01 10:54:01.041:companyID=14
+---------------
+2019-06-01 10:54:01.302:token=12028ad588bd4a5a8b323bf3ce9ad82a
+---------------
+2019-06-01 10:54:01.630:mechineID=45
+---------------
+2019-06-01 10:54:01.968:strJson=[{"ldNO":50,"num":1,"productID":"332"},{"ldNO":51,"num":3,"productID":"333"},{"ldNO":52,"num":2,"productID":"335"},null,null,{"ldNO":55,"num":1,"productID":"400"},{"ldNO":56,"num":"0","productID":"401"},{"ldNO":57,"num":1,"productID":"399"}]
+---------------
+2019-06-01 10:54:22.133:ldNO=50;num=1;productID=332
+---------------
+2019-06-01 10:54:23.412:sql=select * from asm_ldInfo where ldNO=50 and mechineID=45
+---------------
+2019-06-01 10:54:30.861:ldNO=51;num=3;productID=333
+---------------
+2019-06-01 10:54:31.703:sql=select * from asm_ldInfo where ldNO=51 and mechineID=45
+---------------
+2019-06-01 10:54:36.945:ldNO=52;num=2;productID=335
+---------------
+2019-06-01 10:54:37.363:sql=select * from asm_ldInfo where ldNO=52 and mechineID=45
+---------------
+2019-06-01 10:54:42.226:ex=Cannot access child value on Newtonsoft.Json.Linq.JValue.
+---------------
+2019-06-01 10:54:51.651:operaID=43
+---------------
+2019-06-01 10:54:51.873:companyID=14
+---------------
+2019-06-01 10:54:52.479:token=12028ad588bd4a5a8b323bf3ce9ad82a
+---------------
+2019-06-01 10:54:52.761:mechineID=45
+---------------
+2019-06-01 10:54:53.157:strJson=[{"ldNO":50,"num":1,"productID":"332"},{"ldNO":51,"num":3,"productID":"333"},{"ldNO":52,"num":2,"productID":"335"},null,null,{"ldNO":55,"num":1,"productID":"400"},{"ldNO":56,"num":"0","productID":"401"},{"ldNO":57,"num":1,"productID":"399"}]
+---------------
+2019-06-01 10:54:58.879:ldNO=50;num=1;productID=332
+---------------
+2019-06-01 10:54:59.343:sql=select * from asm_ldInfo where ldNO=50 and mechineID=45
+---------------
+2019-06-01 10:55:07.504:ldNO=51;num=3;productID=333
+---------------
+2019-06-01 10:55:08.191:sql=select * from asm_ldInfo where ldNO=51 and mechineID=45
+---------------
+2019-06-01 10:55:12.116:ldNO=52;num=2;productID=335
+---------------
+2019-06-01 10:55:12.568:sql=select * from asm_ldInfo where ldNO=52 and mechineID=45
+---------------
+2019-06-01 10:55:16.866:ex=Cannot access child value on Newtonsoft.Json.Linq.JValue.
+---------------
+2019-06-01 10:55:23.309:operaID=43
+---------------
+2019-06-01 10:55:23.538:companyID=14
+---------------
+2019-06-01 10:55:23.769:token=12028ad588bd4a5a8b323bf3ce9ad82a
+---------------
+2019-06-01 10:55:23.979:mechineID=45
+---------------
+2019-06-01 10:55:24.155:strJson=[{"ldNO":50,"num":1,"productID":"332"},{"ldNO":51,"num":3,"productID":"333"},{"ldNO":52,"num":2,"productID":"335"},null,null,{"ldNO":55,"num":1,"productID":"400"},{"ldNO":56,"num":"0","productID":"401"},{"ldNO":57,"num":1,"productID":"399"}]
+---------------
+2019-06-01 10:55:35.863:ldNO=50;num=1;productID=332
+---------------
+2019-06-01 10:55:37.734:sql=select * from asm_ldInfo where ldNO=50 and mechineID=45
+---------------
+2019-06-01 10:55:43.858:ldNO=51;num=3;productID=333
+---------------
+2019-06-01 10:55:44.720:sql=select * from asm_ldInfo where ldNO=51 and mechineID=45
+---------------
+2019-06-01 10:55:49.318:ldNO=52;num=2;productID=335
+---------------
+2019-06-01 10:55:50.207:sql=select * from asm_ldInfo where ldNO=52 and mechineID=45
+---------------
+2019-06-01 10:55:56.715:ex=Cannot access child value on Newtonsoft.Json.Linq.JValue.
+---------------
+2019-06-01 10:56:04.889:operaID=43
+---------------
+2019-06-01 10:56:05.129:companyID=14
+---------------
+2019-06-01 10:56:05.352:token=12028ad588bd4a5a8b323bf3ce9ad82a
+---------------
+2019-06-01 10:56:05.621:mechineID=45
+---------------
+2019-06-01 10:56:05.870:strJson=[{"ldNO":50,"num":1,"productID":"332"},{"ldNO":51,"num":3,"productID":"333"},{"ldNO":52,"num":2,"productID":"335"},null,null,{"ldNO":55,"num":1,"productID":"400"},{"ldNO":56,"num":"0","productID":"401"},{"ldNO":57,"num":1,"productID":"399"}]
+---------------
+2019-06-01 10:56:16.087:ldNO=50;num=1;productID=332
+---------------
+2019-06-01 10:56:16.782:sql=select * from asm_ldInfo where ldNO=50 and mechineID=45
+---------------
+2019-06-01 10:56:33.896:ldNO=51;num=3;productID=333
+---------------
+2019-06-01 10:56:34.992:sql=select * from asm_ldInfo where ldNO=51 and mechineID=45
+---------------
+2019-06-01 10:56:41.209:ldNO=52;num=2;productID=335
+---------------
+2019-06-01 10:56:59.480:sql=select * from asm_ldInfo where ldNO=52 and mechineID=45
+---------------
+2019-06-01 10:57:09.910:ex=Cannot access child value on Newtonsoft.Json.Linq.JValue.
+---------------
+2019-06-01 10:58:43.354:operaID=43
+---------------
+2019-06-01 10:58:43.819:companyID=14
+---------------
+2019-06-01 10:58:44.017:token=12028ad588bd4a5a8b323bf3ce9ad82a
+---------------
+2019-06-01 10:58:44.256:mechineID=45
+---------------
+2019-06-01 10:58:44.505:strJson=[{"ldNO":50,"num":1,"productID":"332"},{"ldNO":51,"num":3,"productID":"333"},{"ldNO":52,"num":2,"productID":"335"},null,null,{"ldNO":55,"num":1,"productID":"400"},{"ldNO":56,"num":"0","productID":"401"},{"ldNO":57,"num":1,"productID":"399"}]
+---------------
+2019-06-01 10:58:48.641:ldNO=50;num=1;productID=332
+---------------
+2019-06-01 10:58:48.989:sql=select * from asm_ldInfo where ldNO=50 and mechineID=45
+---------------
+2019-06-01 10:58:52.853:ldNO=51;num=3;productID=333
+---------------
+2019-06-01 10:58:53.287:sql=select * from asm_ldInfo where ldNO=51 and mechineID=45
+---------------
+2019-06-01 10:58:56.561:ldNO=52;num=2;productID=335
+---------------
+2019-06-01 10:58:56.989:sql=select * from asm_ldInfo where ldNO=52 and mechineID=45
+---------------
+2019-06-01 10:59:02.021:ex=Cannot access child value on Newtonsoft.Json.Linq.JValue.
+---------------
+2019-06-01 10:59:10.573:operaID=43
+---------------
+2019-06-01 10:59:10.773:companyID=14
+---------------
+2019-06-01 10:59:10.950:token=12028ad588bd4a5a8b323bf3ce9ad82a
+---------------
+2019-06-01 10:59:11.182:mechineID=45
+---------------
+2019-06-01 10:59:11.345:strJson=[{"ldNO":50,"num":1,"productID":"332"},{"ldNO":51,"num":3,"productID":"333"},{"ldNO":52,"num":2,"productID":"335"},null,null,{"ldNO":55,"num":1,"productID":"400"},{"ldNO":56,"num":"0","productID":"401"},{"ldNO":57,"num":1,"productID":"399"}]
+---------------
+2019-06-01 11:00:03.536:ldNO=50;num=1;productID=332
+---------------
+2019-06-01 11:00:04.439:sql=select * from asm_ldInfo where ldNO=50 and mechineID=45
+---------------
+2019-06-01 11:00:15.764:ldNO=51;num=3;productID=333
+---------------
+2019-06-01 11:00:16.352:sql=select * from asm_ldInfo where ldNO=51 and mechineID=45
+---------------
+2019-06-01 11:00:24.483:ldNO=52;num=2;productID=335
+---------------
+2019-06-01 11:00:25.240:sql=select * from asm_ldInfo where ldNO=52 and mechineID=45
+---------------
+2019-06-01 11:00:47.283:ex=Cannot access child value on Newtonsoft.Json.Linq.JValue.
+---------------
+2019-06-01 11:00:53.953:operaID=43
+---------------
+2019-06-01 11:00:54.143:companyID=14
+---------------
+2019-06-01 11:00:54.362:token=12028ad588bd4a5a8b323bf3ce9ad82a
+---------------
+2019-06-01 11:00:54.605:mechineID=45
+---------------
+2019-06-01 11:00:54.803:strJson=[{"ldNO":50,"num":1,"productID":"332"},{"ldNO":51,"num":3,"productID":"333"},{"ldNO":52,"num":2,"productID":"335"},null,null,{"ldNO":55,"num":1,"productID":"400"},{"ldNO":56,"num":"0","productID":"401"},{"ldNO":57,"num":1,"productID":"399"}]
+---------------
+2019-06-01 11:01:19.913:ldNO=50;num=1;productID=332
+---------------
+2019-06-01 11:01:21.022:sql=select * from asm_ldInfo where ldNO=50 and mechineID=45
+---------------
+2019-06-01 11:01:39.085:ldNO=51;num=3;productID=333
+---------------
+2019-06-01 11:01:39.977:sql=select * from asm_ldInfo where ldNO=51 and mechineID=45
+---------------
+2019-06-01 11:01:50.560:ldNO=52;num=2;productID=335
+---------------
+2019-06-01 11:01:51.457:sql=select * from asm_ldInfo where ldNO=52 and mechineID=45
+---------------
+2019-06-01 11:02:12.813:ex=Cannot access child value on Newtonsoft.Json.Linq.JValue.
+---------------
+2019-06-01 11:06:16.167:operaID=43
+---------------
+2019-06-01 11:06:18.123:companyID=14
+---------------
+2019-06-01 11:06:18.524:token=12028ad588bd4a5a8b323bf3ce9ad82a
+---------------
+2019-06-01 11:06:18.759:mechineID=45
+---------------
+2019-06-01 11:06:18.984:strJson=[{"ldNO":50,"num":1,"productID":"332"},{"ldNO":51,"num":3,"productID":"333"},{"ldNO":52,"num":2,"productID":"335"},null,null,{"ldNO":55,"num":1,"productID":"400"},{"ldNO":56,"num":"0","productID":"401"},{"ldNO":57,"num":1,"productID":"399"}]
+---------------
+2019-06-01 11:06:25.139:ldNO=50;num=1;productID=332
+---------------
+2019-06-01 11:06:25.517:sql=select * from asm_ldInfo where ldNO=50 and mechineID=45
+---------------
+2019-06-01 11:06:29.313:ldNO=51;num=3;productID=333
+---------------
+2019-06-01 11:06:29.970:sql=select * from asm_ldInfo where ldNO=51 and mechineID=45
+---------------
+2019-06-01 11:06:35.353:ldNO=52;num=2;productID=335
+---------------
+2019-06-01 11:06:36.264:sql=select * from asm_ldInfo where ldNO=52 and mechineID=45
+---------------
+2019-06-01 11:06:53.060:ex=Cannot access child value on Newtonsoft.Json.Linq.JValue.
+---------------
+2019-06-01 11:10:28.239:operaID=43
+---------------
+2019-06-01 11:10:28.239:companyID=14
+---------------
+2019-06-01 11:10:28.240:token=12028ad588bd4a5a8b323bf3ce9ad82a
+---------------
+2019-06-01 11:10:28.240:mechineID=45
+---------------
+2019-06-01 11:10:28.240:strJson=[{"ldNO":50,"num":1,"productID":"332"},{"ldNO":51,"num":3,"productID":"333"},{"ldNO":52,"num":2,"productID":"335"},null,null,{"ldNO":55,"num":1,"productID":"400"},{"ldNO":56,"num":"0","productID":"401"},{"ldNO":57,"num":1,"productID":"399"}]
+---------------
+2019-06-01 11:10:49.022:ldNO=50;num=1;productID=332
+---------------
+2019-06-01 11:10:49.544:sql=select * from asm_ldInfo where ldNO=50 and mechineID=45
+---------------
+2019-06-01 11:10:52.368:ldNO=51;num=3;productID=333
+---------------
+2019-06-01 11:10:52.810:sql=select * from asm_ldInfo where ldNO=51 and mechineID=45
+---------------
+2019-06-01 11:10:56.051:ldNO=52;num=2;productID=335
+---------------
+2019-06-01 11:10:56.502:sql=select * from asm_ldInfo where ldNO=52 and mechineID=45
+---------------
+2019-06-01 11:11:01.122:ex=Cannot access child value on Newtonsoft.Json.Linq.JValue.
+---------------
+2019-06-01 11:13:20.459:operaID=43
+---------------
+2019-06-01 11:13:20.459:companyID=14
+---------------
+2019-06-01 11:13:20.460:token=12028ad588bd4a5a8b323bf3ce9ad82a
+---------------
+2019-06-01 11:13:20.514:mechineID=45
+---------------
+2019-06-01 11:13:23.380:strJson=[{"ldNO":50,"num":1,"productID":"332"},{"ldNO":51,"num":3,"productID":"333"},{"ldNO":52,"num":2,"productID":"335"},null,null,{"ldNO":55,"num":1,"productID":"400"},{"ldNO":56,"num":"0","productID":"401"},{"ldNO":57,"num":1,"productID":"399"}]
+---------------
+2019-06-01 11:14:17.308:ldNO=50;num=1;productID=332
+---------------
+2019-06-01 11:14:17.309:sql=select * from asm_ldInfo where ldNO=50 and mechineID=45
+---------------
+2019-06-01 11:14:17.449:ldNO=51;num=3;productID=333
+---------------
+2019-06-01 11:14:17.449:sql=select * from asm_ldInfo where ldNO=51 and mechineID=45
+---------------
+2019-06-01 11:14:17.476:ldNO=52;num=2;productID=335
+---------------
+2019-06-01 11:14:17.476:sql=select * from asm_ldInfo where ldNO=52 and mechineID=45
+---------------
+2019-06-01 11:14:17.533:ex=Cannot access child value on Newtonsoft.Json.Linq.JValue.
+---------------
+2019-06-01 11:17:37.505:operaID=43
+---------------
+2019-06-01 11:17:37.506:companyID=14
+---------------
+2019-06-01 11:17:37.506:token=12028ad588bd4a5a8b323bf3ce9ad82a
+---------------
+2019-06-01 11:17:37.507:mechineID=45
+---------------
+2019-06-01 11:17:37.508:strJson=[{"ldNO":50,"num":1,"productID":"332"},{"ldNO":51,"num":3,"productID":"333"},{"ldNO":52,"num":2,"productID":"335"},null,null,{"ldNO":55,"num":1,"productID":"400"},{"ldNO":56,"num":"0","productID":"401"},{"ldNO":57,"num":1,"productID":"399"}]
+---------------
+2019-06-01 11:17:42.091:ex=Unexpected character encountered while parsing value: [. Path '', line 1, position 1.
+---------------
+2019-06-01 11:17:44.576:operaID=43
+---------------
+2019-06-01 11:17:44.577:companyID=14
+---------------
+2019-06-01 11:17:44.577:token=12028ad588bd4a5a8b323bf3ce9ad82a
+---------------
+2019-06-01 11:17:44.577:mechineID=45
+---------------
+2019-06-01 11:17:44.577:strJson=[{"ldNO":50,"num":1,"productID":"332"},{"ldNO":51,"num":3,"productID":"333"},{"ldNO":52,"num":2,"productID":"335"},null,null,{"ldNO":55,"num":1,"productID":"400"},{"ldNO":56,"num":"0","productID":"401"},{"ldNO":57,"num":1,"productID":"399"}]
+---------------
+2019-06-01 11:17:52.881:ex=Unexpected character encountered while parsing value: [. Path '', line 1, position 1.
+---------------
+2019-06-01 11:19:35.638:operaID=43
+---------------
+2019-06-01 11:19:35.639:companyID=14
+---------------
+2019-06-01 11:19:35.639:token=12028ad588bd4a5a8b323bf3ce9ad82a
+---------------
+2019-06-01 11:19:35.640:mechineID=45
+---------------
+2019-06-01 11:19:35.640:strJson=[{"ldNO":50,"num":1,"productID":"332"},{"ldNO":51,"num":3,"productID":"333"},{"ldNO":52,"num":2,"productID":"335"},null,null,{"ldNO":55,"num":1,"productID":"400"},{"ldNO":56,"num":"0","productID":"401"},{"ldNO":57,"num":1,"productID":"399"}]
+---------------
+2019-06-01 11:19:35.776:ldNO=50;num=1;productID=332
+---------------
+2019-06-01 11:19:35.776:sql=select * from asm_ldInfo where ldNO=50 and mechineID=45
+---------------
+2019-06-01 11:19:35.796:ldNO=51;num=3;productID=333
+---------------
+2019-06-01 11:19:35.797:sql=select * from asm_ldInfo where ldNO=51 and mechineID=45
+---------------
+2019-06-01 11:19:35.817:ldNO=52;num=2;productID=335
+---------------
+2019-06-01 11:19:35.818:sql=select * from asm_ldInfo where ldNO=52 and mechineID=45
+---------------
+2019-06-01 11:19:35.862:ldNO=55;num=1;productID=400
+---------------
+2019-06-01 11:19:35.863:sql=select * from asm_ldInfo where ldNO=55 and mechineID=45
+---------------
+2019-06-01 11:19:35.885:ldNO=56;num=0;productID=401
+---------------
+2019-06-01 11:19:35.885:sql=select * from asm_ldInfo where ldNO=56 and mechineID=45
+---------------
+2019-06-01 11:19:35.905:ldNO=57;num=1;productID=399
+---------------
+2019-06-01 11:19:35.905:sql=select * from asm_ldInfo where ldNO=57 and mechineID=45
+---------------
+2019-06-01 11:19:36.393:sqlN=select o.*,m.mechineName from asm_orderlistDetail o left join asm_mechine m on o.mechineID=m.id where o.mechineID = 45 and o.zt = 4 and o.productID=332
+---------------
+2019-06-01 11:19:36.528:sqlN=select o.*,m.mechineName from asm_orderlistDetail o left join asm_mechine m on o.mechineID=m.id where o.mechineID = 45 and o.zt = 4 and o.productID=333
+---------------
+2019-06-01 11:19:36.681:sqlN=select o.*,m.mechineName from asm_orderlistDetail o left join asm_mechine m on o.mechineID=m.id where o.mechineID = 45 and o.zt = 4 and o.productID=335
+---------------
+2019-06-01 11:19:36.715:ex=Cannot access child value on Newtonsoft.Json.Linq.JValue.
+---------------
+2019-06-01 11:26:20.873:operaID=43
+---------------
+2019-06-01 11:26:20.873:companyID=14
+---------------
+2019-06-01 11:26:20.874:token=12028ad588bd4a5a8b323bf3ce9ad82a
+---------------
+2019-06-01 11:26:20.874:mechineID=45
+---------------
+2019-06-01 11:26:20.874:strJson=[{"ldNO":50,"num":1,"productID":"332"},{"ldNO":51,"num":3,"productID":"333"},{"ldNO":52,"num":2,"productID":"335"},null,null,{"ldNO":55,"num":1,"productID":"400"},{"ldNO":56,"num":"0","productID":"401"},{"ldNO":57,"num":1,"productID":"399"}]
+---------------
+2019-06-01 11:26:21.010:ldNO=50;num=1;productID=332
+---------------
+2019-06-01 11:26:21.010:sql=select * from asm_ldInfo where ldNO=50 and mechineID=45
+---------------
+2019-06-01 11:26:21.041:ldNO=51;num=3;productID=333
+---------------
+2019-06-01 11:26:21.042:sql=select * from asm_ldInfo where ldNO=51 and mechineID=45
+---------------
+2019-06-01 11:26:21.071:ldNO=52;num=2;productID=335
+---------------
+2019-06-01 11:26:21.071:sql=select * from asm_ldInfo where ldNO=52 and mechineID=45
+---------------
+2019-06-01 11:26:21.123:ex=无法将类型为“Newtonsoft.Json.Linq.JValue”的对象强制转换为类型“Newtonsoft.Json.Linq.JObject”。
+---------------
+2019-06-01 11:26:28.325:operaID=43
+---------------
+2019-06-01 11:26:28.326:companyID=14
+---------------
+2019-06-01 11:26:31.437:token=12028ad588bd4a5a8b323bf3ce9ad82a
+---------------
+2019-06-01 11:26:31.704:mechineID=45
+---------------
+2019-06-01 11:26:31.967:strJson=[{"ldNO":50,"num":1,"productID":"332"},{"ldNO":51,"num":3,"productID":"333"},{"ldNO":52,"num":2,"productID":"335"},null,null,{"ldNO":55,"num":1,"productID":"400"},{"ldNO":56,"num":"0","productID":"401"},{"ldNO":57,"num":1,"productID":"399"}]
+---------------
+2019-06-01 11:26:44.985:ldNO=50;num=1;productID=332
+---------------
+2019-06-01 11:26:45.400:sql=select * from asm_ldInfo where ldNO=50 and mechineID=45
+---------------
+2019-06-01 11:26:50.011:ldNO=51;num=3;productID=333
+---------------
+2019-06-01 11:26:51.027:sql=select * from asm_ldInfo where ldNO=51 and mechineID=45
+---------------
+2019-06-01 11:27:00.463:ldNO=52;num=2;productID=335
+---------------
+2019-06-01 11:27:01.024:sql=select * from asm_ldInfo where ldNO=52 and mechineID=45
+---------------
+2019-06-01 11:27:04.651:ex=无法将类型为“Newtonsoft.Json.Linq.JValue”的对象强制转换为类型“Newtonsoft.Json.Linq.JObject”。
+---------------
+2019-06-01 11:28:37.081:operaID=43
+---------------
+2019-06-01 11:28:37.082:companyID=14
+---------------
+2019-06-01 11:28:38.771:token=12028ad588bd4a5a8b323bf3ce9ad82a
+---------------
+2019-06-01 11:28:39.040:mechineID=45
+---------------
+2019-06-01 11:28:39.301:strJson=[{"ldNO":50,"num":1,"productID":"332"},{"ldNO":51,"num":3,"productID":"333"},{"ldNO":52,"num":2,"productID":"335"},null,null,{"ldNO":55,"num":1,"productID":"400"},{"ldNO":56,"num":"0","productID":"401"},{"ldNO":57,"num":1,"productID":"399"}]
+---------------
+2019-06-01 11:28:49.754:ldNO=50;num=1;productID=332
+---------------
+2019-06-01 11:28:50.452:sql=select * from asm_ldInfo where ldNO=50 and mechineID=45
+---------------
+2019-06-01 11:28:57.608:ldNO=51;num=3;productID=333
+---------------
+2019-06-01 11:28:58.567:sql=select * from asm_ldInfo where ldNO=51 and mechineID=45
+---------------
+2019-06-01 11:29:05.176:ldNO=52;num=2;productID=335
+---------------
+2019-06-01 11:29:06.002:sql=select * from asm_ldInfo where ldNO=52 and mechineID=45
+---------------
+2019-06-01 11:29:21.060:ex=无法将类型为“Newtonsoft.Json.Linq.JValue”的对象强制转换为类型“Newtonsoft.Json.Linq.JObject”。
+---------------
+2019-06-01 11:29:24.300:operaID=43
+---------------
+2019-06-01 11:29:24.300:companyID=14
+---------------
+2019-06-01 11:29:25.022:token=12028ad588bd4a5a8b323bf3ce9ad82a
+---------------
+2019-06-01 11:29:25.423:mechineID=45
+---------------
+2019-06-01 11:29:25.654:strJson=[{"ldNO":50,"num":1,"productID":"332"},{"ldNO":51,"num":3,"productID":"333"},{"ldNO":52,"num":2,"productID":"335"},null,null,{"ldNO":55,"num":1,"productID":"400"},{"ldNO":56,"num":"0","productID":"401"},{"ldNO":57,"num":1,"productID":"399"}]
+---------------
+2019-06-01 11:29:34.050:ldNO=50;num=1;productID=332
+---------------
+2019-06-01 11:29:34.946:sql=select * from asm_ldInfo where ldNO=50 and mechineID=45
+---------------
+2019-06-01 11:29:46.861:ldNO=51;num=3;productID=333
+---------------
+2019-06-01 11:29:47.474:sql=select * from asm_ldInfo where ldNO=51 and mechineID=45
+---------------
+2019-06-01 11:29:54.201:ldNO=52;num=2;productID=335
+---------------
+2019-06-01 11:29:54.989:sql=select * from asm_ldInfo where ldNO=52 and mechineID=45
+---------------
+2019-06-01 11:35:54.968:ex=无法将类型为“Newtonsoft.Json.Linq.JValue”的对象强制转换为类型“Newtonsoft.Json.Linq.JObject”。
+---------------
+2019-06-01 11:36:07.086:operaID=43
+---------------
+2019-06-01 11:36:07.087:companyID=14
+---------------
+2019-06-01 11:36:07.087:token=12028ad588bd4a5a8b323bf3ce9ad82a
+---------------
+2019-06-01 11:36:07.087:mechineID=45
+---------------
+2019-06-01 11:36:07.088:strJson=[{"ldNO":50,"num":1,"productID":"332"},{"ldNO":51,"num":3,"productID":"333"},{"ldNO":52,"num":2,"productID":"335"},null,null,{"ldNO":55,"num":1,"productID":"400"},{"ldNO":56,"num":"0","productID":"401"},{"ldNO":57,"num":1,"productID":"399"}]
+---------------
+2019-06-01 11:36:37.539:ldNO=50;num=1;productID=332
+---------------
+2019-06-01 11:36:37.541:sql=select * from asm_ldInfo where ldNO=50 and mechineID=45
+---------------
+2019-06-01 11:36:37.707:ldNO=51;num=3;productID=333
+---------------
+2019-06-01 11:36:37.708:sql=select * from asm_ldInfo where ldNO=51 and mechineID=45
+---------------
+2019-06-01 11:36:37.752:ldNO=52;num=2;productID=335
+---------------
+2019-06-01 11:36:37.753:sql=select * from asm_ldInfo where ldNO=52 and mechineID=45
+---------------
+2019-06-01 11:36:37.781:ldNO=55;num=1;productID=400
+---------------
+2019-06-01 11:36:37.781:sql=select * from asm_ldInfo where ldNO=55 and mechineID=45
+---------------
+2019-06-01 11:36:37.808:ldNO=56;num=0;productID=401
+---------------
+2019-06-01 11:36:37.809:sql=select * from asm_ldInfo where ldNO=56 and mechineID=45
+---------------
+2019-06-01 11:36:37.856:ldNO=57;num=1;productID=399
+---------------
+2019-06-01 11:36:37.857:sql=select * from asm_ldInfo where ldNO=57 and mechineID=45
+---------------
+2019-06-01 11:36:38.497:sqlN=select o.*,m.mechineName from asm_orderlistDetail o left join asm_mechine m on o.mechineID=m.id where o.mechineID = 45 and o.zt = 4 and o.productID=332
+---------------
+2019-06-01 11:36:38.672:sqlN=select o.*,m.mechineName from asm_orderlistDetail o left join asm_mechine m on o.mechineID=m.id where o.mechineID = 45 and o.zt = 4 and o.productID=333
+---------------
+2019-06-01 11:36:38.863:sqlN=select o.*,m.mechineName from asm_orderlistDetail o left join asm_mechine m on o.mechineID=m.id where o.mechineID = 45 and o.zt = 4 and o.productID=335
+---------------
+2019-06-01 11:36:39.036:sqlN=select o.*,m.mechineName from asm_orderlistDetail o left join asm_mechine m on o.mechineID=m.id where o.mechineID = 45 and o.zt = 4 and o.productID=400
+---------------
+2019-06-01 11:36:39.206:sqlN=select o.*,m.mechineName from asm_orderlistDetail o left join asm_mechine m on o.mechineID=m.id where o.mechineID = 45 and o.zt = 4 and o.productID=401
+---------------
+2019-06-01 11:36:39.375:sqlN=select o.*,m.mechineName from asm_orderlistDetail o left join asm_mechine m on o.mechineID=m.id where o.mechineID = 45 and o.zt = 4 and o.productID=399
+---------------

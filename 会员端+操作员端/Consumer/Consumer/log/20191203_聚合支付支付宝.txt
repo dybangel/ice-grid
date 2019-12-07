@@ -1,0 +1,255 @@
+2019-12-03 16:18:42.948:reqsn=69_132198288258729840
+---------------
+2019-12-03 16:18:43.028:companyID=;money=1;productID=;mechineID=;dgOrderDetailID=;type=
+---------------
+2019-12-03 16:18:43.127:Exception=Incorrect syntax near '='.
+---------------
+2019-12-03 16:19:33.231:reqsn=69_132198288258729840
+---------------
+2019-12-03 16:19:33.263:companyID=;money=1;productID=;mechineID=;dgOrderDetailID=;type=
+---------------
+2019-12-03 16:19:33.335:Exception=Incorrect syntax near '='.
+---------------
+2019-12-03 16:19:53.289:reqsn=69_132198288258729840
+---------------
+2019-12-03 16:19:55.313:companyID=;money=1;productID=;mechineID=;dgOrderDetailID=;type=
+---------------
+2019-12-03 16:19:55.509:Exception=Incorrect syntax near '='.
+---------------
+2019-12-03 16:20:08.823:reqsn=69_132198288258729840
+---------------
+2019-12-03 16:20:10.364:companyID=;money=1;productID=;mechineID=;dgOrderDetailID=;type=
+---------------
+2019-12-03 16:20:19.049:Exception=Incorrect syntax near '='.
+---------------
+2019-12-03 16:20:43.639:reqsn=68_132198348288398171
+---------------
+2019-12-03 16:20:46.747:companyID=14;money=1;productID=424;mechineID=68;dgOrderDetailID=0;type=2
+---------------
+2019-12-03 16:20:51.050:json={"appid":"00020342","cusid":"55045204816P7KF","payinfo":"https://qr.alipay.com/bax06604rx1c9vebktgm001e","randomstr":"086136366407","reqsn":"68_132198348288398171","retcode":"SUCCESS","key":"Welcome2018","trxid":"111977820001027204","trxstatus":"0000"}
+---------------
+2019-12-03 16:20:53.899:payinfoUrl=https://qr.alipay.com/bax06604rx1c9vebktgm001e
+---------------
+2019-12-03 16:20:53.970:insertSQL=insert into asm_pay_info(appid,cusid,trxid,statu,reqsn,type,payType,trxamt,createTime,mechineID,productID,companyID,dgOrderDetailID,orderType)
+                                            values('00020342','55045204816P7KF','111977820001027204','0','68_132198348288398171',2,2,100,'2019-12-03 16:20:53','68','424','14','0','2')
+---------------
+2019-12-03 16:21:13.411:reqsn=69_132198288258729840
+---------------
+2019-12-03 16:21:13.443:companyID=;money=1;productID=;mechineID=;dgOrderDetailID=;type=
+---------------
+2019-12-03 16:21:13.508:Exception=Incorrect syntax near '='.
+---------------
+2019-12-03 16:22:55.003:reqsn=69_132198288258729840
+---------------
+2019-12-03 16:22:55.034:companyID=;money=1;productID=;mechineID=;dgOrderDetailID=;type=
+---------------
+2019-12-03 16:22:55.101:Exception=Incorrect syntax near '='.
+---------------
+2019-12-03 16:22:56.812:reqsn=69_132198288258729840
+---------------
+2019-12-03 16:22:56.844:companyID=;money=1;productID=;mechineID=;dgOrderDetailID=;type=
+---------------
+2019-12-03 16:22:56.911:Exception=Incorrect syntax near '='.
+---------------
+2019-12-03 16:22:59.154:reqsn=69_132198288258729840
+---------------
+2019-12-03 16:22:59.186:companyID=;money=1;productID=;mechineID=;dgOrderDetailID=;type=
+---------------
+2019-12-03 16:22:59.258:Exception=Incorrect syntax near '='.
+---------------
+2019-12-03 16:23:07.570:reqsn=69_132198288258729840
+---------------
+2019-12-03 16:23:08.299:companyID=;money=1;productID=;mechineID=;dgOrderDetailID=;type=
+---------------
+2019-12-03 16:23:09.440:Exception=Incorrect syntax near '='.
+---------------
+2019-12-03 16:23:18.506:reqsn=69_132198288258729840
+---------------
+2019-12-03 16:23:35.213:companyID=;money=1;productID=;mechineID=;dgOrderDetailID=;type=
+---------------
+2019-12-03 16:23:35.307:Exception=Incorrect syntax near '='.
+---------------
+2019-12-03 16:24:43.650:reqsn=68_132198348288398171
+---------------
+2019-12-03 16:24:44.795:companyID=14;money=1;productID=424;mechineID=68;dgOrderDetailID=0;type=2
+---------------
+2019-12-03 16:24:45.837:json={"appid":"00020342","cusid":"55045204816P7KF","payinfo":"https://qr.alipay.com/bax06604rx1c9vebktgm001e","randomstr":"055416174242","reqsn":"68_132198348288398171","retcode":"SUCCESS","key":"Welcome2018","trxid":"111977820001027204","trxstatus":"0000"}
+---------------
+2019-12-03 16:24:47.087:payinfoUrl=https://qr.alipay.com/bax06604rx1c9vebktgm001e
+---------------
+2019-12-03 16:24:47.672:insertSQL=insert into asm_pay_info(appid,cusid,trxid,statu,reqsn,type,payType,trxamt,createTime,mechineID,productID,companyID,dgOrderDetailID,orderType)
+                                            values('00020342','55045204816P7KF','111977820001027204','0','68_132198348288398171',2,2,100,'2019-12-03 16:24:47','68','424','14','0','2')
+---------------
+2019-12-03 16:27:23.910:reqsn=68_132198351357471097
+---------------
+2019-12-03 16:27:26.037:companyID=14;money=1;productID=424;mechineID=68;dgOrderDetailID=0;type=2
+---------------
+2019-12-03 16:27:29.737:json={"appid":"00020342","cusid":"55045204816P7KF","payinfo":"https://qr.alipay.com/bax026654wn0c7wqdld9609d","randomstr":"174225962975","reqsn":"68_132198351357471097","retcode":"SUCCESS","key":"Welcome2018","trxid":"111977820001027211","trxstatus":"0000"}
+---------------
+2019-12-03 16:27:34.544:payinfoUrl=https://qr.alipay.com/bax026654wn0c7wqdld9609d
+---------------
+2019-12-03 16:27:35.472:insertSQL=insert into asm_pay_info(appid,cusid,trxid,statu,reqsn,type,payType,trxamt,createTime,mechineID,productID,companyID,dgOrderDetailID,orderType)
+                                            values('00020342','55045204816P7KF','111977820001027211','0','68_132198351357471097',2,2,100,'2019-12-03 16:27:34','68','424','14','0','2')
+---------------
+2019-12-03 16:27:43.297:reqsn=68_132198351357471097
+---------------
+2019-12-03 16:27:56.174:companyID=14;money=1;productID=424;mechineID=68;dgOrderDetailID=0;type=2
+---------------
+2019-12-03 16:27:57.885:reqsn=68_132198351357471097
+---------------
+2019-12-03 16:28:17.747:companyID=14;money=1;productID=424;mechineID=68;dgOrderDetailID=0;type=2
+---------------
+2019-12-03 16:28:29.090:json={"appid":"00020342","cusid":"55045204816P7KF","payinfo":"https://qr.alipay.com/bax026654wn0c7wqdld9609d","randomstr":"204627617012","reqsn":"68_132198351357471097","retcode":"SUCCESS","key":"Welcome2018","trxid":"111977820001027211","trxstatus":"0000"}
+---------------
+2019-12-03 16:28:37.923:Exception=在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: TCP Provider, error: 0 - 等待的操作过时。)
+---------------
+2019-12-03 16:29:22.533:payinfoUrl=https://qr.alipay.com/bax026654wn0c7wqdld9609d
+---------------
+2019-12-03 16:29:22.843:insertSQL=insert into asm_pay_info(appid,cusid,trxid,statu,reqsn,type,payType,trxamt,createTime,mechineID,productID,companyID,dgOrderDetailID,orderType)
+                                            values('00020342','55045204816P7KF','111977820001027211','0','68_132198351357471097',2,2,100,'2019-12-03 16:29:22','68','424','14','0','2')
+---------------
+2019-12-03 16:29:41.913:reqsn=68_132198351357471097
+---------------
+2019-12-03 16:29:44.524:companyID=14;money=1;productID=424;mechineID=68;dgOrderDetailID=0;type=2
+---------------
+2019-12-03 16:29:46.993:json={"appid":"00020342","cusid":"55045204816P7KF","payinfo":"https://qr.alipay.com/bax026654wn0c7wqdld9609d","randomstr":"186235727440","reqsn":"68_132198351357471097","retcode":"SUCCESS","key":"Welcome2018","trxid":"111977820001027211","trxstatus":"0000"}
+---------------
+2019-12-03 16:29:48.928:payinfoUrl=https://qr.alipay.com/bax026654wn0c7wqdld9609d
+---------------
+2019-12-03 16:29:49.227:insertSQL=insert into asm_pay_info(appid,cusid,trxid,statu,reqsn,type,payType,trxamt,createTime,mechineID,productID,companyID,dgOrderDetailID,orderType)
+                                            values('00020342','55045204816P7KF','111977820001027211','0','68_132198351357471097',2,2,100,'2019-12-03 16:29:49','68','424','14','0','2')
+---------------
+2019-12-03 16:30:31.140:reqsn=68_132198351357471097
+---------------
+2019-12-03 16:30:32.818:companyID=14;money=1;productID=424;mechineID=68;dgOrderDetailID=0;type=2
+---------------
+2019-12-03 16:30:33.046:json={"appid":"00020342","cusid":"55045204816P7KF","payinfo":"https://qr.alipay.com/bax026654wn0c7wqdld9609d","randomstr":"684783956953","reqsn":"68_132198351357471097","retcode":"SUCCESS","key":"Welcome2018","trxid":"111977820001027211","trxstatus":"0000"}
+---------------
+2019-12-03 16:30:33.079:payinfoUrl=https://qr.alipay.com/bax026654wn0c7wqdld9609d
+---------------
+2019-12-03 16:30:33.080:insertSQL=insert into asm_pay_info(appid,cusid,trxid,statu,reqsn,type,payType,trxamt,createTime,mechineID,productID,companyID,dgOrderDetailID,orderType)
+                                            values('00020342','55045204816P7KF','111977820001027211','0','68_132198351357471097',2,2,100,'2019-12-03 16:30:33','68','424','14','0','2')
+---------------
+2019-12-03 16:32:53.131:reqsn=68_132198351357471097
+---------------
+2019-12-03 16:32:54.325:companyID=14;money=1;productID=424;mechineID=68;dgOrderDetailID=0;type=2
+---------------
+2019-12-03 16:32:55.059:json={"appid":"00020342","cusid":"55045204816P7KF","payinfo":"https://qr.alipay.com/bax026654wn0c7wqdld9609d","randomstr":"015279778624","reqsn":"68_132198351357471097","retcode":"SUCCESS","key":"Welcome2018","trxid":"111977820001027211","trxstatus":"0000"}
+---------------
+2019-12-03 16:32:57.374:payinfoUrl=https://qr.alipay.com/bax026654wn0c7wqdld9609d
+---------------
+2019-12-03 16:32:58.069:insertSQL=insert into asm_pay_info(appid,cusid,trxid,statu,reqsn,type,payType,trxamt,createTime,mechineID,productID,companyID,dgOrderDetailID,orderType)
+                                            values('00020342','55045204816P7KF','111977820001027211','0','68_132198351357471097',2,2,100,'2019-12-03 16:32:57','68','424','14','0','2')
+---------------
+2019-12-03 16:33:02.720:reqsn=68_132198351357471097
+---------------
+2019-12-03 16:33:06.506:companyID=14;money=1;productID=424;mechineID=68;dgOrderDetailID=0;type=2
+---------------
+2019-12-03 16:33:07.532:json={"appid":"00020342","cusid":"55045204816P7KF","payinfo":"https://qr.alipay.com/bax026654wn0c7wqdld9609d","randomstr":"043458372704","reqsn":"68_132198351357471097","retcode":"SUCCESS","key":"Welcome2018","trxid":"111977820001027211","trxstatus":"0000"}
+---------------
+2019-12-03 16:33:07.961:payinfoUrl=https://qr.alipay.com/bax026654wn0c7wqdld9609d
+---------------
+2019-12-03 16:33:08.026:insertSQL=insert into asm_pay_info(appid,cusid,trxid,statu,reqsn,type,payType,trxamt,createTime,mechineID,productID,companyID,dgOrderDetailID,orderType)
+                                            values('00020342','55045204816P7KF','111977820001027211','0','68_132198351357471097',2,2,100,'2019-12-03 16:33:07','68','424','14','0','2')
+---------------
+2019-12-03 16:33:38.250:reqsn=68_132198351357471097
+---------------
+2019-12-03 16:33:38.652:companyID=14;money=1;productID=424;mechineID=68;dgOrderDetailID=0;type=2
+---------------
+2019-12-03 16:33:40.569:json={"appid":"00020342","cusid":"55045204816P7KF","payinfo":"https://qr.alipay.com/bax088609ejex0g7iblg6027","randomstr":"517392716146","reqsn":"68_132198351357471097","retcode":"SUCCESS","key":"Welcome2018","trxid":"111977820001027223","trxstatus":"0000"}
+---------------
+2019-12-03 16:33:41.762:payinfoUrl=https://qr.alipay.com/bax088609ejex0g7iblg6027
+---------------
+2019-12-03 16:33:41.836:insertSQL=insert into asm_pay_info(appid,cusid,trxid,statu,reqsn,type,payType,trxamt,createTime,mechineID,productID,companyID,dgOrderDetailID,orderType)
+                                            values('00020342','55045204816P7KF','111977820001027223','0','68_132198351357471097',2,2,100,'2019-12-03 16:33:41','68','424','14','0','2')
+---------------
+2019-12-03 16:36:59.715:Exception=Incorrect syntax near '='.
+---------------
+2019-12-03 16:37:01.348:Exception=Incorrect syntax near '='.
+---------------
+2019-12-03 16:37:07.739:Exception=Incorrect syntax near '='.
+---------------
+2019-12-03 16:37:12.557:Exception=Incorrect syntax near '='.
+---------------
+2019-12-03 16:37:48.932:json={"appid":"00020342","cusid":"55045204816P7KF","payinfo":"https://qr.alipay.com/bax088609ejex0g7iblg6027","randomstr":"546117532304","reqsn":"68_132198351357471097","retcode":"SUCCESS","key":"Welcome2018","trxid":"111977820001027223","trxstatus":"0000"}
+---------------
+2019-12-03 16:37:55.659:json={"appid":"00020342","cusid":"55045204816P7KF","payinfo":"https://qr.alipay.com/bax088609ejex0g7iblg6027","randomstr":"129585589791","reqsn":"68_132198351357471097","retcode":"SUCCESS","key":"Welcome2018","trxid":"111977820001027223","trxstatus":"0000"}
+---------------
+2019-12-03 16:38:09.148:json={"appid":"00020342","cusid":"55045204816P7KF","payinfo":"https://qr.alipay.com/bax088609ejex0g7iblg6027","randomstr":"546424245280","reqsn":"68_132198351357471097","retcode":"SUCCESS","key":"Welcome2018","trxid":"111977820001027223","trxstatus":"0000"}
+---------------
+2019-12-03 16:39:21.981:reqsn=68_132198351357471097
+---------------
+2019-12-03 16:39:25.460:json={"appid":"00020342","cusid":"55045204816P7KF","payinfo":"https://qr.alipay.com/bax088609ejex0g7iblg6027","randomstr":"444321029877","reqsn":"68_132198351357471097","retcode":"SUCCESS","key":"Welcome2018","trxid":"111977820001027223","trxstatus":"0000"}
+---------------
+2019-12-03 16:40:09.114:reqsn=68_132198351357471097
+---------------
+2019-12-03 16:40:09.608:Exception=订单处理中，请稍后再试
+---------------
+2019-12-03 16:40:09.845:json={"appid":"00020342","cusid":"55045204816P7KF","payinfo":"https://qr.alipay.com/bax05808zinqc3bxbsjw2057","randomstr":"925975135577","reqsn":"68_132198351357471097","retcode":"SUCCESS","key":"Welcome2018","trxid":"111977820001027236","trxstatus":"0000"}
+---------------
+2019-12-03 16:40:58.095:reqsn=68_132198351357471097
+---------------
+2019-12-03 16:40:58.182:companyID=14;money=1;productID=424;mechineID=68;dgOrderDetailID=0;type=2
+---------------
+2019-12-03 16:40:58.703:json={"appid":"00020342","cusid":"55045204816P7KF","payinfo":"https://qr.alipay.com/bax05808zinqc3bxbsjw2057","randomstr":"389608564690","reqsn":"68_132198351357471097","retcode":"SUCCESS","key":"Welcome2018","trxid":"111977820001027236","trxstatus":"0000"}
+---------------
+2019-12-03 16:40:58.755:payinfoUrl=https://qr.alipay.com/bax05808zinqc3bxbsjw2057
+---------------
+2019-12-03 16:40:58.756:insertSQL=insert into asm_pay_info(appid,cusid,trxid,statu,reqsn,type,payType,trxamt,createTime,mechineID,productID,companyID,dgOrderDetailID,orderType)
+                                            values('00020342','55045204816P7KF','111977820001027236','0','68_132198351357471097',2,2,100,'2019-12-03 16:40:58','68','424','14','0','2')
+---------------
+2019-12-03 16:41:26.457:reqsn=68_132198351357471097
+---------------
+2019-12-03 16:41:28.609:companyID=14;money=1;productID=424;mechineID=68;dgOrderDetailID=0;type=2
+---------------
+2019-12-03 16:41:30.081:json={"appid":"00020342","cusid":"55045204816P7KF","payinfo":"https://qr.alipay.com/bax05808zinqc3bxbsjw2057","randomstr":"046447157533","reqsn":"68_132198351357471097","retcode":"SUCCESS","key":"Welcome2018","trxid":"111977820001027236","trxstatus":"0000"}
+---------------
+2019-12-03 16:41:31.977:payinfoUrl=https://qr.alipay.com/bax05808zinqc3bxbsjw2057
+---------------
+2019-12-03 16:41:32.288:insertSQL=insert into asm_pay_info(appid,cusid,trxid,statu,reqsn,type,payType,trxamt,createTime,mechineID,productID,companyID,dgOrderDetailID,orderType)
+                                            values('00020342','55045204816P7KF','111977820001027236','0','68_132198351357471097',2,2,100,'2019-12-03 16:41:32','68','424','14','0','2')
+---------------
+2019-12-03 16:42:21.049:companyID=14;money=1;productID=424;mechineID=68;dgOrderDetailID=0;type=2
+---------------
+2019-12-03 16:42:21.496:json={"appid":"00020342","cusid":"55045204816P7KF","payinfo":"https://qr.alipay.com/bax05808zinqc3bxbsjw2057","randomstr":"878674105933","reqsn":"68_132198351357471097","retcode":"SUCCESS","key":"Welcome2018","trxid":"111977820001027236","trxstatus":"0000"}
+---------------
+2019-12-03 16:42:21.557:payinfoUrl=https://qr.alipay.com/bax05808zinqc3bxbsjw2057
+---------------
+2019-12-03 16:42:21.557:insertSQL=insert into asm_pay_info(appid,cusid,trxid,statu,reqsn,type,payType,trxamt,createTime,mechineID,productID,companyID,dgOrderDetailID,orderType)
+                                            values('00020342','55045204816P7KF','111977820001027236','0','68_132198351357471097',2,2,100,'2019-12-03 16:42:21','68','424','14','0','2')
+---------------
+2019-12-03 16:43:01.285:companyID=14;money=1;productID=424;mechineID=68;dgOrderDetailID=0;type=2
+---------------
+2019-12-03 16:43:01.495:json={"appid":"00020342","cusid":"55045204816P7KF","payinfo":"https://qr.alipay.com/bax05808zinqc3bxbsjw2057","randomstr":"241775117842","reqsn":"68_132198351357471097","retcode":"SUCCESS","key":"Welcome2018","trxid":"111977820001027236","trxstatus":"0000"}
+---------------
+2019-12-03 16:43:01.571:payinfoUrl=https://qr.alipay.com/bax05808zinqc3bxbsjw2057
+---------------
+2019-12-03 16:43:01.571:insertSQL=insert into asm_pay_info(appid,cusid,trxid,statu,reqsn,type,payType,trxamt,createTime,mechineID,productID,companyID,dgOrderDetailID,orderType)
+                                            values('00020342','55045204816P7KF','111977820001027236','0','68_132198351357471097',2,2,100,'2019-12-03 16:43:01','68','424','14','0','2')
+---------------
+2019-12-03 16:44:15.826:companyID=14;money=1;productID=424;mechineID=68;dgOrderDetailID=0;type=2
+---------------
+2019-12-03 16:47:24.728:json={"appid":"00020342","cusid":"55045204816P7KF","payinfo":"https://qr.alipay.com/bax05808zinqc3bxbsjw2057","randomstr":"800291428060","reqsn":"68_132198351357471097","retcode":"SUCCESS","key":"Welcome2018","trxid":"111977820001027236","trxstatus":"0000"}
+---------------
+2019-12-03 16:47:24.803:payinfoUrl=https://qr.alipay.com/bax05808zinqc3bxbsjw2057
+---------------
+2019-12-03 16:47:24.803:insertSQL=insert into asm_pay_info(appid,cusid,trxid,statu,reqsn,type,payType,trxamt,createTime,mechineID,productID,companyID,dgOrderDetailID,orderType)
+                                            values('00020342','55045204816P7KF','111977820001027236','0','68_132198351357471097',2,2,100,'2019-12-03 16:47:24','68','424','14','0','2')
+---------------
+2019-12-03 16:50:05.770:companyID=;money=1;productID=;mechineID=;dgOrderDetailID=;type=
+---------------
+2019-12-03 16:50:05.904:Exception=Incorrect syntax near '='.
+---------------
+2019-12-03 16:52:58.109:Exception=Invalid object name 'asm_pay_infodt'.
+---------------
+2019-12-03 16:52:58.128:Exception=Invalid object name 'asm_pay_infodt'.
+---------------
+2019-12-03 16:53:51.071:companyID=14;money=1;productID=424;mechineID=68;dgOrderDetailID=0;type=2
+---------------
+2019-12-03 16:53:54.305:json={"appid":"00020342","cusid":"55045204816P7KF","payinfo":"https://qr.alipay.com/bax030219d2lf38mwgfl003b","randomstr":"814549059576","reqsn":"68_132198365545457301","retcode":"SUCCESS","key":"Welcome2018","trxid":"111977820001027256","trxstatus":"0000"}
+---------------
+2019-12-03 16:53:54.768:payinfoUrl=https://qr.alipay.com/bax030219d2lf38mwgfl003b
+---------------
+2019-12-03 16:53:55.453:insertSQL=insert into asm_pay_info(appid,cusid,trxid,statu,reqsn,type,payType,trxamt,createTime,mechineID,productID,companyID,dgOrderDetailID,orderType)
+                                            values('00020342','55045204816P7KF','111977820001027256','0','68_132198365545457301',2,2,100,'2019-12-03 16:53:54','68','424','14','0','2')
+---------------

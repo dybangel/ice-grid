@@ -1,0 +1,72 @@
+2019-06-01 11:19:36.255:mechineID=45;companyID=14;productID=332
+---------------
+2019-06-01 11:19:36.255:sql=select productID,sum(ld_productNum)ld_productNum,sum(csldNum) csldNum,sum(csldNum)-sum(ld_productNum) cha from asm_ldInfo where mechineID=45 and productID='332'  group by productID
+---------------
+2019-06-01 11:19:36.277:orderDetail=select COUNT(*) num from asm_orderlistDetail where createTime='2019-06-01' and mechineID=45 and productID=332 and zt=4
+---------------
+2019-06-01 11:19:36.317:insert=insert into asm_kcDetail(companyID,mechineID,productID,dateTime,dgNum,lsNum,totalLsNum,imbalance,totalDgNum)  values('14','45','332','2019-06-01 11:19:36','0','1','1','0','0')
+---------------
+2019-06-01 11:19:36.419:mechineID=45;companyID=14;productID=333
+---------------
+2019-06-01 11:19:36.420:sql=select productID,sum(ld_productNum)ld_productNum,sum(csldNum) csldNum,sum(csldNum)-sum(ld_productNum) cha from asm_ldInfo where mechineID=45 and productID='333'  group by productID
+---------------
+2019-06-01 11:19:36.442:orderDetail=select COUNT(*) num from asm_orderlistDetail where createTime='2019-06-01' and mechineID=45 and productID=333 and zt=4
+---------------
+2019-06-01 11:19:36.483:insert=insert into asm_kcDetail(companyID,mechineID,productID,dateTime,dgNum,lsNum,totalLsNum,imbalance,totalDgNum)  values('14','45','333','2019-06-01 11:19:36','0','3','1','0','0')
+---------------
+2019-06-01 11:19:36.552:mechineID=45;companyID=14;productID=335
+---------------
+2019-06-01 11:19:36.552:sql=select productID,sum(ld_productNum)ld_productNum,sum(csldNum) csldNum,sum(csldNum)-sum(ld_productNum) cha from asm_ldInfo where mechineID=45 and productID='335'  group by productID
+---------------
+2019-06-01 11:19:36.574:orderDetail=select COUNT(*) num from asm_orderlistDetail where createTime='2019-06-01' and mechineID=45 and productID=335 and zt=4
+---------------
+2019-06-01 11:19:36.616:insert=insert into asm_kcDetail(companyID,mechineID,productID,dateTime,dgNum,lsNum,totalLsNum,imbalance,totalDgNum)  values('14','45','335','2019-06-01 11:19:36','0','2','2','0','0')
+---------------
+2019-06-01 11:36:38.326:mechineID=45;companyID=14;productID=332
+---------------
+2019-06-01 11:36:38.327:sql=select productID,sum(ld_productNum)ld_productNum,sum(csldNum) csldNum,sum(csldNum)-sum(ld_productNum) cha from asm_ldInfo where mechineID=45 and productID='332'  group by productID
+---------------
+2019-06-01 11:36:38.355:orderDetail=select COUNT(*) num from asm_orderlistDetail where createTime='2019-06-01' and mechineID=45 and productID=332 and zt=4
+---------------
+2019-06-01 11:36:38.410:insert=insert into asm_kcDetail(companyID,mechineID,productID,dateTime,dgNum,lsNum,totalLsNum,imbalance,totalDgNum)  values('14','45','332','2019-06-01 11:36:38','0','1','1','0','0')
+---------------
+2019-06-01 11:36:38.530:mechineID=45;companyID=14;productID=333
+---------------
+2019-06-01 11:36:38.531:sql=select productID,sum(ld_productNum)ld_productNum,sum(csldNum) csldNum,sum(csldNum)-sum(ld_productNum) cha from asm_ldInfo where mechineID=45 and productID='333'  group by productID
+---------------
+2019-06-01 11:36:38.557:orderDetail=select COUNT(*) num from asm_orderlistDetail where createTime='2019-06-01' and mechineID=45 and productID=333 and zt=4
+---------------
+2019-06-01 11:36:38.609:insert=insert into asm_kcDetail(companyID,mechineID,productID,dateTime,dgNum,lsNum,totalLsNum,imbalance,totalDgNum)  values('14','45','333','2019-06-01 11:36:38','0','3','1','0','0')
+---------------
+2019-06-01 11:36:38.701:mechineID=45;companyID=14;productID=335
+---------------
+2019-06-01 11:36:38.701:sql=select productID,sum(ld_productNum)ld_productNum,sum(csldNum) csldNum,sum(csldNum)-sum(ld_productNum) cha from asm_ldInfo where mechineID=45 and productID='335'  group by productID
+---------------
+2019-06-01 11:36:38.727:orderDetail=select COUNT(*) num from asm_orderlistDetail where createTime='2019-06-01' and mechineID=45 and productID=335 and zt=4
+---------------
+2019-06-01 11:36:38.786:insert=insert into asm_kcDetail(companyID,mechineID,productID,dateTime,dgNum,lsNum,totalLsNum,imbalance,totalDgNum)  values('14','45','335','2019-06-01 11:36:38','0','2','2','0','0')
+---------------
+2019-06-01 11:36:38.892:mechineID=45;companyID=14;productID=400
+---------------
+2019-06-01 11:36:38.894:sql=select productID,sum(ld_productNum)ld_productNum,sum(csldNum) csldNum,sum(csldNum)-sum(ld_productNum) cha from asm_ldInfo where mechineID=45 and productID='400'  group by productID
+---------------
+2019-06-01 11:36:38.925:orderDetail=select COUNT(*) num from asm_orderlistDetail where createTime='2019-06-01' and mechineID=45 and productID=400 and zt=4
+---------------
+2019-06-01 11:36:38.977:insert=insert into asm_kcDetail(companyID,mechineID,productID,dateTime,dgNum,lsNum,totalLsNum,imbalance,totalDgNum)  values('14','45','400','2019-06-01 11:36:38','0','1','1','0','0')
+---------------
+2019-06-01 11:36:39.066:mechineID=45;companyID=14;productID=401
+---------------
+2019-06-01 11:36:39.066:sql=select productID,sum(ld_productNum)ld_productNum,sum(csldNum) csldNum,sum(csldNum)-sum(ld_productNum) cha from asm_ldInfo where mechineID=45 and productID='401'  group by productID
+---------------
+2019-06-01 11:36:39.096:orderDetail=select COUNT(*) num from asm_orderlistDetail where createTime='2019-06-01' and mechineID=45 and productID=401 and zt=4
+---------------
+2019-06-01 11:36:39.149:insert=insert into asm_kcDetail(companyID,mechineID,productID,dateTime,dgNum,lsNum,totalLsNum,imbalance,totalDgNum)  values('14','45','401','2019-06-01 11:36:39','0','0','1','1','0')
+---------------
+2019-06-01 11:36:39.235:mechineID=45;companyID=14;productID=399
+---------------
+2019-06-01 11:36:39.236:sql=select productID,sum(ld_productNum)ld_productNum,sum(csldNum) csldNum,sum(csldNum)-sum(ld_productNum) cha from asm_ldInfo where mechineID=45 and productID='399'  group by productID
+---------------
+2019-06-01 11:36:39.265:orderDetail=select COUNT(*) num from asm_orderlistDetail where createTime='2019-06-01' and mechineID=45 and productID=399 and zt=4
+---------------
+2019-06-01 11:36:39.317:insert=insert into asm_kcDetail(companyID,mechineID,productID,dateTime,dgNum,lsNum,totalLsNum,imbalance,totalDgNum)  values('14','45','399','2019-06-01 11:36:39','0','1','1','0','0')
+---------------

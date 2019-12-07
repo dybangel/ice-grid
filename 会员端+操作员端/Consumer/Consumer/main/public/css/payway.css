@@ -1,0 +1,97 @@
+/*标题*/
+.title{
+	width: 100%;
+	display: inline-block;
+	background: #eaeaea;
+	line-height: 80px;
+}
+.title h2{
+	font-size: 2rem;
+	color: #1B1464;
+	text-align: center;
+}
+/*内容*/
+.main{
+	width: 100%;
+	display: inline-block;
+}
+.yoghourtData{
+	width: calc(100% - 40px);
+	display: inline-block;
+	margin: 20px;
+}
+.yoghourtData .yoghourtIcon{
+	width: 100%;
+	display: inline-block;
+}
+.yoghourtData .yoghourtIcon img{
+	width: 100%;
+	padding: 20px 80px;
+}
+/*商品信息*/
+.yoghourtData .product{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+.yoghourtData .product h4{
+	font-size: 1.5rem;
+	color: #1B1464;
+}
+.yoghourtData .product p{
+	font-size: 2rem;
+	color: #1B1464;
+	line-height: 40px;
+} 
+.yoghourtData .product span{
+	text-decoration: line-through red solid;
+	margin-right: 30px;
+}
+/*支付方式*/
+.method{
+	width: 100%;
+	display: inline-block;
+}
+.method li{
+	width: 100%;
+	display: inline-block;
+	background: #fff;
+	margin-bottom: 10px;
+	padding: 10px 20px;
+}
+.method li .wallet{
+	width: 10%;
+	display: inline-block;
+	float: left;
+}
+.method li .wallet img{
+	width: 100%;
+	padding: 2px;
+}
+.method li .payment{
+	display: inline-block;
+	padding-left: 20px;
+	line-height: 20px;
+}
+.method li .payment h4{
+	font-size: 1.5rem;
+}
+.method li .payment span{
+	color: red;
+}
+.method li p{
+	font-size: 1.2rem;
+	color: #999999;
+	float: right;
+	line-height: 38px;
+}
+.method li .weixin{
+	line-height: 38px;
+}
+/*温馨提示*/
+.tips{
+	text-align: center;
+	color: red;
+	padding: 10px;
+	line-height: 20px;
+}

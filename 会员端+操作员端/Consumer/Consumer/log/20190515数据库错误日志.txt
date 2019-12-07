@@ -1,0 +1,4 @@
+2019-05-15 16:27:05.266:SQLString=insert into asm_pay_info(trxid,statu,type,payType,trxamt,createTime,appid,unionID,mechineID,productID,companyID,orderType,dgOrderDetailID) values('155790882520412712',0,2,4,590,'2019/5/15 16:27:05','00020342','owhCR0Yh6wTJwWWmeNihP4_7VEPU','25','309','14','2','undefined')
+---------------
+2019-05-15 16:27:42.284:SQLString=insert into asm_pay_info(trxid,statu,type,payType,trxamt,createTime,appid,unionID,mechineID,productID,companyID,orderType,dgOrderDetailID) values('155790885973419700',0,2,4,590,'2019/5/15 16:27:40','00020342','owhCR0Yh6wTJwWWmeNihP4_7VEPU','25','309','14','2','undefined')
+---------------

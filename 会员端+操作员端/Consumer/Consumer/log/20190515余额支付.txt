@@ -1,0 +1,10 @@
+2019-05-15 16:27:05.205:insertSQL=insert into asm_pay_info(trxid,statu,type,payType,trxamt,createTime,appid,unionID,mechineID,productID,companyID,orderType,dgOrderDetailID) values('155790882520412712',0,2,4,590,'2019/5/15 16:27:05','00020342','owhCR0Yh6wTJwWWmeNihP4_7VEPU','25','309','14','2','undefined')
+---------------
+2019-05-15 16:27:41.286:insertSQL=insert into asm_pay_info(trxid,statu,type,payType,trxamt,createTime,appid,unionID,mechineID,productID,companyID,orderType,dgOrderDetailID) values('155790885973419700',0,2,4,590,'2019/5/15 16:27:40','00020342','owhCR0Yh6wTJwWWmeNihP4_7VEPU','25','309','14','2','undefined')
+---------------
+2019-05-15 16:29:28.311:insertSQL=insert into asm_pay_info(trxid,statu,type,payType,trxamt,createTime,appid,unionID,mechineID,productID,companyID,orderType,dgOrderDetailID) values('155790896743533270',0,2,4,590,'2019/5/15 16:29:27','00020342','owhCR0Yh6wTJwWWmeNihP4_7VEPU','25','309','14','2','')
+---------------
+2019-05-15 16:29:29.915:sql=select * from asm_member where unionID='owhCR0Yh6wTJwWWmeNihP4_7VEPU'
+---------------
+2019-05-15 16:29:33.315:sql1=select * from asm_pay_info where trxid='155790896743533270'
+---------------

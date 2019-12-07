@@ -1,0 +1,2 @@
+2019-09-03 19:11:36.293:sql=insert into asm_orderlist(mechineID,companyID,memberID,productID,totalNum,syNum,createTime,activityID,startTime,endTime,psMode,psModeStr,orderNO,fkzt,orderZT,totalMoney,psCycle,trxid,mechineName,mechineAddress,productBrand,productBrandID,province,city,county,price,source,zqNum)values(51,14,2377,319,100,100,'2019-09-03 19:11:14',0,'2019 - 09 - 05','2020-03-21','2','2日1送','511567509033101','1','0','566.50','','','一里城1号楼东014','一里城1号楼东014','新希望琴牌',6,'山东省','青岛市','李沧区','5.50','1','100');select @@IDENTITY
+---------------

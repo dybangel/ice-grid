@@ -1,0 +1,90 @@
+2019-09-03 18:54:18.935:companyID=14;mechineID=51;unionID=owhCR0ef_sajVc3jwc0g_kzYMg7U;openID=oJ1cB5UTRUv1N8gFkGnAdfvrhUrw;oldOrderNO=511567141169066;oldProductID=311;newProductID=319;startDate=2019 - 09 - 05
+---------------
+2019-09-03 18:54:23.791:sql1=select * from  asm_orderlist where orderNO='511567141169066'
+---------------
+2019-09-03 18:57:19.082:companyID=14;mechineID=51;unionID=owhCR0ef_sajVc3jwc0g_kzYMg7U;openID=oJ1cB5UTRUv1N8gFkGnAdfvrhUrw;oldOrderNO=511567141169066;oldProductID=311;newProductID=319;startDate=2019 - 09 - 05
+---------------
+2019-09-03 18:57:32.019:sql1=select * from  asm_orderlist where orderNO='511567141169066'
+---------------
+2019-09-03 18:57:41.100:sql5=select count(*) num from  asm_orderlistDetail where orderNO='511567141169066' and zt=5
+---------------
+2019-09-03 18:57:53.758:sql4=select * from  asm_product where productID=319
+---------------
+2019-09-03 18:58:03.531:totalMoney=566.5
+---------------
+2019-09-03 18:58:04.390:进入addOrder2
+---------------
+2019-09-03 18:58:04.641:result={"code":"500","msg":"参数不全，请退出重试"}
+---------------
+2019-09-03 19:07:27.201:companyID=14;mechineID=51;unionID=owhCR0ef_sajVc3jwc0g_kzYMg7U;openID=oJ1cB5UTRUv1N8gFkGnAdfvrhUrw;oldOrderNO=511567141169066;oldProductID=311;newProductID=319;startDate=2019 - 09 - 05
+---------------
+2019-09-03 19:07:29.346:sql1=select * from  asm_orderlist where orderNO='511567141169066'
+---------------
+2019-09-03 19:07:29.393:sql5=select count(*) num from  asm_orderlistDetail where orderNO='511567141169066' and zt=5
+---------------
+2019-09-03 19:07:29.508:sql4=select * from  asm_product where productID=319
+---------------
+2019-09-03 19:07:29.528:totalMoney=566.5
+---------------
+2019-09-03 19:07:29.533:进入addOrder2
+---------------
+2019-09-03 19:07:29.533:result={"code":"500","msg":"参数不全，请退出重试"}
+---------------
+2019-09-03 19:08:14.675:companyID=14;mechineID=51;unionID=owhCR0ef_sajVc3jwc0g_kzYMg7U;openID=oJ1cB5UTRUv1N8gFkGnAdfvrhUrw;oldOrderNO=511567141169066;oldProductID=311;newProductID=319;startDate=2019 - 09 - 05
+---------------
+2019-09-03 19:08:14.676:sql1=select * from  asm_orderlist where orderNO='511567141169066'
+---------------
+2019-09-03 19:08:14.695:sql5=select count(*) num from  asm_orderlistDetail where orderNO='511567141169066' and zt=5
+---------------
+2019-09-03 19:08:14.798:sql4=select * from  asm_product where productID=319
+---------------
+2019-09-03 19:08:14.818:totalMoney=566.5
+---------------
+2019-09-03 19:08:14.819:进入addOrder2
+---------------
+2019-09-03 19:08:14.819:result={"code":"500","msg":"参数不全，请退出重试"}
+---------------
+2019-09-03 19:08:38.707:companyID=14;mechineID=51;unionID=owhCR0ef_sajVc3jwc0g_kzYMg7U;openID=oJ1cB5UTRUv1N8gFkGnAdfvrhUrw;oldOrderNO=511567141169066;oldProductID=311;newProductID=319;startDate=2019 - 09 - 05
+---------------
+2019-09-03 19:08:41.256:sql1=select * from  asm_orderlist where orderNO='511567141169066'
+---------------
+2019-09-03 19:09:14.938:companyID=14;mechineID=51;unionID=owhCR0ef_sajVc3jwc0g_kzYMg7U;openID=oJ1cB5UTRUv1N8gFkGnAdfvrhUrw;oldOrderNO=511567141169066;oldProductID=311;newProductID=319;startDate=2019 - 09 - 05
+---------------
+2019-09-03 19:09:16.587:sql1=select * from  asm_orderlist where orderNO='511567141169066'
+---------------
+2019-09-03 19:09:18.090:sql5=select count(*) num from  asm_orderlistDetail where orderNO='511567141169066' and zt=5
+---------------
+2019-09-03 19:09:22.708:sql4=select * from  asm_product where productID=319
+---------------
+2019-09-03 19:09:25.849:totalMoney=566.5
+---------------
+2019-09-03 19:09:26.325:进入addOrder2
+---------------
+2019-09-03 19:09:34.322:sqlMechineselect * from asm_mechine where id=51
+---------------
+2019-09-03 19:10:04.495:result={"code":"500","msg":"系统异常"}
+---------------
+2019-09-03 19:10:19.537:companyID=14;mechineID=51;unionID=owhCR0ef_sajVc3jwc0g_kzYMg7U;openID=oJ1cB5UTRUv1N8gFkGnAdfvrhUrw;oldOrderNO=511567141169066;oldProductID=311;newProductID=319;startDate=2019 - 09 - 05
+---------------
+2019-09-03 19:10:24.079:sql1=select * from  asm_orderlist where orderNO='511567141169066'
+---------------
+2019-09-03 19:10:27.193:sql5=select count(*) num from  asm_orderlistDetail where orderNO='511567141169066' and zt=5
+---------------
+2019-09-03 19:10:31.465:sql4=select * from  asm_product where productID=319
+---------------
+2019-09-03 19:10:31.492:totalMoney=566.5
+---------------
+2019-09-03 19:10:31.493:进入addOrder2
+---------------
+2019-09-03 19:10:35.372:sqlMechineselect * from asm_mechine where id=51
+---------------
+2019-09-03 19:10:41.078:sqlproductselect p.*,b.brandName from asm_product p left join asm_brand b on p.brandID=b.id where p.productID=319
+---------------
+2019-09-03 19:10:45.665:sqlActivityselect * from  asm_activity where id=''
+---------------
+2019-09-03 19:11:04.222:date
+---------------
+2019-09-03 19:11:36.724:result={"code":"200","msg":"订单提交成功","orderID":"984","activityID":"0"}
+---------------
+2019-09-03 19:11:36.725:sql6=insert into [dbo].[asm_duihuan](memberID,oldOrderNO,newOrderNO,oldProductID,newProductID,bce,dhTime,bz)values('2377','511567141169066','511567509017049','311','319','-51.5','2019-09-03 19:11:36','当前剩余天数103')
+---------------

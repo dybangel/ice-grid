@@ -1,0 +1,68 @@
+2019-12-02 15:05:05.903:sqlInsert=update  asm_product_pick set payStatus=1 where reqsnNo='68132197296571629047' 
+---------------
+2019-12-02 15:05:28.492:sqlInsert=update  asm_product_pick set payStatus=1 where reqsnNo='68132197296571629047' 
+---------------
+2019-12-02 15:08:58.504:sqlInsert=update  asm_product_pick set payStatus=1 where reqsnNo='68132197296571629047' 
+---------------
+2019-12-02 15:09:04.544:jArray=1
+---------------
+2019-12-02 15:09:14.004:sqlInsert=1111
+---------------
+2019-12-02 15:09:15.263:ldno=10
+---------------
+2019-12-02 15:34:22.635:sqlInsert=update  asm_product_pick set payStatus=1 where reqsnNo='68132197296571629047' 
+---------------
+2019-12-02 15:35:44.112:sqlInsert=update  asm_product_pick set payStatus=1 where reqsnNo='68132197296571629047' 
+---------------
+2019-12-02 15:35:44.249:jArray=1
+---------------
+2019-12-02 15:35:44.309:sqlInsert=1111
+---------------
+2019-12-02 15:35:44.377:ldno=10
+---------------
+2019-12-02 15:39:22.655:sqlInsert=update  asm_product_pick set payStatus=1 where reqsnNo='68132197296571629047' 
+---------------
+2019-12-02 15:39:24.063:jArray=1
+---------------
+2019-12-02 15:39:24.963:sqlInsert=1111
+---------------
+2019-12-02 15:39:25.147:ldno=10
+---------------
+2019-12-02 15:40:43.892:sqlInsert=update  asm_product_pick set payStatus=1 where reqsnNo='68132197296571629047' 
+---------------
+2019-12-02 15:40:44.028:jArray=1
+---------------
+2019-12-02 15:40:44.084:sqlInsert=1111
+---------------
+2019-12-02 15:40:44.151:ldno=10
+---------------
+2019-12-02 15:43:52.229:sqlInsert=update  asm_product_pick set payStatus=1 where reqsnNo='68132197296571629047' 
+---------------
+2019-12-02 15:43:52.402:jArray=1
+---------------
+2019-12-02 15:43:52.494:sqlInsert=1111
+---------------
+2019-12-02 15:43:52.593:ldno=10
+---------------
+2019-12-02 16:03:57.651:sqlInsert=update  asm_product_pick set payStatus=1 where reqsnNo='68132197296571629047' 
+---------------
+2019-12-02 16:03:58.157:jArray=1
+---------------
+2019-12-02 16:03:58.312:sqlInsert=1111
+---------------
+2019-12-02 16:03:58.484:ldno=10
+---------------
+2019-12-02 16:05:38.497:sqlInsert=update  asm_product_pick set payStatus=1 where reqsnNo='68132197296571629047' 
+---------------
+2019-12-02 16:05:38.546:jArray=1
+---------------
+2019-12-02 16:05:38.643:sqlInsert=1111
+---------------
+2019-12-02 16:05:38.748:ldno=10
+---------------
+2019-12-02 16:06:31.053:sqlInsert=update  asm_product_pick set payStatus=1 where reqsnNo='68132197296571629047' 
+---------------
+2019-12-02 16:06:54.167:sqlInsert=update  asm_product_pick set payStatus=1 where reqsnNo='68132197296571629047' 
+---------------
+2019-12-02 16:07:52.355:sqlInsert=update  asm_product_pick set payStatus=1 where reqsnNo='68132197296571629047' 
+---------------

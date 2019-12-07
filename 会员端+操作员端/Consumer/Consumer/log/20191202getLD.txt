@@ -1,0 +1,54 @@
+2019-12-02 15:09:14.554:sql=select SUM(ld_productNum) ld_productNum from  asm_ldinfo where mechineID=68 and productID=424 and ld_productNum>0 and (zt is null or zt=0) group by productID
+---------------
+2019-12-02 15:09:14.578:sql1=select COUNT(*) num  from asm_orderlistDetail where mechineID=68 and productID=424 and zt=4 and createTime='2019-12-02'
+---------------
+2019-12-02 15:09:14.609:sql3=select * from  asm_ldinfo where mechineID=68 and productID=424 and ld_productNum>0 and (zt is null or zt=0) order by yxch
+---------------
+2019-12-02 15:35:44.310:sql=select SUM(ld_productNum) ld_productNum from  asm_ldinfo where mechineID=68 and productID=424 and ld_productNum>0 and (zt is null or zt=0) group by productID
+---------------
+2019-12-02 15:35:44.329:sql1=select COUNT(*) num  from asm_orderlistDetail where mechineID=68 and productID=424 and zt=4 and createTime='2019-12-02'
+---------------
+2019-12-02 15:35:44.356:sql3=select * from  asm_ldinfo where mechineID=68 and productID=424 and ld_productNum>0 and (zt is null or zt=0) order by yxch
+---------------
+2019-12-02 15:39:25.019:sql=select SUM(ld_productNum) ld_productNum from  asm_ldinfo where mechineID=68 and productID=424 and ld_productNum>0 and (zt is null or zt=0) group by productID
+---------------
+2019-12-02 15:39:25.039:sql1=select COUNT(*) num  from asm_orderlistDetail where mechineID=68 and productID=424 and zt=4 and createTime='2019-12-02'
+---------------
+2019-12-02 15:39:25.066:sql3=select * from  asm_ldinfo where mechineID=68 and productID=424 and ld_productNum>0 and (zt is null or zt=0) order by yxch
+---------------
+2019-12-02 15:40:44.084:sql=select SUM(ld_productNum) ld_productNum from  asm_ldinfo where mechineID=68 and productID=424 and ld_productNum>0 and (zt is null or zt=0) group by productID
+---------------
+2019-12-02 15:40:44.104:sql1=select COUNT(*) num  from asm_orderlistDetail where mechineID=68 and productID=424 and zt=4 and createTime='2019-12-02'
+---------------
+2019-12-02 15:40:44.131:sql3=select * from  asm_ldinfo where mechineID=68 and productID=424 and ld_productNum>0 and (zt is null or zt=0) order by yxch
+---------------
+2019-12-02 15:43:52.495:sql=select SUM(ld_productNum) ld_productNum from  asm_ldinfo where mechineID=68 and productID=424 and ld_productNum>0 and (zt is null or zt=0) group by productID
+---------------
+2019-12-02 15:43:52.525:sql1=select COUNT(*) num  from asm_orderlistDetail where mechineID=68 and productID=424 and zt=4 and createTime='2019-12-02'
+---------------
+2019-12-02 15:43:52.563:sql3=select * from  asm_ldinfo where mechineID=68 and productID=424 and ld_productNum>0 and (zt is null or zt=0) order by yxch
+---------------
+2019-12-02 16:03:58.313:sql=select SUM(ld_productNum) ld_productNum from  asm_ldinfo where mechineID=68 and productID=424 and ld_productNum>0 and (zt is null or zt=0) group by productID
+---------------
+2019-12-02 16:03:58.391:sql1=select COUNT(*) num  from asm_orderlistDetail where mechineID=68 and productID=424 and zt=4 and createTime='2019-12-02'
+---------------
+2019-12-02 16:03:58.444:sql3=select * from  asm_ldinfo where mechineID=68 and productID=424 and ld_productNum>0 and (zt is null or zt=0) order by yxch
+---------------
+2019-12-02 16:05:38.644:sql=select SUM(ld_productNum) ld_productNum from  asm_ldinfo where mechineID=68 and productID=424 and ld_productNum>0 and (zt is null or zt=0) group by productID
+---------------
+2019-12-02 16:05:38.677:sql1=select COUNT(*) num  from asm_orderlistDetail where mechineID=68 and productID=424 and zt=4 and createTime='2019-12-02'
+---------------
+2019-12-02 16:05:38.715:sql3=select * from  asm_ldinfo where mechineID=68 and productID=424 and ld_productNum>0 and (zt is null or zt=0) order by yxch
+---------------
+2019-12-02 16:44:33.139:sql=select SUM(ld_productNum) ld_productNum from  asm_ldinfo where mechineID=68 and productID=424 and ld_productNum>0 and (zt is null or zt=0) group by productID
+---------------
+2019-12-02 16:44:33.164:sql1=select COUNT(*) num  from asm_orderlistDetail where mechineID=68 and productID=424 and zt=4 and createTime='2019-12-02'
+---------------
+2019-12-02 16:44:33.195:sql3=select * from  asm_ldinfo where mechineID=68 and productID=424 and ld_productNum>0 and (zt is null or zt=0) order by yxch
+---------------
+2019-12-02 16:44:49.304:sql=select SUM(ld_productNum) ld_productNum from  asm_ldinfo where mechineID=68 and productID=424 and ld_productNum>0 and (zt is null or zt=0) group by productID
+---------------
+2019-12-02 16:44:49.328:sql1=select COUNT(*) num  from asm_orderlistDetail where mechineID=68 and productID=424 and zt=4 and createTime='2019-12-02'
+---------------
+2019-12-02 16:44:49.360:sql3=select * from  asm_ldinfo where mechineID=68 and productID=424 and ld_productNum>0 and (zt is null or zt=0) order by yxch
+---------------

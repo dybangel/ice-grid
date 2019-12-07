@@ -1,0 +1,8 @@
+2019-10-31 11:22:17.169:operaList=[{ 'productID':424,'proName':'订购测试确认定位','removeNum':'10','remarks':'20'}]operaID=52companyID=14token=ef0eaf52002c46a8a825ace7dc62123emechineID=68
+---------------
+2019-10-31 11:28:16.367:operaList=[{"productID":424,"proName":"订购测试确认定位","removeNum":"10","remarks":"20"}]operaID=52companyID=14token=ef0eaf52002c46a8a825ace7dc62123emechineID=68
+---------------
+2019-10-31 11:30:49.741:operaList=[{"productID":424,"proName":"订购测试确认定位","removeNum":"10","remarks":"20"}]operaID=52companyID=14token=ef0eaf52002c46a8a825ace7dc62123emechineID=68
+---------------
+2019-10-31 11:32:49.352:operaList=[{"productID":424,"proName":"订购测试确认定位","removeNum":"10","remarks":"20"}]operaID=52companyID=14token=ef0eaf52002c46a8a825ace7dc62123emechineID=68
+---------------

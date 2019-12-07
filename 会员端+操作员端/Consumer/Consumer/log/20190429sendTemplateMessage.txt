@@ -1,0 +1,108 @@
+2019-04-29 10:16:23.569:touser=oJ1cB5cNfxOI2COElfzZiB-mUfuc
+---------------
+2019-04-29 10:16:23.845:formId=114838b2ef0141ceb69e31360d4f9dc8
+---------------
+2019-04-29 10:16:24.199:type=1
+---------------
+2019-04-29 10:16:24.734:touser=oJ1cB5cNfxOI2COElfzZiB-mUfuc;formId=114838b2ef0141ceb69e31360d4f9dc8;type=1;companyID=14
+---------------
+2019-04-29 10:16:25.384:sql=select minAppid,minSecret from asm_company where id=14
+---------------
+2019-04-29 10:16:28.161:会员充值={"touser":"oJ1cB5cNfxOI2COElfzZiB-mUfuc","template_id":"jIgqkxQstR7tw9Wo6IiQK0z49SJ88USO6bGdkb2vz5c","page":"","form_id":"114838b2ef0141ceb69e31360d4f9dc8","data":{"keyword1":"{\"value\":\"小爷不狂\"}","keyword2":"{\"value\":\"2019年04月29日 10:16\"}","keyword3":"{\"value\":\"欢迎您成为会员\"}"}}
+---------------
+2019-04-29 10:27:33.221:touser=oJ1cB5cNfxOI2COElfzZiB-mUfuc
+---------------
+2019-04-29 10:27:33.551:formId=114838b2ef0141ceb69e31360d4f9dc8
+---------------
+2019-04-29 10:27:34.314:type=1
+---------------
+2019-04-29 10:27:35.914:touser=oJ1cB5cNfxOI2COElfzZiB-mUfuc;formId=114838b2ef0141ceb69e31360d4f9dc8;type=1;companyID=14
+---------------
+2019-04-29 10:27:36.260:sql=select minAppid,minSecret from asm_company where id=14
+---------------
+2019-04-29 10:27:56.113:会员充值={"touser":"oJ1cB5cNfxOI2COElfzZiB-mUfuc","template_id":"jIgqkxQstR7tw9Wo6IiQK0z49SJ88USO6bGdkb2vz5c","page":"","form_id":"114838b2ef0141ceb69e31360d4f9dc8","data":{"keyword1":"{value:小爷不狂}","keyword2":"{value:2019年04月29日 10:27}","keyword3":"{value:欢迎您成为会员}"}}
+---------------
+2019-04-29 10:39:06.894:touser=oJ1cB5cNfxOI2COElfzZiB-mUfuc
+---------------
+2019-04-29 10:39:06.894:formId=114838b2ef0141ceb69e31360d4f9dc8
+---------------
+2019-04-29 10:39:06.894:type=1
+---------------
+2019-04-29 10:39:06.895:touser=oJ1cB5cNfxOI2COElfzZiB-mUfuc;formId=114838b2ef0141ceb69e31360d4f9dc8;type=1;companyID=14
+---------------
+2019-04-29 10:39:06.895:sql=select minAppid,minSecret from asm_company where id=14
+---------------
+2019-04-29 10:39:07.039:会员充值={"touser":"oJ1cB5cNfxOI2COElfzZiB-mUfuc","template_id":"jIgqkxQstR7tw9Wo6IiQK0z49SJ88USO6bGdkb2vz5c","page":"","form_id":"114838b2ef0141ceb69e31360d4f9dc8","data":{"data":{"keyword1":"{\"value\":\"小爷不狂\"}","keyword2":"{\"value\":\"2019年04月29日 10:39\"}","keyword3":"{\"value\":\"欢迎您成为会员\"}"}}}
+---------------
+2019-04-29 10:43:48.377:touser=oJ1cB5cNfxOI2COElfzZiB-mUfuc
+---------------
+2019-04-29 10:43:48.377:formId=114838b2ef0141ceb69e31360d4f9dc8
+---------------
+2019-04-29 10:43:48.378:type=1
+---------------
+2019-04-29 10:43:48.378:touser=oJ1cB5cNfxOI2COElfzZiB-mUfuc;formId=114838b2ef0141ceb69e31360d4f9dc8;type=1;companyID=14
+---------------
+2019-04-29 10:43:48.379:sql=select minAppid,minSecret from asm_company where id=14
+---------------
+2019-04-29 10:43:48.512:会员充值={"data":{"keyword1":"{\"value\":\"小爷不狂\"}","keyword2":"{\"value\":\"2019年04月29日 10:43\"}","keyword3":"{\"value\":\"欢迎您成为会员\"}"}}
+---------------
+2019-04-29 10:45:05.740:touser=oJ1cB5cNfxOI2COElfzZiB-mUfuc
+---------------
+2019-04-29 10:45:06.167:formId=114838b2ef0141ceb69e31360d4f9dc8
+---------------
+2019-04-29 10:45:06.525:type=1
+---------------
+2019-04-29 10:45:06.960:touser=oJ1cB5cNfxOI2COElfzZiB-mUfuc;formId=114838b2ef0141ceb69e31360d4f9dc8;type=1;companyID=14
+---------------
+2019-04-29 10:45:07.739:sql=select minAppid,minSecret from asm_company where id=14
+---------------
+2019-04-29 10:45:36.853:会员充值={"data":{"keyword1":"{\"value\":\"小爷不狂\"}","keyword2":"{\"value\":\"2019年04月29日 10:45\"}","keyword3":"{\"value\":\"欢迎您成为会员\"}"}}
+---------------
+2019-04-29 10:48:48.133:touser=oJ1cB5cNfxOI2COElfzZiB-mUfuc
+---------------
+2019-04-29 10:48:48.133:formId=114838b2ef0141ceb69e31360d4f9dc8
+---------------
+2019-04-29 10:48:48.134:type=1
+---------------
+2019-04-29 10:48:48.134:touser=oJ1cB5cNfxOI2COElfzZiB-mUfuc;formId=114838b2ef0141ceb69e31360d4f9dc8;type=1;companyID=14
+---------------
+2019-04-29 10:48:48.135:sql=select minAppid,minSecret from asm_company where id=14
+---------------
+2019-04-29 10:48:48.281:会员充值={"data":{"keyword1":"小爷不狂","keyword2":"2019年04月29日 10:48","keyword3":"欢迎您成为会员"}}
+---------------
+2019-04-29 10:49:14.583:touser=oJ1cB5cNfxOI2COElfzZiB-mUfuc
+---------------
+2019-04-29 10:49:14.942:formId=114838b2ef0141ceb69e31360d4f9dc8
+---------------
+2019-04-29 10:49:15.317:type=1
+---------------
+2019-04-29 10:49:15.633:touser=oJ1cB5cNfxOI2COElfzZiB-mUfuc;formId=114838b2ef0141ceb69e31360d4f9dc8;type=1;companyID=14
+---------------
+2019-04-29 10:49:15.975:sql=select minAppid,minSecret from asm_company where id=14
+---------------
+2019-04-29 10:49:43.101:会员充值={"touser":"oJ1cB5cNfxOI2COElfzZiB-mUfuc","template_id":"jIgqkxQstR7tw9Wo6IiQK0z49SJ88USO6bGdkb2vz5c","page":"","form_id":"114838b2ef0141ceb69e31360d4f9dc8","data":{"data":{"keyword1":"小爷不狂","keyword2":"2019年04月29日 10:49","keyword3":"欢迎您成为会员"}}}
+---------------
+2019-04-29 10:59:20.304:touser=oJ1cB5cNfxOI2COElfzZiB-mUfuc
+---------------
+2019-04-29 10:59:20.667:formId=114838b2ef0141ceb69e31360d4f9dc8
+---------------
+2019-04-29 10:59:21.084:type=1
+---------------
+2019-04-29 10:59:21.780:touser=oJ1cB5cNfxOI2COElfzZiB-mUfuc;formId=114838b2ef0141ceb69e31360d4f9dc8;type=1;companyID=14
+---------------
+2019-04-29 10:59:22.161:sql=select minAppid,minSecret from asm_company where id=14
+---------------
+2019-04-29 10:59:41.880:会员充值={"touser":"oJ1cB5cNfxOI2COElfzZiB-mUfuc","template_id":"jIgqkxQstR7tw9Wo6IiQK0z49SJ88USO6bGdkb2vz5c","page":"","form_id":"114838b2ef0141ceb69e31360d4f9dc8","data":{"data":{"keyword1":{"value":"小爷不狂"},"keyword2":{"value":"2019年04月29日 10:59"},"keyword3":{"value":"欢迎您成为会员"}}}}
+---------------
+2019-04-29 11:01:37.520:touser=oJ1cB5cNfxOI2COElfzZiB-mUfuc
+---------------
+2019-04-29 11:01:38.211:formId=114838b2ef0141ceb69e31360d4f9dc8
+---------------
+2019-04-29 11:01:38.626:type=1
+---------------
+2019-04-29 11:01:39.116:touser=oJ1cB5cNfxOI2COElfzZiB-mUfuc;formId=114838b2ef0141ceb69e31360d4f9dc8;type=1;companyID=14
+---------------
+2019-04-29 11:01:39.837:sql=select minAppid,minSecret from asm_company where id=14
+---------------
+2019-04-29 11:01:56.595:会员充值={"touser":"oJ1cB5cNfxOI2COElfzZiB-mUfuc","template_id":"jIgqkxQstR7tw9Wo6IiQK0z49SJ88USO6bGdkb2vz5c","page":"","form_id":"114838b2ef0141ceb69e31360d4f9dc8","data":{"keyword1":{"value":"小爷不狂"},"keyword2":{"value":"2019年04月29日 11:01"},"keyword3":{"value":"欢迎您成为会员"}}}
+---------------
